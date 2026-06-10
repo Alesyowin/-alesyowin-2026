@@ -2,45 +2,29 @@
 
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import { Mail, MessageCircle, Phone, Send, Facebook, Youtube, Instagram, Music2 } from 'lucide-react';
+import { Mail, MessageCircle, Phone, Send, Facebook, Youtube, Instagram, Music2, CreditCard } from 'lucide-react';
 import { Link } from '../../i18n/routing';
 
 const Footer = () => {
     const t = useTranslations('Footer');
 
     return (
-        <footer id="footer" className="bg-(--color-black-pure) text-white pt-16 pb-8 px-4 border-t border-white/10">
+        <footer id="footer" className="bg-[#000] text-white pt-16 pb-8 px-4 border-t border-white/10">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                 
                 {/* Coloana 1: CONTACT US */}
                 <div className="space-y-6">
                     <div className="relative inline-block">
                         <h3 className="text-lg font-bold uppercase tracking-wider mb-1">{t('contactUs')}</h3>
-                        <div className="h-0.5 w-12 bg-(--color-gold)"></div>
+                        <div className="h-0.5 w-12 bg-[#00A5FF]"></div>
                     </div>
                     
-                    <p className="text-(--color-gold) font-bold italic text-sm">{t('tagline')}</p>
+                    <p className="text-[#00A5FF] font-bold italic text-sm">Join the Alesywin family today!</p>
                     
                     <ul className="space-y-4 text-sm text-gray-400">
                         <li className="flex items-center gap-3">
-                            <Send size={18} className="text-white" />
-                            <a href="https://t.me/yourchannel" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                                {t('telegram')}
-                            </a>
-                        </li>
-                        <li className="flex items-center gap-3">
-                            <Phone size={18} className="text-white" />
-                            <a href="tel:+447700900555" className="hover:text-white transition-colors">+44 7700 900555</a>
-                        </li>
-                        <li className="flex items-center gap-3">
                             <Mail size={18} className="text-white" />
-                            <a href="mailto:info@gpcompetition.com" className="hover:text-white transition-colors">{t('email')}</a>
-                        </li>
-                        <li className="flex items-start gap-3 mt-4 pt-4 border-t border-white/5">
-                            <div className="space-y-1">
-                                <p className="text-white font-semibold uppercase tracking-tighter">{t('companyName')}</p>
-                                <p className="text-xs uppercase opacity-70">{t('companyNumber', { number: '17127347' })}</p>
-                            </div>
+                            <a href="mailto:andreialexandruuk25@gmail.com" className="hover:text-white transition-colors">andreialexandruuk25@gmail.com</a>
                         </li>
                     </ul>
                 </div>
@@ -49,7 +33,7 @@ const Footer = () => {
                 <div className="space-y-6">
                     <div className="relative inline-block">
                         <h3 className="text-lg font-bold uppercase tracking-wider mb-1">{t('legal')}</h3>
-                        <div className="h-0.5 w-12 bg-(--color-gold)"></div>
+                        <div className="h-0.5 w-12 bg-[#00A5FF]"></div>
                     </div>
                     
                     <ul className="space-y-3 text-sm text-gray-400">
@@ -75,15 +59,13 @@ const Footer = () => {
                     <div className="space-y-4">
                         <div className="relative inline-block">
                             <h3 className="text-lg font-bold uppercase tracking-wider mb-1">{t('keepInTouch')}</h3>
-                            <div className="h-0.5 w-12 bg-(--color-gold)"></div>
+                            <div className="h-0.5 w-12 bg-[#00A5FF]"></div>
                         </div>
                         
                         <div className="flex gap-3">
-                            <SocialIcon href="https://www.facebook.com/profile.php?id=61574236922040" icon={<Facebook size={18} fill="currentColor" />} />
-                            <SocialIcon href="https://www.tiktok.com/@gpcompetition" icon={<Music2 size={18} />} />
-                            <SocialIcon href="https://www.instagram.com/gpcompetitionn/" icon={<Instagram size={18} />} />
-                            <SocialIcon href="https://www.youtube.com/@GpCompetition-uk" icon={<Youtube size={18} />} />
-                            <SocialIcon href="#" icon={<Send size={18} fill="currentColor" />} />
+                            <SocialIcon href="#" icon={<Facebook size={18} fill="currentColor" />} />
+                            <SocialIcon href="#" icon={<Instagram size={18} />} />
+                            <SocialIcon href="#" icon={<Youtube size={18} />} />
                         </div>
                     </div>
 
@@ -91,38 +73,29 @@ const Footer = () => {
                     <div className="space-y-4">
                         <div className="relative inline-block">
                             <h3 className="text-lg font-bold uppercase tracking-wider mb-1">{t('paymentMethods')}</h3>
-                            <div className="h-0.5 w-12 bg-(--color-gold)"></div>
+                            <div className="h-0.5 w-12 bg-[#00A5FF]"></div>
                         </div>
                         
-                        {/* Payment Methods Image */}
                         <div className="space-y-2 pt-2">
-                            <img 
-                                src="/PaytriotFooterMain1.png" 
-                                alt="Payment Methods" 
-                                className="w-full max-w-[280px] h-auto object-contain transition-transform hover:scale-[1.02]"
-                            />
+                            <div className="flex items-center gap-3 text-gray-300">
+                                <CreditCard size={32} />
+                                <span>Secured by Stripe</span>
+                            </div>
                             <p className="text-[10px] text-white/40 tracking-tight">
-                                Secure payments powered by Paytriot
+                                We accept all major credit and debit cards securely through Stripe.
                             </p>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
 
             {/* Bottom Section */}
             <div className="border-t border-white/10 pt-8 text-center space-y-2">
                 <p className="text-xs text-white/80">
-                    &copy; {new Date().getFullYear()} {t('companyName')}. {t('rights')}
+                    &copy; {new Date().getFullYear()} Alesywin. All Rights Reserved.
                 </p>
                 <p className="text-[10px] text-white/60">
-                    GP COMPETITIONS&reg; {t('trademark', { name: '' })}
-                </p>
-                <p className="text-[10px] text-white/60 max-w-2xl mx-auto">
-                    {t('unauthorised')}
+                    ALESYWIN&reg;
                 </p>
             </div>
         </footer>
@@ -134,7 +107,7 @@ const SocialIcon = ({ icon, href }: { icon: React.ReactNode, href: string }) => 
         href={href} 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-(--color-gold) hover:text-black transition-all"
+        className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-[#00A5FF] hover:text-white transition-all"
     >
         {icon}
     </a>

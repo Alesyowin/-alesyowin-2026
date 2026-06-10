@@ -14,8 +14,8 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Configurare — folosim valorile din .env.local
-const DIRECTUS_URL = 'https://gpcompetition.onrender.com';
-const ADMIN_TOKEN = 'Q5Rn66dcpUUEmaDNmYG71se95RI5QhYE';
+const DIRECTUS_URL = 'https://alesyowin-backend.onrender.com';
+const ADMIN_TOKEN = 'wGFrQpJRa7rpj1Y2YarOPp2tM0f8CMBj';
 
 // Citim snapshot-ul
 const snapshotPath = join(__dirname, 'snapshot.json');

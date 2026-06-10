@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import CountdownTimer from '../giveaway/CountdownTimer';
-import BorderBeam from '../ui/BorderBeam';
 
 interface GiveawayCardProps {
     id: string;
@@ -17,10 +16,9 @@ interface GiveawayCardProps {
     totalTickets: number;
     endDate: string;
     locale: string;
-    animate?: boolean; // Prop nou pentru activarea animației
+    animate?: boolean;
 }
 
-// Cartonaș produs giveaway pentru pagina principală
 export default function GiveawayCard({
     id, title, subtitle, price, imageUrl, ticketsSold, totalTickets, endDate, locale, animate = false,
 }: GiveawayCardProps) {
@@ -33,91 +31,82 @@ export default function GiveawayCard({
             href={`/${locale}/giveaway/${id}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="group block h-full relative bg-[#0A0A0A] border border-[#D4AF37]/15 rounded-lg overflow-hidden hover:border-[#D4AF37]/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(212,175,55,0.1)] cursor-pointer"
+            className="group block h-full relative bg-white border-2 border-[#00A5FF] rounded-2xl overflow-hidden hover:border-[#008ecc] transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,165,255,0.15)] hover:-translate-y-2 cursor-pointer"
         >
-            {/* Efectul de Border Beam (Glow animat pe margini) */}
-            <BorderBeam isHovered={isHovered} />
-
             <motion.div
                 initial={animate ? { opacity: 0, y: 50 } : {}}
                 whileInView={animate ? { opacity: 1, y: 0 } : {}}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="w-full h-full md:flex md:flex-col"
+                className="w-full h-full flex flex-col"
             >
             
             {/* Imaginea produsului */}
-            <div className="relative w-full aspect-[16/9] overflow-hidden bg-[#111]">
+            <div className="relative w-full h-[240px] overflow-hidden border-b border-gray-100">
                 <img
                     src={imageUrl}
                     alt={title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/0 to-[#0A0A0A]/0 opacity-60" />
                 
                 {/* Badge preț */}
-                <div className="absolute top-3 right-3 bg-black/80 border border-[#D4AF37]/30 rounded-md px-3 py-1.5 flex items-center justify-center min-w-[3.5rem]">
-                    <span className="text-[#D4AF37] font-black text-lg" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm border border-[#00A5FF]/30 rounded-lg px-4 py-2 flex items-center justify-center shadow-sm">
+                    <span className="text-[#00A5FF] font-black text-xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                         £{Number(price).toFixed(2)}
                     </span>
                 </div>
             </div>
 
             {/* Conținut */}
-            <div className="p-5 space-y-4 md:flex-1 md:flex md:flex-col">
+            <div className="p-6 space-y-4 flex-1 flex flex-col justify-between text-center">
                 {/* Titlu și subtitlu */}
                 <div>
                     <h3
-                        className="text-white font-black text-xl uppercase tracking-wide leading-tight group-hover:text-[#D4AF37] transition-colors duration-300"
+                        className="text-[#222] font-extrabold text-lg uppercase tracking-wide leading-snug group-hover:text-[#00A5FF] transition-colors duration-300 line-clamp-2 min-h-[50px]"
                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
                         {title}
                     </h3>
                     {subtitle && (
-                        <p className="text-[#D4AF37]/50 text-sm mt-1 line-clamp-1">{subtitle}</p>
+                        <p className="text-gray-500 text-sm mt-2 line-clamp-1">{subtitle}</p>
                     )}
                 </div>
 
                 {/* Timer și Bara de progres */}
-                <div className="space-y-4 md:mt-auto">
-                    {/* Timer (scalat pentru a încăpea perfect în cartonaș) */}
-                    <div className="transform origin-left scale-75 w-[133%] -mb-2">
+                <div className="space-y-4 mt-auto">
+                    {/* Timer */}
+                    <div className="transform origin-center scale-90 w-[111%] -ml-[5%]">
                         <CountdownTimer endDate={endDate} isSoldOut={ticketsSold >= totalTickets} />
                     </div>
 
                     {/* Bara de progres interior */}
-                    <div className="relative w-full h-5 bg-[#1a1a1a] rounded-full overflow-hidden border border-[#D4AF37]/10">
-                        <div
-                            className="absolute top-0 left-0 h-full rounded-full transition-all duration-700 ease-out flex items-center justify-end pr-2"
-                            style={{
-                                width: `${Math.max(8, percent)}%`, // Asigurăm minim de lățime pt a face procentajul vizibil dacă îl punem înăuntru
-                                background: 'linear-gradient(90deg, #8b6914 0%, #D4AF37 60%, #f0d060 100%)',
-                                boxShadow: '0 0 10px rgba(212, 175, 55, 0.4)',
-                            }}
-                        >
-                            {percent > 5 && <span className="text-white font-black text-[10px]">{percent}%</span>}
+                    <div className="text-left w-full">
+                        <div className="flex justify-between text-[11px] font-bold text-gray-500 mb-1">
+                            <span>{ticketsSold} SOLD</span>
+                            <span>{totalTickets} TOTAL</span>
                         </div>
-                        {percent <= 5 && <span className="absolute top-1/2 -translate-y-1/2 left-2 text-white font-black text-[10px]">{percent}%</span>}
+                        <div className="relative w-full h-2 bg-gray-100 rounded-full overflow-hidden border border-gray-200">
+                            <div
+                                className="absolute top-0 left-0 h-full rounded-full transition-all duration-700 ease-out"
+                                style={{
+                                    width: `${Math.max(2, percent)}%`,
+                                    backgroundColor: '#00A5FF'
+                                }}
+                            />
+                        </div>
                     </div>
                 </div>
 
-                {/* Buton Enter Now (acum este vizual, clicul fiind gestionat de întregul card) */}
+                {/* Buton Enter Now */}
                 <div
                     className="
-                        flex items-center justify-center w-full text-center py-3.5 rounded-md text-sm font-bold uppercase tracking-[0.2em]
-                        bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black
-                        hover:shadow-[0_0_25px_rgba(212,175,55,0.4)] hover:scale-[1.02]
-                        transition-all duration-300 btn-gold-safe
+                        mt-4 flex items-center justify-center w-full text-center py-3.5 rounded-lg text-sm font-extrabold uppercase tracking-[0.1em]
+                        bg-[#00A5FF] text-white
+                        hover:bg-[#008ecc] hover:shadow-[0_6px_15px_rgba(0,165,255,0.4)]
+                        transition-all duration-300
                     "
                     style={{ 
-                        fontFamily: "'Montserrat', sans-serif",
-                        backgroundColor: '#D4AF37',
-                        opacity: 1,
-                        visibility: 'visible',
-                        zIndex: 999,
-                        position: 'relative',
-                        display: 'inline-block'
+                        fontFamily: "'Montserrat', sans-serif"
                     }}
                 >
                     {t('enterNow')}

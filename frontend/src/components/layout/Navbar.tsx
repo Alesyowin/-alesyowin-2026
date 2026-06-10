@@ -41,7 +41,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed w-full z-[9999] bg-(--color-black-rich)/95 border-b border-(--color-gold)/20 transition-all duration-300">
+        <nav className="fixed w-full z-[9999] bg-[#000]/95 border-b border-[#00A5FF]/20 transition-all duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20">
 
@@ -49,11 +49,11 @@ export default function Navbar() {
                     <div className="flex items-center flex-shrink-0 pr-2 lg:pr-6">
                         <Link href="/" className="flex items-center">
                             <Image
-                                src="/logo-principal-orizontal-fara-fundal.png"
-                                alt="GPCompetition Logo"
-                                width={250}
-                                height={80}
-                                className="w-auto h-12 md:h-14 lg:h-16 object-contain"
+                                src="/logo-principal-transparent.webp"
+                                alt="Alesywin Logo"
+                                width={300}
+                                height={100}
+                                className="w-auto h-14 md:h-16 lg:h-24 xl:h-28 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] contrast-125 saturate-150 transition-transform hover:scale-105"
                                 priority
                             />
                         </Link>
@@ -137,9 +137,9 @@ export default function Navbar() {
                         ) : (
                             <Link 
                                 href="/login" 
-                                className="bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black hover:from-[#D4AF37] hover:to-[#D4AF37] uppercase tracking-wide lg:tracking-widest font-bold text-[10px] lg:text-xs xl:text-sm py-2 px-3 xl:py-2.5 xl:px-6 rounded-sm transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.4)] btn-gold-safe whitespace-nowrap"
+                                className="bg-[#00A5FF] text-white hover:bg-[#008ecc] uppercase tracking-wide lg:tracking-widest font-bold text-[10px] lg:text-xs xl:text-sm py-2 px-3 xl:py-2.5 xl:px-6 rounded-md transition-all transform hover:scale-105 shadow-[0_4px_10px_rgba(0,165,255,0.4)] whitespace-nowrap"
                                 style={{ 
-                                    backgroundColor: '#D4AF37',
+                                    backgroundColor: '#00A5FF',
                                     opacity: 1,
                                     visibility: 'visible',
                                     zIndex: 999,
@@ -228,9 +228,9 @@ export default function Navbar() {
                             <Link 
                                 href="/login"
                                 onClick={() => setIsOpen(false)}
-                                className="w-full bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black uppercase tracking-widest font-black py-4 px-6 rounded-sm shadow-[0_0_15px_rgba(212,175,55,0.4)] text-center btn-gold-safe"
+                                className="w-full bg-[#00A5FF] text-white uppercase tracking-widest font-black py-4 px-6 rounded-md shadow-[0_4px_10px_rgba(0,165,255,0.4)] text-center"
                                 style={{ 
-                                    backgroundColor: '#D4AF37',
+                                    backgroundColor: '#00A5FF',
                                     opacity: 1,
                                     visibility: 'visible',
                                     zIndex: 999,
