@@ -1,9 +1,6 @@
 FROM directus/directus:11.14.1
 USER root
 
-# Install Cloudinary Driver
-RUN pnpm add @directus/storage-driver-cloudinary
-
 COPY ./extensions/hooks/ticket-engine/dist /directus/extensions/ticket-engine/dist
 COPY ./extensions/hooks/ticket-engine/package.json /directus/extensions/ticket-engine/package.json
 
