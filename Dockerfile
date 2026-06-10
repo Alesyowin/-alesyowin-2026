@@ -1,9 +1,12 @@
 FROM directus/directus:11.14.1
+
 USER root
+RUN corepack enable
 
-# Instalăm extensia oficială Cloudinary pentru Directus 
-RUN npm install @directus/storage-driver-cloudinary
+USER node
+RUN pnpm install @directus/storage-driver-cloudinary
 
+USER root
 COPY ./extensions/hooks/ticket-engine/dist /directus/extensions/ticket-engine/dist
 COPY ./extensions/hooks/ticket-engine/package.json /directus/extensions/ticket-engine/package.json
 
