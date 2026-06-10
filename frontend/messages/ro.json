@@ -1,0 +1,514 @@
+{
+  "Navbar": {
+    "home": "Acasă",
+    "apartments": "Apartamente",
+    "cars": "Mașini",
+    "cash": "Bani Gheață",
+    "tech": "Tehnologie",
+    "entryList": "Lista Participanți",
+    "contact": "Contact",
+    "login": "Autentificare",
+    "profile": "Profilul Meu",
+    "logout": "Deconectare"
+  },
+  "Giveaway": {
+    "timeRemaining": "Timp Rămas",
+    "ticketsSold": "Bilete Vândute",
+    "quizTitle": "Răspunde pentru a debloca coșul",
+    "quizSubtitle": "Răspunde corect la întrebare pentru a activa butonul de cumpărare.",
+    "addToCart": "Adaugă în Coș",
+    "lockedBtn": "Răspunde corect pentru deblocare",
+    "wrongAnswer": "Răspuns greșit. Încearcă din nou!",
+    "correctAnswer": "Corect! Acum poți adăuga în coș.",
+    "giveawayEnded": "Concurs Încheiat",
+    "perTicket": "/ bilet",
+    "ticketsSelected": "{count} Bilet(e)",
+    "enterNowFor": "Participă acum pentru {total}",
+    "loginToEnter": "Te rugăm să te autentifici sau să te înregistrezi pentru a participa la acest concurs gratuit.",
+    "alreadyEntered": "Ai participat deja la acest concurs. Mult succes!",
+    "freeEntry": "Participă Gratuit"
+  },
+  "Cart": {
+    "title": "Coșul Tău",
+    "empty": "Coșul tău este gol.",
+    "total": "Total",
+    "checkout": "Finalizează Comanda",
+    "continueShopping": "Continuă Cumpărăturile"
+  },
+  "Checkout": {
+    "title": "Finalizare Comandă",
+    "summary": "Sumar Comandă",
+    "formTitle": "Informații Client",
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "email": "Adresă Email",
+    "phone": "Număr de Telefon",
+    "payNow": "Plătește Acum",
+    "processing": "Se procesează...",
+    "errorProcessing": "Eroare la procesarea comenzii",
+    "qty": "Cant",
+    "paymentTitle": "Detalii Plată",
+    "secureRedirect": "Vei fi redirecționat(ă) în siguranță către furnizorul nostru de plăți pentru a finaliza achiziția.",
+    "cardNumber": "Număr Card",
+    "expiry": "Data Expirare",
+    "billingTitle": "Adresa de facturare",
+    "address": "Adresa",
+    "city": "Oraș",
+    "county": "Județ / Regiune",
+    "postalCode": "Cod poștal",
+    "country": "Țară"
+  },
+  "Home": {
+    "subtitle": "GP Competition",
+    "title": "Competiții Active",
+    "description": "Participă acum pentru șansa de a câștiga premii de lux. Fiecare bilet te aduce mai aproape de recompense incredibile.",
+    "noCompetitions": "Nu există competiții active în acest moment.",
+    "checkBack": "Revină curând pentru noi premii!",
+    "enterNow": "Participă Acum"
+  },
+  "GiveawayPage": {
+    "instantPrizes": "Premii Instant",
+    "description": "Descriere",
+    "competitionDetails": "Detalii Competiție",
+    "bonusDraw": "Trageri Bonus",
+    "comingSoon": "În Curând",
+    "perTicket": "/ bilet",
+    "maxTickets": "Max {limit} bilet(e) per persoană",
+    "timeRemaining": "Timp Rămas",
+    "ticketsSold": "Bilete Vândute",
+    "ticketsRemaining": "{count} bilete rămase",
+    "quizTitle": "Răspunde pentru a debloca coșul",
+    "quizSubtitle": "Răspunde corect la întrebare pentru a activa butonul de cumpărare.",
+    "cars": "Mașini",
+    "apartments": "Apartamente",
+    "cash": "Bani Gheață",
+    "tech": "Tehnologie",
+    "liveDrawBadge": "Tragere Live",
+    "liveDrawInfo": "Tragerea va avea loc live pe <fb>Facebook</fb> și <yt>YouTube</yt>",
+    "winnersInfo": "Această competiție va avea <strong>1</strong> câștigător",
+    "entriesInfo": "<strong>{count}</strong> înscrieri",
+    "postalEntryBtn": "PARTICIPARE GRATUITĂ PRIN POȘTĂ",
+    "instantWinTitle": "Câștig Instant",
+    "instantWinWon": "CÂȘTIGAT de {name}",
+    "instantWinAvailable": "Disponibil",
+    "instantWinPrizeLabel": "Premiu",
+    "instantWinNoPrizes": "Nu există câștiguri instant configurate pentru această competiție.",
+    "instantWinWonCount": "{won} din {total} premii câștigate",
+    "bonusDrawsExplanation": "Cum funcționează Tragerile Bonus",
+    "bonusDrawsModalText": "Tragerile bonus sunt premii speciale deblocate atunci când vânzările de bilete ating anumite praguri (secțiunile marcate cu stea). Odată ce un prag este atins, un câștigător este ales aleatoriu dintre toate biletele vândute până în acel moment.",
+    "bonusDrawsGoText": "Mai sunt doar {percent}% până la următoarea tragere bonus!",
+    "bonusDrawsTakePlaceText": "Tragerile bonus au loc atunci când secțiunile marcate cu stea sunt atinse"
+  },
+  "EntryList": {
+    "subtitle": "GP Competition",
+    "title": "Lista de Participanți",
+    "description": "Verifică participanții și biletele tale pentru fiecare competiție activă sau finalizată.",
+    "all": "Toate",
+    "cars": "Mașini",
+    "apartments": "Apartamente",
+    "cash": "Bani Gheață",
+    "tech": "Tehnologie",
+    "active": "Active",
+    "finished": "Finalizate",
+    "noCompetitions": "Nu există competiții în această categorie.",
+    "tickets": "bilete",
+    "viewTickets": "Vezi Bilete",
+    "searchTitle": "Caută Biletele Tale",
+    "searchDescription": "Introdu numele tău pentru a vedea toate biletele înregistrate pe contul tău.",
+    "totalTickets": "Total Bilete",
+    "ticketsSold": "Bilete Vândute",
+    "searchPlaceholder": "Nume, Email sau Număr Bilet (ex: 4521)...",
+    "searchBtn": "Caută",
+    "searching": "Se caută...",
+    "connectionError": "Eroare de conexiune.",
+    "noTicketsFound": "Nu am găsit niciun bilet",
+    "tryAnother": "Încearcă un alt nume, email sau număr de bilet.",
+    "ticketsFoundFor": "Bilete găsite pentru",
+    "ticketCount": "{count} bilete",
+    "searchPrompt": "Introdu mai sus numele, email-ul sau numărul biletului pentru a-ți găsi biletele.",
+    "verifiedNote": "Biletele tale sunt securizate și înregistrate oficial în sistemul GP Competition."
+  },
+  "Success": {
+    "title": "Comandă Reușită!",
+    "message": "Mulțumim pentru participare. Biletele tale au fost securizate și un email de confirmare a fost trimis. Mult noroc!",
+    "returnHome": "Înapoi la Acasă",
+    "checkTickets": "Verifică biletele",
+    "instantWinCongrats": "🎉 Ai câștigat un Premiu Instant!",
+    "instantWinAmount": "Ai câștigat {amount} {currency}!",
+    "instantWinMsg": "Echipa noastră te va contacta în curând pentru a stabili detaliile livrării premiului."
+  },
+  "Category": {
+    "breadcrumb": "Categorii",
+    "cars": "Mașini",
+    "apartments": "Apartamente",
+    "cashPrizes": "Premii în Bani",
+    "techGadgets": "Tech & Gadget-uri",
+    "noActive": "Nu există încă {category} active",
+    "preparingNew": "Momentan pregătim noi premii incitante în această categorie. Revino curând!"
+  },
+  "Timer": {
+    "days": "Zile",
+    "hours": "Ore",
+    "min": "Min",
+    "sec": "Sec",
+    "ended": "Concurs Încheiat"
+  },
+  "Payment": {
+    "title": "Gateway de Plată Mock",
+    "orderRef": "REF COMANDĂ",
+    "description": "Mediu de testare pre-integrare. În producție, această pagină va fi înlocuită cu interfața securizată de plată Paytriot UK.",
+    "simulateBtn": "Simulează Plată Reușită",
+    "processingWebhook": "Se procesează Webhook...",
+    "webhookNote": "Apăsarea butonului declanșează Webhook-ul care actualizează comanda în Directus și execută Hook-ul generator de bilete."
+  },
+  "Profile": {
+    "title": "Profilul Meu",
+    "memberBadge": "Membru GP Competition",
+    "logout": "Deconectare",
+    "personalData": "Date Personale",
+    "fullName": "Nume Complet",
+    "email": "Email",
+    "phone": "Telefon",
+    "notSet": "Nesetat",
+    "ticketsSummary": "Sumar Bilete",
+    "activeTickets": "Bilete Active",
+    "totalPrizes": "Total Premii Câștigate",
+    "recentActivity": "Activitate Recentă",
+    "loadingOrders": "Se încarcă comenzile...",
+    "noOrders": "Nu ai nicio comandă încă",
+    "ticketsPurchased": "Bilete Achiziționate",
+    "event": "Eveniment",
+    "id": "ID"
+  },
+  "Footer": {
+    "contactUs": "CONTACTEAZĂ-NE",
+    "tagline": "Suntem aici pentru tine 24/7",
+    "telegram": "Canal Telegram",
+    "email": "info@gpcompetition.com",
+    "companyName": "GP PROMOTIONS LTD",
+    "companyNumber": "Număr companie {number}",
+    "legal": "LEGAL",
+    "terms": "Termeni și Condiții",
+    "privacy": "Politică de Confidențialitate",
+    "rules": "Regulile concursului",
+    "postal": "Metodă de participare gratuită prin poștă",
+    "cookies": "Politică de Cookies",
+    "faq": "FAQ",
+    "keepInTouch": "RĂMÂI ÎN CONTACT",
+    "paymentMethods": "METODE DE PLATĂ",
+    "securePayments": "Plăți securizate",
+    "rights": "Toate drepturile rezervate.",
+    "trademark": "{name} este o marcă înregistrată.",
+    "unauthorised": "Orice utilizare neautorizată a numelui, logo-ului sau brandingului este strict interzisă."
+  },
+  "Email": {
+    "otpSubject": "Codul tău de acces - GP Competition",
+    "otpTitle": "Cod de Autentificare",
+    "otpGreeting": "Bună,",
+    "otpMessage": "Codul tău de acces pentru GP Competition este:",
+    "otpExpiry": "Acest cod va expira în 10 minute.",
+    "otpSecurityNote": "Dacă nu ai solicitat acest cod, te rugăm să ignori acest email.",
+    "footer": "© {year} GP PROMOTIONS LTD. Toate drepturile rezervate."
+  },
+  "OrderEmail": {
+    "subject": "Confirmare comandă #{id} - GP Competition",
+    "title": "Confirmare Comandă",
+    "greeting": "Bună {name},",
+    "orderNumber": "Număr Comandă:",
+    "event": "Competiție:",
+    "total": "Sumă totală plătită:",
+    "yourTickets": "Biletele Tale:",
+    "thanks": "Îți mulțumim pentru participarea la concursul nostru! Îți dorim mult noroc la următoarea extragere.",
+    "footer": "© {year} GP PROMOTIONS LTD. Toate drepturile rezervate."
+  },
+  "Terms": {
+    "title": "Termeni și Condiții",
+    "lastUpdated": "Ultima actualizare: Octombrie 2023",
+    "intro": "GP PROMOTIONS LTD (număr companie 17127347), cu sediul social în Shelton Street nr. 71-75, Covent Garden, Londra, WC2H 9JQ, Regatul Unit, operează site-ul web www.gpcompetition.com și este responsabilă pentru gestionarea tuturor competițiilor listate acolo.\n\nPentru orice întrebări sau nelămuriri, ne puteți contacta prin email la info@gpcompetition.com.",
+    "sections": {
+      "s1": {
+        "title": "1. Reguli Generale",
+        "content": "1.1 Fiecare competiție publicată pe www.gpcompetition.com este guvernată de acești Termeni și Condiții („T&C”). Aceștia acoperă atât competițiile standard cu tragere la sorți („Competiții Standard”), cât și competițiile cu câștig instant („Competiții Instant Win”), denumite colectiv „Competiții”.\n1.2 Acești T&C au prioritate față de orice altă comunicare — inclusiv orice material promoțional, postări pe rețelele sociale sau alte comunicări referitoare la o Competiție.\n1.3 Pentru a fi eligibili pentru un premiu, participanții trebuie să răspundă corect la o întrebare sau să rezolve o problemă stabilită de GP PROMOTIONS LTD („Întrebarea Competiției”).\n1.4 Fiecare Competiție include o Întrebare a Competiției. Se aplică o taxă de participare plătită pentru fiecare înscriere. În cazul în care GP PROMOTIONS LTD oferă o întrebare cu mai multe variante de răspuns sau o întrebare cu răspuns ușor, este disponibilă și o modalitate de participare gratuită prin poștă."
+      },
+      "s2": {
+        "title": "2. Cum să Participi",
+        "content": "2.1 Fiecare Competiție se desfășoară între data de început și data de încheiere afișate pe pagina competiției respective de pe www.gpcompetition.com („Data de Deschidere” și „Data de Închidere”). Toate datele și orele se referă la ora Londrei, Anglia.\n2.2 GP PROMOTIONS LTD își rezervă dreptul de a ajusta datele de deschidere sau de închidere dacă este cu adevărat necesar. Orice modificări vor fi actualizate prompt pe site-ul web.\n2.3 Toate înscrierile trebuie să ajungă la noi până la ora de închidere specificată. Înscrierile primite după acest moment sunt automat invalide. Nu se vor acorda rambursări pentru înscrierile întârziate.\n2.4 Fiecare Competiție are o limită maximă de bilete, afișată pe pagina competiției. Odată ce această limită este atinsă, nu mai pot fi acceptate alte înscrieri.\n2.5 Există, de asemenea, o limită de participare per persoană pentru fiecare Competiție. Această limită este menționată pe pagina individuală a competiției.\n2.6 Pentru a participa la o Competiție Standard prin metoda plătită: vizitați www.gpcompetition.com, alegeți competiția, răspundeți la Întrebarea Competiției, alegeți câte înscrieri doriți, finalizați comanda, autentificați-vă sau înregistrați-vă dacă este necesar, acceptați acești T&C și finalizați plata.\n2.7 Pentru a participa la o Competiție Instant Win prin metoda plătită: vizitați www.gpcompetition.com, selectați competiția, alegeți numărul de înscrieri, finalizați comanda, autentificați-vă sau înregistrați-vă dacă este necesar, acceptați acești T&C și finalizați plata.\n2.8 Odată ce înscrierea este finalizată cu succes, veți primi o confirmare de la GP PROMOTIONS LTD.\n2.9 GP PROMOTIONS LTD nu își asumă nicio responsabilitate pentru înscrierile care nu ajung la noi din cauza unor probleme tehnice, de conectivitate sau orice altă circumstanță în afara controlului nostru.\n2.10 Prin participarea la orice Competiție, confirmați că îndepliniți cerințele de eligibilitate, că înțelegeți că încheiați un acord obligatoriu cu GP PROMOTIONS LTD și că acceptați acești T&C în totalitate."
+      },
+      "s3": {
+        "title": "3. Participare Gratuită prin Poștă",
+        "content": "Participanții care nu doresc să plătească pot participa prin poștă, cu condiția să urmeze instrucțiunile de mai jos:\nTrimiteți o scrisoare scrisă de mână prin poștă preplătită de clasa întâi sau a doua la: GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit. Scrisorile livrate personal nu vor fi acceptate.\nScrisoarea trebuie să includă clar: Numele competiției la care participați, numele dvs. complet, data nașterii, adresa de domiciliu completă, un număr de telefon de contact și o adresă de email, și răspunsul dvs. la Întrebarea Competiției (dacă este cazul).\nÎnscrierile incomplete sau ilizibile vor fi descalificate. Este permis un număr maxim de două (2) înscrieri gratuite prin poștă de persoană și per competiție. Fiecare înscriere trebuie trimisă în propriul plic separat.\nÎnscrierile gratuite trebuie să ajungă înainte de Data de Închidere. Costurile poștale sunt responsabilitatea participantului. Pentru a fi validă, trebuie să aveți un cont activ pe www.gpcompetition.com și toate detaliile din scrisoarea dvs. trebuie să coincidă exact cu detaliile contului dvs."
+      },
+      "s4": {
+        "title": "4. Selectarea Câștigătorilor",
+        "content": "4.1 Pentru Competițiile Standard, toți participanții care răspund corect la Întrebarea Competiției vor participa la o tragere la sorți. Câștigătorul va fi ales live folosind generatorul de numere aleatorii de la Google. Tragerea la sorți va fi difuzată live pe canalele oficiale de social media ale GP PROMOTIONS LTD. Tragerea la sorți va avea loc în termen de 7 zile de la Data de Închidere.\n4.2 Toți participanții la Competițiile Standard pot avea numele și numărul de participare incluse într-un tabel publicat pe site-ul web sau afișat în timpul tragerii la sorți live. Dacă nu doriți ca numele dvs. să fie inclus, contactați-ne la info@gpcompetition.com cu cel puțin 48 de ore înainte de tragere.\n4.3 Pentru Competițiile Instant Win, premiile sunt pre-atribuite unor numere de bilet aleatorii. Fiecărei înscrieri cu răspuns corect îi este atribuit un număr. Dacă acel număr corespunde unui premiu, participantul câștigă. Câștigătorii sunt notificați imediat pe pagina competiției și prin email automat."
+      },
+      "s5": {
+        "title": "5. Credit Website",
+        "content": "5.1 Creditele de website pot fi acordate ca premii sau cadouri în anumite Competiții.\n5.2 În unele cazuri, un premiu poate fi schimbat cu credite de website, acolo unde este menționat pe pagina competiției.\n5.3 Creditul de website trebuie utilizat în termen de 12 luni de la adăugarea în contul dvs. Mementourile vor fi trimise prin email. Creditul expirat nu mai poate fi utilizat.\n5.4 Creditul de website nu are valoare monetară. Nu poate fi schimbat în numerar, transferat sau retras. Este valabil numai pentru utilizare pentru înscrieri viitoare la competiții pe www.gpcompetition.com."
+      },
+      "s6": {
+        "title": "6. Cine poate Participa",
+        "content": "6.1 Competițiile sunt deschise rezidenților din Marea Britanie cu vârsta de peste 18 ani, cu excepția: Angajaților GP PROMOTIONS LTD, angajaților oricărei agenții sau furnizor implicat în gestionarea Competițiilor sau a membrilor familiei imediate ale celor de mai sus.\n6.2 Prin înscriere, confirmați că sunteți eligibil să participați și să solicitați orice premiu. GP PROMOTIONS LTD poate solicita dovada eligibilității în orice moment.\n6.3 GP PROMOTIONS LTD nu va accepta înscrieri generate de calculator sau incomplete.\n6.4 Taxele de participare sunt nerambursabile în orice circumstanță, inclusiv dacă descoperiți ulterior că nu erați eligibil sau dacă sunteți descalificat.\n6.5 Orice participant descoperit a fi implicat în fraudă, hacking sau orice formă de interferență cu site-ul web va fi interzis definitiv."
+      },
+      "s7": {
+        "title": "7. Premiul",
+        "content": "7.1 Premiul pentru fiecare Competiție este descris pe pagina competiției respective de pe www.gpcompetition.com.\n7.2 Premiile sunt supuse disponibilității. GP PROMOTIONS LTD își rezervă dreptul de a înlocui orice premiu cu unul de valoare egală sau mai mare.\n7.3 Cu excepția cazului în care se specifică altfel, nu există o alternativă în numerar pentru premiu. GP PROMOTIONS LTD poate, la propria sa discreție, să ofere un echivalent în bani dacă câștigătorul preferă.\n7.4 Dacă premiul este un vehicul: acesta va fi livrat cu un ITP (MOT) valabil dacă este necesar; asigurarea și impozitul auto nu sunt incluse și sunt responsabilitatea exclusivă a câștigătorului.\n7.5 Dacă premiul este o călătorie sau un eveniment: datele, numărul de bilete și clasa de călătorie vor fi cele specificate pe pagina competiției."
+      },
+      "s8": {
+        "title": "8. Câștigători",
+        "content": "8.1 Decizia GP PROMOTIONS LTD este finală. Nu va fi acceptată nicio contestație cu privire la rezultatul oricărei Competiții.\n8.2 Pentru Competițiile Standard, GP PROMOTIONS LTD va contacta câștigătorul în termen de 7 zile de la tragerea la sorți. Dacă un câștigător nu poate fi contactat sau nu își revendică premiul în termen de 14 zile, ne rezervăm dreptul de a alege un câștigător alternativ.\n8.3 Pentru Competițiile Instant Win, câștigătorii sunt notificați imediat prin pagina competiției și email. Dacă un premiu nu este revendicat în termen de 14 zile, acesta poate fi redistribuit."
+      },
+      "s9": {
+        "title": "9. Revendicarea Premiului",
+        "content": "9.1 Premiile trebuie revendicate de către câștigător personal. Nicio terță parte nu poate revendica un premiu în numele unui câștigător.\n9.2 Câștigătorii trebuie să își păstreze datele de contact actualizate. Orice modificări trebuie trimise prompt la info@gpcompetition.com.\n9.3 Premiile în bani vor fi transferate direct în contul bancar al câștigătorului. Câștigătorul trebuie să confirme că este titularul contului. Neprezentarea acestei dovezi în termen de 14 zile va duce la pierderea premiului."
+      },
+      "s10": {
+        "title": "10. Limitarea Răspunderii",
+        "content": "10.1 În măsura permisă de lege, GP PROMOTIONS LTD nu va fi responsabilă pentru nicio pierdere, rănire sau daună rezultată din participarea la o Competiție sau utilizarea unui premiu, cu excepția cazului în care sunt cauzate direct de neglijența noastră.\n10.2 GP PROMOTIONS LTD nu este responsabilă pentru: înscrierile pierdute din cauza informațiilor incorecte sau a defecțiunilor tehnice; accesul neautorizat sau manipularea datelor de înscriere."
+      },
+      "s11": {
+        "title": "11. Protecția Datelor și Publicitate",
+        "content": "11.1 Prin înscriere, sunteți de acord ca GP PROMOTIONS LTD să stocheze și să utilizeze informațiile dvs. personale exclusiv în scopul gestionării Competiției, în conformitate cu Politica noastră de Confidențialitate.\n11.2 Dacă câștigați, sunteți de acord ca GP PROMOTIONS LTD să vă folosească numele și imaginea pentru a anunța rezultatul public.\n11.3 Dacă nu doriți să participați la publicitate, vă rugăm să ne informați înainte de Data de Închidere."
+      },
+      "s12": {
+        "title": "12. General",
+        "content": "12.1 GP PROMOTIONS LTD poate actualiza acești T&C din când în când. Versiunea curentă va fi întotdeauna disponibilă pe www.gpcompetition.com.\n12.2 Acești T&C sunt guvernați de legile din Anglia și Țara Galilor. Orice dispute vor fi supuse jurisdicției exclusive a instanțelor din Anglia și Țara Galilor."
+      }
+    },
+    "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
+  },
+  "Privacy": {
+    "title": "Politică de Confidențialitate",
+    "lastUpdated": "Ultima actualizare: Aprilie 2026",
+    "intro": "GP PROMOTIONS LTD („noi”, „nouă”, „nostru”) ia în serios confidențialitatea fiecărei persoane care vizitează sau utilizează www.gpcompetition.com. Această Politică de Confidențialitate stabilește clar ce informații personale colectăm, de ce le colectăm, cum le protejăm și ce drepturi aveți asupra acestora.\n\nDetalii Operator de Date:\nGP PROMOTIONS LTD (Număr Companie 17127347)\n71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit\nEmail: info@gpcompetition.com\n\nAceastă Politică se aplică oricărei persoane care navighează pe www.gpcompetition.com, creează un cont sau participă la oricare dintre competițiile noastre. Utilizarea site-ului nostru web înseamnă că ați avut ocazia să citiți și să înțelegeți cum gestionăm datele dvs.",
+    "sections": {
+      "s1": {
+        "title": "1. Cine Suntem",
+        "content": "GP PROMOTIONS LTD are grijă de confidențialitatea ta. Această politică explică abordarea noastră privind protecția datelor."
+      },
+      "s2": {
+        "title": "2. Informații Colectate",
+        "content": "Colectăm date prin interacțiunile tale directe și automat prin intermediul web.\n- Identitate: Nume, prenume.\n- Contact: E-mail, telefon, adresă.\n- Financiare: Istoricul tranzacțiilor.\n- Tehnice: IP, tip de browser etc."
+      },
+      "s3": {
+        "title": "3. Utilizarea Informațiilor",
+        "content": "Utilizăm datele tale pentru: a-ți gestiona contul, competițiile, plățile și a te informa despre noutăți. Temeiurile legale includ executarea contractului și interesul legitim."
+      },
+      "s4": {
+        "title": "4. Securitatea Datelor",
+        "content": "Utilizăm criptarea SSL și medii de găzduire securizate pentru a-ți proteja informațiile."
+      },
+      "s5": {
+        "title": "5. Partajarea Datelor",
+        "content": "Partajăm datele doar cu furnizori externi de încredere. Nu vindem niciodată datele tale personale către terți."
+      },
+      "s6": {
+        "title": "6. Transferuri Internaționale",
+        "content": "Dacă datele sunt transferate în afara Marii Britanii sau a SEE, garantăm protecții adecvate."
+      },
+      "s7": {
+        "title": "7. Reținerea Datelor",
+        "content": "Păstrăm datele atâta timp cât contul este activ sau conform obligațiilor legale (de obicei 6 ani)."
+      },
+      "s8": {
+        "title": "8. Drepturile Tale",
+        "content": "Ai dreptul de a accesa, rectifica sau șterge datele tale. Contactează-ne la info@gpcompetition.com pentru orice solicitare."
+      },
+      "s9": {
+        "title": "9. Câștigători și Publicitate",
+        "content": "Putem publica numele câștigătorilor pentru a asigura transparența. Pentru orice altă publicitate, vom cere acordul tău."
+      },
+      "s10": {
+        "title": "10. Confidențialitatea Copiilor",
+        "content": "Serviciile noastre sunt rezervate persoanelor cu vârsta de 18 ani sau mai mult."
+      },
+      "s11": {
+        "title": "11. Actualizări",
+        "content": "Această politică poate fi revizuită periodic."
+      },
+      "s12": {
+        "title": "12. Contact",
+        "content": "Pentru întrebări, contactați info@gpcompetition.com."
+      }
+    },
+    "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
+  },
+  "Rules": {
+    "title": "Regulamentul Oficial al Competiției",
+    "lastUpdated": "În vigoare de la: Martie 2026",
+    "intro": "GP PROMOTIONS LTD, înregistrată în Anglia și Țara Galilor sub numărul de companie 17127347, cu sediul social în 71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit.\n\nAcest Regulament Oficial al Competiției („Reguli”) este obligatoriu și guvernează toate competițiile lansate pe www.gpcompetition.com.",
+    "sections": {
+      "s1": {
+        "title": "1. Condiții Generale",
+        "content": "1.1 Acest Regulament Oficial al Competiției („Reguli”) este obligatoriu. ORGANIZATORUL: GP PROMOTIONS LTD. PLATFORMA: www.gpcompetition.com oferă persoanelor eligibile șansa de a participa la trageri la sorți cu premii. DOMENIUL DE APLICARE: Aceste Reguli guvernează toate competițiile lansate la sau după 01.03.2026."
+      },
+      "s2": {
+        "title": "2. Cum să Participi",
+        "content": "2.1 Datele de deschidere și închidere sunt pe pagina competiției. Participare Plătită: Răspunde la întrebare, selectează înscrierile, finalizează comanda, autentifică-te, acceptă T&C, finalizează plata. Participare Gratuită prin Poștă: Trimite o scrisoare scrisă de mână la adresa noastră. Trebuie să includă ID-ul Competiției, Numele, Data Nașterii, Adresa, Email-ul, Telefonul și Răspunsul. Trebuie să ai un cont activ care să coincidă cu detaliile."
+      },
+      "s3": {
+        "title": "3. Condiții de Înscriere și Eliberare",
+        "content": "3.1 Prin trimiterea unei înscrieri, fiecare participant confirmă acceptarea acestor Reguli, eliberează GP PROMOTIONS LTD și platformele de social media de răspundere și renunță la pretențiile pentru daune subsecvente."
+      },
+      "s4": {
+        "title": "4. Cum sunt Aleși Câștigătorii",
+        "content": "4.1 Câștigătorii sunt selectați folosind generatorul de numere aleatorii de la Google. Sunt incluse numai înscrierile valide cu răspuns corect. Tragerile au loc în termen de 7 zile de la data închiderii."
+      },
+      "s5": {
+        "title": "5. Credit Website",
+        "content": "5.1 Creditul de website nu are valoare monetară, nu poate fi schimbat în numerar și expiră la 12 luni de la data adăugării în contul tău."
+      },
+      "s6": {
+        "title": "6. Premii",
+        "content": "6.1 Premiile sunt supuse disponibilității. GP PROMOTIONS LTD își rezervă dreptul de a înlocui orice premiu cu unul de valoare egală sau mai mare. Nu există o alternativă în numerar decât dacă se specifică altfel."
+      },
+      "s7": {
+        "title": "7. Rambursări și Modificări de Date",
+        "content": "7.1 Taxele de participare sunt nerambursabile decât dacă data închiderii este prelungită cu mai mult de 120 de zile sau dacă premiul se schimbă substanțial."
+      },
+      "s8": {
+        "title": "8. Protecția Datelor și Confidențialitate",
+        "content": "8.1 Datele personale sunt utilizate pentru administrarea competiției și comunicările de marketing. Detalii complete sunt în Politica noastră de Confidențialitate."
+      },
+      "s9": {
+        "title": "9. Limitarea Răspunderii",
+        "content": "9.1 GP PROMOTIONS LTD nu își asumă nicio responsabilitate pentru erorile participanților, defecțiunile tehnice sau întreruperile de sistem."
+      },
+      "s10": {
+        "title": "10. Dispute",
+        "content": "10.1 Disputele sunt guvernate de legile din Anglia și Țara Galilor. Nu sunt permise acțiuni colective sau procese de grup."
+      },
+      "s11": {
+        "title": "11. Prevederi Generale",
+        "content": "11.1 GP PROMOTIONS LTD poate actualiza aceste reguli din când în când. Anularea sau suspendarea poate apărea în caz de defecțiuni tehnice sau evenimente de forță majoră."
+      }
+    },
+    "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
+  },
+  "PostalEntry": {
+    "title": "Metodă de participare gratuită prin poștă",
+    "lastUpdated": "În vigoare din: Martie 2026",
+    "intro": "Orice persoană care dorește să participe la o competiție—fie că este o Competiție Standard sau o Competiție Instant Win—o poate face gratuit urmând setul complet de instrucțiuni de mai jos.",
+    "sections": {
+      "s1": {
+        "title": "1. Adresa",
+        "content": "Înscrierea dvs. trebuie trimisă prin poștă preplătită de clasa întâi sau a doua și adresată către: GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit. Înscrierile livrate personal nu vor fi acceptate sub nicio formă și vor fi excluse din tragerea la sorți."
+      },
+      "s2": {
+        "title": "2. Informații Necesare",
+        "content": "Fiecare înscriere prin poștă trebuie să conțină clar toate următoarele informații:\n\n• Numele competiției la care participați\n• Numele dvs. complet\n• Data nașterii\n• Adresa de domiciliu completă\n• Un număr de telefon de contact și o adresă de email\n• Răspunsul dvs. la Întrebarea Competiției, acolo unde este cazul\n\nÎnscrierile cărora le lipsesc oricare dintre informațiile de mai sus, sau care nu pot fi citite clar, vor fi descalificate fără excepție."
+      },
+      "s3": {
+        "title": "3. Limite de Înscriere",
+        "content": "Puteți trimite mai mult de o înscriere gratuită per competiție, până la numărul maxim de înscrieri permise pentru acea competiție. Limita de înscriere per persoană este afișată pe pagina competiției respective de pe www.gpcompetition.com. Fiecare înscriere trebuie trimisă separat în propriul plic individual. Dacă mai mult de o înscriere este plasată în interiorul unui singur plic, întregul pachet va fi numărat ca o singură înscriere, indiferent de câte înscrieri sunt anexate."
+      },
+      "s4": {
+        "title": "4. Competiții Standard",
+        "content": "Pentru Competițiile Standard, înscrierea dvs. prin poștă trebuie să ajungă fizic la adresa de mai sus înainte de Data de Închidere stabilită și înainte ca toate biletele disponibile pentru acea competiție să fi fost alocate. Înscrierile care sosesc în termen de 48 de ore de la Data de Închidere sau în termen de 48 de ore de la alocarea tuturor biletelor pot fi, la discreția exclusivă a GP PROMOTIONS LTD, reportate și înscrise în următoarea competiție disponibilă de valoare comparabilă unde înscrierile sunt încă deschise. Înscrierile care sosesc după Data de Închidere și după ce toate biletele au fost alocate nu vor fi înscrise în competiția inițială și în nicio altă competiție. Vă rugăm să rețineți că dovada expedierii poștale nu este acceptată ca dovadă a primirii și nu garantează că înscrierea dvs. va fi inclusă în tragerea la sorți."
+      },
+      "s5": {
+        "title": "5. Competiții Instant Win",
+        "content": "Pentru Competițiile Instant Win, înscrierea dvs. gratuită prin poștă trebuie să ajungă înainte ca toate biletele pentru acea competiție să fi fost alocate prin intermediul înscrierilor plătite. Cu condiția ca toate biletele să nu fi fost alocate, înscrierile vor fi, de asemenea, acceptate dacă sosesc în termen de 48 de ore de la Data de Închidere pentru a fi incluse în Competiția Instant Win."
+      },
+      "s6": {
+        "title": "6. Disponibilitatea Biletelor",
+        "content": "Dacă numărul maxim de înscrieri pentru o competiție este atins înainte ca înscrierea dvs. prin poștă să fie primită, înscrierea dvs. nu va fi inclusă în acea competiție și în nicio altă competiție, cu excepția cazului în care se aplică prevederile punctului 4 de mai sus."
+      },
+      "s7": {
+        "title": "7. Cont Înregistrat",
+        "content": "Pentru a vă procesa înscrierea gratuită prin poștă, trebuie să aveți un cont înregistrat activ pe www.gpcompetition.com. Toate datele personale incluse în scrisoare trebuie să coincidă exact cu datele contului dvs. înregistrat. Înscrierile unde detaliile nu coincid, sau unde nu există un cont corespunzător, vor fi considerate invalide și nu vor fi incluse în tragerea la sorți."
+      }
+    },
+    "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
+  },
+  "Cookies": {
+    "title": "Politică de Cookies",
+    "lastUpdated": "Ultima actualizare: Aprilie 2026",
+    "intro": "GP PROMOTIONS LTD („noi”, „nostru”, „nouă”) operează site-ul web www.gpcompetition.com. Această Politică de Cookies explică ce sunt cookie-urile, cum le folosim pe site-ul nostru web și ce opțiuni aveți cu privire la utilizarea lor.\n\nPrin continuarea utilizării www.gpcompetition.com, recunoașteți că ați citit și înțeles cum folosim cookie-urile conform descrierii de mai jos.",
+    "sections": {
+      "s1": {
+        "title": "1. Despre această Politică",
+        "content": "GP PROMOTIONS LTD („noi”, „nostru”, „nouă”) operează site-ul web www.gpcompetition.com. Această Politică de Cookies explică ce sunt cookie-urile, cum le folosim pe site-ul nostru web și ce opțiuni aveți cu privire la utilizarea lor."
+      },
+      "s2": {
+        "title": "2. Ce este un Cookie?",
+        "content": "Un cookie este un mic fișier text care este plasat pe dispozitivul dvs.—cum ar fi computerul, tableta sau telefonul mobil—atunci când vizitați un site web. Cookie-urile permit site-ului web să vă recunoască dispozitivul la vizitele viitoare și să rețină anumite informații despre preferințele sau activitatea dvs., cum ar fi dacă sunteți autentificat sau ce limbă preferați.\nCookie-urile nu conțin în sine numele dvs. sau orice informații personale direct identificabile, dar pot fi legate de datele personale pe care le deținem despre dvs. în conformitate cu Politica noastră de Confidențialitate."
+      },
+      "s3": {
+        "title": "3. Cum folosim Cookie-urile",
+        "content": "Folosim cookie-uri pe www.gpcompetition.com în mai multe scopuri, inclusiv:\n\n• Menținerea funcționării corecte a site-ului web – Unele cookie-uri sunt esențiale pentru funcționarea site-ului. Fără ele, anumite pagini sau funcții ar putea să nu funcționeze conform așteptărilor.\n• Înțelegerea modului în care vizitatorii folosesc site-ul nostru – Folosim instrumente analitice pentru a vedea ce pagini sunt vizitate cel mai des și de unde vin vizitatorii. Acest lucru ne ajută să îmbunătățim experiența utilizatorului.\n• Reținerea preferințelor dvs. – Cookie-urile ne ajută să ne amintim alegerile pe care le-ați făcut, cum ar fi setarea limbii, astfel încât să nu fie nevoie să le reintroduceți de fiecare dată.\n• Furnizarea de conținut și publicitate relevante – Putem folosi cookie-uri pentru a vă afișa promoții legate de cadourile noastre despre care credem că v-ar putea interesa."
+      },
+      "s4": {
+        "title": "4. Cookie-uri de la Terțe Părți",
+        "content": "Unele cookie-uri de pe www.gpcompetition.com sunt plasate de servicii terțe pe care le folosim pentru a ne susține site-ul web, cum ar fi Google, Meta și TikTok. Fiecare dintre aceste terțe părți operează sub propriile politici de confidențialitate și de cookie-uri, pe care le puteți citi aici:\n\n• Google: https://policies.google.com/privacy\n• Meta (Facebook/Instagram): https://www.facebook.com/privacy/policy/\n• TikTok: https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nGP PROMOTIONS LTD nu are control asupra modului în care aceste terțe părți folosesc datele colectate prin cookie-urile lor."
+      },
+      "s5": {
+        "title": "5. Alegerile și Controlul Dvs.",
+        "content": "Aveți control asupra modului în care cookie-urile sunt utilizate în timpul vizitei dvs. pe site-ul nostru web:\n\n• Banner de Cookie-uri – La prima vizită, va fi afișată o notificare care vă permite să acceptați sau să refuzați cookie-urile neesențiale.\n• Setări Browser – Puteți ajusta setările browserului în orice moment pentru a bloca sau șterge cookie-urile. Vă rugăm să verificați meniul „Ajutor” sau „Setări” al browserului pentru instrucțiuni.\n• Modificarea Preferințelor – Vă puteți actualiza opțiunile privind cookie-urile în orice moment prin ștergerea cookie-urilor sau prin linkul de consimțământ de pe site-ul nostru."
+      },
+      "s6": {
+        "title": "6. Actualizări ale acestei Politici",
+        "content": "Putem revizui această Politică de Cookies din când în când pentru a reflecta schimbările în tehnologie, legislație sau modul în care operăm site-ul nostru web. Orice actualizări vor fi postate pe această pagină, iar data de sus va fi actualizată corespunzător."
+      },
+      "s7": {
+        "title": "7. Contactați-ne",
+        "content": "Dacă aveți întrebări despre cum folosim cookie-urile pe www.gpcompetition.com, vă rugăm să ne contactați:\n\nEmail: info@gpcompetition.com\nGP PROMOTIONS LTD\n71-75 Shelton Street, Covent Garden,\nLondra, WC2H 9JQ, Regatul Unit"
+      }
+    },
+    "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
+  },
+  "FAQ": {
+    "title": "Întrebări Frecvente (FAQ)",
+    "lastUpdated": "Ultima actualizare: Aprilie 2026",
+    "intro": "Ai întrebări despre cum funcționează GP Competition? Am adunat aici cele mai frecvente întrebări pentru a te ajuta să înțelegi procesul nostru și cum poți câștiga premii incredibile.",
+    "sections": {
+      "q1": {
+        "question": "Cum particip la un concurs?",
+        "answer": "Este simplu! Alege concursul dorit, răspunde corect la întrebarea de calificare, selectează numărul de bilete și finalizează plata. Vei primi un e-mail de confirmare cu numerele biletelor tale."
+      },
+      "q2": {
+        "question": "Cine poate participa?",
+        "answer": "Concursurile sunt deschise rezidenților din Marea Britanie cu vârsta de peste 18 ani. Te rugăm să verifici Regulamentul Oficial pentru detalii complete despre eligibilitate."
+      },
+      "q3": {
+        "question": "Cum sunt aleși câștigătorii?",
+        "answer": "Câștigătorii concursurilor standard sunt aleși prin tragere la sorți live folosind generatorul de numere aleatorii de la Google. Pentru concursurile Instant Win, premiile sunt atribuite automat numerelor de bilet câștigătoare la momentul achiziției."
+      },
+      "q4": {
+        "question": "Ce sunt premiile Instant Win?",
+        "answer": "Premiile Instant Win sunt premii pe care le poți câștiga imediat în momentul cumpărării unui bilet, fără a mai aștepta tragerea la sorți finală. Dacă biletul tău are un număr care corespunde unui premiu instant, ai câștigat pe loc!"
+      },
+      "q5": {
+        "question": "Când are loc tragerea la sorți?",
+        "answer": "Tragerile la sorți au loc de obicei în termen de 7 zile de la închiderea concursului. Data și ora exactă sunt anunțate pe paginile noastre de social media."
+      },
+      "q6": {
+        "question": "Cum primesc premiul dacă am câștigat?",
+        "answer": "Echipa noastră te va contacta prin telefon sau e-mail în termen de 7 zile de la tragerea la sorți pentru a stabili detaliile livrării. Premiile în bani sunt transferate direct în contul tău bancar."
+      }
+    },
+    "footerNote": "Nu ai găsit răspunsul căutat? Contactează-ne la info@gpcompetition.com și te vom ajuta cu plăcere."
+  },
+  "InstantWinnerEmail": {
+    "title": "Notificare Câștig Instant",
+    "subject": "Felicitări! Ai câștigat un premiu instant! - {title}",
+    "greeting": "Salut {name},",
+    "congrats": "Felicitări! Ai câștigat un premiu instant în cadrul competiției {title}.",
+    "ticketLabel": "Număr Bilet Câștigător",
+    "prizeLabel": "Valoarea Premiului",
+    "instructions": "Vei fi contactat în scurt timp de echipa noastră cu privire la modul de ridicare a premiului tău. Fii cu ochii pe telefon și email!",
+    "thanks": "Îți mulțumim că joci alături de noi la GP Competition!",
+    "footer": "© {year} GP Competition. Toate drepturile rezervate."
+  },
+  "BonusWinnerEmail": {
+    "title": "Notificare Tragere Bonus",
+    "subject": "Felicitări! Ai câștigat o tragere Bonus! - {title}",
+    "greeting": "Salut {name},",
+    "congrats": "Vești extraordinare! Ai fost extras automat ca câștigător al unei trageri Bonus în cadrul competiției {title}.",
+    "ticketLabel": "Număr Bilet Câștigător",
+    "prizeLabel": "Valoarea Premiului",
+    "instructions": "Vei fi contactat în scurt timp de echipa noastră cu privire la modul de ridicare a premiului tău. Fii cu ochii pe telefon și email!",
+    "thanks": "Îți mulțumim că ești parte din GP Competition!",
+    "footer": "© {year} GP Competition. Toate drepturile rezervate."
+  }
+}

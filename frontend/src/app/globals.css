@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #d4af37;
+  --color-gold-light: #e6c86e;
+  --color-gold-dark: #b59228;
+  --color-black-pure: #000000;
+  --color-black-rich: #0b0b0b;
+  --color-black-soft: #1a1a1a;
+  
+  --color-background: var(--color-black-rich);
+  --color-foreground: #ededed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply antialiased font-sans;
+  }
+
+  /* Fix Total pentru Safari iOS (iPhone) */
+  button, 
+  a.block, 
+  a.inline-block,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"] {
+    -webkit-appearance: none;
+    appearance: none;
+    text-decoration: none;
+    /* Dezactivăm culoarea de highlight nativă iPhone */
+    -webkit-tap-highlight-color: transparent !important;
+    
+    /* FIX GPU SUPREM (iOS 16) */
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+    will-change: transform, opacity !important;
+    isolation: isolate !important;
+    z-index: 50 !important;
+    position: relative !important;
+    
+    -webkit-font-smoothing: antialiased !important;
+    perspective: 1000px;
+  }
+
+  /* Forțăm <a> să fie flex/grid dacă sunt butoane pentru randare corectă */
+  a.block, a.inline-block {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Prevenim ca Safari să pună opacitate pe butoanele cu gradient */
+  .bg-gradient-to-r, .bg-gradient-to-t {
+    opacity: 1 !important;
+    /* Un alt fix pentru Safari - forțează randarea culorilor */
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* CLASA SUPREMĂ DE VIZIBILITATE - REPARAȚIE BRUTĂ BUTOANE GOLD */
+  /* Funcționează global: stabilizează butoanele și garantează randarea corectă. */
+  .btn-gold-safe {
+    position: relative;
+    z-index: 50;
+    isolation: isolate;
+  }
+
+  /* Targetăm specific mediul iOS Safari (unde apar erorile de black block / zero opacity) */
+  @supports (-webkit-touch-callout: none) {
+    .btn-gold-safe {
+      /* Forțare prezență vizuală */
+      opacity: 1 !important;
+      visibility: visible !important;
+      
+      /* Culori Hardcoded (Fără variabile CSS care să nu fie evaluate corect) */
+      color: #000000 !important;
+      background-color: #D4AF37 !important; /* Fallback solid absolut */
+      background: -webkit-linear-gradient(left, #8b6914, #D4AF37, #f0d060) !important;
+      background: linear-gradient(to right, #8b6914, #D4AF37, #f0d060) !important;
+      
+      /* Forțare randare GPU extremă */
+      transform: translateZ(0) !important;
+      -webkit-transform: translateZ(0) !important;
+      backface-visibility: hidden !important;
+      -webkit-backface-visibility: hidden !important;
+      will-change: transform, opacity !important;
+      
+      /* Resetare orice interferență de blur sau filtru care omoară memoria pe iOS 16 */
+      filter: none !important;
+      -webkit-filter: none !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      
+      /* Oprim animațiile care s-ar putea bloca la jumătate și da un aspect șters/negru */
+      transition: none !important;
+    }
+  }
+}
+
+/* Protecție pentru efectele de Hover pe Mobil */
+/* Permitem transformări și umbre DOAR pe dispozitive cu mouse */
+@media (hover: hover) {
+  .hover\:scale-\[1\.02\]:hover {
+    transform: scale(1.02);
+  }
+  .hover\:shadow-\[0_0_20px_rgba\(212\,175\,55\,0\.3\)\]:hover,
+  .hover\:shadow-\[0_0_25px_rgba\(212\,175\,55\,0\.4\)\]:hover {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+  }
+}
+
+/* Pe ecrane touch (fără hover), dezactivăm forțat aceste efecte care rămân blocate */
+@media (hover: none) {
+  .hover\:scale-\[1\.02\]:hover,
+  .hover\:scale-105:hover {
+    transform: none !important;
+  }
+  .hover\:shadow-\[0_0_20px_rgba\(212\,175\,55\,0\.3\)\]:hover,
+  .hover\:shadow-\[0_0_25px_rgba\(212\,175\,55\,0\.4\)\]:hover {
+    box-shadow: none !important;
+  }
+}

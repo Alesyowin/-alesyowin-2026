@@ -1,0 +1,514 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "apartments": "Appartements",
+    "cars": "Voitures",
+    "cash": "Cash",
+    "tech": "Tech",
+    "entryList": "Liste des Participants",
+    "contact": "Contact",
+    "login": "Connexion",
+    "profile": "Mon Profil",
+    "logout": "Déconnexion"
+  },
+  "Giveaway": {
+    "timeRemaining": "Temps Restant",
+    "ticketsSold": "Tickets Vendus",
+    "quizTitle": "Répondez pour débloquer le panier",
+    "quizSubtitle": "Répondez correctement à la question pour activer le bouton d'achat.",
+    "addToCart": "Ajouter au Panier",
+    "lockedBtn": "Répondez correctement pour déverrouiller",
+    "wrongAnswer": "Mauvaise réponse. Réessayez!",
+    "correctAnswer": "Correct! Vous pouvez maintenant ajouter au panier.",
+    "giveawayEnded": "Tirage au sort terminé",
+    "perTicket": "/ billet",
+    "ticketsSelected": "{count} Billet(s)",
+    "enterNowFor": "Participez pour {total}",
+    "loginToEnter": "Veuillez vous connecter ou vous inscrire pour participer à ce concours gratuit.",
+    "alreadyEntered": "Vous avez déjà participé à ce concours. Bonne chance !",
+    "freeEntry": "Participer gratuitement"
+  },
+  "Cart": {
+    "title": "Votre Panier",
+    "empty": "Votre panier est vide.",
+    "total": "Total",
+    "checkout": "Passer la Commande",
+    "continueShopping": "Continuer vos achats"
+  },
+  "Checkout": {
+    "title": "Commander",
+    "summary": "Résumé de la Commande",
+    "formTitle": "Informations Client",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Adresse E-mail",
+    "phone": "Numéro de Téléphone",
+    "payNow": "Payer Maintenant",
+    "processing": "Traitement en cours...",
+    "errorProcessing": "Erreur lors du traitement de la commande",
+    "qty": "Qté",
+    "paymentTitle": "Détails de Paiement",
+    "secureRedirect": "Vous serez redirigé(e) en toute sécurité vers notre prestataire de paiement pour finaliser votre achat.",
+    "cardNumber": "Numéro de Carte",
+    "expiry": "Date d'Expiration",
+    "billingTitle": "Adresse de facturation",
+    "address": "Adresse",
+    "city": "Ville",
+    "county": "Département / Région",
+    "postalCode": "Code postal",
+    "country": "Pays"
+  },
+  "Home": {
+    "subtitle": "GP Competition",
+    "title": "Compétitions Actives",
+    "description": "Participez maintenant pour tenter de gagner des prix de luxe. Chaque billet vous rapproche de récompenses exceptionnelles.",
+    "noCompetitions": "Aucune compétition active pour le moment.",
+    "checkBack": "Revenez bientôt pour de nouveaux prix!",
+    "enterNow": "Participer"
+  },
+  "GiveawayPage": {
+    "instantPrizes": "Prix Instantanés",
+    "description": "Description",
+    "competitionDetails": "Détails du Concours",
+    "bonusDraw": "Tirages Bonus",
+    "comingSoon": "Bientôt disponible",
+    "perTicket": "/ ticket",
+    "maxTickets": "Max {limit} ticket(s) par personne",
+    "timeRemaining": "Temps Restant",
+    "ticketsSold": "Tickets Vendus",
+    "ticketsRemaining": "{count} tickets restants",
+    "quizTitle": "Répondez pour déverrouiller le panier",
+    "quizSubtitle": "Répondez correctement à la question pour activer le bouton d'achat.",
+    "cars": "Voitures",
+    "apartments": "Appartements",
+    "cash": "Argent Liquide",
+    "tech": "Technologie",
+    "liveDrawBadge": "Tirage en Direct",
+    "liveDrawInfo": "Le tirage au sort aura lieu en direct sur <fb>Facebook</fb> et <yt>YouTube</yt>",
+    "winnersInfo": "Ce concours aura <strong>1</strong> gagnant",
+    "entriesInfo": "<strong>{count}</strong> participations",
+    "postalEntryBtn": "ENTRÉE POSTALE GRATUITE",
+    "instantWinTitle": "Gain Instantané",
+    "instantWinWon": "GAGNÉ par {name}",
+    "instantWinAvailable": "Disponible",
+    "instantWinPrizeLabel": "Prix",
+    "instantWinNoPrizes": "Aucun gain instantané configuré pour ce concours.",
+    "instantWinWonCount": "{won} sur {total} prix gagnés",
+    "bonusDrawsExplanation": "Comment fonctionnent les tirages bonus",
+    "bonusDrawsModalText": "Les tirages bonus sont des prix spéciaux débloqués lorsque les ventes de billets atteignent des paliers spécifiques (sections étoilées). Dès qu'un palier est atteint, un gagnant est tiré au sort parmi tous les billets vendus jusque-là.",
+    "bonusDrawsGoText": "Encore {percent}% avant le prochain tirage bonus !",
+    "bonusDrawsTakePlaceText": "Les tirages bonus ont lieu lorsque les sections étoilées sont atteintes"
+  },
+  "EntryList": {
+    "subtitle": "GP Competition",
+    "title": "Liste des Participants",
+    "description": "Vérifiez les participants et vos billets pentru à chaque compétition active ou terminée.",
+    "all": "Tous",
+    "cars": "Voitures",
+    "apartments": "Appartements",
+    "cash": "Cash",
+    "tech": "Tech",
+    "active": "Actif",
+    "finished": "Terminé",
+    "noCompetitions": "Aucune compétition dans cette catégorie.",
+    "tickets": "billets",
+    "viewTickets": "Voir les Billets",
+    "searchTitle": "Recherchez vos Billets",
+    "searchDescription": "Entrez votre nom pentru à voir tous les billets enregistrés sur votre compte.",
+    "totalTickets": "Billets Totaux",
+    "ticketsSold": "Billets Vendus",
+    "searchPlaceholder": "Nom, E-mail ou Numéro de Billet (ex: 4521)...",
+    "searchBtn": "Rechercher",
+    "searching": "Recherche en cours...",
+    "connectionError": "Erreur de connexion.",
+    "noTicketsFound": "Aucun billet trouvé",
+    "tryAnother": "Essayez un autre nom, e-mail ou numéro de billet.",
+    "ticketsFoundFor": "Billets trouvés pour",
+    "ticketCount": "{count} billets",
+    "searchPrompt": "Entrez votre nom, e-mail ou numéro de billet ci-dessus pentru à trouver vos billets.",
+    "verifiedNote": "Vos billets sont sécurisés et officiellement enregistrés dans le système GP Competition."
+  },
+  "Success": {
+    "title": "Commande Réussie!",
+    "message": "Merci pentru votre participation. Vos billets ont été sécurisés et un e-mail de confirmation a été envoyé. Bonne chance!",
+    "returnHome": "Retour à l'Accueil",
+    "checkTickets": "Vérifier les billets",
+    "instantWinCongrats": "🎉 Vous avez gagné un Gain Instantané!",
+    "instantWinAmount": "Vous avez gagné {amount} {currency}!",
+    "instantWinMsg": "Notre équipe vous contactera prochainement pentru à organiser la livraison de votre prix."
+  },
+  "Category": {
+    "breadcrumb": "Catégories",
+    "cars": "Voitures",
+    "apartments": "Appartements",
+    "cashPrizes": "Prix en Cash",
+    "techGadgets": "Tech & Gadgets",
+    "noActive": "Pas encore de {category} actifs",
+    "preparingNew": "Nous préparons actuellement de nouveaux prix passionnants dans cette catégorie. Revenez bientôt!"
+  },
+  "Timer": {
+    "days": "Jours",
+    "hours": "Heures",
+    "min": "Min",
+    "sec": "Sec",
+    "ended": "Concours Terminé"
+  },
+  "Payment": {
+    "title": "Passerelle de Paiement Mock",
+    "orderRef": "RÉF COMMANDE",
+    "description": "Environnement de test pré-intégration. En production, cette page sera remplacée par l'interface sécurisée Paytriot UK.",
+    "simulateBtn": "Simuler un Paiement Réussi",
+    "processingWebhook": "Traitement du Webhook...",
+    "webhookNote": "En appuyant sur le bouton, le Webhook est déclenché et met à jour la commande dans Directus et exécute le Hook générateur de billets."
+  },
+  "Profile": {
+    "title": "Mon profil",
+    "memberBadge": "Membre de GP Competition",
+    "logout": "Se déconnecter",
+    "personalData": "Données personnelles",
+    "fullName": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "notSet": "Non défini",
+    "ticketsSummary": "Résumé des billets",
+    "activeTickets": "Billets actifs",
+    "totalPrizes": "Total des prix gagnés",
+    "recentActivity": "Activité récente",
+    "loadingOrders": "Chargement des commandes...",
+    "noOrders": "Pas encore de commandes",
+    "ticketsPurchased": "Billets achetés",
+    "event": "Événement",
+    "id": "ID"
+  },
+  "Footer": {
+    "contactUs": "CONTACTEZ-NOUS",
+    "tagline": "Nous sommes à votre écoute 24h/24 et 7j/7",
+    "telegram": "Canal Telegram",
+    "email": "info@gpcompetition.com",
+    "companyName": "GP PROMOTIONS LTD",
+    "companyNumber": "Numéro d'entreprise {number}",
+    "legal": "JURIDIQUE",
+    "rules": "Règles du Concours",
+    "terms": "Conditions Générales",
+    "privacy": "Politique de Confidentialité",
+    "postal": "Méthode de participation postale gratuite",
+    "cookies": "Politique de Cookies",
+    "faq": "FAQ",
+    "keepInTouch": "RESTEZ EN CONTACT",
+    "paymentMethods": "MÉTHODES DE PAIEMENT",
+    "securePayments": "Paiements sécurisés",
+    "rights": "Tous droits réservés.",
+    "trademark": "{name} est une marque déposée.",
+    "unauthorised": "Toute utilisation non autorisée du nom, du logo ou de l'image de marque est strictement interdite."
+  },
+  "Email": {
+    "otpSubject": "Votre code d'accès - GP Competition",
+    "otpTitle": "Code d'authentification",
+    "otpGreeting": "Bonjour,",
+    "otpMessage": "Votre code d'accès pour GP Competition est :",
+    "otpExpiry": "Ce code expirera dans 10 minutes.",
+    "otpSecurityNote": "Si vous n'avez pas demandé ce code, veuillez ignorer cet e-mail.",
+    "footer": "© {year} GP PROMOTIONS LTD. Tous droits réservés."
+  },
+  "OrderEmail": {
+    "subject": "Confirmation de commande #{id} - GP Competition",
+    "title": "Confirmation de commande",
+    "greeting": "Bonjour {name},",
+    "orderNumber": "Numéro de commande :",
+    "event": "Compétition :",
+    "total": "Montant total payé :",
+    "yourTickets": "Vos billets :",
+    "thanks": "Merci de participer à notre concours ! Nous vous souhaitons bonne chance pentru le prochain tirage.",
+    "footer": "© {year} GP PROMOTIONS LTD. Tous droits réservés."
+  },
+  "Terms": {
+    "title": "Conditions Générales",
+    "lastUpdated": "Dernière mise à jour : Octobre 2023",
+    "intro": "GP PROMOTIONS LTD (numéro de société 17127347), dont le siège social est situé au 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Royaume-Uni, exploite le site Web www.gpcompetition.com et est responsable de la gestion de tous les concours qui y sont répertoriés.\n\nPour toute question ou préoccupation, vous pouvez nous contacter par e-mail à info@gpcompetition.com.",
+    "sections": {
+      "s1": {
+        "title": "1. Règles Générales",
+        "content": "1.1 Chaque concours publié sur www.gpcompetition.com est régi par les présentes Conditions Générales (« CG »). Elles couvrent à la fois les concours de tirage au sort standard (« Concours Standard ») et les concours à gain instantané (« Concours Instant Win »), désignés collectivement sous le nom de « Concours ».\n1.2 Ces CG prévalent sur tout autre document — y compris tout matériel promotionnel, publication sur les réseaux sociaux ou autre communication liée à un Concours.\n1.3 Pour être éligible à un prix, les participants doivent répondre correctement à une question ou résoudre un problème posé par GP PROMOTIONS LTD (la « Question du Concours »).\n1.4 Chaque Concours comprend une Question du Concours. Des frais d'inscription payants s'appliquent à chaque participation. Lorsqu'un Concours propose une question à choix multiples ou à réponse facile, une voie d'inscription postale gratuite est également disponible."
+      },
+      "s2": {
+        "title": "2. Comment Participer",
+        "content": "2.1 Chaque Concours se déroule entre la date de début et la date de fin indiquées sur la page du concours concerné sur www.gpcompetition.com (« Date d'Ouverture » et « Date de Clôture »). Toutes les dates et heures se réfèrent à l'heure de Londres, Angleterre.\n2.2 GP PROMOTIONS LTD se réserve le droit d'ajuster les dates d'ouverture ou de clôture si cela est réellement nécessaire. Toute modification sera mise à jour sur le site Web dans les meilleurs délais.\n2.3 Toutes les inscriptions doivent nous parvenir avant l'heure de clôture spécifiée. Les inscriptions reçues après ce délai sont automatiquement invalides. Aucun remboursement ne sera effectué pour les inscriptions tardives.\n2.4 Chaque Concours a une limite maximale de tickets, affichée sur la page du concours. Une fois cette limite atteinte, plus aucune inscription ne sera acceptée.\n2.5 Il existe également une limite d'inscription par personne pentru à chaque Concours. Cette limite est indiquée sur la page de chaque concours.\n2.6 Pour participer à un Concours Standard via la voie payante : visitez www.gpcompetition.com, choisissez le concours, répondez à la Question du Concours, choisissez le nombre de participations, passez à la caisse, connectez-vous ou inscrivez-vous si nécessaire, acceptez ces CG et effectuez votre paiement.\n2.7 Pour participer à un Concours Instant Win via la voie payante : visitez www.gpcompetition.com, trouvez le concours, sélectionnez le nombre de participations, passez à la caisse, connectez-vous ou inscrivez-vous si nécessaire, acceptez ces CG et effectuez votre paiement.\n2.8 Une fois votre inscription validée, vous recevrez une confirmation de GP PROMOTIONS LTD.\n2.9 GP PROMOTIONS LTD n'assume aucune responsabilité pour les inscriptions qui ne nous parviennent pas en raison de problèmes techniques, de connectivité ou de toute autre circonstance indépendante de notre volonté.\n2.10 En participant à un Concours, vous confirmez que vous remplissez les conditions d'éligibilité, que vous comprenez que vous concluiez un accord contraignant avec GP PROMOTIONS LTD et que vous acceptez l'intégralité de ces CG."
+      },
+      "s3": {
+        "title": "3. Inscription Postale Gratuite",
+        "content": "Les participants qui ne souhaitent pas payer peuvent s'inscrire par courrier postal, à condition de suivre les instructions ci-dessous :\nEnvoyez une lettre manuscrite par courrier prépayé de première ou deuxième classe à : GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Royaume-Uni. Les lettres remises en main propre ne seront pas acceptées.\nVotre lettre doit clairement inclure : Le nom du concours, votre nom complet, votre date de naissance, votre adresse complète, un numéro de téléphone et une adresse e-mail, ainsi que votre réponse à la Question du Concours (le cas échéant).\nInscriptions incomplètes ou illisibles seront disqualifiées. Un maximum de deux (2) inscriptions postales gratuites par personne et par concours est autorisé. Chaque inscription doit être envoyée dans sa propre enveloppe séparée.\nLes inscriptions gratuites doivent arriver avant la Date de Clôture. Les frais d'affranchissement sont à la charge du participant. Pour être valide, vous devez posséder un compte actif sur www.gpcompetition.com, et tous les détails de votre lettre doivent correspondre exactement aux détails de votre compte."
+      },
+      "s4": {
+        "title": "4. Sélection des Gagnants",
+        "content": "4.1 Pour les Concours Standard, tous les participants ayant répondu correctement à la Question du Concours participeront à un tirage au sort. Le gagnant sera choisi en direct via le générateur de nombres aléatoires de Google. Le tirage sera diffusé en direct sur les réseaux sociaux officiels de GP PROMOTIONS LTD. Le tirage aura lieu dans les 7 jours suivant la Date de Clôture.\n4.2 Tous les participants aux Concours Standard peuvent voir leur nom et leur numéro de participation figurer dans un tableur publié sur le site Web ou présenté lors du tirage au sort. Si vous ne souhaitez pas que votre nom soit inclus, contactez-nous à info@gpcompetition.com au moins 48 heures avant le tirage.\n4.3 Pour les Concours Instant Win, les prix sont pré-attribués à des numéros de ticket aléatoires. Chaque participation avec une réponse correcte se voit attribuer un numéro. Si ce numéro correspond à un prix, le participant gagne. Les gagnants sont informés immédiatement sur la page du concours et par e-mail automatique."
+      },
+      "s5": {
+        "title": "5. Crédit du Site",
+        "content": "5.1 Des crédits du site peuvent être accordés comme prix ou cadeaux dans certains Concours.\n5.2 Dans certains cas, un prix peut être échangé contre des crédits du site, si cela est mentionné sur la page du concours.\n5.3 Le crédit du site doit être utilisé dans les 12 mois suivant son ajout sur votre compte. Les rappels seront envoyés un mois avant et le jour de l'expiration. Le crédit expiré ne pourra plus être utilisé.\n5.4 Le crédit du site n'a aucune valeur monétaire. Il ne peut pas être échangé contre de l'argent, transféré ou retiré. Il est valable uniquement pentru à de futures participations sur www.gpcompetition.com."
+      },
+      "s6": {
+        "title": "6. Qui Peut Participer",
+        "content": "6.1 Les Concours sont ouverts aux résidents du Royaume-Uni âgés de 18 ans ou plus, à l'exception des : Employés de GP PROMOTIONS LTD, employés de toute agence ou fournisseur impliqué dans la gestion des Concours, ainsi que les membres de la famille immédiate de ces derniers.\n6.2 En participant, vous confirmez que vous êtes éligible et que vous pouvez réclamer un prix. GP PROMOTIONS LTD peut demander une preuve d'éligibilité à tout moment.\n6.3 GP PROMOTIONS LTD n'acceptera pas d'inscriptions générées par ordinateur ou incomplètes.\n6.4 Les frais d'inscription ne sont en aucun cas remboursables, y compris si vous découvrez plus tard que vous n'étiez pas éligible ou si vous êtes disqualifié.\n6.5 Tout participant reconnu coupable de fraude, de piratage ou de toute forme d'interférence avec le site Web sera banni définitivement."
+      },
+      "s7": {
+        "title": "7. Le Prix",
+        "content": "7.1 Le prix de chaque Concours est décrit sur la page du concours concerné.\n7.2 Les prix sont soumis à disponibilité. GP PROMOTIONS LTD se réserve le droit de substituer tout prix par un prix de valeur égale ou supérieure.\n7.3 Sauf indication contraire, il n'y a pas d'alternative en espèces au prix. GP PROMOTIONS LTD peut, à sa discrétion, proposer un équivalent en espèces si le gagnant le préfère.\n7.4 Si le prix est un véhicule : il sera livré avec un contrôle technique (MOT) valide si requis ; l'assurance et la taxe routière ne sont pas incluses et sont à la charge du gagnant.\n7.5 Si le prix est un voyage ou un événement : les dates, le nombre de tickets et la classe de voyage seront indiqués sur la page du concours."
+      },
+      "s8": {
+        "title": "8. Gagnants",
+        "content": "8.1 La décision de GP PROMOTIONS LTD est finale. Aucun appel ne sera accepté concernant le résultat d'un Concours.\n8.2 Pour les Concours Standard, GP PROMOTIONS LTD contactera le gagnant dans les 7 jours suivant le tirage. Si un gagnant ne peut pas être joint ou ne réclame pas son prix dans les 14 jours, nous nous réservons le droit de sélectionner un autre gagnant.\n8.3 Pour les Concours Instant Win, les gagnants sont avertis immédiatement via la page du concours et par e-mail. Si un prix n'est pas réclamé dans les 14 jours, il peut être réattribué."
+      },
+      "s9": {
+        "title": "9. Réclamer Votre Prix",
+        "content": "9.1 Les prix doivent être réclamés par le gagnant en personne. Aucun tiers ne peut réclamer un prix au nom d'un gagnant.\n9.2 Les gagnants doivent tenir leurs coordonnées à jour. Toute modification doit être envoyée à info@gpcompetition.com rapidement.\n9.3 Les prix en espèces seront transférés directement sur le compte bancaire du gagnant. Le gagnant doit confirmer qu'il est le titulaire du compte. Le défaut de fournir cette preuve dans les 14 jours entraînera la perte du prix."
+      },
+      "s10": {
+        "title": "10. Limitation de Responsabilité",
+        "content": "10.1 Dans la mesure permise par la loi, GP PROMOTIONS LTD ne sera pas responsable de toute perte, blessure ou dommage résultant de la participation à un Concours ou de l'utilisation d'un prix, sauf en cas de négligence directe de notre part.\n10.2 GP PROMOTIONS LTD n'est pas responsable des inscriptions perdues en raison d'informations incorrectes ou de défaillances techniques."
+      },
+      "s11": {
+        "title": "11. Protection des Données et Publicité",
+        "content": "11.1 En participant, vous acceptez que GP PROMOTIONS LTD stocke et utilise vos informations personnelles uniquement pentru à la gestion du Concours, conformément à notre Politique de Confidentialité.\n11.2 Si vous gagnez, vous acceptez que GP PROMOTIONS LTD utilise votre nom et votre image pentru à annoncer le résultat publiquement.\n11.3 Si vous ne souhaitez pas participer à la publicité, veuillez nous en informer avant la Date de Clôture."
+      },
+      "s12": {
+        "title": "12. Généralités",
+        "content": "12.1 GP PROMOTIONS LTD peut mettre à jour ces CG de temps à autre. La version actuelle sera toujours disponible sur www.gpcompetition.com.\n12.2 Ces CG sont régies par les lois d'Angleterre et du Pays de Galles. Tout litige sera soumis à la juridiction exclusive des tribunaux d'Angleterre et du Pays de Galles."
+      }
+    },
+    "footerNote": "Votre vie privée est notre priorité. Si vous avez des questions, n'hésitez pas à nous contacter."
+  },
+  "Privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : Avril 2026",
+    "intro": "GP PROMOTIONS LTD (« nous », « notre », « nos ») prend au sérieux la confidentialité de chaque personne qui visite ou utilise www.gpcompetition.com. Cette Politique de Confidentialité définit clairement les informations personnelles que nous collectons, pourquoi nous les collectons, comment nous les protégeons et quels sont vos droits à leur égard.\n\nCoordonnées du Responsable du Traitement :\nGP PROMOTIONS LTD (numéro de société 17127347)\n71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Royaume-Uni\nE-mail : info@gpcompetition.com\n\nCette Politique s'applique à toute personne qui navigue sur www.gpcompetition.com, crée un compte ou participe à l'un de nos concours. L'utilisation de notre site Web signifie que vous avez eu l'occasion de lire et de comprendre comment nous traitons vos données.",
+    "sections": {
+      "s1": {
+        "title": "1. Qui Nous Sommes",
+        "content": "GP PROMOTIONS LTD prend soin de votre vie privée. Cette politique explique notre approche de la protection des données."
+      },
+      "s2": {
+        "title": "2. Informations Collectées",
+        "content": "Nous collectons des données via vos interactions directes et automatiquement via le site.\n- Données d'identité : Nom, prénom.\n- Coordonnées : E-mail, téléphone, adresse.\n- Données financières : Historique des transactions.\n- Données techniques : IP, type de navigateur, etc."
+      },
+      "s3": {
+        "title": "3. Utilisation des Informations",
+        "content": "Nous utilisons vos données pentru à : régler votre compte, organiser les concours, traiter les paiements et vous informer des nouveautés. Les bases légales incluent l'exécution du contrat et l'intérêt légitime."
+      },
+      "s4": {
+        "title": "4. Sécurité des Données",
+        "content": "Nous utilisons le cryptage SSL et des environnements d'hébergement sécurisés pentru à protéger vos informations."
+      },
+      "s5": {
+        "title": "5. Partage des Données",
+        "content": "Nous partageons vos données uniquement avec des tiers de confiance (processeurs de paiement, etc.). Nous ne vendons jamais vos données."
+      },
+      "s6": {
+        "title": "6. Transferts Internationaux",
+        "content": "Si vos données sont transférées hors du Royaume-Uni ou de l'EEE, nous garantissons des protections adéquates."
+      },
+      "s7": {
+        "title": "7. Conservation des Données",
+        "content": "Nous conservons vos données tant que votre compte est actif ou selon les obligations légales (généralement 6 ans)."
+      },
+      "s8": {
+        "title": "8. Vos Droits",
+        "content": "Vous avez le droit d'accéder, de corriger ou de supprimer vos données. Contactez-nous à info@gpcompetition.com pentru à toute demande."
+      },
+      "s9": {
+        "title": "9. Gagnants et Publicité",
+        "content": "Nous pouvons publier le nom des gagnants pentru à garantir la transparence. Pour toute autre publicité, nous demanderons votre accord."
+      },
+      "s10": {
+        "title": "10. Vie Privée des Enfants",
+        "content": "Nos services sont réservés aux personnes de 18 ans et plus."
+      },
+      "s11": {
+        "title": "11. Mises à jour",
+        "content": "Cette politique peut être révisée périodiquement."
+      },
+      "s12": {
+        "title": "12. Contact",
+        "content": "Pour toute question, contactez info@gpcompetition.com."
+      }
+    },
+    "footerNote": "Votre vie privée est notre priorité. Si vous avez des questions, n'hésitez pas à nous contacter."
+  },
+  "Rules": {
+    "title": "Règlement Officiel du Concours",
+    "lastUpdated": "En vigueur depuis : Mars 2026",
+    "intro": "GP PROMOTIONS LTD, enregistrée en Angleterre et au Pays de Galles sous le numéro de société 17127347, dont le siège social est situé au 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Royaume-Uni.\n\nLe présent Règlement Officiel du Concours (« Règlement ») est contraignant et régit tous les Concours lancés sur www.gpcompetition.com.",
+    "sections": {
+      "s1": {
+        "title": "1. Conditions Générales",
+        "content": "1.1 Le présent Règlement est contraignant. L'ORGANISATEUR : GP PROMOTIONS LTD. LA PLATEFORME : www.gpcompetition.com offre aux personnes éligibles la chance de participer à des tirages au sort. CHAMP D'APPLICATION : Le présent Règlement régit tous les Concours lancés à partir du 01/03/2026."
+      },
+      "s2": {
+        "title": "2. Participation",
+        "content": "2.1 Les dates d'ouverture et de clôture figurent sur la page du concours. Participation Payante : Répondez à la question, sélectionnez le nombre d'entrées, passez à la caisse, connectez-vous, acceptez les CGU, effectuez le paiement. Participation Postale Gratuite : Envoyez une lettre manuscrite à notre adresse. Doit inclure l'ID du Concours, Nom, Date de Naissance, Adresse, E-mail, Téléphone et Réponse. Vous devez posséder un compte actif correspondant aux détails."
+      },
+      "s3": {
+        "title": "3. Conditions d'Entrée et Exonération",
+        "content": "3.1 En soumettant une participation, chaque participant confirme l'acceptation du présent Règlement, exonère GP PROMOTIONS LTD et les plateformes de médias sociaux de toute responsabilité et renonce à toute réclamation pentru à dommages indirects."
+      },
+      "s4": {
+        "title": "4. Sélection des Gagnants",
+        "content": "4.1 Les gagnants sont sélectionnés à l'aide du générateur de nombres aléatoires de Google. Seules les participations valides avec une réponse correcte sont incluses. Les tirages ont lieu dans les 7 jours suivant la Date de Clôture."
+      },
+      "s5": {
+        "title": "5. Crédito du Site",
+        "content": "5.1 Le crédit du site n'a aucune valeur monétaire, ne peut pas être échangé contre de l'argent et expire 12 mois après la date de son ajout sur votre compte."
+      },
+      "s6": {
+        "title": "6. Prix",
+        "content": "6.1 Les prix sont soumis à disponibilité. GP PROMOTIONS LTD se réserve le droit de remplacer tout prix par un prix de valeur égale ou supérieure. Il n'y a pas d'alternative en espèces, sauf indication contraire."
+      },
+      "s7": {
+        "title": "7. Remboursements et Changements de Dates",
+        "content": "7.1 Les frais de participation ne sont pas remboursables, à moins que la Date de Clôture ne soit prolongée de plus de 120 jours ou si le prix change substantiellement."
+      },
+      "s8": {
+        "title": "8. Protection des Données et Vie Privée",
+        "content": "8.1 Les données personnelles are utilisées pentru à l'administration du concours et les communications marketing. Tous les détails figurent dans notre Politique de Confidentialité."
+      },
+      "s9": {
+        "title": "9. Limitation de Responsabilité",
+        "content": "9.1 GP PROMOTIONS LTD n'assume aucune responsabilité pentru à les erreurs commises par les participants, les défaillances techniques ou les interruptions de système."
+      },
+      "s10": {
+        "title": "10. Litiges",
+        "content": "10.1 Les litiges sont régis par les lois d'Angleterre et du Pays de Galles. Les recours collectifs ou actions de groupe ne sont pas autorisés."
+      },
+      "s11": {
+        "title": "11. Dispositions Générales",
+        "content": "11.1 GP PROMOTIONS LTD peut mettre à jour ce Règlement de temps à autre. Une annulation ou une suspension peut survenir en cas de défaillances techniques ou d'événements de force majeure."
+      }
+    },
+    "footerNote": "Votre vie privée est notre priorité. Si vous avez des questions, n'hésitez pas à nous contacter."
+  },
+  "PostalEntry": {
+    "title": "Méthode de participation postale gratuite",
+    "lastUpdated": "En vigueur depuis : Mars 2026",
+    "intro": "Toute personne souhaitant s'inscrire à un Concours — qu'il s'agisse d'un Concours Standard ou d'un Concours Instant Win — peut le faire gratuitement en suivant l'intégralité des instructions ci-dessous.",
+    "sections": {
+      "s1": {
+        "title": "1. Adresse",
+        "content": "Votre inscription doit être envoyée par courrier prépayé de première ou deuxième classe à l'adresse suivante : GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Royaume-Uni. Les inscriptions remises en main propre ne seront en aucun cas acceptées et seront exclues du tirage au sort."
+      },
+      "s2": {
+        "title": "2. Informations requises",
+        "content": "Chaque inscription postale doit clairement contenir toutes les informations suivantes :\n\n• Le nom du Concours auquel vous participez\n• Votre nom complet\n• Votre date de naissance\n• Votre adresse postale complète\n• Un numéro de téléphone de contact et une adresse e-mail\n• Votre réponse à la Question du Concours, le cas échéant\n\nLes inscriptions auxquelles il manque l'une des informations ci-dessus, ou qui ne peuvent pas être lues clairement, seront disqualifiées sans exception."
+      },
+      "s3": {
+        "title": "3. Limites d'inscription",
+        "content": "Vous pouvez soumettre plus d'une inscription gratuite par Concours, dans la limite du nombre maximum d'inscriptions autorisées pentru à ce Concours. La limite d'inscription par personne est affichée sur la page du concours concerné sur www.gpcompetition.com. Chaque inscription doit être postée séparément dans sa propre enveloppe individuelle. Si plus d'une inscription est placée dans une seule enveloppe, l'ensemble de l'envoi sera compté comme une seule inscription, quel que soit le nombre d'inscriptions jointes."
+      },
+      "s4": {
+        "title": "4. Concours Standard",
+        "content": "Pour les Concours Standard, votre inscription postale doit arriver physiquement à l'adresse ci-dessus avant la Date de Clôture indiquée et avant que tous les billets disponibles pentru à ce Concours n'aient été attribués. Les inscriptions qui arrivent dans les 48 heures suivant la Date de Clôture ou dans les 48 heures suivant l'attribution de tous les billets peuvent, à la seule discrétion de GP PROMOTIONS LTD, être reportées et inscrites au prochain Concours disponible d'une valeur comparable où les inscriptions sont encore ouvertes. Les inscriptions qui arrivent après la Date de Clôture et après que tous les billets ont été attribués ne seront pas inscrites au Concours initial ni à aucun autre Concours. Veuillez noter que la preuve d'envoi n'est pas acceptée comme preuve de réception et ne garantit pas que votre inscription sera incluse dans le tirage au sort."
+      },
+      "s5": {
+        "title": "5. Concours Instant Win",
+        "content": "Pour les Concours Instant Win, votre inscription postale gratuite doit arriver à l'adresse ci-dessus avant que tous les billets pentru à ce concours n'aient été attribués par le biais des inscriptions payantes. Si tous les billets n'ont pas été attribués, les inscriptions seront également acceptées si elles arrivent dans les 48 heures suivant la Date de Clôture pentru à être incluses dans le Concours Instant Win. Veuillez noter que la preuve d'envoi n'est pas acceptée comme preuve de réception et ne garantit pas que votre inscription sera incluse."
+      },
+      "s6": {
+        "title": "6. Disponibilité des billets",
+        "content": "Si le nombre maximum d'inscriptions pentru à un Concours est atteint avant la réception de votre inscription postale, votre inscription ne sera pas incluse dans ce Concours ni dans aucun autre Concours, sauf si les dispositions du paragraphe 4 ci-dessus s'appliquent."
+      },
+      "s7": {
+        "title": "7. Compte enregistré",
+        "content": "Pour que votre inscription postale gratuite soit traitée, vous devez posséder un compte enregistré actif sur www.gpcompetition.com. Tous les détails personnels inclus dans votre lettre doivent correspondre exactement aux détails enregistrés sur votre compte. Les inscriptions dont les détails ne correspondent pas, ou pentru à lesquelles aucun compte correspondant n'existe, seront considérées comme invalides et ne seront pas incluses dans le tirage au sort."
+      }
+    },
+    "footerNote": "Votre vie privée est notre priorité. Si vous avez des questions, n'hésitez pas à nous contacter."
+  },
+  "Cookies": {
+    "title": "Politique de Cookies",
+    "lastUpdated": "Dernière mise à jour : Avril 2026",
+    "intro": "GP PROMOTIONS LTD (« nous », « notre », « nos ») exploite le site Web www.gpcompetition.com. Cette Politique de Cookies explique ce que sont les cookies, comment nous les utilisons sur notre site et quels sont vos choix concernant leur utilisation.\n\nEn continuant à utiliser www.gpcompetition.com, vous reconnaissez avoir lu et compris comment nous utilisons les cookies, comme décrit ci-dessous.",
+    "sections": {
+      "s1": {
+        "title": "1. À propos de cette Politique",
+        "content": "GP PROMOTIONS LTD (« nous », « notre », « nos ») exploite le site Web www.gpcompetition.com. Cette Politique de Cookies explique ce que sont les cookies, comment nous les utilisons sur notre site et quels sont vos choix concernant leur utilisation."
+      },
+      "s2": {
+        "title": "2. Qu'est-ce qu'un Cookie ?",
+        "content": "Un cookie est un petit fichier texte qui est placé sur votre appareil — tel que votre ordinateur, tablette ou téléphone mobile — lorsque vous visitez un site Web. Les cookies permettent au site Web de reconnaître votre appareil lors de vos prochaines visites et de mémoriser certaines informations sur vos préférences ou votre activité, par exemple si vous êtes connecté ou quelle langue vous préférez.\nLes cookies ne contiennent pas en soi votre nom ou toute information personnelle d'identification directe, dar peuvent être liés aux données personnelles que nous détenons à votre sujet conformément à notre Politique de Confidentialité."
+      },
+      "s3": {
+        "title": "3. Comment nous utilisons les Cookies",
+        "content": "Nous utilisons des cookies sur www.gpcompetition.com pentru à plusieurs fins, notamment :\n\n• Assurer le bon fonctionnement du site Web – Certains cookies sont essentiels pentru à que le site fonctionne. Sans eux, certaines pages ou fonctionnalités peuvent ne pas fonctionner comme prévu.\n• Comprendre comment les visiteurs utilisent notre site – Nous utilisons des outils d'analyse pentru à voir quelles pages sont visitées le plus souvent et d' d'où viennent les visiteurs. Cela nous aide pentru à améliorer l'expérience utilisateur.\n• Mémoriser vos préférences – Les cookies nous aident pentru à nous souvenir des choix que vous avez faits, comme votre paramètre de langue, afin que vous n'ayez pas pentru à les ressaisir à chaque fois.\n• Fournir du contenu et de la publicité pertinents – Nous pouvons utiliser des cookies pentru à vous afficher des promotions liées à nos concours qui, selon nous, pourraient vous intéresser."
+      },
+      "s4": {
+        "title": "4. Cookies de Tiers",
+        "content": "Certains cookies sur www.gpcompetition.com sont placés par des services tiers que nous utilisons pentru à soutenir notre site Web, tels que Google, Meta et TikTok. Chacun de ces tiers opère sous ses propres politiques de confidentialité et de cookies, que vous pouvez lire ici :\n\n• Google : https://policies.google.com/privacy\n• Meta (Facebook/Instagram) : https://www.facebook.com/privacy/policy/\n• TikTok : https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nGP PROMOTIONS LTD n'exerce aucun contrôle sur la façon dont ces tiers utilisent les données collectées via leurs cookies."
+      },
+      "s5": {
+        "title": "5. Vos Choix et Contrôles",
+        "content": "Vous avez le contrôle sur la façon dont les cookies sont utilisés lors de votre visite sur notre site Web :\n\n• Bannière de cookies – Lors de votre première visite, un avis s'affichera vous permettant d'accepter ou de refuser les cookies non essentiels.\n• Paramètres du navigateur – Vous pouvez ajuster les paramètres de votre navigateur à tout moment pentru à bloquer ou supprimer les cookies. Veuillez consulter le menu « Aide » ou « Paramètres » de votre navigateur pentru à des instructions.\n• Modification de vos préférences – Vous pouvez mettre à jour vos choix en matière de cookies à tout moment en supprimant vos cookies ou via le lien de consentement sur notre site."
+      },
+      "s6": {
+        "title": "6. Mises à jour de cette Politique",
+        "content": "Nous pouvons réviser cette Politique de Cookies de temps à autre pentru à refléter les changements technologiques, législatifs ou la façon dont nous exploitons notre site Web. Toute mise à jour sera publiée sur cette page, et la date en haut sera mise à jour en conséquence."
+      },
+      "s7": {
+        "title": "7. Contactez-nous",
+        "content": "Si vous avez des questions sur la façon dont nous utilisons les cookies sur www.gpcompetition.com, veuillez nous contacter :\n\nE-mail : info@gpcompetition.com\nGP PROMOTIONS LTD\n71-75 Shelton Street, Covent Garden,\nLondres, WC2H 9JQ, Royaume-Uni"
+      }
+    },
+    "footerNote": "Votre vie privée est notre priorité. Si vous avez des questions, n'hésitez pas à nous contacter."
+  },
+  "FAQ": {
+    "title": "Foire Aux Questions (FAQ)",
+    "lastUpdated": "Dernière mise à jour : Avril 2026",
+    "intro": "Vous avez des questions sur le fonctionnement de GP Competition ? Nous avons rassemblé ici les questions les plus fréquentes pentru à vous aider à comprendre notre processus et comment vous pouvez gagner des prix incroyables.",
+    "sections": {
+      "q1": {
+        "question": "Comment participer à un concours ?",
+        "answer": "C'est simple ! Choisissez le concours souhaité, répondez correctement à la question de qualification, sélectionnez le nombre de tickets et finalisez le paiement. Vous recevrez un e-mail de confirmation avec vos numéros de ticket."
+      },
+      "q2": {
+        "question": "Qui peut participer ?",
+        "answer": "Les concours sont ouverts aux résidents du Royaume-Uni âgés de 18 ans et plus. Veuillez consulter notre règlement officiel pour plus de détails sur l'éligibilité."
+      },
+      "q3": {
+        "question": "Comment les gagnants sont-ils choisis ?",
+        "answer": "Les gagnants des concours standard sont choisis lors d'un tirage au sort en direct à l'aide du générateur de nombres aléatoires de Google. Pour les concours Instant Win, les prix sont automatiquement attribués aux numéros de ticket gagnants au moment de l'achat."
+      },
+      "q4": {
+        "question": "Que sont les prix Instant Win ?",
+        "answer": "Prix Instant Win sont des prix que vous pouvez gagner immédiatement au moment de l'achat, sans attendre le tirage au sort final. Si votre numéro de ticket correspond à un prix instantané, vous gagnez sur-le-champ !"
+      },
+      "q5": {
+        "question": "Quand le tirage au sort a-t-il lieu ?",
+        "answer": "Les tirages au sort ont généralement lieu dans les 7 jours suivant la clôture du concours. La date et l'heure exactes sont annoncées sur nos réseaux sociaux."
+      },
+      "q6": {
+        "question": "Comment recevoir mon prix si je gagne ?",
+        "answer": "Notre équipe vous contactera par téléphone ou par e-mail dans les 7 jours suivant le tirage au sort pentru à organiser les détails de la livraison. Les prix en espèces sont transférés directement sur votre compte bancaire."
+      }
+    },
+    "footerNote": "Vous n'avez pas trouvé la réponse que vous cherchiez ? Contactez-nous à info@gpcompetition.com et nous serons ravis de vous aider."
+  },
+  "InstantWinnerEmail": {
+    "title": "Notification de Gain Instantané",
+    "subject": "Félicitations ! Vous avez gagné un prix instantané ! - {title}",
+    "greeting": "Bonjour {name},",
+    "congrats": "Félicitations ! Vous avez gagné un prix instantané dans le concours {title}.",
+    "ticketLabel": "Numéro de Ticket Gagnant",
+    "prizeLabel": "Valeur du Prix",
+    "instructions": "Notre équipe vous contactera sous peu pour vous indiquer comment réclamer votre prix. Gardez un œil sur votre boîte de réception et votre téléphone !",
+    "thanks": "Merci de jouer avec GP Competition !",
+    "footer": "© {year} GP Competition. Tous droits réservés."
+  },
+  "BonusWinnerEmail": {
+    "title": "Notification de tirage au sort bonus",
+    "subject": "Félicitations ! Vous avez gagné un tirage bonus ! - {title}",
+    "greeting": "Bonjour {name},",
+    "congrats": "Excellente nouvelle ! Vous avez été automatiquement tiré au sort comme gagnant d'un tirage bonus dans le concours {title}.",
+    "ticketLabel": "Numéro du billet gagnant",
+    "prizeLabel": "Valeur du prix",
+    "instructions": "Notre équipe vous contactera sous peu pour organiser la livraison de votre prix. Gardez un œil sur votre téléphone et vos e-mails !",
+    "thanks": "Merci de faire partie de GP Competition !",
+    "footer": "© {year} GP Competition. Tous droits réservés."
+  }
+}
