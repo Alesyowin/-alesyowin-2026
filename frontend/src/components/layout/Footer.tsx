@@ -72,12 +72,11 @@ const Footer = () => {
                         </div>
                         
                         <div className="flex flex-wrap gap-3 mt-4">
-                            <SocialIcon url="https://facebook.com" network="facebook" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(24,119,242,0.5)] rounded-full" />
-                            <SocialIcon url="https://instagram.com" network="instagram" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(225,48,108,0.5)] rounded-full" />
-                            <SocialIcon url="https://tiktok.com" network="tiktok" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] rounded-full" />
-                            <SocialIcon url="https://youtube.com" network="youtube" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,0,0,0.5)] rounded-full" />
-                            <SocialIcon url="https://whatsapp.com" network="whatsapp" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(37,211,102,0.5)] rounded-full" />
-                            <SocialIcon url="https://telegram.org" network="telegram" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(0,136,204,0.5)] rounded-full" />
+                            <SocialIcon url="https://www.instagram.com/alesyo_win" target="_blank" rel="noopener noreferrer" network="instagram" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(225,48,108,0.5)] rounded-full" />
+                            <SocialIcon url="https://www.tiktok.com/@alesyoclub" target="_blank" rel="noopener noreferrer" network="tiktok" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] rounded-full" />
+                            <SocialIcon url="https://www.youtube.com/@Alesyowin" target="_blank" rel="noopener noreferrer" network="youtube" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,0,0,0.5)] rounded-full" />
+                            <SocialIcon url="https://api.whatsapp.com/send/?phone=40721715520&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" network="whatsapp" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(37,211,102,0.5)] rounded-full" />
+                            <SocialIcon url="https://t.me/+fjvcRfeBUvwzN2E8" target="_blank" rel="noopener noreferrer" network="telegram" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(0,136,204,0.5)] rounded-full" />
                         </div>
                     </div>
 
