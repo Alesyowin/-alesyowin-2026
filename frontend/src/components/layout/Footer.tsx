@@ -91,12 +91,12 @@ const Footer = () => {
                         <div className="flex items-center gap-3 mt-4">
                             {/* Mastercard */}
                             <div className="bg-white w-[60px] h-[38px] rounded-md flex items-center justify-center p-1.5 hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,95,0,0.4)]">
-                                <img src="/mastercard.png" alt="Mastercard" className="w-full h-full object-contain" />
+                                <img src="/mastercard.svg" alt="Mastercard" className="w-full h-full object-contain" />
                             </div>
 
                             {/* Visa */}
                             <div className="bg-white w-[60px] h-[38px] rounded-md flex items-center justify-center p-1.5 hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(20,52,203,0.4)]">
-                                <img src="/visa.png" alt="Visa" className="w-full h-full object-contain" />
+                                <img src="/visa.svg" alt="Visa" className="w-full h-full object-contain" />
                             </div>
                         </div>
                     </div>
