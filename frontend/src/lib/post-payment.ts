@@ -66,26 +66,7 @@ export async function processPostPayment({
             }
         });
 
-        // 5. Wait 2s for Directus Hook to generate tickets
-        console.log(`[POST-PAYMENT] Waiting 2s for tickets to generate...`);
-        await new Promise(resolve => setTimeout(resolve, 2000));
-
-        const orderLocale = orderData.locale || 'en';
-
-        // 6. Get Tickets for Email
-        // @ts-ignore
-        const tickets = await adminClient.request(
-            readItems('tickets' as any, {
-                filter: { order_id: { _eq: parseInt(orderId.toString(), 10) } },
-                fields: ['ticket_number', 'giveaway_id'] as any,
-                limit: 1000
-            })
-        );
-
-        // 7. Build Products Map for Email Template
-        const productsMap = new Map<number, { giveawayTitle: string, productImageUrl?: string, tickets: string[], unitPrice: number, instantPrizes: any, bonusDraws: any }>();
-        const giveawayIds = Array.from(new Set(tickets.map((t: any) => t.giveaway_id)));
-
+        // 5. Get Order Items immediately to know how many tickets to expect and which products
         let orderItemsData: any[] = [];
         try {
             // @ts-ignore
@@ -98,6 +79,42 @@ export async function processPostPayment({
         } catch (oiErr) {
             console.warn('[POST-PAYMENT] Could not read order_items details:', oiErr);
         }
+
+        const expectedTickets = orderItemsData.reduce((sum: number, item: any) => sum + (Number(item.quantity) || Number(item.Quantity) || 1), 0);
+
+        // 6. Smart polling to wait for Directus Hook to generate tickets
+        console.log(`[POST-PAYMENT] Waiting for ${expectedTickets} tickets to generate...`);
+        let tickets: any[] = [];
+        let attempts = 0;
+        const maxAttempts = 8; // 8 seconds max wait for Vercel timeout safety
+
+        while (attempts < maxAttempts) {
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            // @ts-ignore
+            tickets = await adminClient.request(
+                readItems('tickets' as any, {
+                    filter: { order_id: { _eq: parseInt(orderId.toString(), 10) } },
+                    fields: ['ticket_number', 'giveaway_id'] as any,
+                    limit: -1
+                })
+            );
+            if (tickets.length >= expectedTickets) {
+                console.log(`[POST-PAYMENT] All ${tickets.length} tickets successfully generated!`);
+                break;
+            }
+            console.log(`[POST-PAYMENT] Attempt ${attempts + 1}: Found ${tickets.length} tickets, expecting ${expectedTickets}. Waiting...`);
+            attempts++;
+        }
+
+        const orderLocale = orderData.locale || 'en';
+
+        // 7. Build Products Map for Email Template
+        const productsMap = new Map<number, { giveawayTitle: string, productImageUrl?: string, tickets: string[], unitPrice: number, instantPrizes: any, bonusDraws: any }>();
+        
+        // Asigurăm-ne că adăugăm giveaway-urile din comanda inițială, chiar dacă unele bilete încă se procesează
+        const giveawayIdsFromItems = orderItemsData.map((oi: any) => oi.giveaway_id);
+        const giveawayIdsFromTickets = tickets.map((t: any) => t.giveaway_id);
+        const giveawayIds = Array.from(new Set([...giveawayIdsFromItems, ...giveawayIdsFromTickets]));
 
         if (giveawayIds.length > 0) {
             // @ts-ignore
