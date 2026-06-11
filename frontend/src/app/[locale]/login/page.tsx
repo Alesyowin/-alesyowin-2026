@@ -68,14 +68,14 @@ export default function LoginPage() {
                     {step === 'email' ? (
                         <form onSubmit={handleRequestOTP} className="space-y-4 pt-4">
                             <div className="relative group">
-                                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30 group-focus-within:text-(--color-gold) transition-colors" size={20} />
+                                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#00A5FF] transition-colors" size={20} />
                                 <input
                                     type="email"
                                     required
                                     placeholder="Nume.prenume@exemplu.com"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full bg-(--color-black-soft) border border-white/10 rounded py-3 pl-10 pr-4 text-white focus:border-(--color-gold) focus:ring-1 focus:ring-(--color-gold)/20 outline-none transition-all placeholder:text-white/20"
+                                    className="w-full bg-white border border-gray-200 rounded py-3 pl-10 pr-4 text-black font-semibold focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF]/50 outline-none transition-all placeholder:text-gray-400"
                                 />
                             </div>
 
