@@ -211,7 +211,12 @@
     "securePayments": "Pagos seguros",
     "rights": "Todos los derechos reservados.",
     "trademark": "{name} es una marca registrada.",
-    "unauthorised": "Cualquier uso no autorizado del nombre, logotipo o marca está estrictamente prohibido."
+    "unauthorised": "Cualquier uso no autorizado del nombre, logotipo o marca está estrictamente prohibido.",
+    "joinFamily": "¡Únete a la familia Alesyowin hoy!",
+    "companyDetailsName": "Alesyo Win LTD",
+    "companyDetailsNumber": "Número de la empresa: 16737234",
+    "companyDetailsAddressTitle": "Dirección del domicilio social:",
+    "companyDetailsAddress": "54 Market Street, Eastleigh, England, SO50 5RB, Reino Unido"
   },
   "Email": {
     "otpSubject": "Tu código de acceso - ALESYOWIN",

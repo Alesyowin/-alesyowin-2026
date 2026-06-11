@@ -211,7 +211,12 @@
     "securePayments": "Plăți securizate",
     "rights": "Toate drepturile rezervate.",
     "trademark": "{name} este o marcă înregistrată.",
-    "unauthorised": "Orice utilizare neautorizată a numelui, logo-ului sau brandingului este strict interzisă."
+    "unauthorised": "Orice utilizare neautorizată a numelui, logo-ului sau brandingului este strict interzisă.",
+    "joinFamily": "Alătură-te familiei Alesyowin astăzi!",
+    "companyDetailsName": "Alesyo Win LTD",
+    "companyDetailsNumber": "Număr companie: 16737234",
+    "companyDetailsAddressTitle": "Adresă sediu social:",
+    "companyDetailsAddress": "54 Market Street, Eastleigh, England, SO50 5RB, Regatul Unit"
   },
   "Email": {
     "otpSubject": "Codul tău de acces - ALESYOWIN",

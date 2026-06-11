@@ -19,14 +19,22 @@ const Footer = () => {
                         <div className="h-0.5 w-12 bg-[#00A5FF]"></div>
                     </div>
                     
-                    <p className="text-[#00A5FF] font-bold italic text-sm">Join the Alesywin family today!</p>
+                    <p className="text-[#00A5FF] font-bold italic text-sm">{t('joinFamily')}</p>
                     
                     <ul className="space-y-4 text-sm text-gray-400">
                         <li className="flex items-center gap-3">
                             <Mail size={18} className="text-white" />
-                            <a href="mailto:andreialexandruuk25@gmail.com" className="hover:text-white transition-colors">andreialexandruuk25@gmail.com</a>
+                            <a href="mailto:info@alesyowin.com" className="hover:text-white transition-colors">info@alesyowin.com</a>
                         </li>
                     </ul>
+
+                    {/* Company Details */}
+                    <div className="pt-4 space-y-1 text-sm text-gray-400 border-t border-white/10 mt-6">
+                        <p className="font-bold text-white">{t('companyDetailsName')}</p>
+                        <p>{t('companyDetailsNumber')}</p>
+                        <p className="pt-2">{t('companyDetailsAddressTitle')}</p>
+                        <p>{t('companyDetailsAddress')}</p>
+                    </div>
                 </div>
 
                 {/* Coloana 2: LEGAL */}
