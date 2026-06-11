@@ -21,7 +21,7 @@ export default async function Home({ params }: PageProps) {
     });
 
     return (
-        <div className="relative bg-gray-50">
+        <div className="relative bg-[#000000]">
             {/* Alesywin Hero Banner */}
             <div className="relative w-full h-screen min-h-[600px] bg-black">
                 <div 
@@ -45,7 +45,7 @@ export default async function Home({ params }: PageProps) {
                         {t('title')}
                     </h2>
                     <div className="h-1 w-24 bg-[#00A5FF] mx-auto mt-4 rounded-full" />
-                    <p className="mt-4 text-gray-600 text-sm max-w-md mx-auto font-medium">
+                    <p className="mt-4 text-gray-200 text-sm max-w-md mx-auto font-medium">
                         {t('description')}
                     </p>
                 </div>
@@ -82,8 +82,8 @@ export default async function Home({ params }: PageProps) {
                         })}
                     </div>
                 ) : (
-                    <div className="text-center py-16 bg-white rounded-xl shadow-sm border border-gray-100">
-                        <p className="text-gray-500 text-lg font-semibold">{t('noCompetitions')}</p>
+                    <div className="text-center py-16 bg-[#111] rounded-xl shadow-sm border border-[#222]">
+                        <p className="text-gray-200 text-lg font-semibold">{t('noCompetitions')}</p>
                         <p className="text-gray-400 text-sm mt-2">{t('checkBack')}</p>
                     </div>
                 )}
