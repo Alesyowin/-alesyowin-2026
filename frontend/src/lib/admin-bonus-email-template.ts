@@ -23,7 +23,7 @@ export function getAdminBonusWinnerTemplate(props: AdminBonusEmailProps): string
         .section { margin-bottom: 20px; padding: 15px; background: #f9f9f9; border-radius: 8px; }
         .label { font-weight: bold; color: #666; font-size: 12px; text-transform: uppercase; }
         .value { font-size: 16px; margin-top: 5px; color: #000; }
-        .winner-badge { display: inline-block; background: #ffd700; color: #000; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 12px; margin-bottom: 10px; }
+        .winner-badge { display: inline-block; background: #00A5FF; color: #000; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 12px; margin-bottom: 10px; }
         .footer { font-size: 12px; color: #999; text-align: center; margin-top: 20px; }
     </style>
 </head>
@@ -48,7 +48,7 @@ export function getAdminBonusWinnerTemplate(props: AdminBonusEmailProps): string
                 ` : ''}
             </div>
 
-            <div class="section" style="border-left: 4px solid #ffd700;">
+            <div class="section" style="border-left: 4px solid #00A5FF;">
                 <div class="label">Bilet Câștigător</div>
                 <div class="value" style="font-size: 24px; font-weight: bold;">#${props.ticketNumber}</div>
                 

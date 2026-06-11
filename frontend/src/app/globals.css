@@ -81,9 +81,9 @@ html {
       
       /* Culori Hardcoded (Fără variabile CSS care să nu fie evaluate corect) */
       color: #000000 !important;
-      background-color: #D4AF37 !important; /* Fallback solid absolut */
-      background: -webkit-linear-gradient(left, #8b6914, #D4AF37, #f0d060) !important;
-      background: linear-gradient(to right, #8b6914, #D4AF37, #f0d060) !important;
+      background-color: #00A5FF !important; /* Fallback solid absolut */
+      background: -webkit-linear-gradient(left, #008ecc, #00A5FF, #3498db) !important;
+      background: linear-gradient(to right, #008ecc, #00A5FF, #3498db) !important;
       
       /* Forțare randare GPU extremă */
       transform: translateZ(0) !important;
@@ -112,7 +112,7 @@ html {
   }
   .hover\:shadow-\[0_0_20px_rgba\(212\,175\,55\,0\.3\)\]:hover,
   .hover\:shadow-\[0_0_25px_rgba\(212\,175\,55\,0\.4\)\]:hover {
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 25px rgba(0,165,255, 0.4);
   }
 }
 

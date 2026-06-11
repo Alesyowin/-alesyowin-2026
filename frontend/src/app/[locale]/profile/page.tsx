@@ -71,7 +71,7 @@ export default function ProfilePage() {
 
                 <div className="relative z-10 space-y-12">
                     <div className="flex flex-col md:flex-row items-center gap-8 border-b border-white/5 pb-12">
-                        <div className="w-24 h-24 bg-gradient-to-br from-(--color-gold-dark) to-(--color-gold-light) rounded-full flex items-center justify-center text-4xl font-black text-black shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                        <div className="w-24 h-24 bg-gradient-to-br from-(--color-gold-dark) to-(--color-gold-light) rounded-full flex items-center justify-center text-4xl font-black text-black shadow-[0_0_20px_rgba(0,165,255,0.3)]">
                             {user.First_Name?.[0] || user.email[0].toUpperCase()}
                             {user.Last_Name?.[0] || ''}
                         </div>

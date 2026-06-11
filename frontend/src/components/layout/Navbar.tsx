@@ -98,7 +98,7 @@ export default function Navbar() {
                                     onClick={() => setIsProfileOpen(!isProfileOpen)}
                                     className="flex items-center gap-2 group"
                                 >
-                                    <div className="w-10 h-10 bg-gradient-to-br from-(--color-gold-dark) to-(--color-gold-light) rounded-full flex items-center justify-center text-xs font-black text-black shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:scale-105 transition-transform border border-(--color-gold)/20">
+                                    <div className="w-10 h-10 bg-gradient-to-br from-(--color-gold-dark) to-(--color-gold-light) rounded-full flex items-center justify-center text-xs font-black text-black shadow-[0_0_15px_rgba(0,165,255,0.2)] group-hover:scale-105 transition-transform border border-(--color-gold)/20">
                                         {getInitials()}
                                     </div>
                                     <ChevronDown size={14} className={`text-(--color-gold)/60 transition-transform duration-300 ${isProfileOpen ? 'rotate-180' : ''}`} />

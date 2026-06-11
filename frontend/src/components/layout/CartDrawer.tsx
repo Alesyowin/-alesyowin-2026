@@ -65,15 +65,15 @@ export default function CartDrawer() {
             {/* Drawer Panel — în DOM doar cât e vizibil sau cât durează animația, evitând interferența cu tool-uri externe (Meta, TikTok) */}
             {isVisible && (
             <div
-                className="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-[#0A0A0A] border-l border-[#D4AF37]/20 z-[99999] shadow-2xl flex flex-col"
+                className="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-[#0A0A0A] border-l border-[#00A5FF]/20 z-[99999] shadow-2xl flex flex-col"
                 style={{
                     transform: isOpen ? 'translateX(0)' : 'translateX(100%)',
                     transition: 'transform 500ms cubic-bezier(0.4, 0, 0.2, 1)',
                 }}
             >
                 {/* Header */}
-                <div className="flex items-center justify-between p-6 border-b border-[#D4AF37]/10 bg-[#000]">
-                    <div className="flex items-center gap-3 text-[#D4AF37]">
+                <div className="flex items-center justify-between p-6 border-b border-[#00A5FF]/10 bg-[#000]">
+                    <div className="flex items-center gap-3 text-[#00A5FF]">
                         <ShoppingCart size={24} />
                         <h2
                             className="text-xl font-bold uppercase tracking-widest"
@@ -101,10 +101,10 @@ export default function CartDrawer() {
                         items.map((item, index) => (
                             <div
                                 key={`${item.id}-${index}`}
-                                className="flex items-center gap-4 border border-[#D4AF37]/10 bg-[#111] p-4 rounded-sm"
+                                className="flex items-center gap-4 border border-[#00A5FF]/10 bg-[#111] p-4 rounded-sm"
                             >
                                 {/* Image Placeholder */}
-                                <div className="w-16 h-16 shrink-0 bg-[#1A1A1A] border border-[#D4AF37]/20 flex items-center justify-center overflow-hidden">
+                                <div className="w-16 h-16 shrink-0 bg-[#1A1A1A] border border-[#00A5FF]/20 flex items-center justify-center overflow-hidden">
                                     <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                                 </div>
 
@@ -116,7 +116,7 @@ export default function CartDrawer() {
                                     >
                                         {item.title}
                                     </h3>
-                                    <p className="text-[#D4AF37] font-bold text-sm">£{Number(item.price).toFixed(2)}</p>
+                                    <p className="text-[#00A5FF] font-bold text-sm">£{Number(item.price).toFixed(2)}</p>
 
                                 {/* Quantity Controls */}
                                     <div className="flex items-center gap-3 mt-3">
@@ -132,19 +132,19 @@ export default function CartDrawer() {
                                             </div>
                                         ) : (
                                             // Produs plătit — controale normale de cantitate
-                                            <div className="flex items-center border border-[#D4AF37]/30 rounded-sm overflow-hidden bg-black">
+                                            <div className="flex items-center border border-[#00A5FF]/30 rounded-sm overflow-hidden bg-black">
                                                 <button
                                                     onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                                                    className="px-2 py-1 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors"
+                                                    className="px-2 py-1 text-[#00A5FF] hover:bg-[#00A5FF]/10 transition-colors"
                                                 >
                                                     <Minus size={14} />
                                                 </button>
-                                                <span className="px-3 text-xs font-bold text-white w-8 text-center border-x border-[#D4AF37]/30">
+                                                <span className="px-3 text-xs font-bold text-white w-8 text-center border-x border-[#00A5FF]/30">
                                                     {item.quantity}
                                                 </span>
                                                 <button
                                                     onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                                                    className="px-2 py-1 text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors"
+                                                    className="px-2 py-1 text-[#00A5FF] hover:bg-[#00A5FF]/10 transition-colors"
                                                 >
                                                     <Plus size={14} />
                                                 </button>
@@ -165,11 +165,11 @@ export default function CartDrawer() {
 
                 {/* Footer (Total & Checkout) */}
                 {items.length > 0 && (
-                    <div className="p-6 border-t border-[#D4AF37]/20 bg-[#050505]">
+                    <div className="p-6 border-t border-[#00A5FF]/20 bg-[#050505]">
                         <div className="flex justify-between items-center mb-6">
                             <span className="text-white/60 uppercase tracking-widest text-sm">{t('total')}</span>
                             <span
-                                className="text-3xl font-black text-[#D4AF37]"
+                                className="text-3xl font-black text-[#00A5FF]"
                                 style={{ fontFamily: "'Montserrat', sans-serif" }}
                             >
                                 £{Number(total).toFixed(2)}
@@ -180,7 +180,7 @@ export default function CartDrawer() {
                                 setCartOpen(false);
                                 router.push('/checkout');
                             }}
-                            className="w-full py-4 bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black font-black uppercase tracking-[0.2em] rounded-sm hover:scale-[1.02] transition-transform shadow-[0_0_20px_rgba(212,175,55,0.3)] mb-3"
+                            className="w-full py-4 bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] btn-gold-safe text-black font-black uppercase tracking-[0.2em] rounded-sm hover:scale-[1.02] transition-transform shadow-[0_0_20px_rgba(0,165,255,0.3)] mb-3"
                         >
                             {t('checkout')}
                         </button>
@@ -190,7 +190,7 @@ export default function CartDrawer() {
                                 setCartOpen(false);
                                 router.push('/#active-competitions');
                             }}
-                            className="w-full py-3 border border-[#D4AF37]/30 text-[#D4AF37]/70 hover:text-[#D4AF37] hover:border-[#D4AF37] hover:bg-[#D4AF37]/5 font-bold uppercase tracking-[0.1em] text-[10px] rounded-sm transition-all duration-300 flex items-center justify-center gap-2 group"
+                            className="w-full py-3 border border-[#00A5FF]/30 text-[#00A5FF]/70 hover:text-[#00A5FF] hover:border-[#00A5FF] hover:bg-[#00A5FF]/5 font-bold uppercase tracking-[0.1em] text-[10px] rounded-sm transition-all duration-300 flex items-center justify-center gap-2 group"
                         >
                             <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
                             {t('continueShopping')}

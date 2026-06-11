@@ -36,7 +36,7 @@ export function getAdminInstantEmailTemplate(props: AdminInstantOrderEmailProps)
             border: 1px solid #e6ebf1;
         }
         .header {
-            background-color: #d97706; /* Un orange/gold pt admin */
+            background-color: #00A5FF; /* Un orange/gold pt admin */
             padding: 20px;
             text-align: center;
             color: white;
@@ -68,7 +68,7 @@ export function getAdminInstantEmailTemplate(props: AdminInstantOrderEmailProps)
         .winner-box {
             background-color: #fffaf0;
             border: 1px solid #fbd38d;
-            border-left: 4px solid #d97706;
+            border-left: 4px solid #00A5FF;
             padding: 15px;
             margin: 25px 0;
             border-radius: 4px;
@@ -109,7 +109,7 @@ export function getAdminInstantEmailTemplate(props: AdminInstantOrderEmailProps)
             <p style="font-size: 16px; margin-top: 0;">Un client tocmai a câștigat un premiu instant la comanda <strong>#${props.orderId}</strong>!</p>
             
             <div class="winner-box">
-                <p><span class="label">Premiu:</span> <span class="val" style="color: #d97706; font-size: 18px;">${props.prizeValue}</span></p>
+                <p><span class="label">Premiu:</span> <span class="val" style="color: #00A5FF; font-size: 18px;">${props.prizeValue}</span></p>
                 <p><span class="label">Bilet câștigător:</span> <span class="val">#${props.ticketNumber}</span></p>
                 <p><span class="label">Concurs:</span> <span class="val">${props.giveawayTitle}</span></p>
             </div>

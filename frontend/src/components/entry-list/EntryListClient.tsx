@@ -52,8 +52,8 @@ export default function EntryListClient({ giveaways }: EntryListClientProps) {
                         onClick={() => setActiveCategory(cat.key)}
                         className={`px-4 py-2 text-xs uppercase tracking-widest font-semibold border rounded-sm transition-all duration-300 ${
                             activeCategory === cat.key
-                                ? 'bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black border-[#D4AF37] shadow-[0_0_15px_rgba(212,175,55,0.4)]'
-                                : 'bg-[#0A0A0A] border-[#D4AF37]/20 text-white/60 hover:text-[#D4AF37] hover:border-[#D4AF37]/50'
+                                ? 'bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] btn-gold-safe text-black border-[#00A5FF] shadow-[0_0_15px_rgba(0,165,255,0.4)]'
+                                : 'bg-[#0A0A0A] border-[#00A5FF]/20 text-white/60 hover:text-[#00A5FF] hover:border-[#00A5FF]/50'
                         }`}
                     >
                         {cat.label}
@@ -81,10 +81,10 @@ export default function EntryListClient({ giveaways }: EntryListClientProps) {
                         return (
                             <div
                                 key={giveaway.id}
-                                className="group bg-[#0A0A0A] border border-[#D4AF37]/10 rounded-sm overflow-hidden hover:border-[#D4AF37]/30 transition-all flex flex-col h-full"
+                                className="group bg-[#0A0A0A] border border-[#00A5FF]/10 rounded-sm overflow-hidden hover:border-[#00A5FF]/30 transition-all flex flex-col h-full"
                             >
                                 {/* Event Image Container */}
-                                <div className="relative w-full aspect-[16/9] bg-[#111] overflow-hidden border-b border-[#D4AF37]/10">
+                                <div className="relative w-full aspect-[16/9] bg-[#111] overflow-hidden border-b border-[#00A5FF]/10">
                                     {imageUrl ? (
                                         <img 
                                             src={imageUrl} 
@@ -92,7 +92,7 @@ export default function EntryListClient({ giveaways }: EntryListClientProps) {
                                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                         />
                                     ) : (
-                                        <div className="w-full h-full flex items-center justify-center text-[#D4AF37]/20 text-5xl">
+                                        <div className="w-full h-full flex items-center justify-center text-[#00A5FF]/20 text-5xl">
                                             🏆
                                         </div>
                                     )}
@@ -120,7 +120,7 @@ export default function EntryListClient({ giveaways }: EntryListClientProps) {
                                         </h3>
                                         
                                         <div className="text-white/40 text-xs flex items-center gap-2">
-                                            <span className="text-[#D4AF37]">🎫</span>
+                                            <span className="text-[#00A5FF]">🎫</span>
                                             {giveaway.tickets_sold.toLocaleString()} / {giveaway.total_tickets.toLocaleString()} {t('tickets')}
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ export default function EntryListClient({ giveaways }: EntryListClientProps) {
                                     <div className="mt-auto">
                                         <Link
                                             href={`/${locale}/entry-list/${giveaway.id}`}
-                                            className="block w-full text-center py-2.5 text-xs font-bold uppercase tracking-[0.15em] bg-[#111] border border-[#D4AF37]/20 text-[#D4AF37] rounded-sm hover:bg-[#D4AF37]/10hover:border-[#D4AF37]/50 transition-all"
+                                            className="block w-full text-center py-2.5 text-xs font-bold uppercase tracking-[0.15em] bg-[#111] border border-[#00A5FF]/20 text-[#00A5FF] rounded-sm hover:bg-[#00A5FF]/10hover:border-[#00A5FF]/50 transition-all"
                                         >
                                             {t('viewTickets')}
                                         </Link>

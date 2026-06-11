@@ -43,7 +43,7 @@ export function getBonusWinnerEmailTemplate(props: BonusOrderEmailProps): string
             background-color: #080808;
             padding: 30px 20px;
             text-align: center;
-            border-bottom: 2px solid #3d2a00;
+            border-bottom: 2px solid #002244;
         }
         .email-header img {
             max-width: 200px;
@@ -54,7 +54,7 @@ export function getBonusWinnerEmailTemplate(props: BonusOrderEmailProps): string
             text-align: center;
         }
         .greeting {
-            color: #ffda6b;
+            color: #66ccff;
             font-size: 24px;
             margin-top: 0;
             margin-bottom: 20px;
@@ -67,8 +67,8 @@ export function getBonusWinnerEmailTemplate(props: BonusOrderEmailProps): string
         }
         
         .gold-ticket {
-            background: linear-gradient(135deg, #3d2a00 0%, #6b4e00 50%, #b38600 100%);
-            border: 2px solid #ffcc00;
+            background: linear-gradient(135deg, #002244 0%, #0055aa 50%, #008ecc 100%);
+            border: 2px solid #00A5FF;
             border-radius: 12px;
             padding: 30px 20px;
             margin: 0 auto 35px auto;
@@ -90,11 +90,11 @@ export function getBonusWinnerEmailTemplate(props: BonusOrderEmailProps): string
         }
         .gold-ticket::before {
             left: -12px;
-            border-right: 2px solid #ffcc00;
+            border-right: 2px solid #00A5FF;
         }
         .gold-ticket::after {
             right: -12px;
-            border-left: 2px solid #ffcc00;
+            border-left: 2px solid #00A5FF;
         }
 
         .ticket-title {
@@ -116,7 +116,7 @@ export function getBonusWinnerEmailTemplate(props: BonusOrderEmailProps): string
         }
         
         .prize-value {
-            color: #ffcc00;
+            color: #00A5FF;
             font-size: 32px;
             font-weight: bold;
             margin: 5px 0;
@@ -142,7 +142,7 @@ export function getBonusWinnerEmailTemplate(props: BonusOrderEmailProps): string
 
         .instructions {
             background-color: rgba(255, 204, 0, 0.08);
-            border-left: 4px solid #ffcc00;
+            border-left: 4px solid #00A5FF;
             padding: 20px;
             margin-bottom: 35px;
             text-align: left;
@@ -194,7 +194,7 @@ export function getBonusWinnerEmailTemplate(props: BonusOrderEmailProps): string
         <div class="email-header">
             ${props.logoUrl 
                 ? `<img src="${props.logoUrl}" alt="ALESYOWIN Logo">` 
-                : `<h1 style="color: #ffcc00; margin: 0; font-size: 28px; letter-spacing: 1px;">ALESYOWIN</h1>`
+                : `<h1 style="color: #00A5FF; margin: 0; font-size: 28px; letter-spacing: 1px;">ALESYOWIN</h1>`
             }
         </div>
 

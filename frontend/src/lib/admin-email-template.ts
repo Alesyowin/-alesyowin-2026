@@ -55,7 +55,7 @@ export function getAdminOrderEmailTemplate({
                             </td>
                             <!-- Line Total -->
                             <td width="80" valign="middle" align="right">
-                                <div style="color: #d4af37; font-weight: 700; font-size: 14px;">£${Number(product.lineTotal).toFixed(2)}</div>
+                                <div style="color: #00A5FF; font-weight: 700; font-size: 14px;">£${Number(product.lineTotal).toFixed(2)}</div>
                             </td>
                         </tr>
                     </table>
@@ -113,20 +113,20 @@ export function getAdminOrderEmailTemplate({
                     <!-- Main Card -->
                     <tr>
                         <td style="padding: 0 30px 30px 30px;">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #111111; border: 1px solid #d4af37; border-radius: 12px;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #111111; border: 1px solid #00A5FF; border-radius: 12px;">
                                 <tr>
                                     <td style="padding: 35px 25px;">
                                         
                                         <!-- Header Text -->
                                         <div style="color: #ffffff; font-size: 16px; text-align: center; margin-bottom: 25px; line-height: 1.5;">
-                                            <span style="font-weight: bold;">${customerName}</span> a plasat comanda <span style="color: #d4af37; font-weight: bold;">#${orderId}</span> pe ${orderDate}
+                                            <span style="font-weight: bold;">${customerName}</span> a plasat comanda <span style="color: #00A5FF; font-weight: bold;">#${orderId}</span> pe ${orderDate}
                                         </div>
                                         
                                         <!-- View Order Button -->
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 35px;">
                                             <tr>
                                                 <td align="center">
-                                                    <a href="${directusAdminUrl}" target="_blank" style="background-color: #d4af37; color: #000000; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
+                                                    <a href="${directusAdminUrl}" target="_blank" style="background-color: #00A5FF; color: #000000; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">
                                                         View Order
                                                     </a>
                                                 </td>
@@ -152,7 +152,7 @@ export function getAdminOrderEmailTemplate({
                                             </tr>
                                             <tr>
                                                 <td align="right" style="padding: 10px 0; color: #ffffff; font-size: 18px; font-weight: bold;">
-                                                    Total: <span style="color: #d4af37; margin-left: 10px;">£${Number(total).toFixed(2)}</span>
+                                                    Total: <span style="color: #00A5FF; margin-left: 10px;">£${Number(total).toFixed(2)}</span>
                                                 </td>
                                             </tr>
                                         </table>

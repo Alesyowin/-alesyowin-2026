@@ -32,14 +32,14 @@ export default async function EntryListDetailPage({ params }: PageProps) {
         <main className="min-h-screen bg-[#050505] text-white">
             {/* Ambient */}
             <div className="fixed inset-0 z-0 pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#D4AF37] opacity-[0.02] blur-[180px] rounded-full hidden md:block" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00A5FF] opacity-[0.02] blur-[180px] rounded-full hidden md:block" />
             </div>
 
             <div className="relative z-10 max-w-5xl mx-auto px-4 py-16 md:py-24">
 
                 {/* Breadcrumb */}
                 <nav className="mb-8 text-xs uppercase tracking-[0.3em] text-white/30 flex items-center gap-2">
-                    <a href="../entry-list" className="hover:text-[#D4AF37] transition-colors">{t('title')}</a>
+                    <a href="../entry-list" className="hover:text-[#00A5FF] transition-colors">{t('title')}</a>
                     <span>›</span>
                     <span className="text-white/50">{giveaway.title}</span>
                 </nav>
@@ -47,11 +47,11 @@ export default async function EntryListDetailPage({ params }: PageProps) {
                 {/* Event Header */}
                 <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     {/* Image */}
-                    <div className="w-full aspect-[16/9] rounded-sm overflow-hidden border border-[#D4AF37]/10 bg-[#111]">
+                    <div className="w-full aspect-[16/9] rounded-sm overflow-hidden border border-[#00A5FF]/10 bg-[#111]">
                         {imageUrl ? (
                             <img src={imageUrl} alt={giveaway.title} className="w-full h-full object-cover" />
                         ) : (
-                            <div className="w-full h-full flex items-center justify-center text-[#D4AF37]/20 text-7xl">
+                            <div className="w-full h-full flex items-center justify-center text-[#00A5FF]/20 text-7xl">
                                 🏎️
                             </div>
                         )}
@@ -76,15 +76,15 @@ export default async function EntryListDetailPage({ params }: PageProps) {
                             {giveaway.title}
                         </h1>
 
-                        <div className="h-px w-32 bg-gradient-to-r from-[#D4AF37]/60 to-transparent" />
+                        <div className="h-px w-32 bg-gradient-to-r from-[#00A5FF]/60 to-transparent" />
 
                         <div className="grid grid-cols-2 gap-4 mt-2">
-                            <div className="bg-[#0A0A0A] border border-[#D4AF37]/10 rounded-sm p-4 text-center">
-                                <p className="text-[#D4AF37] font-black text-2xl">{giveaway.total_tickets.toLocaleString()}</p>
+                            <div className="bg-[#0A0A0A] border border-[#00A5FF]/10 rounded-sm p-4 text-center">
+                                <p className="text-[#00A5FF] font-black text-2xl">{giveaway.total_tickets.toLocaleString()}</p>
                                 <p className="text-white/40 text-xs uppercase tracking-widest mt-1">{t('totalTickets')}</p>
                             </div>
-                            <div className="bg-[#0A0A0A] border border-[#D4AF37]/10 rounded-sm p-4 text-center">
-                                <p className="text-[#D4AF37] font-black text-2xl">{giveaway.tickets_sold.toLocaleString()}</p>
+                            <div className="bg-[#0A0A0A] border border-[#00A5FF]/10 rounded-sm p-4 text-center">
+                                <p className="text-[#00A5FF] font-black text-2xl">{giveaway.tickets_sold.toLocaleString()}</p>
                                 <p className="text-white/40 text-xs uppercase tracking-widest mt-1">{t('ticketsSold')}</p>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ export default async function EntryListDetailPage({ params }: PageProps) {
                 </div>
 
                 {/* Divider */}
-                <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent mb-12" />
+                <div className="h-px w-full bg-gradient-to-r from-transparent via-[#00A5FF]/20 to-transparent mb-12" />
 
                 {/* Search Section */}
                 <div className="space-y-6">

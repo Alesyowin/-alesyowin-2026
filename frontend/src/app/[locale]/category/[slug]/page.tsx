@@ -47,8 +47,8 @@ export default async function CategoryPage({ params }: PageProps) {
     return (
         <div className="min-h-screen bg-[#050505] pt-24 pb-16 px-4">
             <div className="max-w-7xl mx-auto">
-                <div className="mb-10 border-b border-[#D4AF37]/20 pb-6">
-                    <p className="text-xs uppercase tracking-[0.3em] text-[#D4AF37]/60 mb-2">
+                <div className="mb-10 border-b border-[#00A5FF]/20 pb-6">
+                    <p className="text-xs uppercase tracking-[0.3em] text-[#00A5FF]/60 mb-2">
                         ALESYOWIN &rsaquo; {t('breadcrumb')}
                     </p>
                     <h1
@@ -86,7 +86,7 @@ export default async function CategoryPage({ params }: PageProps) {
                         })}
                     </div>
                 ) : (
-                    <div className="bg-[#0A0A0A] border border-[#D4AF37]/10 rounded-lg p-12 text-center">
+                    <div className="bg-[#0A0A0A] border border-[#00A5FF]/10 rounded-lg p-12 text-center">
                         <span className="text-4xl block mb-4">🏆</span>
                         <h2 className="text-xl font-bold text-white mb-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             {t('noActive', { category: pageTitle.toLowerCase() })}

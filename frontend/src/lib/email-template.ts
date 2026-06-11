@@ -103,8 +103,8 @@ export function getOtpEmailTemplate({
                                         <!-- Cod OTP -->
                                         <table border="0" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
                                             <tr>
-                                                <td align="center" style="background-color: #000000; border: 1px solid #d4af37; border-radius: 8px; padding: 15px 30px;">
-                                                    <div style="font-size: 40px; font-weight: 800; letter-spacing: 8px; color: #d4af37; margin: 0; text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);">
+                                                <td align="center" style="background-color: #000000; border: 1px solid #00A5FF; border-radius: 8px; padding: 15px 30px;">
+                                                    <div style="font-size: 40px; font-weight: 800; letter-spacing: 8px; color: #00A5FF; margin: 0; text-shadow: 0 0 15px rgba(0,165,255, 0.3);">
                                                         ${code}
                                                     </div>
                                                 </td>

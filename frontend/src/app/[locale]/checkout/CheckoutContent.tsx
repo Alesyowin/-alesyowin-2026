@@ -106,8 +106,8 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Left side: Customer Form */}
-                <div className="bg-[#0A0A0A] border border-[#D4AF37]/20 rounded-sm p-6 md:p-8">
-                    <h2 className="text-xl font-bold text-[#D4AF37] uppercase tracking-widest mb-6">
+                <div className="bg-[#0A0A0A] border border-[#00A5FF]/20 rounded-sm p-6 md:p-8">
+                    <h2 className="text-xl font-bold text-[#00A5FF] uppercase tracking-widest mb-6">
                         {t('formTitle')}
                     </h2>
 
@@ -123,7 +123,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                     name="firstName"
                                     value={formData.firstName}
                                     onChange={handleChange}
-                                    className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                    className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                 />
                             </div>
                             <div>
@@ -136,7 +136,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                     name="lastName"
                                     value={formData.lastName}
                                     onChange={handleChange}
-                                    className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                    className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                 />
                             </div>
                         </div>
@@ -151,7 +151,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                             />
                         </div>
 
@@ -165,13 +165,13 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                             />
                         </div>
 
                         {/* Billing Section */}
-                        <div className="pt-6 border-t border-[#D4AF37]/20 mt-8 mb-6">
-                            <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-widest mb-6">
+                        <div className="pt-6 border-t border-[#00A5FF]/20 mt-8 mb-6">
+                            <h3 className="text-lg font-bold text-[#00A5FF] uppercase tracking-widest mb-6">
                                 {t('billingTitle')}
                             </h3>
 
@@ -186,7 +186,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                         name="address"
                                         value={formData.address}
                                         onChange={handleChange}
-                                        className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                        className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                     />
                                 </div>
                                 
@@ -201,7 +201,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                             name="city"
                                             value={formData.city}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                         />
                                     </div>
                                     <div>
@@ -214,7 +214,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                             name="county"
                                             value={formData.county}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                         />
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                             name="postal_code"
                                             value={formData.postal_code}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                         />
                                     </div>
                                     <div>
@@ -243,7 +243,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                             name="country"
                                             value={formData.country}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                         />
                                     </div>
                                 </div>
@@ -258,11 +258,11 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                 transition-all duration-300 relative overflow-hidden btn-gold-safe mt-6
                                 ${isSubmitting || items.length === 0
                                     ? 'bg-[#222] text-white/30 cursor-not-allowed'
-                                    : 'bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:scale-[1.02] flex items-center justify-center'
+                                    : 'bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] btn-gold-safe text-black shadow-[0_0_20px_rgba(0,165,255,0.3)] hover:scale-[1.02] flex items-center justify-center'
                                 }
                             `}
                             style={{ 
-                                backgroundColor: '#D4AF37',
+                                backgroundColor: '#00A5FF',
                                 opacity: 1,
                                 visibility: 'visible',
                                 zIndex: 999,
@@ -276,7 +276,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                 </div>
 
                 {/* Right side: Order Summary */}
-                <div className="bg-[#050505] border border-[#D4AF37]/10 rounded-sm p-6 md:p-8 h-fit sticky top-28">
+                <div className="bg-[#050505] border border-[#00A5FF]/10 rounded-sm p-6 md:p-8 h-fit sticky top-28">
                     <h2 className="text-xl font-bold text-white uppercase tracking-widest mb-6">
                         {t('summary')}
                     </h2>
@@ -286,13 +286,13 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                             <p className="text-white/40">{tCart('empty')}</p>
                         ) : (
                             items.map((item, index) => (
-                                <div key={`${item.id}-${index}`} className="flex justify-between items-center py-4 border-b border-[#D4AF37]/10">
+                                <div key={`${item.id}-${index}`} className="flex justify-between items-center py-4 border-b border-[#00A5FF]/10">
                                     <div className="flex items-center gap-4 flex-1">
-                                        <div className="w-12 h-12 bg-[#111] border border-[#D4AF37]/20 flex items-center justify-center p-1 rounded-sm shrink-0 hidden sm:flex">
+                                        <div className="w-12 h-12 bg-[#111] border border-[#00A5FF]/20 flex items-center justify-center p-1 rounded-sm shrink-0 hidden sm:flex">
                                             {item.image ? (
                                                 <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                                             ) : (
-                                                <span className="text-[#D4AF37] text-xs">IMG</span>
+                                                <span className="text-[#00A5FF] text-xs">IMG</span>
                                             )}
                                         </div>
                                         <div className="min-w-0 flex-1">
@@ -300,7 +300,7 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                                             <p className="text-white/50 text-xs mt-1">{t('qty')}: {item.quantity}</p>
                                         </div>
                                     </div>
-                                    <div className="text-[#D4AF37] font-bold ml-4 shrink-0">
+                                    <div className="text-[#00A5FF] font-bold ml-4 shrink-0">
                                         £{Number(item.price * item.quantity).toFixed(2)}
                                     </div>
                                 </div>
@@ -308,9 +308,9 @@ export default function CheckoutContent({ clientSecret }: { clientSecret: string
                         )}
                     </div>
 
-                    <div className="flex justify-between items-center pt-4 border-t border-[#D4AF37]/30">
+                    <div className="flex justify-between items-center pt-4 border-t border-[#00A5FF]/30">
                         <span className="text-white font-bold uppercase tracking-widest">{tCart('total')}</span>
-                        <span className="text-3xl font-black text-[#D4AF37]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <span className="text-3xl font-black text-[#00A5FF]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             £{Number(total).toFixed(2)}
                         </span>
                     </div>

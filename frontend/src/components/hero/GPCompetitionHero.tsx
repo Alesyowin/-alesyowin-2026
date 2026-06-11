@@ -83,12 +83,12 @@ const ALESYOWINHero = () => {
                 {animationState === 'impact' && (
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                         {/* Impact Ring */}
-                        <div className="absolute w-20 h-20 border-2 border-[#f0d060] rounded-full animate-impact-ring opacity-0" />
+                        <div className="absolute w-20 h-20 border-2 border-[#3498db] rounded-full animate-impact-ring opacity-0" />
                         {/* Sparks Simulation */}
                         {[...Array(12)].map((_, i) => (
                             <div
                                 key={i}
-                                className="absolute w-1 h-8 bg-gradient-to-t from-transparent to-[#f0d060] rounded-full animate-spark"
+                                className="absolute w-1 h-8 bg-gradient-to-t from-transparent to-[#3498db] rounded-full animate-spark"
                                 style={{
                                     transform: `rotate(${i * 30}deg) translateY(-100px)`,
                                     animationDelay: '0s'
@@ -113,7 +113,7 @@ const ALESYOWINHero = () => {
                     />
                     {/* Gold Glow Overlay */}
                     <div
-                        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f0d060]/20 to-transparent animate-shimmer pointer-events-none mix-blend-overlay"
+                        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3498db]/20 to-transparent animate-shimmer pointer-events-none mix-blend-overlay"
                     />
                 </div>
             </div>
@@ -123,10 +123,10 @@ const ALESYOWINHero = () => {
                 className={`mt-12 text-center transition-all duration-1000 delay-500 flex flex-col items-center ${['impact', 'floating'].includes(animationState) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}
             >
-                <h2 className="text-4xl md:text-6xl font-bold tracking-[0.2em] text-[#f0d060] uppercase mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style={{ fontFamily: "'Cinzel Decorative', serif" }}>
+                <h2 className="text-4xl md:text-6xl font-bold tracking-[0.2em] text-[#3498db] uppercase mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style={{ fontFamily: "'Cinzel Decorative', serif" }}>
                     ALESYOWIN
                 </h2>
-                <div className="h-[2px] w-48 bg-gradient-to-r from-transparent via-[#c8a84b] to-transparent mb-4" />
+                <div className="h-[2px] w-48 bg-gradient-to-r from-transparent via-[#00A5FF] to-transparent mb-4" />
                 <h3 className="text-xl md:text-2xl font-light tracking-[0.5em] text-white/80 uppercase" style={{ fontFamily: "'Cinzel', serif" }}>
                     LUXURY GIVEAWAY
                 </h3>
@@ -136,7 +136,7 @@ const ALESYOWINHero = () => {
             {animationState === 'floating' && (
                 <button
                     onClick={handleReplay}
-                    className="absolute bottom-10 px-6 py-2 border border-[#8b6914] text-[#c8a84b] text-xs tracking-widest uppercase hover:bg-[#8b6914] hover:text-white transition-all duration-300 opacity-60 hover:opacity-100"
+                    className="absolute bottom-10 px-6 py-2 border border-[#008ecc] text-[#00A5FF] text-xs tracking-widest uppercase hover:bg-[#008ecc] hover:text-white transition-all duration-300 opacity-60 hover:opacity-100"
                 >
                     ↺ Replay Animation
                 </button>

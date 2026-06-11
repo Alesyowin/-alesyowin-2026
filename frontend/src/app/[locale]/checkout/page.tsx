@@ -308,8 +308,8 @@ export default function CheckoutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                 {/* Coloana stânga: Formular date client */}
-                <div className="bg-[#0A0A0A] border border-[#D4AF37]/20 rounded-sm p-6 md:p-8">
-                    <h2 className="text-xl font-bold text-[#D4AF37] uppercase tracking-widest mb-6">
+                <div className="bg-[#0A0A0A] border border-[#00A5FF]/20 rounded-sm p-6 md:p-8">
+                    <h2 className="text-xl font-bold text-[#00A5FF] uppercase tracking-widest mb-6">
                         {t('formTitle')}
                     </h2>
 
@@ -325,7 +325,7 @@ export default function CheckoutPage() {
                                     name="firstName"
                                     value={formData.firstName}
                                     onChange={handleChange}
-                                    className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                    className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                 />
                             </div>
                             <div>
@@ -338,7 +338,7 @@ export default function CheckoutPage() {
                                     name="lastName"
                                     value={formData.lastName}
                                     onChange={handleChange}
-                                    className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                    className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                 />
                             </div>
                         </div>
@@ -353,7 +353,7 @@ export default function CheckoutPage() {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                             />
                         </div>
 
@@ -367,13 +367,13 @@ export default function CheckoutPage() {
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                             />
                         </div>
 
                         {/* Adresa de facturare */}
-                        <div className="pt-6 border-t border-[#D4AF37]/20 mt-8 mb-6">
-                            <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-widest mb-6">
+                        <div className="pt-6 border-t border-[#00A5FF]/20 mt-8 mb-6">
+                            <h3 className="text-lg font-bold text-[#00A5FF] uppercase tracking-widest mb-6">
                                 {t('billingTitle')}
                             </h3>
 
@@ -388,7 +388,7 @@ export default function CheckoutPage() {
                                         name="address"
                                         value={formData.address}
                                         onChange={handleChange}
-                                        className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                        className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                     />
                                 </div>
 
@@ -403,7 +403,7 @@ export default function CheckoutPage() {
                                             name="city"
                                             value={formData.city}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                         />
                                     </div>
                                     <div>
@@ -416,7 +416,7 @@ export default function CheckoutPage() {
                                             name="county"
                                             value={formData.county}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                         />
                                     </div>
                                 </div>
@@ -432,7 +432,7 @@ export default function CheckoutPage() {
                                             name="postal_code"
                                             value={formData.postal_code}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                         />
                                     </div>
                                     <div>
@@ -445,7 +445,7 @@ export default function CheckoutPage() {
                                             name="country"
                                             value={formData.country}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#D4AF37]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-colors"
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
                                         />
                                     </div>
                                 </div>
@@ -454,13 +454,13 @@ export default function CheckoutPage() {
 
                         {/* Secțiunea de plată — redirect către Paytriot Hosted Payment Page */}
                         {total > 0 && (
-                            <div className="pt-6 border-t border-[#D4AF37]/20 mt-2">
-                                <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-widest mb-4">
+                            <div className="pt-6 border-t border-[#00A5FF]/20 mt-2">
+                                <h3 className="text-lg font-bold text-[#00A5FF] uppercase tracking-widest mb-4">
                                     💳 {t('paymentTitle') || 'Payment Details'}
                                 </h3>
-                                <div className="bg-[#111] border border-[#D4AF37]/20 rounded-sm p-5 flex items-center gap-4">
+                                <div className="bg-[#111] border border-[#00A5FF]/20 rounded-sm p-5 flex items-center gap-4">
                                     <div className="flex-shrink-0">
-                                        <svg className="w-8 h-8 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                                        <svg className="w-8 h-8 text-[#00A5FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                                         </svg>
                                     </div>
@@ -491,7 +491,7 @@ export default function CheckoutPage() {
                                 transition-all duration-300 mt-8
                                 ${isSubmitting || items.length === 0 || items.some(i => i.minTickets && i.quantity < i.minTickets)
                                     ? 'bg-[#222] text-white/30 cursor-not-allowed'
-                                    : 'bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] text-black shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:scale-[1.02]'
+                                    : 'bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] text-black shadow-[0_0_20px_rgba(0,165,255,0.3)] hover:scale-[1.02]'
                                 }
                             `}
                         >
@@ -509,7 +509,7 @@ export default function CheckoutPage() {
                 </div>
 
                 {/* Coloana dreapta: Sumar comandă */}
-                <div className="bg-[#0A0A0A] border border-[#D4AF37]/20 rounded-sm p-6 md:p-8 h-fit sticky top-28">
+                <div className="bg-[#0A0A0A] border border-[#00A5FF]/20 rounded-sm p-6 md:p-8 h-fit sticky top-28">
                     <h2 className="text-xl font-bold text-white uppercase tracking-widest mb-6">
                         {t('summary')}
                     </h2>
@@ -519,13 +519,13 @@ export default function CheckoutPage() {
                             <p className="text-white/40">{tCart('empty')}</p>
                         ) : (
                             items.map((item, index) => (
-                                <div key={`${item.id}-${index}`} className="flex justify-between items-start py-4 border-b border-[#D4AF37]/10 gap-4">
+                                <div key={`${item.id}-${index}`} className="flex justify-between items-start py-4 border-b border-[#00A5FF]/10 gap-4">
                                     <div className="flex items-start gap-4 flex-1 min-w-0">
-                                        <div className="w-12 h-12 bg-[#111] border border-[#D4AF37]/20 flex items-center justify-center p-1 rounded-sm shrink-0 hidden sm:flex">
+                                        <div className="w-12 h-12 bg-[#111] border border-[#00A5FF]/20 flex items-center justify-center p-1 rounded-sm shrink-0 hidden sm:flex">
                                             {item.image ? (
                                                 <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                                             ) : (
-                                                <span className="text-[#D4AF37] text-xs">IMG</span>
+                                                <span className="text-[#00A5FF] text-xs">IMG</span>
                                             )}
                                         </div>
                                         <div className="min-w-0 flex-1">
@@ -535,7 +535,7 @@ export default function CheckoutPage() {
                                             <p className="text-white/50 text-xs mt-1">{t('qty')}: {item.quantity}</p>
                                         </div>
                                     </div>
-                                    <div className="text-[#D4AF37] font-bold shrink-0 text-right">
+                                    <div className="text-[#00A5FF] font-bold shrink-0 text-right">
                                         £{Number(item.price * item.quantity).toFixed(2)}
                                     </div>
                                 </div>
@@ -543,15 +543,15 @@ export default function CheckoutPage() {
                         )}
                     </div>
 
-                    <div className="flex justify-between items-center pt-4 border-t border-[#D4AF37]/30">
+                    <div className="flex justify-between items-center pt-4 border-t border-[#00A5FF]/30">
                         <span className="text-white font-bold uppercase tracking-widest">{tCart('total')}</span>
-                        <span className="text-3xl font-black text-[#D4AF37]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                        <span className="text-3xl font-black text-[#00A5FF]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                             £{Number(total).toFixed(2)}
                         </span>
                     </div>
 
                     {/* Badge procesator plăți */}
-                    <div className="mt-6 pt-6 border-t border-[#D4AF37]/10">
+                    <div className="mt-6 pt-6 border-t border-[#00A5FF]/10">
                         <div className="flex items-center justify-center gap-3">
                             <div className="flex items-center gap-1 text-white/30">
                                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

@@ -54,7 +54,7 @@ export function getInstantWinnerEmailTemplate(props: InstantOrderEmailProps): st
             text-align: center;
         }
         .greeting {
-            color: #ffda6b;
+            color: #66ccff;
             font-size: 22px;
             margin-top: 0;
             margin-bottom: 20px;
@@ -68,7 +68,7 @@ export function getInstantWinnerEmailTemplate(props: InstantOrderEmailProps): st
         
         .gold-ticket {
             background: linear-gradient(135deg, #2a2200 0%, #4d3f00 50%, #806b00 100%);
-            border: 2px solid #ffd700;
+            border: 2px solid #00A5FF;
             border-radius: 10px;
             padding: 30px 20px;
             margin: 0 auto 35px auto;
@@ -90,11 +90,11 @@ export function getInstantWinnerEmailTemplate(props: InstantOrderEmailProps): st
         }
         .gold-ticket::before {
             left: -10px;
-            border-right: 2px solid #ffd700;
+            border-right: 2px solid #00A5FF;
         }
         .gold-ticket::after {
             right: -10px;
-            border-left: 2px solid #ffd700;
+            border-left: 2px solid #00A5FF;
         }
 
         .ticket-title {
@@ -115,7 +115,7 @@ export function getInstantWinnerEmailTemplate(props: InstantOrderEmailProps): st
         }
         
         .prize-value {
-            color: #ffd700;
+            color: #00A5FF;
             font-size: 28px;
             font-weight: bold;
             margin: 5px 0;
@@ -140,7 +140,7 @@ export function getInstantWinnerEmailTemplate(props: InstantOrderEmailProps): st
 
         .instructions {
             background-color: rgba(255, 215, 0, 0.05);
-            border-left: 4px solid #ffd700;
+            border-left: 4px solid #00A5FF;
             padding: 15px 20px;
             margin-bottom: 30px;
             text-align: left;
@@ -190,7 +190,7 @@ export function getInstantWinnerEmailTemplate(props: InstantOrderEmailProps): st
         <div class="email-header">
             ${props.logoUrl 
                 ? `<img src="${props.logoUrl}" alt="ALESYOWIN Logo">` 
-                : `<h1 style="color: #ffd700; margin: 0;">ALESYOWIN</h1>`
+                : `<h1 style="color: #00A5FF; margin: 0;">ALESYOWIN</h1>`
             }
         </div>
 

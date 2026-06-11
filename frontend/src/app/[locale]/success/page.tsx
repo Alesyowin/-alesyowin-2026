@@ -102,7 +102,7 @@ function SuccessContent() {
             {instantWin?.won && (
                 <div className="w-full max-w-2xl mb-8 relative overflow-hidden">
                     {/* Fundal auriu animat */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37] via-[#B8932C] to-[#D4AF37] animate-pulse opacity-90 rounded-xl" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#00A5FF] via-[#B8932C] to-[#00A5FF] animate-pulse opacity-90 rounded-xl" />
                     <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 rounded-xl" />
 
                     {/* Efect de strălucire în colțuri */}
@@ -136,10 +136,10 @@ function SuccessContent() {
             )}
 
             {/* Card principal de succes */}
-            <div className="bg-[#0A0A0A] border border-[#D4AF37]/30 p-12 rounded-sm shadow-[0_0_40px_rgba(212,175,55,0.1)] flex flex-col items-center max-w-lg w-full text-center">
-                <div className="w-24 h-24 bg-[#111] rounded-full border border-[#D4AF37]/50 flex items-center justify-center mb-8 relative">
-                    <div className="absolute inset-0 bg-[#D4AF37]/10rounded-full animate-ping"></div>
-                    <CheckCircle2 size={48} className="text-[#D4AF37] relative z-10" />
+            <div className="bg-[#0A0A0A] border border-[#00A5FF]/30 p-12 rounded-sm shadow-[0_0_40px_rgba(0,165,255,0.1)] flex flex-col items-center max-w-lg w-full text-center">
+                <div className="w-24 h-24 bg-[#111] rounded-full border border-[#00A5FF]/50 flex items-center justify-center mb-8 relative">
+                    <div className="absolute inset-0 bg-[#00A5FF]/10rounded-full animate-ping"></div>
+                    <CheckCircle2 size={48} className="text-[#00A5FF] relative z-10" />
                 </div>
 
                 <h1 className="text-3xl font-black text-white uppercase tracking-widest mb-4"
@@ -149,7 +149,7 @@ function SuccessContent() {
 
                 {/* Indicator verificare în curs */}
                 {checking && (
-                    <div className="flex items-center gap-2 mb-4 text-[#D4AF37]/60 text-sm">
+                    <div className="flex items-center gap-2 mb-4 text-[#00A5FF]/60 text-sm">
                         <Sparkles size={16} className="animate-spin" />
                         <span>Se verifică premiile instant...</span>
                     </div>
@@ -161,7 +161,7 @@ function SuccessContent() {
 
                 <Link
                     href="/entry-list"
-                    className="inline-block py-4 px-8 bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black font-black uppercase tracking-[0.2em] rounded-sm hover:scale-[1.02] transition-transform shadow-[0_0_20px_rgba(212,175,55,0.3)] w-full"
+                    className="inline-block py-4 px-8 bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] btn-gold-safe text-black font-black uppercase tracking-[0.2em] rounded-sm hover:scale-[1.02] transition-transform shadow-[0_0_20px_rgba(0,165,255,0.3)] w-full"
                 >
                     {t('checkTickets')}
                 </Link>
@@ -175,7 +175,7 @@ export default function SuccessPage() {
     return (
         <Suspense fallback={
             <div className="min-h-[80vh] flex items-center justify-center">
-                <div className="w-8 h-8 border-2 border-[#D4AF37] border-t-transparent rounded-full animate-spin" />
+                <div className="w-8 h-8 border-2 border-[#00A5FF] border-t-transparent rounded-full animate-spin" />
             </div>
         }>
             <SuccessContent />

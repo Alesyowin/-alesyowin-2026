@@ -45,8 +45,8 @@ export function getOrderEmailTemplate({
                 <td width="20%" align="center" valign="middle" style="padding: 3px;">
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;">
                         <tr>
-                            <td align="center" style="background-color: #000000; border: 1px solid #d4af37; border-radius: 6px; padding: 6px 1px;">
-                                <div style="color: #d4af37; font-weight: 800; font-size: 11px; letter-spacing: 0px; line-height: 1; word-break: break-all;">${num}</div>
+                            <td align="center" style="background-color: #000000; border: 1px solid #00A5FF; border-radius: 6px; padding: 6px 1px;">
+                                <div style="color: #00A5FF; font-weight: 800; font-size: 11px; letter-spacing: 0px; line-height: 1; word-break: break-all;">${num}</div>
                             </td>
                         </tr>
                     </table>
@@ -170,7 +170,7 @@ export function getOrderEmailTemplate({
                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
                                                             <td style="color: #666; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">${orderNumberLabel}</td>
-                                                            <td align="right" style="color: #d4af37; font-weight: bold; font-size: 16px;">#${orderId}</td>
+                                                            <td align="right" style="color: #00A5FF; font-weight: bold; font-size: 16px;">#${orderId}</td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="2" style="padding-top: 10px;">

@@ -136,7 +136,7 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
             {/* Search Input */}
             <form onSubmit={handleSubmit} className="max-w-2xl mx-auto flex flex-col sm:flex-row gap-3">
                 <div className="relative flex-1 group">
-                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#D4AF37]/40 group-focus-within:text-[#D4AF37] transition-colors pointer-events-none" />
+                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#00A5FF]/40 group-focus-within:text-[#00A5FF] transition-colors pointer-events-none" />
                     <input
                         type="text"
                         value={query}
@@ -148,9 +148,9 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                         placeholder={t('searchPlaceholder')}
                         className="
                             w-full pl-12 pr-4 py-4 text-base
-                            bg-[#0A0A0A] border border-[#D4AF37]/20 rounded-sm
+                            bg-[#0A0A0A] border border-[#00A5FF]/20 rounded-sm
                             text-white placeholder-white/20
-                            focus:outline-none focus:border-[#D4AF37]/60 focus:ring-1 focus:ring-[#D4AF37]/10
+                            focus:outline-none focus:border-[#00A5FF]/60 focus:ring-1 focus:ring-[#00A5FF]/10
                             transition-all duration-300
                         "
                         style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -164,7 +164,7 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                         transition-all duration-500 whitespace-nowrap
                         ${loading || query.trim().length < 1
                             ? 'bg-white/5 text-white/10 border border-white/5 cursor-not-allowed'
-                            : 'bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black shadow-[0_4px_15px_rgba(212,175,55,0.2)] hover:shadow-[0_0_25px_rgba(212,175,55,0.4)] hover:scale-[1.02] active:scale-[0.98]'
+                            : 'bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] btn-gold-safe text-black shadow-[0_4px_15px_rgba(0,165,255,0.2)] hover:shadow-[0_0_25px_rgba(0,165,255,0.4)] hover:scale-[1.02] active:scale-[0.98]'
                         }
                     `}
                 >
@@ -180,14 +180,14 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
             {isSearchEmpty && (
                 <div className="max-w-4xl mx-auto mt-12 animate-in fade-in duration-500">
                     {loadingAll ? (
-                        <div className="text-center py-12 text-[#D4AF37]/60">
+                        <div className="text-center py-12 text-[#00A5FF]/60">
                             <Loader2 className="w-8 h-8 animate-spin mx-auto" />
                         </div>
                     ) : (
-                        <div className="bg-[#0A0A0A] border border-[#D4AF37]/20 rounded-md overflow-hidden shadow-2xl">
+                        <div className="bg-[#0A0A0A] border border-[#00A5FF]/20 rounded-md overflow-hidden shadow-2xl">
                             <div className="overflow-x-auto">
                                 <table className="w-full text-left text-sm text-white">
-                                    <thead className="bg-[#111] border-b border-[#D4AF37]/20 text-[#D4AF37] uppercase tracking-wider text-[11px] font-black">
+                                    <thead className="bg-[#111] border-b border-[#00A5FF]/20 text-[#00A5FF] uppercase tracking-wider text-[11px] font-black">
                                         <tr>
                                             <th className="px-6 py-4 rounded-tl-md">Ticket Number</th>
                                             <th className="px-6 py-4">Name</th>
@@ -198,7 +198,7 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                                     <tbody className="divide-y divide-white/5">
                                         {allTickets.map((ticket) => (
                                             <tr key={ticket.id} className="hover:bg-white/5 transition-colors group">
-                                                <td className="px-6 py-4 font-black tracking-widest text-[#D4AF37] whitespace-nowrap">
+                                                <td className="px-6 py-4 font-black tracking-widest text-[#00A5FF] whitespace-nowrap">
                                                     #{ticket.ticket_number}
                                                 </td>
                                                 <td className="px-6 py-4 text-white/80 truncate max-w-[200px] sm:max-w-xs font-medium">
@@ -225,11 +225,11 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
 
                             {/* Paginare Simplă numerică */}
                             {totalPages > 1 && (
-                                <div className="flex items-center justify-center gap-2 p-4 border-t border-[#D4AF37]/10 bg-[#050505]">
+                                <div className="flex items-center justify-center gap-2 p-4 border-t border-[#00A5FF]/10 bg-[#050505]">
                                     <button
                                         onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                                         disabled={currentPage === 1}
-                                        className="w-8 h-8 flex items-center justify-center rounded-sm text-[#D4AF37] hover:bg-[#D4AF37]/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                                        className="w-8 h-8 flex items-center justify-center rounded-sm text-[#00A5FF] hover:bg-[#00A5FF]/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                                     >
                                         &lt;
                                     </button>
@@ -241,7 +241,7 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                                             className={`
                                                 w-8 h-8 flex items-center justify-center rounded-sm text-xs font-bold transition-colors
                                                 ${currentPage === num 
-                                                    ? 'bg-[#D4AF37] text-black shadow-[0_0_10px_rgba(212,175,55,0.4)]' 
+                                                    ? 'bg-[#00A5FF] text-black shadow-[0_0_10px_rgba(0,165,255,0.4)]' 
                                                     : 'text-white/60 hover:bg-white/10 hover:text-white'
                                                 }
                                             `}
@@ -253,7 +253,7 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                                     <button
                                         onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                                         disabled={currentPage === totalPages}
-                                        className="w-8 h-8 flex items-center justify-center rounded-sm text-[#D4AF37] hover:bg-[#D4AF37]/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                                        className="w-8 h-8 flex items-center justify-center rounded-sm text-[#00A5FF] hover:bg-[#00A5FF]/10 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                                     >
                                         &gt;
                                     </button>
@@ -269,7 +269,7 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                 <div className="max-w-2xl mx-auto animate-in fade-in duration-500">
                     {loading && (
                         <div className="text-center py-12 text-white/40 space-y-3">
-                            <Loader2 className="w-8 h-8 animate-spin mx-auto text-[#D4AF37]/60" />
+                            <Loader2 className="w-8 h-8 animate-spin mx-auto text-[#00A5FF]/60" />
                             <p className="text-sm">{t('searching')}</p>
                         </div>
                     )}
@@ -304,7 +304,7 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                                         <div>
                                             <p className="text-white font-semibold">
                                                 {t('ticketsFoundFor')}{' '}
-                                                <span className="text-[#D4AF37]">"{query}"</span>
+                                                <span className="text-[#00A5FF]">"{query}"</span>
                                             </p>
                                             {results.tickets[0]?.client_name && (
                                                 <p className="text-white/40 text-xs mt-0.5">
@@ -312,7 +312,7 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                                                 </p>
                                             )}
                                         </div>
-                                        <span className="px-3 py-1 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-full text-[#D4AF37] text-sm font-bold">
+                                        <span className="px-3 py-1 bg-[#00A5FF]/10 border border-[#00A5FF]/30 rounded-full text-[#00A5FF] text-sm font-bold">
                                             {t('ticketCount', { count: results.tickets.length })}
                                         </span>
                                     </div>
@@ -324,8 +324,8 @@ export default function EntryListSearch({ giveawayId }: EntryListSearchProps) {
                                                 key={ticket.id}
                                                 className="
                                                     relative flex flex-col items-center justify-center py-6 px-1
-                                                    bg-gradient-to-b from-[#EFD584] via-[#D4AF37] to-[#B38D22]
-                                                    rounded-md shadow-[0_0_15px_rgba(212,175,55,0.3)]
+                                                    bg-gradient-to-b from-[#3498db] via-[#00A5FF] to-[#008ecc]
+                                                    rounded-md shadow-[0_0_15px_rgba(0,165,255,0.3)]
                                                     cursor-default transition-transform hover:scale-105
                                                 "
                                             >

@@ -76,7 +76,7 @@ const ALESYOWINHeroV2 = () => {
                     {[...Array(25)].map((_, i) => (
                         <div
                             key={`speed-${i}`}
-                            className="absolute h-[2px] bg-gradient-to-r from-transparent via-[#f0d060] to-transparent animate-speed-line opacity-70"
+                            className="absolute h-[2px] bg-gradient-to-r from-transparent via-[#3498db] to-transparent animate-speed-line opacity-70"
                             style={{
                                 top: `${Math.random() * 100}%`,
                                 left: `${Math.random() * 100}%`,
@@ -120,13 +120,13 @@ const ALESYOWINHeroV2 = () => {
                         {/* Impact Flash */}
                         <div className="absolute w-full h-full bg-white animate-flash opacity-0 mix-blend-overlay rounded-full blur-3xl" />
                         {/* Massive Shockwave */}
-                        <div className="absolute w-20 h-20 border-4 border-[#f0d060] rounded-full animate-shockwave opacity-0" />
+                        <div className="absolute w-20 h-20 border-4 border-[#3498db] rounded-full animate-shockwave opacity-0" />
 
                         {/* Directional Sparks */}
                         {[...Array(30)].map((_, i) => (
                             <div
                                 key={`spark-${i}`}
-                                className="absolute w-1.5 h-16 bg-gradient-to-t from-transparent via-[#f0d060] to-white rounded-full animate-aggressive-spark"
+                                className="absolute w-1.5 h-16 bg-gradient-to-t from-transparent via-[#3498db] to-white rounded-full animate-aggressive-spark"
                                 style={{
                                     transform: `rotate(${i * 12}deg) translateY(-120px)`,
                                     animationDelay: `${Math.random() * 0.15}s`
@@ -151,7 +151,7 @@ const ALESYOWINHeroV2 = () => {
                     />
                     {/* Fiery Glow Overlay */}
                     <div
-                        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f0d060]/40 to-transparent animate-shimmer-fast pointer-events-none mix-blend-color-dodge"
+                        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#3498db]/40 to-transparent animate-shimmer-fast pointer-events-none mix-blend-color-dodge"
                     />
                 </div>
             </div>
@@ -167,7 +167,7 @@ const ALESYOWINHeroV2 = () => {
                 >
                     ALESYOWIN
                 </h2>
-                <div className="h-1 w-48 md:w-64 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mb-4 opacity-80" />
+                <div className="h-1 w-48 md:w-64 bg-gradient-to-r from-transparent via-[#00A5FF] to-transparent mb-4 opacity-80" />
                 <h3
                     className="text-lg md:text-3xl font-semibold tracking-[0.4em] text-white/90 uppercase mb-8"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -179,9 +179,9 @@ const ALESYOWINHeroV2 = () => {
                 <div className={`transition-opacity duration-700 ${isFloating ? 'opacity-100' : 'opacity-0'}`}>
                     <button
                         onClick={handleScrollToProducts}
-                        className="px-6 py-2 md:px-8 md:py-3 bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black text-xs md:text-sm tracking-[0.2em] uppercase font-bold hover:shadow-[0_0_25px_rgba(212,175,55,0.4)] transition-all duration-300 rounded-sm hover:scale-105 btn-gold-safe"
+                        className="px-6 py-2 md:px-8 md:py-3 bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] btn-gold-safe text-black text-xs md:text-sm tracking-[0.2em] uppercase font-bold hover:shadow-[0_0_25px_rgba(0,165,255,0.4)] transition-all duration-300 rounded-sm hover:scale-105 btn-gold-safe"
                         style={{ 
-                            backgroundColor: '#D4AF37',
+                            backgroundColor: '#00A5FF',
                             opacity: 1,
                             visibility: 'visible',
                             zIndex: 999,
