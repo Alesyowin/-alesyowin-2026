@@ -48,7 +48,7 @@
     "errorProcessing": "Error al procesar el pedido",
     "qty": "Cant",
     "paymentTitle": "Datos de Pago",
-    "secureRedirect": "Serás redirigido/a de forma segura a nuestro proveedor de pagos para completar tu compra.",
+    "secureRedirect": "Serás redirigido/a de forma segura a Stripe para completar tu compra.",
     "cardNumber": "Número de Tarjeta",
     "expiry": "Fecha de Vencimiento",
     "billingTitle": "Dirección de facturación",

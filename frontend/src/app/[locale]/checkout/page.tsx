@@ -212,54 +212,24 @@ export default function CheckoutPage() {
                 return;
             }
 
-            // --- PASUL 2: Obținem câmpurile semnate de la server pentru Hosted Payment Page ---
-            // Includem tokenul secret generat la crearea comenzii pentru a valida callback-ul
-            const redirectURL = `${window.location.origin}/api/payment-callback?orderId=${data.orderId}&locale=${locale}&sec=${data.cbSecret}`;
+            // --- PASUL 2: Stripe Checkout ---
+            console.log(`[Checkout] Creăm sesiunea Stripe...`);
 
-            console.log(`[Checkout] Cerăm semnătura pentru Hosted Payment Page...`);
-
-            const formResponse = await fetch('/api/payment-form-data', {
+            const stripeResponse = await fetch('/api/stripe/checkout', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     orderId: data.orderId,
-                    amount: total,
-                    redirectURL: redirectURL,
-                    // Date client pentru pre-completarea paginii de plată Paytriot
-                    customerName: `${formData.firstName} ${formData.lastName}`.trim(),
-                    customerEmail: formData.email,
-                    customerPhone: formData.phone,
-                    customerAddress: formData.address,
-                    customerPostcode: formData.postal_code,
-                    // Țara clientului — folosită pentru conversia telefonului în format internațional
-                    customerCountry: formData.country,
                 }),
             });
 
-            const formResult = await formResponse.json();
+            const stripeResult = await stripeResponse.json();
 
-            if (!formResponse.ok) {
-                throw new Error(formResult.error || 'Failed to prepare payment');
+            if (!stripeResponse.ok || !stripeResult.url) {
+                throw new Error(stripeResult.error || 'Failed to create Stripe session');
             }
 
-            console.log(`[Checkout] Semnătură primită, redirectăm către Paytriot...`);
-
-            // --- PASUL 3: Construim formularul HTML ascuns și îl trimitem automat ---
-            const form = document.createElement('form');
-            form.method = 'POST';
-            form.action = 'https://gateway.paytriot.co.uk/paymentform/';
-            form.style.display = 'none';
-
-            // Adăugăm fiecare câmp ca input hidden
-            for (const [key, value] of Object.entries(formResult.fields)) {
-                const input = document.createElement('input');
-                input.type = 'hidden';
-                input.name = key;
-                input.value = value as string;
-                form.appendChild(input);
-            }
-
-            document.body.appendChild(form);
+            console.log(`[Checkout] Redirectăm către Stripe...`);
 
             // Salvăm obiect complet în sessionStorage pentru evenimentul Purchase pe pagina de success
             const purchaseEventId = crypto.randomUUID();
@@ -283,8 +253,8 @@ export default function CheckoutPage() {
             // Golăm coșul înainte de redirect (utilizatorul părăsește pagina)
             clearCart();
 
-            // Auto-submit — utilizatorul este redirectat către pagina securizată Paytriot
-            form.submit();
+            // Redirect la Stripe Checkout URL
+            window.location.href = stripeResult.url;
             return;
 
         } catch (error: any) {
@@ -466,10 +436,10 @@ export default function CheckoutPage() {
                                     </div>
                                     <div>
                                         <p className="text-white/80 text-sm">
-                                            {t('secureRedirect') || 'You will be securely redirected to our payment provider to complete your purchase.'}
+                                            {t('secureRedirect') || 'You will be securely redirected to Stripe to complete your purchase.'}
                                         </p>
                                         <p className="text-white/40 text-xs mt-1">
-                                            Powered by Paytriot · 256-bit SSL Encryption
+                                            Powered by Stripe · 256-bit SSL Encryption
                                         </p>
                                     </div>
                                 </div>
@@ -562,7 +532,7 @@ export default function CheckoutPage() {
                             <div className="text-white/20 text-xs">|</div>
                             <span className="text-white/30 text-xs">PCI DSS</span>
                             <div className="text-white/20 text-xs">|</div>
-                            <span className="text-white/30 text-xs">Paytriot</span>
+                            <span className="text-white/30 text-xs">Stripe</span>
                         </div>
                     </div>
                 </div>

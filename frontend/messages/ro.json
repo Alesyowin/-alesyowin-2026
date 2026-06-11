@@ -48,7 +48,7 @@
     "errorProcessing": "Eroare la procesarea comenzii",
     "qty": "Cant",
     "paymentTitle": "Detalii Plată",
-    "secureRedirect": "Vei fi redirecționat(ă) în siguranță către furnizorul nostru de plăți pentru a finaliza achiziția.",
+    "secureRedirect": "Vei fi redirecționat(ă) în siguranță către Stripe pentru a finaliza achiziția.",
     "cardNumber": "Număr Card",
     "expiry": "Data Expirare",
     "billingTitle": "Adresa de facturare",

@@ -90,10 +90,27 @@ function SuccessContent() {
             }
         };
 
-        // Așteptăm puțin ca webhook-ul să termine procesarea
-        const timer = setTimeout(checkInstantWin, 1500);
-        return () => clearTimeout(timer);
-    }, [orderId]);
+        const sessionId = searchParams.get('session_id');
+
+        const verifyStripeSession = async () => {
+            if (sessionId && orderId) {
+                try {
+                    await fetch('/api/stripe/verify-session', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ sessionId, orderId }),
+                    });
+                } catch (err) {
+                    console.warn('Verify session failed:', err);
+                }
+            }
+        };
+
+        // Verificăm sesiunea Stripe apoi așteptăm puțin ca webhook-ul să termine procesarea
+        verifyStripeSession().then(() => {
+            setTimeout(checkInstantWin, 1500);
+        });
+    }, [orderId, searchParams]);
 
     return (
         <div className="min-h-[80vh] flex flex-col items-center justify-center p-4">

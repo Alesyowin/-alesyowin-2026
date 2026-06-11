@@ -48,7 +48,7 @@
     "errorProcessing": "Errore durante l'elaborazione dell'ordine",
     "qty": "Qtà",
     "paymentTitle": "Dettagli Pagamento",
-    "secureRedirect": "Sarai reindirizzato/a in modo sicuro al nostro fornitore di pagamenti per completare l'acquisto.",
+    "secureRedirect": "Sarai reindirizzato/a in modo sicuro a Stripe per completare l'acquisto.",
     "cardNumber": "Numero Carta",
     "expiry": "Data di Scadenza",
     "billingTitle": "Indirizzo di fatturazione",

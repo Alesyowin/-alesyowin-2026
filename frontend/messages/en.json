@@ -48,7 +48,7 @@
     "errorProcessing": "Error processing order",
     "qty": "Qty",
     "paymentTitle": "Payment Details",
-    "secureRedirect": "You will be securely redirected to our payment provider to complete your purchase.",
+    "secureRedirect": "You will be securely redirected to Stripe to complete your purchase.",
     "cardNumber": "Card Number",
     "expiry": "Expiry Date",
     "billingTitle": "Billing Address",

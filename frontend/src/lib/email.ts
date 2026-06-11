@@ -148,7 +148,7 @@ export async function sendAdminOrderNotification(options: {
     const subject = `[Comandă Nouă] Comanda #${orderId} plasată de ${customerName}`;
 
     return sendEmail({
-        to: 'ALESYOWINn@gmail.com',
+        to: process.env.ADMIN_EMAIL || 'andreialexandruuk25@gmail.com',
         subject,
         text: `Comandă nouă #${orderId} de la ${customerName} (${customerEmail}). Total: £${total}`,
         html
@@ -232,7 +232,7 @@ export async function sendAdminInstantWinnerEmail(options: {
     const subject = `[INSTANT WIN] Câștigător Nou - Comanda #${orderId}`;
 
     return sendEmail({
-        to: 'ALESYOWINn@gmail.com',
+        to: process.env.ADMIN_EMAIL || 'andreialexandruuk25@gmail.com',
         subject,
         text: `A câștigat ${customerName} premiul ${prizeValue} la concursul ${giveawayTitle} cu biletul ${ticketNumber}.`,
         html
@@ -314,7 +314,7 @@ export async function sendAdminBonusWinnerEmail(options: {
     const subject = `[BONUS DRAW WIN] Câștigător Nou Extras Automat - ${customerName}`;
 
     return sendEmail({
-        to: 'ALESYOWINn@gmail.com',
+        to: process.env.ADMIN_EMAIL || 'andreialexandruuk25@gmail.com',
         subject,
         text: `A fost extras automat biletul #${ticketNumber} (${customerName}) pentru premiul ${prizeValue} la concursul ${giveawayTitle}.`,
         html

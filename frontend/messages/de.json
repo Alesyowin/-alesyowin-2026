@@ -48,7 +48,7 @@
     "errorProcessing": "Fehler bei der Bestellverarbeitung",
     "qty": "Anz",
     "paymentTitle": "Zahlungsdetails",
-    "secureRedirect": "Sie werden sicher zu unserem Zahlungsanbieter weitergeleitet, um Ihren Kauf abzuschließen.",
+    "secureRedirect": "Sie werden sicher zu Stripe weitergeleitet, um Ihren Kauf abzuschließen.",
     "cardNumber": "Kartennummer",
     "expiry": "Ablaufdatum",
     "billingTitle": "Rechnungsadresse",

@@ -48,7 +48,7 @@
     "errorProcessing": "Erreur lors du traitement de la commande",
     "qty": "Qté",
     "paymentTitle": "Détails de Paiement",
-    "secureRedirect": "Vous serez redirigé(e) en toute sécurité vers notre prestataire de paiement pour finaliser votre achat.",
+    "secureRedirect": "Vous serez redirigé(e) en toute sécurité vers Stripe pour finaliser votre achat.",
     "cardNumber": "Numéro de Carte",
     "expiry": "Date d'Expiration",
     "billingTitle": "Adresse de facturation",
