@@ -48,8 +48,8 @@ export default function LoginPage() {
     };
 
     return (
-        <div className="flex justify-center items-center py-20 px-4">
-            <div className="w-full max-w-md bg-(--color-black-rich)/80 backdrop-blur-xl border border-(--color-gold)/10 p-8 rounded-sm shadow-2xl relative overflow-hidden">
+        <div className="flex justify-center items-center py-20 px-4 min-h-screen bg-black">
+            <div className="w-full max-w-md bg-black backdrop-blur-xl border-2 border-(--color-gold) p-8 rounded-sm shadow-2xl relative overflow-hidden">
                 {/* Background Decor */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-(--color-gold) opacity-[0.05] blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full" />
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-(--color-gold) opacity-[0.03] blur-3xl translate-y-1/2 -translate-x-1/2 rounded-full" />
