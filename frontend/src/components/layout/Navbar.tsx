@@ -110,7 +110,7 @@ export default function Navbar() {
                                             className="fixed inset-0 z-0" 
                                             onClick={() => setIsProfileOpen(false)}
                                         />
-                                        <div className="absolute right-0 mt-3 w-56 bg-(--color-black-rich) border border-(--color-gold)/20 rounded-sm shadow-2xl py-2 z-10 animate-in fade-in slide-in-from-top-2 duration-200 btn-gold-safe">
+                                        <div className="absolute right-0 mt-3 w-56 bg-black border border-[#00A5FF] rounded-sm shadow-2xl py-2 z-10 animate-in fade-in slide-in-from-top-2 duration-200">
                                             <Link
                                                 href="/profile"
                                                 onClick={() => setIsProfileOpen(false)}
