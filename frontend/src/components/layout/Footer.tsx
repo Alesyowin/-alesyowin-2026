@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import { Mail, MessageCircle, Phone, Send, Facebook, Youtube, Instagram, Music2, CreditCard } from 'lucide-react';
+import { Mail, MessageCircle, Phone, Send, Music2, CreditCard } from 'lucide-react';
 import { Link } from '../../i18n/routing';
+import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
     const t = useTranslations('Footer');
@@ -70,10 +71,13 @@ const Footer = () => {
                             <div className="h-0.5 w-12 bg-[#00A5FF]"></div>
                         </div>
                         
-                        <div className="flex gap-3">
-                            <SocialIcon href="#" icon={<Facebook size={18} fill="currentColor" />} />
-                            <SocialIcon href="#" icon={<Instagram size={18} />} />
-                            <SocialIcon href="#" icon={<Youtube size={18} />} />
+                        <div className="flex flex-wrap gap-3 mt-4">
+                            <SocialIcon url="https://facebook.com" network="facebook" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(24,119,242,0.5)] rounded-full" />
+                            <SocialIcon url="https://instagram.com" network="instagram" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(225,48,108,0.5)] rounded-full" />
+                            <SocialIcon url="https://tiktok.com" network="tiktok" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] rounded-full" />
+                            <SocialIcon url="https://youtube.com" network="youtube" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,0,0,0.5)] rounded-full" />
+                            <SocialIcon url="https://whatsapp.com" network="whatsapp" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(37,211,102,0.5)] rounded-full" />
+                            <SocialIcon url="https://telegram.org" network="telegram" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(0,136,204,0.5)] rounded-full" />
                         </div>
                     </div>
 
@@ -109,16 +113,5 @@ const Footer = () => {
         </footer>
     );
 };
-
-const SocialIcon = ({ icon, href }: { icon: React.ReactNode, href: string }) => (
-    <a 
-        href={href} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-[#00A5FF] hover:text-white transition-all"
-    >
-        {icon}
-    </a>
-)
 
 export default Footer;

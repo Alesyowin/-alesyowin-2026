@@ -19,6 +19,7 @@
     "next-intl": "^4.8.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-social-icons": "^6.26.0",
     "resend": "^6.10.0",
     "zustand": "^5.0.11"
   },
