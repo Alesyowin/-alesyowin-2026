@@ -4,7 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { sendEmail } from '../../../../../lib/email';
 import { getOtpEmailTemplate } from '../../../../../lib/email-template';
 
-const DIRECTUS_URL = process.env.DIRECTUS_URL || 'https://gpcompetition.onrender.com';
+const DIRECTUS_URL = process.env.DIRECTUS_URL || 'https://alesyowin-backend.onrender.com';
 const ADMIN_TOKEN = process.env.DIRECTUS_ADMIN_TOKEN;
 
 export async function POST(request: Request) {
@@ -43,7 +43,7 @@ export async function POST(request: Request) {
         const baseUrl = `${protocol}://${host}`;
         // Forțăm logo-ul de pe serverul de producție pentru testele de pe localhost
         const logoUrl = host?.includes('localhost') 
-            ? 'https://gpcompetition.com/logo-principal-orizontal-fara-fundal.png' 
+            ? 'https://alesyowin.uk/logo-principal-orizontal-fara-fundal.png' 
             : `${baseUrl}/logo-principal-orizontal-fara-fundal.png`;
 
         const html = getOtpEmailTemplate({
@@ -67,6 +67,8 @@ export async function POST(request: Request) {
 
         if (!success) {
             console.error('[API OTP Request] Resend failed:', error);
+            // Nu mai întoarcem "success: true", ci eroare clară către site!
+            return NextResponse.json({ error: 'Eroare la trimiterea emailului (verifică setările Resend)' }, { status: 500 });
         }
 
         return NextResponse.json({ success: true });
