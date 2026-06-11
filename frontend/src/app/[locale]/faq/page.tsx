@@ -7,7 +7,7 @@ export default function FAQPage() {
     const questionKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'];
 
     return (
-        <div className="min-h-screen bg-(--color-black-pure) text-white font-sans py-20 px-4 md:px-8">
+        <div className="min-h-screen bg-black text-white font-sans py-20 px-4 md:px-8">
             <div className="max-w-4xl mx-auto">
                 
                 {/* Antetul Paginii */}

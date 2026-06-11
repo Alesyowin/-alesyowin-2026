@@ -7,7 +7,7 @@ export default function PostalEntryPage() {
   const sectionKeys = ['s1', 's2', 's3', 's4', 's5', 's6', 's7'];
 
   return (
-    <div className="min-h-screen bg-(--color-black-pure) text-white font-sans py-20 px-4 md:px-8">
+    <div className="min-h-screen bg-black text-white font-sans py-20 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         
         {/* Header Section */}
