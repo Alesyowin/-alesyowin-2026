@@ -64,8 +64,9 @@ export default function ProfilePage() {
     if (!user) return null;
 
     return (
-        <div className="max-w-4xl mx-auto px-4 py-16">
-            <div className="bg-(--color-black-rich)/80 border border-white/5 rounded-sm p-8 shadow-2xl relative overflow-hidden backdrop-blur-md">
+        <div className="min-h-screen bg-black w-full">
+            <div className="max-w-4xl mx-auto px-4 py-16">
+                <div className="bg-black border border-(--color-gold) rounded-sm p-8 shadow-2xl relative overflow-hidden backdrop-blur-md">
                 {/* Background Decor */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-(--color-gold) opacity-[0.03] blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full" />
 
@@ -184,6 +185,7 @@ export default function ProfilePage() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

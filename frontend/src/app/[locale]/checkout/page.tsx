@@ -267,8 +267,9 @@ export default function CheckoutPage() {
     };
 
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 font-sans relative">
-            <h1
+        <div className="min-h-screen bg-black w-full">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 font-sans relative">
+                <h1
                 className="text-3xl md:text-5xl font-black text-white uppercase tracking-widest mb-12"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
@@ -278,7 +279,7 @@ export default function CheckoutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                 {/* Coloana stânga: Formular date client */}
-                <div className="bg-[#0A0A0A] border border-[#00A5FF]/20 rounded-sm p-6 md:p-8">
+                <div className="bg-black border border-[#00A5FF] rounded-sm p-6 md:p-8">
                     <h2 className="text-xl font-bold text-[#00A5FF] uppercase tracking-widest mb-6">
                         {t('formTitle')}
                     </h2>
@@ -479,7 +480,7 @@ export default function CheckoutPage() {
                 </div>
 
                 {/* Coloana dreapta: Sumar comandă */}
-                <div className="bg-[#0A0A0A] border border-[#00A5FF]/20 rounded-sm p-6 md:p-8 h-fit sticky top-28">
+                <div className="bg-black border border-[#00A5FF] rounded-sm p-6 md:p-8 h-fit sticky top-28">
                     <h2 className="text-xl font-bold text-white uppercase tracking-widest mb-6">
                         {t('summary')}
                     </h2>
@@ -537,6 +538,7 @@ export default function CheckoutPage() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

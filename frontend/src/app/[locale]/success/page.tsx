@@ -113,7 +113,7 @@ function SuccessContent() {
     }, [orderId, searchParams]);
 
     return (
-        <div className="min-h-[80vh] flex flex-col items-center justify-center p-4">
+        <div className="min-h-screen bg-black w-full flex flex-col items-center justify-center p-4">
 
             {/* Banner Instant Win - afișat dacă a câștigat */}
             {instantWin?.won && (
@@ -153,7 +153,7 @@ function SuccessContent() {
             )}
 
             {/* Card principal de succes */}
-            <div className="bg-[#0A0A0A] border border-[#00A5FF]/30 p-12 rounded-sm shadow-[0_0_40px_rgba(0,165,255,0.1)] flex flex-col items-center max-w-lg w-full text-center">
+            <div className="bg-black border border-[#00A5FF] p-12 rounded-sm shadow-[0_0_40px_rgba(0,165,255,0.1)] flex flex-col items-center max-w-lg w-full text-center">
                 <div className="w-24 h-24 bg-[#111] rounded-full border border-[#00A5FF]/50 flex items-center justify-center mb-8 relative">
                     <div className="absolute inset-0 bg-[#00A5FF]/10rounded-full animate-ping"></div>
                     <CheckCircle2 size={48} className="text-[#00A5FF] relative z-10" />
