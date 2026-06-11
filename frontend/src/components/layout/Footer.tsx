@@ -88,14 +88,24 @@ const Footer = () => {
                             <div className="h-0.5 w-12 bg-[#00A5FF]"></div>
                         </div>
                         
-                        <div className="space-y-2 pt-2">
-                            <div className="flex items-center gap-3 text-gray-300">
-                                <CreditCard size={32} />
-                                <span>Secured by Stripe</span>
+                        <div className="flex items-center gap-3 mt-4">
+                            {/* Mastercard */}
+                            <div className="bg-white w-[60px] h-[38px] rounded-md flex items-center justify-center hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,95,0,0.4)]">
+                                <svg viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[36px] h-[24px]">
+                                    <circle cx="8" cy="8" r="8" fill="#EB001B"/>
+                                    <circle cx="16" cy="8" r="8" fill="#F79E1B"/>
+                                    <path d="M12 14.8c-1.5-1.6-2.5-3.9-2.5-6.8s1-5.2 2.5-6.8c1.5 1.6 2.5 3.9 2.5 6.8s-1 5.2-2.5 6.8z" fill="#FF5F00"/>
+                                </svg>
                             </div>
-                            <p className="text-[10px] text-white/40 tracking-tight">
-                                We accept all major credit and debit cards securely through Stripe.
-                            </p>
+
+                            {/* Visa */}
+                            <div className="bg-white w-[60px] h-[38px] rounded-md flex items-center justify-center hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(20,52,203,0.4)]">
+                                <svg viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[36px] h-[24px]">
+                                    <path d="M10.2 14.8L11.5 6.7h2.1L12.3 14.8h-2.1zm8.3-7.9c-.3-.1-1-.3-1.8-.3-2 0-3.4 1-3.4 2.6 0 1.1 1.1 1.7 1.8 2 .8.4 1 1 1 1.6 0 1-.9 1.4-1.7 1.4-.9 0-1.5-.2-2.1-.5l-.3-.1-.3 1.9c.5.3 1.5.5 2.4.5 2.1 0 3.5-1 3.5-2.6 0-.8-.5-1.5-1.7-2.1-.7-.3-1.1-.5-1.1-.9 0-.3.4-.8 1.2-.8.6-.1 1.1.1 1.5.2l.2.1.2-1.6z" fill="#1434CB"/>
+                                    <path d="M22 6.7h-1.6c-.4 0-.7.2-.9.6l-3.2 7.5h2.2l.4-1.2h2.7l.2 1.2H24L22 6.7zm-2 5l1-2.6 1 2.6h-2z" fill="#1434CB"/>
+                                    <path d="M7 6.7L5 12l-.6-3.1c0-.2-.1-.4-.2-.5l-2.4-1.6.4-.1h3.9c.3 0 .6.2.7.5l.8 4.2.9-4.7H7z" fill="#1434CB"/>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
