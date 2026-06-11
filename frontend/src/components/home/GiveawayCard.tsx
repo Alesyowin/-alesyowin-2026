@@ -31,7 +31,7 @@ export default function GiveawayCard({
             href={`/${locale}/giveaway/${id}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="group block h-full relative bg-[#111] border-2 border-[#00A5FF] rounded-2xl overflow-hidden hover:border-[#008ecc] transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,165,255,0.15)] hover:-translate-y-2 cursor-pointer"
+            className="group block h-full relative bg-[#111] border border-[#00A5FF] rounded-2xl overflow-hidden hover:border-[#008ecc] transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,165,255,0.15)] hover:-translate-y-2 cursor-pointer"
         >
             <motion.div
                 initial={animate ? { opacity: 0, y: 50 } : {}}

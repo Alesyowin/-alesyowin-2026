@@ -510,5 +510,9 @@
     "instructions": "Notre équipe vous contactera sous peu pour organiser la livraison de votre prix. Gardez un œil sur votre téléphone et vos e-mails !",
     "thanks": "Merci de faire partie de ALESYOWIN !",
     "footer": "© {year} ALESYOWIN. Tous droits réservés."
+  },
+  "Hero": {
+    "title": "Merci pour votre patience !",
+    "subtitle": "Nous sommes de retour. La compétition continue."
   }
 }

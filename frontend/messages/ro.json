@@ -510,5 +510,9 @@
     "instructions": "Vei fi contactat în scurt timp de echipa noastră cu privire la modul de ridicare a premiului tău. Fii cu ochii pe telefon și email!",
     "thanks": "Îți mulțumim că ești parte din ALESYOWIN!",
     "footer": "© {year} ALESYOWIN. Toate drepturile rezervate."
+  },
+  "Hero": {
+    "title": "Mulțumim pentru răbdare!",
+    "subtitle": "Am revenit. Competiția merge mai departe."
   }
 }

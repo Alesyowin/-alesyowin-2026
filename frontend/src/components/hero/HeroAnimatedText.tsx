@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 export default function HeroAnimatedText() {
+    const t = useTranslations('Hero');
+    
     return (
         <motion.div 
             initial={{ opacity: 0, y: 30, filter: 'blur(10px)' }}
@@ -15,8 +17,8 @@ export default function HeroAnimatedText() {
                 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tight leading-tight uppercase mb-6"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-                <span className="block mb-2 text-[#00A5FF]">Mulțumim pentru răbdare!</span>
-                <span className="block text-3xl md:text-4xl lg:text-5xl mt-4 font-bold text-gray-200">Am revenit. Competiția merge mai departe.</span>
+                <span className="block mb-2 text-[#00A5FF]">{t('title')}</span>
+                <span className="block text-3xl md:text-4xl lg:text-5xl mt-4 font-bold text-gray-200">{t('subtitle')}</span>
             </h1>
         </motion.div>
     );

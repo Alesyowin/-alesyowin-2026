@@ -510,5 +510,9 @@
     "instructions": "Unser Team wird Sie in Kürze kontaktieren, um die Lieferung Ihres Preises zu vereinbaren. Behalten Sie Ihr Telefon und Ihre E-Mails im Auge!",
     "thanks": "Vielen Dank, dass Sie Teil von ALESYOWIN sind!",
     "footer": "© {year} ALESYOWIN. Alle Rechte vorbehalten."
+  },
+  "Hero": {
+    "title": "Danke für Ihre Geduld!",
+    "subtitle": "Wir sind zurück. Der Wettbewerb geht weiter."
   }
 }
