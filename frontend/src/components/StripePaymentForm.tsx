@@ -7,7 +7,7 @@ interface StripePaymentFormProps {
     amount: number;
     buttonText: string;
     processingText: string;
-    onBeforeConfirm: () => Promise<{ clientSecret: string; returnUrl: string } | null>;
+    onBeforeConfirm: () => Promise<{ clientSecret: string; returnUrl: string; billingDetails?: any } | null>;
 }
 
 // Componentă care afișează câmpurile de card Stripe direct pe pagină (fără formular separat)
@@ -20,39 +20,50 @@ export default function StripePaymentForm({ amount, buttonText, processingText, 
     const handlePayment = async () => {
         if (!stripe || !elements || isProcessing) return;
 
-        setIsProcessing(true);
-        setMessage('');
+        try {
+            setIsProcessing(true);
+            setMessage('');
 
-        // Validăm câmpurile de card introduse de client
-        const { error: submitError } = await elements.submit();
-        if (submitError) {
-            setMessage(submitError.message || 'Card validation failed.');
+            // Validăm câmpurile de card introduse de client
+            const { error: submitError } = await elements.submit();
+            if (submitError) {
+                setMessage(submitError.message || 'Datele cardului sunt incorecte.');
+                setIsProcessing(false);
+                return;
+            }
+
+            // Creăm comanda + PaymentIntent prin funcția din pagina de checkout
+            const result = await onBeforeConfirm();
+            if (!result) {
+                // Eroarea a fost deja afișată de pagina de checkout
+                setIsProcessing(false);
+                return;
+            }
+
+            // Confirmăm plata cu datele cardului introduse de utilizator și detaliile de facturare manuale
+            const { error } = await stripe.confirmPayment({
+                elements,
+                clientSecret: result.clientSecret,
+                confirmParams: {
+                    return_url: result.returnUrl,
+                    ...(result.billingDetails && {
+                        payment_method_data: {
+                            billing_details: result.billingDetails
+                        }
+                    })
+                },
+            });
+
+            // Dacă codul ajunge aici, înseamnă că plata a fost refuzată sau a apărut o eroare
+            if (error) {
+                setMessage(error.message || 'Plata a fost respinsă de bancă.');
+            }
+        } catch (err: any) {
+            console.error('StripePaymentForm error:', err);
+            setMessage(err.message || 'Eroare neașteptată la procesarea plății.');
+        } finally {
             setIsProcessing(false);
-            return;
         }
-
-        // Creăm comanda + PaymentIntent prin funcția din pagina de checkout
-        const result = await onBeforeConfirm();
-        if (!result) {
-            // Eroarea a fost deja afișată de pagina de checkout
-            setIsProcessing(false);
-            return;
-        }
-
-        // Confirmăm plata cu datele cardului introduse de utilizator
-        const { error } = await stripe.confirmPayment({
-            elements,
-            clientSecret: result.clientSecret,
-            confirmParams: {
-                return_url: result.returnUrl,
-            },
-        });
-
-        // Dacă codul ajunge aici, înseamnă că plata a fost refuzată sau a apărut o eroare
-        if (error) {
-            setMessage(error.message || 'Payment failed.');
-        }
-        setIsProcessing(false);
     };
 
     return (

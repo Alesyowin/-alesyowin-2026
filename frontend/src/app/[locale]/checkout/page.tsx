@@ -78,7 +78,7 @@ export default function CheckoutPage() {
      * Creează comanda + PaymentIntent și returnează clientSecret + returnUrl.
      * Dacă totalul e £0, procesează gratuit și returnează null (redirect direct).
      */
-    const handleBeforeConfirm = async (): Promise<{ clientSecret: string; returnUrl: string } | null> => {
+    const handleBeforeConfirm = async (): Promise<{ clientSecret: string; returnUrl: string; billingDetails?: any } | null> => {
         // Protecție contra dublu-click
         if (isProcessingRef.current) return null;
         isProcessingRef.current = true;
@@ -228,6 +228,18 @@ export default function CheckoutPage() {
             return {
                 clientSecret: intentResult.clientSecret,
                 returnUrl: `${window.location.origin}/${locale}/success?orderId=${data.orderId}`,
+                billingDetails: {
+                    name: `${formData.firstName} ${formData.lastName}`.trim(),
+                    email: formData.email,
+                    phone: formData.phone,
+                    address: {
+                        line1: formData.address,
+                        city: formData.city,
+                        state: formData.county,
+                        postal_code: formData.postal_code,
+                        country: formData.country,
+                    }
+                }
             };
 
         } catch (error: any) {
