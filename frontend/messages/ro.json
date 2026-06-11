@@ -64,7 +64,19 @@
     "description": "Participă acum pentru șansa de a câștiga premii speciale. Fiecare bilet te aduce mai aproape de recompense incredibile.",
     "noCompetitions": "Nu există competiții active în acest moment.",
     "checkBack": "Revină curând pentru noi premii!",
-    "enterNow": "Participă Acum"
+    "enterNow": "Participă Acum",
+    "features": {
+      "title": "De ce să ne alegi pe noi",
+      "subtitle": "O platformă de încredere, creată pentru o experiență transparentă și corectă.",
+      "f1_title": "Transparență 100%",
+      "f1_desc": "Fiecare extragere este realizată la vedere, printr-un sistem demonstrabil echitabil.",
+      "f2_title": "Premii Autentice",
+      "f2_desc": "Garantăm autenticitatea și calitatea premium pentru fiecare premiu pe care îl câștigi.",
+      "f3_title": "Plăți Securizate",
+      "f3_desc": "Tranzacțiile tale sunt protejate cu cele mai înalte standarde de securitate din industrie.",
+      "f4_title": "Comunitate Unită",
+      "f4_desc": "Alătură-te unei comunități de pasionați, unde norocul se întâlnește cu premii de neuitat."
+    }
   },
   "GiveawayPage": {
     "instantPrizes": "Premii Instant",

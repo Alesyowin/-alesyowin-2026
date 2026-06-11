@@ -64,7 +64,19 @@
     "description": "Enter now for a chance to win special prizes. Every ticket brings you closer to incredible rewards.",
     "noCompetitions": "No active competitions at the moment.",
     "checkBack": "Check back soon for new prizes!",
-    "enterNow": "Enter Now"
+    "enterNow": "Enter Now",
+    "features": {
+      "title": "Why Choose Us",
+      "subtitle": "A trusted platform, built for a transparent and fair experience.",
+      "f1_title": "100% Transparency",
+      "f1_desc": "Every draw is conducted openly through a provably fair system.",
+      "f2_title": "Authentic Prizes",
+      "f2_desc": "We guarantee the authenticity and premium quality of every prize you win.",
+      "f3_title": "Secure Payments",
+      "f3_desc": "Your transactions are protected with the highest security standards in the industry.",
+      "f4_title": "United Community",
+      "f4_desc": "Join a community of enthusiasts where luck meets unforgettable rewards."
+    }
   },
   "GiveawayPage": {
     "instantPrizes": "Instant Prizes",

@@ -64,7 +64,19 @@
     "description": "Participa ahora para tener la oportunidad de ganar premios especiales. Cada boleto te acerca a increíbles recompensas.",
     "noCompetitions": "No hay sorteos activos en este momento.",
     "checkBack": "¡Vuelve pronto para ver nuevos premios!",
-    "enterNow": "Participa Ahora"
+    "enterNow": "Participa Ahora",
+    "features": {
+      "title": "Por qué elegirnos",
+      "subtitle": "Una plataforma de confianza, creada para una experiencia transparente y justa.",
+      "f1_title": "Transparencia 100%",
+      "f1_desc": "Cada sorteo se realiza de forma abierta a través de un sistema demostrablemente justo.",
+      "f2_title": "Premios Auténticos",
+      "f2_desc": "Garantizamos la autenticidad y la calidad premium de cada premio que ganes.",
+      "f3_title": "Pagos Seguros",
+      "f3_desc": "Tus transacciones están protegidas con los más altos estándares de seguridad de la industria.",
+      "f4_title": "Comunidad Unida",
+      "f4_desc": "Únete a una comunidad de entusiastas donde la suerte se encuentra con recompensas inolvidables."
+    }
   },
   "GiveawayPage": {
     "instantPrizes": "Premios Instantáneos",

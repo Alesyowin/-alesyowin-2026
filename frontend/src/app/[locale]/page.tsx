@@ -1,5 +1,6 @@
 import GiveawayCard from '../../components/home/GiveawayCard';
 import HeroAnimatedText from '../../components/hero/HeroAnimatedText';
+import WhyChooseUs from '../../components/home/WhyChooseUs';
 import { getAllGiveaways, getDirectusFileUrl } from '../../lib/directus';
 import { getTranslations } from 'next-intl/server';
 
@@ -88,6 +89,9 @@ export default async function Home({ params }: PageProps) {
                     </div>
                 )}
             </div>
+            
+            {/* Secțiunea De ce să ne alegi pe noi */}
+            <WhyChooseUs />
         </div>
     );
 }

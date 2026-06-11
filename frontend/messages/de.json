@@ -64,7 +64,19 @@
     "description": "Nehmen Sie jetzt teil und gewinnen Sie besondere Preise. Jedes Los bringt Sie unglaublichen Belohnungen näher.",
     "noCompetitions": "Derzeit keine aktiven Wettbewerbe.",
     "checkBack": "Schau bald wieder vorbei für neue Preise!",
-    "enterNow": "Jetzt Teilnehmen"
+    "enterNow": "Jetzt Teilnehmen",
+    "features": {
+      "title": "Warum uns wählen",
+      "subtitle": "Eine vertrauenswürdige Plattform, gebaut für eine transparente und faire Erfahrung.",
+      "f1_title": "100% Transparenz",
+      "f1_desc": "Jede Ziehung wird offen durch ein nachweislich faires System durchgeführt.",
+      "f2_title": "Authentische Preise",
+      "f2_desc": "Wir garantieren die Authentizität und Premium-Qualität jedes Preises, den Sie gewinnen.",
+      "f3_title": "Sichere Zahlungen",
+      "f3_desc": "Ihre Transaktionen sind mit den höchsten Sicherheitsstandards der Branche geschützt.",
+      "f4_title": "Vereinte Community",
+      "f4_desc": "Schließen Sie sich einer Gemeinschaft von Enthusiasten an, in der Glück auf unvergessliche Belohnungen trifft."
+    }
   },
   "GiveawayPage": {
     "instantPrizes": "Sofortgewinne",

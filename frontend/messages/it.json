@@ -64,7 +64,19 @@
     "description": "Partecipa ora per avere la possibilità di vincere premi speciali. Ogni biglietto ti avvicina a incredibili ricompense.",
     "noCompetitions": "Nessun concorso attivo al momento.",
     "checkBack": "Torna presto per nuovi premi!",
-    "enterNow": "Partecipa Ora"
+    "enterNow": "Partecipa Ora",
+    "features": {
+      "title": "Perché sceglierci",
+      "subtitle": "Una piattaforma di fiducia, costruita per un'esperienza trasparente ed equa.",
+      "f1_title": "Trasparenza al 100%",
+      "f1_desc": "Ogni estrazione viene condotta apertamente attraverso un sistema dimostrabilmente equo.",
+      "f2_title": "Premi Autentici",
+      "f2_desc": "Garantiamo l'autenticità e la qualità premium di ogni premio che vinci.",
+      "f3_title": "Pagamenti Sicuri",
+      "f3_desc": "Le tue transazioni sono protette con i più alti standard di sicurezza del settore.",
+      "f4_title": "Comunità Unita",
+      "f4_desc": "Unisciti a una comunità di appassionati dove la fortuna incontra ricompense indimenticabili."
+    }
   },
   "GiveawayPage": {
     "instantPrizes": "Premi Istantanei",

@@ -64,7 +64,19 @@
     "description": "Participez maintenant pour avoir la chance de gagner des prix spéciaux. Chaque billet vous rapproche de récompenses incroyables.",
     "noCompetitions": "Aucune compétition active pour le moment.",
     "checkBack": "Revenez bientôt pour de nouveaux prix!",
-    "enterNow": "Participer"
+    "enterNow": "Participer",
+    "features": {
+      "title": "Pourquoi nous choisir",
+      "subtitle": "Une plateforme de confiance, conçue pour une expérience transparente et équitable.",
+      "f1_title": "Transparence 100%",
+      "f1_desc": "Chaque tirage est effectué ouvertement via un système prouvablement équitable.",
+      "f2_title": "Prix Authentiques",
+      "f2_desc": "Nous garantissons l'authenticité et la qualité premium de chaque prix que vous gagnez.",
+      "f3_title": "Paiements Sécurisés",
+      "f3_desc": "Vos transactions sont protégées avec les normes de sécurité les plus élevées de l'industrie.",
+      "f4_title": "Communauté Unie",
+      "f4_desc": "Rejoignez une communauté de passionnés où la chance rencontre des récompenses inoubliables."
+    }
   },
   "GiveawayPage": {
     "instantPrizes": "Prix Instantanés",
