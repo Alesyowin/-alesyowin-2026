@@ -63,31 +63,37 @@ export default function CountdownTimer({ endDate, isSoldOut }: CountdownTimerPro
             <div
                 className="
           flex items-center justify-center
-          w-16 h-16 md:w-20 md:h-20
-          text-2xl md:text-3xl font-black text-[#00A5FF]
-          bg-gray-50 rounded-sm border border-[#00A5FF]/20
-          shadow-[inset_0_0_12px_rgba(0,165,255,0.08)]
+          w-14 h-14 md:w-16 md:h-16
+          text-xl md:text-2xl font-black text-[#00A5FF]
+          bg-white rounded-lg border border-[#00A5FF]/20
+          shadow-sm
         "
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
                 <Pad n={value} />
             </div>
-            <span className="text-[10px] md:text-xs tracking-[0.2em] text-black/40 uppercase mt-1">
+            <span className="text-[9px] md:text-[10px] tracking-[0.2em] text-gray-500 uppercase mt-2">
                 {label}
             </span>
+        </div>
+    );
+
+    const colon = (
+        <div className="flex h-14 md:h-16 items-center">
+            <span className="text-[#00A5FF] text-xl md:text-2xl font-black pb-1">:</span>
         </div>
     );
 
     // Dacă lipsește endDate complet, desenăm ceasul cu "–-" pentru a nu strica layout-ul
     if (!endDate) {
         return (
-            <div className="flex items-end gap-2 md:gap-4 justify-center">
+            <div className="flex items-start gap-1.5 md:gap-2 justify-center">
                 {unit(t('days'), '--')}
-                <span className="text-[#00A5FF] text-2xl md:text-3xl font-black mb-4">:</span>
+                {colon}
                 {unit(t('hours'), '--')}
-                <span className="text-[#00A5FF] text-2xl md:text-3xl font-black mb-4">:</span>
+                {colon}
                 {unit(t('min'), '--')}
-                <span className="text-[#00A5FF] text-2xl md:text-3xl font-black mb-4">:</span>
+                {colon}
                 {unit(t('sec'), '--')}
             </div>
         );
@@ -95,12 +101,11 @@ export default function CountdownTimer({ endDate, isSoldOut }: CountdownTimerPro
 
     // While mounting pe client, arătăm Skeleton
     if (!timeLeft) {
-        // Loading skeleton - same size as the boxes
         return (
-            <div className="flex items-end gap-2 md:gap-4 justify-center">
+            <div className="flex items-start gap-1.5 md:gap-2 justify-center">
                 {['--', '--', '--', '--'].map((_, i) => (
                     <div key={i} className="flex flex-col items-center">
-                        <div className="w-16 h-16 md:w-20 md:h-20 bg-gray-50 border border-[#00A5FF]/10 rounded-sm animate-pulse" />
+                        <div className="w-14 h-14 md:w-16 md:h-16 bg-white border border-[#00A5FF]/10 rounded-lg animate-pulse" />
                     </div>
                 ))}
             </div>
@@ -108,13 +113,13 @@ export default function CountdownTimer({ endDate, isSoldOut }: CountdownTimerPro
     }
 
     return (
-        <div className="flex items-end gap-2 md:gap-4 justify-center">
+        <div className="flex items-start gap-1.5 md:gap-2 justify-center">
             {unit(t('days'), timeLeft.days)}
-            <span className="text-[#00A5FF] text-2xl md:text-3xl font-black mb-4">:</span>
+            {colon}
             {unit(t('hours'), timeLeft.hours)}
-            <span className="text-[#00A5FF] text-2xl md:text-3xl font-black mb-4">:</span>
+            {colon}
             {unit(t('min'), timeLeft.minutes)}
-            <span className="text-[#00A5FF] text-2xl md:text-3xl font-black mb-4">:</span>
+            {colon}
             {unit(t('sec'), timeLeft.seconds)}
         </div>
     );

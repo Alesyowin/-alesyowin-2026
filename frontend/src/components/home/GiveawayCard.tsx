@@ -75,7 +75,7 @@ export default function GiveawayCard({
                 {/* Timer și Bara de progres */}
                 <div className="space-y-4 mt-auto">
                     {/* Timer */}
-                    <div className="transform origin-center scale-90 w-[111%] -ml-[5%]">
+                    <div>
                         <CountdownTimer endDate={endDate} isSoldOut={ticketsSold >= totalTickets} />
                     </div>
 
