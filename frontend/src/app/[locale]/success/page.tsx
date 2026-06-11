@@ -97,14 +97,15 @@ function SuccessContent() {
         };
 
         const sessionId = searchParams.get('session_id');
+        const paymentIntentId = searchParams.get('payment_intent');
 
         const verifyStripeSession = async () => {
-            if (sessionId && orderId) {
+            if ((sessionId || paymentIntentId) && orderId) {
                 try {
                     await fetch('/api/stripe/verify-session', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ sessionId, orderId }),
+                        body: JSON.stringify({ sessionId, paymentIntentId, orderId }),
                     });
                 } catch (err) {
                     console.warn('Verify session failed:', err);
