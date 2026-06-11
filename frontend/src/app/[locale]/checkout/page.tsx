@@ -421,14 +421,23 @@ export default function CheckoutPage() {
                                         <label className="block text-sm font-medium text-white/70 mb-2 uppercase tracking-wide">
                                             {t('country')}
                                         </label>
-                                        <input
+                                        <select
                                             required
-                                            type="text"
                                             name="country"
                                             value={formData.country}
                                             onChange={handleChange}
-                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
-                                        />
+                                            className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors appearance-none"
+                                        >
+                                            <option value="">{t('country')}</option>
+                                            <option value="RO">România</option>
+                                            <option value="GB">United Kingdom (Marea Britanie)</option>
+                                            <option value="DE">Germania (Deutschland)</option>
+                                            <option value="FR">Franța (France)</option>
+                                            <option value="IT">Italia</option>
+                                            <option value="ES">Spania (España)</option>
+                                            <option value="IE">Irlanda (Ireland)</option>
+                                            <option value="US">Statele Unite (USA)</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
