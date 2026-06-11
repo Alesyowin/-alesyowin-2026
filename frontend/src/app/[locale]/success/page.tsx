@@ -5,6 +5,7 @@ import { Link } from '../../../i18n/routing';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { useCartStore } from '../../../lib/store';
 
 // Componenta internă care folosește useSearchParams (necesită Suspense)
 function SuccessContent() {
@@ -20,7 +21,12 @@ function SuccessContent() {
     } | null>(null);
     const [checking, setChecking] = useState(false);
 
+    const { clearCart } = useCartStore();
+
     useEffect(() => {
+        // Golește coșul după plată cu succes (pentru a nu-l goli prea devreme pe pagina de checkout)
+        clearCart();
+        
         // Dacă avem orderId, verificăm dacă utilizatorul a câștigat un premiu instant
         if (!orderId) return;
 

@@ -225,8 +225,6 @@ export default function CheckoutPage() {
                 contentIds: items.map(i => i.id), orderId: data.orderId
             }));
 
-            clearCart();
-
             return {
                 clientSecret: intentResult.clientSecret,
                 returnUrl: `${window.location.origin}/${locale}/success?orderId=${data.orderId}`,
