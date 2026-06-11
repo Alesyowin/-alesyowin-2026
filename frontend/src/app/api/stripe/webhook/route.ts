@@ -20,6 +20,7 @@ export async function POST(request: Request) {
 
         const host = request.headers.get('host') || 'alesyowin.com';
 
+        // Capturăm succesul din REDIRECT-ul clasic de Checkout (Dacă rămân clienți cu el deschis)
         if (event.type === 'checkout.session.completed') {
             const session = event.data.object as any;
             
@@ -27,16 +28,19 @@ export async function POST(request: Request) {
                 const orderId = session.metadata?.orderId;
                 
                 if (orderId) {
-                    console.log(`[STRIPE-WEBHOOK] Payment successful for Order: ${orderId}`);
-                    
-                    await processPostPayment({
-                        orderId,
-                        host,
-                        userAgent: 'Stripe Webhook'
-                    });
-                } else {
-                    console.warn(`[STRIPE-WEBHOOK] Completed session missing orderId in metadata`);
+                    console.log(`[STRIPE-WEBHOOK] Checkout Session successful for Order: ${orderId}`);
+                    await processPostPayment({ orderId, host, userAgent: 'Stripe Webhook' });
                 }
+            }
+        } 
+        // NOU: Capturăm succesul din noul STRIPE ELEMENTS (Plată sigură în site)
+        else if (event.type === 'payment_intent.succeeded') {
+            const paymentIntent = event.data.object as any;
+            const orderId = paymentIntent.metadata?.orderId;
+            
+            if (orderId) {
+                console.log(`[STRIPE-WEBHOOK] Payment Intent successful for Order: ${orderId} via Elements`);
+                await processPostPayment({ orderId, host, userAgent: 'Stripe Webhook (Elements)' });
             }
         }
 

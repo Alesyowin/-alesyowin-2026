@@ -4,6 +4,11 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useAuth } from '../../../contexts/AuthContext';
 import { useCartStore } from '../../../lib/store';
 import { useState, useEffect, useRef } from 'react';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import StripePaymentForm from '../../../components/StripePaymentForm';
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || '');
 
 export default function CheckoutPage() {
     const t = useTranslations('Checkout');
@@ -30,6 +35,8 @@ export default function CheckoutPage() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [paymentError, setPaymentError] = useState<string | null>(null);
+    const [clientSecret, setClientSecret] = useState('');
+    const [currentOrderId, setCurrentOrderId] = useState('');
     
     // Protecție suplimentară contra dublu-click
     const isProcessingRef = useRef(false);
@@ -212,10 +219,10 @@ export default function CheckoutPage() {
                 return;
             }
 
-            // --- PASUL 2: Stripe Checkout ---
-            console.log(`[Checkout] Creăm sesiunea Stripe...`);
+            // --- PASUL 2: Initializare Stripe Elements ---
+            console.log(`[Checkout] Obținem Client Secret pentru Elements...`);
 
-            const stripeResponse = await fetch('/api/stripe/checkout', {
+            const intentResponse = await fetch('/api/stripe/payment-intent', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -223,13 +230,11 @@ export default function CheckoutPage() {
                 }),
             });
 
-            const stripeResult = await stripeResponse.json();
+            const intentResult = await intentResponse.json();
 
-            if (!stripeResponse.ok || !stripeResult.url) {
-                throw new Error(stripeResult.error || 'Failed to create Stripe session');
+            if (!intentResponse.ok || !intentResult.clientSecret) {
+                throw new Error(intentResult.error || 'Failed to initialize payment intent');
             }
-
-            console.log(`[Checkout] Redirectăm către Stripe...`);
 
             // Salvăm obiect complet în sessionStorage pentru evenimentul Purchase pe pagina de success
             const purchaseEventId = crypto.randomUUID();
@@ -250,11 +255,12 @@ export default function CheckoutPage() {
                 orderId: data.orderId
             }));
 
-            // Golăm coșul înainte de redirect (utilizatorul părăsește pagina)
-            clearCart();
-
-            // Redirect la Stripe Checkout URL
-            window.location.href = stripeResult.url;
+            // Deschidem fereastra Stripe direct pe pagină (nu mai facem redirect exterior!)
+            setCurrentOrderId(data.orderId);
+            setClientSecret(intentResult.clientSecret);
+            
+            setIsSubmitting(false);
+            isProcessingRef.current = false;
             return;
 
         } catch (error: any) {
@@ -423,59 +429,67 @@ export default function CheckoutPage() {
                             </div>
                         </div>
 
-                        {/* Secțiunea de plată — redirect către Paytriot Hosted Payment Page */}
-                        {total > 0 && (
-                            <div className="pt-6 border-t border-[#00A5FF]/20 mt-2">
-                                <h3 className="text-lg font-bold text-[#00A5FF] uppercase tracking-widest mb-4">
-                                    💳 {t('paymentTitle') || 'Payment Details'}
-                                </h3>
-                                <div className="bg-[#111] border border-[#00A5FF]/20 rounded-sm p-5 flex items-center gap-4">
-                                    <div className="flex-shrink-0">
-                                        <svg className="w-8 h-8 text-[#00A5FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p className="text-white/80 text-sm">
-                                            {t('secureRedirect') || 'You will be securely redirected to Stripe to complete your purchase.'}
-                                        </p>
-                                        <p className="text-white/40 text-xs mt-1">
-                                            Powered by Stripe · 256-bit SSL Encryption
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-
-                        {/* Mesaj de eroare plată */}
+                        {/* Mesaj de eroare plată (dacă intervine ceva înainte de generare) */}
                         {paymentError && (
                             <div className="bg-red-900/20 border border-red-500/30 rounded-sm px-4 py-3 text-red-400 text-sm">
                                 ⚠️ {paymentError}
                             </div>
                         )}
 
-                        <button
-                            type="submit"
-                            disabled={isSubmitting || items.length === 0 || items.some(i => i.minTickets && i.quantity < i.minTickets)}
-                            className={`
-                                w-full py-4 px-8 rounded-sm font-black uppercase tracking-[0.3em] text-sm
-                                transition-all duration-300 mt-8
-                                ${isSubmitting || items.length === 0 || items.some(i => i.minTickets && i.quantity < i.minTickets)
-                                    ? 'bg-[#222] text-white/30 cursor-not-allowed'
-                                    : 'bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] text-black shadow-[0_0_20px_rgba(0,165,255,0.3)] hover:scale-[1.02]'
-                                }
-                            `}
-                        >
-                            {isSubmitting ? (
-                                <span className="flex items-center justify-center gap-3">
-                                    <svg className="animate-spin h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        {!clientSecret ? (
+                            <button
+                                type="submit"
+                                disabled={isSubmitting || items.length === 0 || items.some(i => i.minTickets && i.quantity < i.minTickets)}
+                                className={`
+                                    w-full py-4 px-8 rounded-sm font-black uppercase tracking-[0.3em] text-sm
+                                    transition-all duration-300 mt-8
+                                    ${isSubmitting || items.length === 0 || items.some(i => i.minTickets && i.quantity < i.minTickets)
+                                        ? 'bg-[#222] text-white/30 cursor-not-allowed'
+                                        : 'bg-gradient-to-r from-[#008ecc] via-[#00A5FF] to-[#3498db] text-black shadow-[0_0_20px_rgba(0,165,255,0.3)] hover:scale-[1.02]'
+                                    }
+                                `}
+                            >
+                                {isSubmitting ? (
+                                    <span className="flex items-center justify-center gap-3">
+                                        <svg className="animate-spin h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                        </svg>
+                                        {t('processing')}
+                                    </span>
+                                ) : (t('continueToPayment') || 'Continue to Secure Payment')}
+                            </button>
+                        ) : (
+                            <div className="pt-6 border-t border-[#00A5FF]/20 mt-8">
+                                <h3 className="text-lg font-bold text-[#00A5FF] uppercase tracking-widest mb-6 flex items-center gap-3">
+                                    <svg className="w-6 h-6 text-[#00A5FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                                     </svg>
-                                    {t('processing')}
-                                </span>
-                            ) : (t('payNow'))}
-                        </button>
+                                    Introdu Datele Cardului
+                                </h3>
+                                
+                                <Elements 
+                                    stripe={stripePromise} 
+                                    options={{ 
+                                        clientSecret, 
+                                        appearance: { 
+                                            theme: 'night', 
+                                            variables: { 
+                                                colorPrimary: '#00A5FF', 
+                                                colorBackground: '#111111', 
+                                                colorText: '#ffffff',
+                                                colorDanger: '#ef4444'
+                                            } 
+                                        } 
+                                    }}
+                                >
+                                    <StripePaymentForm 
+                                        amount={total} 
+                                        returnUrl={`${window.location.origin}/${locale}/success?orderId=${currentOrderId}`} 
+                                    />
+                                </Elements>
+                            </div>
+                        )}
                     </form>
                 </div>
 
