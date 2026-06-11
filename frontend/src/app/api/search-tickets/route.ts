@@ -62,7 +62,7 @@ export async function GET(request: Request) {
                         ]
                     },
                     fields: ['id', 'ticket_number', 'email', 'client_name', 'order_id', 'date_created', 'is_winner', 'prize_won'],
-                    limit: 500,
+                    limit: -1,
                     sort: ['ticket_number'],
                 })
             );
@@ -104,7 +104,7 @@ export async function GET(request: Request) {
                                     ]
                                 },
                                 fields: ['id', 'ticket_number', 'email', 'client_name', 'order_id', 'date_created', 'is_winner', 'prize_won'],
-                                limit: 500,
+                                limit: -1,
                                 sort: ['ticket_number'],
                             })
                         );
