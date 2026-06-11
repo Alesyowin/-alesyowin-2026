@@ -225,6 +225,24 @@ export default function CheckoutPage() {
                 contentIds: items.map(i => i.id), orderId: data.orderId
             }));
 
+            // Stripe cere cod ISO de 2 litere pentru țară
+            let stripeCountry = formData.country.trim();
+            if (stripeCountry.length > 2) {
+                const map: Record<string, string> = {
+                    'romania': 'RO', 'românia': 'RO',
+                    'united kingdom': 'GB', 'uk': 'GB', 'great britain': 'GB', 'england': 'GB',
+                    'germany': 'DE', 'germania': 'DE', 'deutschland': 'DE',
+                    'france': 'FR', 'franța': 'FR', 'franta': 'FR',
+                    'italy': 'IT', 'italia': 'IT',
+                    'spain': 'ES', 'spania': 'ES', 'españa': 'ES',
+                    'usa': 'US', 'united states': 'US', 'america': 'US',
+                    'ireland': 'IE', 'irlanda': 'IE'
+                };
+                stripeCountry = map[stripeCountry.toLowerCase()] || '';
+            } else {
+                stripeCountry = stripeCountry.toUpperCase();
+            }
+
             return {
                 clientSecret: intentResult.clientSecret,
                 returnUrl: `${window.location.origin}/${locale}/success?orderId=${data.orderId}`,
@@ -237,7 +255,7 @@ export default function CheckoutPage() {
                         city: formData.city,
                         state: formData.county,
                         postal_code: formData.postal_code,
-                        country: formData.country,
+                        ...(stripeCountry.length === 2 && { country: stripeCountry }),
                     }
                 }
             };
