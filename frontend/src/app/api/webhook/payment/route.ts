@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import { getClientIP } from '../../../lib/rate-limit';
-import { processPostPayment } from '../../../lib/post-payment';
+import { getClientIP } from '../../../../lib/rate-limit';
+import { processPostPayment } from '../../../../lib/post-payment';
 
 const ADMIN_TOKEN = process.env.DIRECTUS_ADMIN_TOKEN!;
 
