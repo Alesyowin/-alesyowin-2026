@@ -48,7 +48,7 @@ export default function TermsPage() {
                 {/* Footer Note */}
                 <div className="mt-24 pt-12 border-t border-white/10 text-center">
                     <p className="text-gray-500 text-sm italic">
-                        {t('footerNote')} <span className="text-(--color-gold)">info@gpcompetition.com</span>
+                        {t('footerNote')} <span className="text-(--color-gold)">info@alesyowin.com</span>
                     </p>
                 </div>
             </div>
