@@ -39,8 +39,12 @@ export function getOrderEmailTemplate({
     const productsHtml = products.map(product => {
         // Generăm HTML-ul biletelor organizate strict câte 5 pe rând, folosind un tabel adaptat pentru mobil
         const rows = [];
-        for (let i = 0; i < product.tickets.length; i += 5) {
-            const rowTickets = product.tickets.slice(i, i + 5);
+        const MAX_TICKETS_TO_SHOW = 200;
+        const visibleTickets = product.tickets.slice(0, MAX_TICKETS_TO_SHOW);
+        const hiddenTicketsCount = product.tickets.length - MAX_TICKETS_TO_SHOW;
+
+        for (let i = 0; i < visibleTickets.length; i += 5) {
+            const rowTickets = visibleTickets.slice(i, i + 5);
             const tds = rowTickets.map(num => `
                 <td width="20%" align="center" valign="middle" style="padding: 3px;">
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;">
@@ -85,6 +89,11 @@ export function getOrderEmailTemplate({
                     <div style="width: 100%; margin: 0 auto;">
                         ${ticketsTableHtml}
                     </div>
+                    ${hiddenTicketsCount > 0 ? `
+                    <div style="margin-top: 15px; padding: 10px; background-color: #111; border: 1px dashed #333; border-radius: 6px; text-align: center; color: #888; font-size: 12px;">
+                        + ${hiddenTicketsCount} bilete valide ascunse din email pentru economisire de spațiu. Le poți găsi și verifica pe toate în Lista Participanților de pe site.
+                    </div>
+                    ` : ''}
                 </div>
             </div>
         `;

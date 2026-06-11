@@ -45,28 +45,7 @@ export async function processPostPayment({
             return { success: true, message: 'Already processed' };
         }
 
-        // 3. Update Order Status to PAID
-        await adminClient.request(
-            updateItem('orders', orderId.toString(), { 
-                status: 'paid' 
-            })
-        );
-
-        // 4. TikTok S2S CompletePayment Event
-        fireTikTokEvent({
-            event: 'CompletePayment',
-            ip: ip || undefined,
-            userAgent,
-            email: orderData.client_email,
-            phone: orderData.client_phone,
-            properties: {
-                value: Number(orderData.Total_Amount) || 0,
-                currency: 'GBP',
-                contents: [{ content_id: 'giveaway', quantity: 1, price: Number(orderData.Total_Amount) || 0 }]
-            }
-        });
-
-        // 5. Get Order Items immediately to know how many tickets to expect and which products
+        // 3. Extragem order_items ACUM, înainte de a seta 'paid', ca serverul Directus să nu fie încărcat
         let orderItemsData: any[] = [];
         try {
             // @ts-ignore
@@ -82,11 +61,32 @@ export async function processPostPayment({
 
         const expectedTickets = orderItemsData.reduce((sum: number, item: any) => sum + (Number(item.quantity) || Number(item.Quantity) || 1), 0);
 
+        // 4. Update Order Status to PAID (Acest pas declanșează masivul hook de bilete în background)
+        await adminClient.request(
+            updateItem('orders', orderId.toString(), { 
+                status: 'paid' 
+            })
+        );
+
+        // 5. TikTok S2S CompletePayment Event
+        fireTikTokEvent({
+            event: 'CompletePayment',
+            ip: ip || undefined,
+            userAgent,
+            email: orderData.client_email,
+            phone: orderData.client_phone,
+            properties: {
+                value: Number(orderData.Total_Amount) || 0,
+                currency: 'GBP',
+                contents: [{ content_id: 'giveaway', quantity: 1, price: Number(orderData.Total_Amount) || 0 }]
+            }
+        });
+
         // 6. Smart polling to wait for Directus Hook to generate tickets
         console.log(`[POST-PAYMENT] Waiting for ${expectedTickets} tickets to generate...`);
         let tickets: any[] = [];
         let attempts = 0;
-        const maxAttempts = 8; // 8 seconds max wait for Vercel timeout safety
+        const maxAttempts = 10; // 10 seconds max wait for Vercel timeout safety
 
         while (attempts < maxAttempts) {
             await new Promise(resolve => setTimeout(resolve, 1000));
