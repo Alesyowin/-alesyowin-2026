@@ -49,7 +49,7 @@ export default async function CategoryPage({ params }: PageProps) {
             <div className="max-w-7xl mx-auto">
                 <div className="mb-10 border-b border-[#D4AF37]/20 pb-6">
                     <p className="text-xs uppercase tracking-[0.3em] text-[#D4AF37]/60 mb-2">
-                        GP Competition &rsaquo; {t('breadcrumb')}
+                        ALESYOWIN &rsaquo; {t('breadcrumb')}
                     </p>
                     <h1
                         className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight"

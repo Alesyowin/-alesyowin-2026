@@ -160,7 +160,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
                             all: unset !important; 
                             width: 44px !important; height: 44px !important;
                             background: transparent !important; 
-                            color: #D4AF37 !important;
+                            color: #00A5FF !important;
                             display: flex !important; align-items: center !important; justify-content: center !important;
                             cursor: pointer !important;
                         }
@@ -184,7 +184,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
                         .lb-counter {
                             display: block !important;
                             text-align: center !important;
-                            color: #D4AF37 !important; font-size: 14px !important; padding: 15px 0 !important;
+                            color: #00A5FF !important; font-size: 14px !important; padding: 15px 0 !important;
                             font-weight: 600 !important; letter-spacing: 1px !important;
                         }
                         
@@ -202,7 +202,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
                             border: 2px solid transparent !important; transition: all 0.2s !important;
                             opacity: 0.5 !important;
                         }
-                        .lb-footer-thumb.active { border-color: #D4AF37 !important; border-width: 2px !important; opacity: 1 !important; }
+                        .lb-footer-thumb.active { border-color: #00A5FF !important; border-width: 2px !important; opacity: 1 !important; }
                         .lb-footer-thumb img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
                         
                         .lb-footer-spacing { display: none !important; }
@@ -216,7 +216,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
                         onClick={(e) => { e.stopPropagation(); setIsLightboxOpen(false); }}
                         style={{
                             all: 'unset', width: '56px', height: '56px', borderRadius: '50%',
-                            backgroundColor: '#111', color: '#D4AF37', border: '2px solid #D4AF37',
+                            backgroundColor: '#111', color: '#00A5FF', border: '2px solid #00A5FF',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
                             cursor: 'pointer', boxShadow: '0 4px 20px rgba(0,0,0,0.8)',
                             transition: 'transform 0.2s'
@@ -242,7 +242,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
                                 onClick={(e) => { e.stopPropagation(); handlePrev(); }}
                                 style={{
                                     all: 'unset', width: '64px', height: '64px', borderRadius: '50%',
-                                    backgroundColor: '#111', color: '#D4AF37', border: '2px solid #D4AF37',
+                                    backgroundColor: '#111', color: '#00A5FF', border: '2px solid #00A5FF',
                                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                                     cursor: 'pointer', boxShadow: '0 4px 20px rgba(0,0,0,0.8)'
                                 }}
@@ -285,7 +285,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
                                 onClick={(e) => { e.stopPropagation(); handleNext(); }}
                                 style={{
                                     all: 'unset', width: '64px', height: '64px', borderRadius: '50%',
-                                    backgroundColor: '#111', color: '#D4AF37', border: '2px solid #D4AF37',
+                                    backgroundColor: '#111', color: '#00A5FF', border: '2px solid #00A5FF',
                                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                                     cursor: 'pointer', boxShadow: '0 4px 20px rgba(0,0,0,0.8)'
                                 }}
@@ -318,7 +318,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
     return (
     <div className="space-y-4">
         <div
-            className="w-full aspect-[4/3] rounded-sm overflow-hidden border border-[#D4AF37]/10 bg-[#111] relative group select-none"
+            className="w-full aspect-[4/3] rounded-sm overflow-hidden border border-[#00A5FF]/10 bg-[#0a0a0a] relative group select-none"
             onDoubleClick={() => setIsLightboxOpen(true)}
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
@@ -343,13 +343,13 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
                 <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-3 z-[40] pointer-events-none">
                     <button 
                         onClick={handlePrev} 
-                        className="w-10 h-10 flex items-center justify-center rounded-full bg-black/80 text-white border border-white/10 hover:bg-[#D4AF37] btn-gold-safe hover:border-[#D4AF37] transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 touch-manipulation pointer-events-auto shadow-lg"
+                        className="w-10 h-10 flex items-center justify-center rounded-full bg-black/80 text-white border border-white/10 hover:bg-[#00A5FF] hover:border-[#00A5FF] transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 touch-manipulation pointer-events-auto shadow-lg"
                     >
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
                     </button>
                     <button 
                         onClick={handleNext} 
-                        className="w-10 h-10 flex items-center justify-center rounded-full bg-black/80 text-white border border-white/10 hover:bg-[#D4AF37] btn-gold-safe hover:border-[#D4AF37] transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 touch-manipulation pointer-events-auto shadow-lg"
+                        className="w-10 h-10 flex items-center justify-center rounded-full bg-black/80 text-white border border-white/10 hover:bg-[#00A5FF] hover:border-[#00A5FF] transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 touch-manipulation pointer-events-auto shadow-lg"
                     >
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
                     </button>
@@ -363,7 +363,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
                     <button 
                         key={i} 
                         onClick={() => handleThumbnailClick(i)} 
-                        className={`shrink-0 w-20 h-20 rounded-sm overflow-hidden bg-[#111] border-2 transition-all duration-200 ${i === activeIndex ? 'border-[#D4AF37] shadow-[0_0_10px_rgba(212,175,55,0.3)]' : 'border-[#D4AF37]/20 hover:border-[#D4AF37]/60'}`}
+                        className={`shrink-0 w-20 h-20 rounded-sm overflow-hidden bg-gray-100 border-2 transition-all duration-200 ${i === activeIndex ? 'border-[#00A5FF] shadow-[0_0_10px_rgba(0,165,255,0.3)]' : 'border-[#00A5FF]/20 hover:border-[#00A5FF]/60'}`}
                     >
                         <img src={getDirectusFileUrl(fileId, { width: 200, quality: 70 })} alt={`${title} - ${i + 1}`} className="w-full h-full object-cover" />
                     </button>

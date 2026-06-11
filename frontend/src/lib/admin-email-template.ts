@@ -100,10 +100,10 @@ export function getAdminOrderEmailTemplate({
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td align="left" valign="middle" class="header-left" style="font-size: 20px; font-weight: 800; color: #ffffff; text-transform: uppercase; letter-spacing: 2px;">
-                                        GP COMPETITION
+                                        ALESYOWIN
                                     </td>
                                     <td align="right" valign="middle" width="140" class="header-right">
-                                        <img src="${logoUrl}" alt="GP Competition" width="130" style="display: block; width: 100%; max-width: 130px; height: auto;" class="logo-img" />
+                                        <img src="${logoUrl}" alt="ALESYOWIN" width="130" style="display: block; width: 100%; max-width: 130px; height: auto;" class="logo-img" />
                                     </td>
                                 </tr>
                             </table>
@@ -166,7 +166,7 @@ export function getAdminOrderEmailTemplate({
                 
                 <!-- Footer Text -->
                 <div style="color: #444; font-size: 10px; text-align: center; margin-top: 20px; text-transform: uppercase; letter-spacing: 1px;">
-                    GP COMPETITION ADMIN NOTIFICATION &copy; ${new Date().getFullYear()}
+                    ALESYOWIN ADMIN NOTIFICATION &copy; ${new Date().getFullYear()}
                 </div>
                 
             </td>

@@ -134,7 +134,7 @@ export function getAdminInstantEmailTemplate(props: AdminInstantOrderEmailProps)
         </div>
         
         <div class="footer">
-            Sistem Automat Notificări GP Competition
+            Sistem Automat Notificări ALESYOWIN
         </div>
     </div>
 </body>

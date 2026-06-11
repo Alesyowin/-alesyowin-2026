@@ -73,10 +73,10 @@ export function getOtpEmailTemplate({
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td align="left" valign="middle" class="header-left" style="font-size: 22px; font-weight: 800; color: #ffffff; text-transform: uppercase; letter-spacing: 2px;">
-                                        GP COMPETITION
+                                        ALESYOWIN
                                     </td>
                                     <td align="right" valign="middle" width="150" class="header-right">
-                                        <img src="${logoUrl}" alt="GP Competition" width="140" style="display: block; width: 100%; max-width: 140px; height: auto;" class="logo-img" />
+                                        <img src="${logoUrl}" alt="ALESYOWIN" width="140" style="display: block; width: 100%; max-width: 140px; height: auto;" class="logo-img" />
                                     </td>
                                 </tr>
                             </table>

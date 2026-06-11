@@ -59,7 +59,7 @@
     "country": "Land"
   },
   "Home": {
-    "subtitle": "GP Competition",
+    "subtitle": "ALESYOWIN",
     "title": "Aktive Wettbewerbe",
     "description": "Nimm jetzt teil und gewinne Luxuspreise. Jedes Ticket bringt dich näher an lebensverändernde Belohnungen.",
     "noCompetitions": "Derzeit keine aktiven Wettbewerbe.",
@@ -100,7 +100,7 @@
     "bonusDrawsTakePlaceText": "Bonusziehungen finden statt, wenn die markierten Abschnitte erreicht werden"
   },
   "EntryList": {
-    "subtitle": "GP Competition",
+    "subtitle": "ALESYOWIN",
     "title": "Teilnehmerliste",
     "description": "Überprüfe die Teilnehmer und deine Tickets für jeden aktiven oder abgeschlossenen Wettbewerb.",
     "all": "Alle",
@@ -126,7 +126,7 @@
     "ticketsFoundFor": "Tickets gefunden für",
     "ticketCount": "{count} Tickets",
     "searchPrompt": "Gib oben deinen Namen, E-Mail oder Ticketnummer ein, um deine Tickets zu finden.",
-    "verifiedNote": "Deine Tickets are gesichert und offiziell im GP Competition System registriert."
+    "verifiedNote": "Deine Tickets are gesichert und offiziell im ALESYOWIN System registriert."
   },
   "Success": {
     "title": "Bestellung Erfolgreich!",
@@ -163,7 +163,7 @@
   },
   "Profile": {
     "title": "Mein Profil",
-    "memberBadge": "GP Competition Mitglied",
+    "memberBadge": "ALESYOWIN Mitglied",
     "logout": "Abmelden",
     "personalData": "Persönliche Daten",
     "fullName": "Vollständiger Name",
@@ -184,7 +184,7 @@
     "contactUs": "KONTAKTIEREN SIE UNS",
     "tagline": "Wir sind rund um die Uhr für Sie da",
     "telegram": "Telegram-Kanal",
-    "email": "info@gpcompetition.com",
+    "email": "info@ALESYOWIN.com",
     "companyName": "GP PROMOTIONS LTD",
     "companyNumber": "Firmennummer {number}",
     "legal": "RECHTLICHES",
@@ -202,16 +202,16 @@
     "unauthorised": "Jede unbefugte Verwendung des Namens, Logos oder Brandings ist strengstens untersagt."
   },
   "Email": {
-    "otpSubject": "Ihr Zugangscode - GP Competition",
+    "otpSubject": "Ihr Zugangscode - ALESYOWIN",
     "otpTitle": "Authentifizierungscode",
     "otpGreeting": "Hallo,",
-    "otpMessage": "Ihr Zugangscode für GP Competition lautet:",
+    "otpMessage": "Ihr Zugangscode für ALESYOWIN lautet:",
     "otpExpiry": "Dieser Code läuft in 10 Minuten ab.",
     "otpSecurityNote": "Wenn Sie diesen Code nicht angefordert haben, ignorieren Sie bitte diese E-Mail.",
     "footer": "© {year} GP PROMOTIONS LTD. Alle Rechte vorbehalten."
   },
   "OrderEmail": {
-    "subject": "Bestellbestätigung #{id} - GP Competition",
+    "subject": "Bestellbestätigung #{id} - ALESYOWIN",
     "title": "Bestellbestätigung",
     "greeting": "Hallo {name},",
     "orderNumber": "Bestellnummer:",
@@ -224,27 +224,27 @@
   "Terms": {
     "title": "Allgemeine Geschäftsbedingungen",
     "lastUpdated": "Zuletzt aktualisiert: Oktober 2023",
-    "intro": "GP PROMOTIONS LTD (Firmennummer 17127347), mit eingetragenem Sitz in 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Vereinigtes Königreich, betreibt die Website www.gpcompetition.com und ist für die Durchführung aller dort aufgeführten Wettbewerbe verantwortlich.\n\nBei Fragen wenden Sie sich bitte per E-Mail an info@gpcompetition.com.",
+    "intro": "GP PROMOTIONS LTD (Firmennummer 17127347), mit eingetragenem Sitz in 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Vereinigtes Königreich, betreibt die Website www.ALESYOWIN.com und ist für die Durchführung aller dort aufgeführten Wettbewerbe verantwortlich.\n\nBei Fragen wenden Sie sich bitte per E-Mail an info@ALESYOWIN.com.",
     "sections": {
       "s1": {
         "title": "1. Allgemeine Regeln",
-        "content": "1.1 Jeder auf www.gpcompetition.com veröffentlichte Wettbewerb unterliegt diesen Allgemeinen Geschäftsbedingungen („AGB“). Diese umfassen sowohl Standard-Preisausschreiben („Standard-Wettbewerbe“) als auch Sofortgewinn-Wettbewerbe („Instant-Win-Wettbewerbe“), zusammenfassend als „Wettbewerbe“ bezeichnet.\n1.2 Diese AGB haben Vorrang vor allen anderen Kommunikationsmitteln — einschließlich Werbematerialien, Social-Media-Beiträgen oder sonstigen Mitteilungen im Zusammenhang mit einem Wettbewerb.\n1.3 Um Anspruch auf einen Preis zu haben, müssen die Teilnehmer eine von GP PROMOTIONS LTD gestellte Frage korrekt beantworten oder ein Problem lösen (die „Wettbewerbsfrage“).\n1.4 Jeder Wettbewerb beinhaltet eine Wettbewerbsfrage. Bei jeder Teilnahme fällt eine Teilnahmegebühr an. Sofern GP PROMOTIONS LTD eine Multiple-Choice- oder einfach zu beantwortende Frage anbietet, steht auch ein kostenloser postalischer Teilnahmeweg zur Verfügung."
+        "content": "1.1 Jeder auf www.ALESYOWIN.com veröffentlichte Wettbewerb unterliegt diesen Allgemeinen Geschäftsbedingungen („AGB“). Diese umfassen sowohl Standard-Preisausschreiben („Standard-Wettbewerbe“) als auch Sofortgewinn-Wettbewerbe („Instant-Win-Wettbewerbe“), zusammenfassend als „Wettbewerbe“ bezeichnet.\n1.2 Diese AGB haben Vorrang vor allen anderen Kommunikationsmitteln — einschließlich Werbematerialien, Social-Media-Beiträgen oder sonstigen Mitteilungen im Zusammenhang mit einem Wettbewerb.\n1.3 Um Anspruch auf einen Preis zu haben, müssen die Teilnehmer eine von GP PROMOTIONS LTD gestellte Frage korrekt beantworten oder ein Problem lösen (die „Wettbewerbsfrage“).\n1.4 Jeder Wettbewerb beinhaltet eine Wettbewerbsfrage. Bei jeder Teilnahme fällt eine Teilnahmegebühr an. Sofern GP PROMOTIONS LTD eine Multiple-Choice- oder einfach zu beantwortende Frage anbietet, steht auch ein kostenloser postalischer Teilnahmeweg zur Verfügung."
       },
       "s2": {
         "title": "2. Teilnahme",
-        "content": "2.1 Jeder Wettbewerb läuft zwischen dem Start- und Enddatum, das auf der jeweiligen Wettbewerbsseite von www.gpcompetition.com angegeben ist („Eröffnungsdatum“ und „Einsendeschluss“). Alle Datums- und Zeitangaben beziehen sich auf die Zeit in London, England.\n2.2 GP PROMOTIONS LTD behält sich das Recht vor, die Eröffnungs- oder Abschlussdaten anzupassen, falls dies wirklich erforderlich ist. Etwaige Änderungen werden umgehend auf der Website aktualisiert.\n2.3 Alle Einsendungen müssen vor der angegebenen Abschlusszeit eingehen. Nach diesem Zeitpunkt eingehende Einsendungen sind automatisch ungültig. Für verspätete Einsendungen erfolgt keine Rückerstattung.\n2.4 Für jeden Wettbewerb gibt es ein maximales Ticketlimit, das auf der Wettbewerbsseite angezeigt wird. Sobald dieses Limit erreicht ist, werden keine weiteren Einsendungen mehr akzeptiert.\n2.5 Es gibt auch ein Teilnahme-Limit pro Person für jeden Wettbewerb. Dieses Limit ist auf der jeweiligen Wettbewerbsseite angegeben.\n2.6 So nehmen Sie an einem Standard-Wettbewerb über den kostenpflichtigen Weg teil: Besuchen Sie www.gpcompetition.com, wählen Sie den gewünschten Wettbewerb aus, beantworten Sie die Wettbewerbsfrage, wählen Sie die Anzahl der Teilnahmen, gehen Sie zur Kasse, melden Sie sich an oder registrieren Sie sich, akzeptieren Sie diese AGB und schließen Sie die Zahlung ab.\n2.7 So nehmen Sie an einem Instant-Win-Wettbewerb über den kostenpflichtigen Weg teil: Besuchen Sie www.gpcompetition.com, wählen Sie den Wettbewerb aus, wählen Sie die Anzahl der Teilnahmen, gehen Sie zur Kasse, melden Sie sich an oder registrieren Sie sich, akzeptieren Sie diese AGB und schließen Sie die Zahlung ab.\n2.8 Nach erfolgreichem Abschluss Ihrer Teilnahme erhalten Sie eine Bestätigung von GP PROMOTIONS LTD.\n2.9 GP PROMOTIONS LTD übernimmt keine Verantwortung für Einsendungen, die uns aufgrund technischer Probleme, Konnektivitätsproblemen oder anderer Umstände, die außerhalb unserer Kontrolle liegen, nicht erreichen.\n2.10 Mit der Teilnahme an einem Wettbewerb bestätigen Sie, dass Sie die Teilnahmebedingungen erfüllen, dass Sie verstehen, dass Sie einen verbindlichen Vertrag mit GP PROMOTIONS LTD eingehen, und dass Sie diese AGB in vollem Umfang akzeptieren."
+        "content": "2.1 Jeder Wettbewerb läuft zwischen dem Start- und Enddatum, das auf der jeweiligen Wettbewerbsseite von www.ALESYOWIN.com angegeben ist („Eröffnungsdatum“ und „Einsendeschluss“). Alle Datums- und Zeitangaben beziehen sich auf die Zeit in London, England.\n2.2 GP PROMOTIONS LTD behält sich das Recht vor, die Eröffnungs- oder Abschlussdaten anzupassen, falls dies wirklich erforderlich ist. Etwaige Änderungen werden umgehend auf der Website aktualisiert.\n2.3 Alle Einsendungen müssen vor der angegebenen Abschlusszeit eingehen. Nach diesem Zeitpunkt eingehende Einsendungen sind automatisch ungültig. Für verspätete Einsendungen erfolgt keine Rückerstattung.\n2.4 Für jeden Wettbewerb gibt es ein maximales Ticketlimit, das auf der Wettbewerbsseite angezeigt wird. Sobald dieses Limit erreicht ist, werden keine weiteren Einsendungen mehr akzeptiert.\n2.5 Es gibt auch ein Teilnahme-Limit pro Person für jeden Wettbewerb. Dieses Limit ist auf der jeweiligen Wettbewerbsseite angegeben.\n2.6 So nehmen Sie an einem Standard-Wettbewerb über den kostenpflichtigen Weg teil: Besuchen Sie www.ALESYOWIN.com, wählen Sie den gewünschten Wettbewerb aus, beantworten Sie die Wettbewerbsfrage, wählen Sie die Anzahl der Teilnahmen, gehen Sie zur Kasse, melden Sie sich an oder registrieren Sie sich, akzeptieren Sie diese AGB und schließen Sie die Zahlung ab.\n2.7 So nehmen Sie an einem Instant-Win-Wettbewerb über den kostenpflichtigen Weg teil: Besuchen Sie www.ALESYOWIN.com, wählen Sie den Wettbewerb aus, wählen Sie die Anzahl der Teilnahmen, gehen Sie zur Kasse, melden Sie sich an oder registrieren Sie sich, akzeptieren Sie diese AGB und schließen Sie die Zahlung ab.\n2.8 Nach erfolgreichem Abschluss Ihrer Teilnahme erhalten Sie eine Bestätigung von GP PROMOTIONS LTD.\n2.9 GP PROMOTIONS LTD übernimmt keine Verantwortung für Einsendungen, die uns aufgrund technischer Probleme, Konnektivitätsproblemen oder anderer Umstände, die außerhalb unserer Kontrolle liegen, nicht erreichen.\n2.10 Mit der Teilnahme an einem Wettbewerb bestätigen Sie, dass Sie die Teilnahmebedingungen erfüllen, dass Sie verstehen, dass Sie einen verbindlichen Vertrag mit GP PROMOTIONS LTD eingehen, und dass Sie diese AGB in vollem Umfang akzeptieren."
       },
       "s3": {
         "title": "3. Kostenlose postalische Teilnahme",
-        "content": "Teilnehmer, die nicht bezahlen möchten, können per Post teilnehmen, sofern sie die folgenden Anweisungen befolgen:\nSenden Sie einen handgeschriebenen Brief per vorausbezahlter Post der ersten oder zweiten Klasse an: GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Vereinigtes Königreich. Persönlich abgegebene Briefe werden nicht akzeptiert.\nIhr Brief muss deutlich enthalten: Den Namen des Wettbewerbs, an dem Sie teilnehmen, Ihren vollen Namen, Ihr Geburtsdatum, Ihre vollständige Privatadresse, eine Telefonnummer und E-Mail-Adresse sowie Ihre Antwort auf die Wettbewerbsfrage (falls zutreffend).\nUnvollständige oder unleserliche Einsendungen werden disqualifiziert. Pro Person und Wettbewerb sind maximal zwei (2) kostenlose postalische Einsendungen zulässig. Jede Einsendung muss in einem eigenen separaten Umschlag gesendet werden.\nPostalische Einsendungen müssen vor dem Einsendeschluss und vor der Zuteilung aller Tickets eingehen. Porto-Kosten gehen zu Lasten des Teilnehmers. GP PROMOTIONS LTD erstattet keine Portogebühren. Um gültig zu sein, müssen Sie über ein aktives Konto auf www.gpcompetition.com verfügen, und alle Angaben in Ihrem Brief müssen exakt mit den Angaben in Ihrem Konto übereinstimmen."
+        "content": "Teilnehmer, die nicht bezahlen möchten, können per Post teilnehmen, sofern sie die folgenden Anweisungen befolgen:\nSenden Sie einen handgeschriebenen Brief per vorausbezahlter Post der ersten oder zweiten Klasse an: GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Vereinigtes Königreich. Persönlich abgegebene Briefe werden nicht akzeptiert.\nIhr Brief muss deutlich enthalten: Den Namen des Wettbewerbs, an dem Sie teilnehmen, Ihren vollen Namen, Ihr Geburtsdatum, Ihre vollständige Privatadresse, eine Telefonnummer und E-Mail-Adresse sowie Ihre Antwort auf die Wettbewerbsfrage (falls zutreffend).\nUnvollständige oder unleserliche Einsendungen werden disqualifiziert. Pro Person und Wettbewerb sind maximal zwei (2) kostenlose postalische Einsendungen zulässig. Jede Einsendung muss in einem eigenen separaten Umschlag gesendet werden.\nPostalische Einsendungen müssen vor dem Einsendeschluss und vor der Zuteilung aller Tickets eingehen. Porto-Kosten gehen zu Lasten des Teilnehmers. GP PROMOTIONS LTD erstattet keine Portogebühren. Um gültig zu sein, müssen Sie über ein aktives Konto auf www.ALESYOWIN.com verfügen, und alle Angaben in Ihrem Brief müssen exakt mit den Angaben in Ihrem Konto übereinstimmen."
       },
       "s4": {
         "title": "4. Auswahl der Gewinner",
-        "content": "4.1 Bei Standard-Wettbewerben nehmen alle Teilnehmer, die die Wettbewerbsfrage richtig beantwortet haben, an einer Verlosung teil. Der Gewinner wird live mit dem Zufallszahlengenerator von Google ermittelt. Die Ziehung wird live auf den offiziellen Social-Media-Kanälen von GP PROMOTIONS LTD übertragen. Die Ziehung findet innerhalb von 7 Tagen nach dem Einsendeschluss statt.\n4.2 Teilnehmer an Standard-Wettbewerben können mit ihrem Namen und ihrer Teilnahmenummer in einer Tabellenkalkulation aufgeführt werden, die auf der Website veröffentlicht oder während der Live-Ziehung gezeigt werden kann. Wenn Sie nicht möchten, dass Ihr Name aufgeführt wird, kontaktieren Sie uns bitte mindestens 48 Stunden vor der Ziehung unter info@gpcompetition.com.\n4.3 Bei Instant-Win-Wettbewerben werden die Preise in einer Tabellenkalkulation zufälligen Ticketnummern vorab zugewiesen. Jeder korrekt beantworteten Teilnahme wird eine Nummer zugewiesen. Wenn diese Nummer einem Preis entspricht, gewinnt der Teilnehmer. Die Gewinner werden sofort auf der Wettbewerbsseite und per automatischer E-Mail benachrichtigt."
+        "content": "4.1 Bei Standard-Wettbewerben nehmen alle Teilnehmer, die die Wettbewerbsfrage richtig beantwortet haben, an einer Verlosung teil. Der Gewinner wird live mit dem Zufallszahlengenerator von Google ermittelt. Die Ziehung wird live auf den offiziellen Social-Media-Kanälen von GP PROMOTIONS LTD übertragen. Die Ziehung findet innerhalb von 7 Tagen nach dem Einsendeschluss statt.\n4.2 Teilnehmer an Standard-Wettbewerben können mit ihrem Namen und ihrer Teilnahmenummer in einer Tabellenkalkulation aufgeführt werden, die auf der Website veröffentlicht oder während der Live-Ziehung gezeigt werden kann. Wenn Sie nicht möchten, dass Ihr Name aufgeführt wird, kontaktieren Sie uns bitte mindestens 48 Stunden vor der Ziehung unter info@ALESYOWIN.com.\n4.3 Bei Instant-Win-Wettbewerben werden die Preise in einer Tabellenkalkulation zufälligen Ticketnummern vorab zugewiesen. Jeder korrekt beantworteten Teilnahme wird eine Nummer zugewiesen. Wenn diese Nummer einem Preis entspricht, gewinnt der Teilnehmer. Die Gewinner werden sofort auf der Wettbewerbsseite und per automatischer E-Mail benachrichtigt."
       },
       "s5": {
         "title": "5. Website-Guthaben",
-        "content": "5.1 Website-Guthaben kann bei bestimmten Wettbewerben als Preis oder Geschenk vergeben werden.\n5.2 In einigen Fällen kann ein Preis gegen Website-Guthaben eingetauscht werden, sofern dies auf der Wettbewerbsseite angegeben ist.\n5.3 Website-Guthaben kann an Gewinner vergeben werden, die Fotos und Erfahrungsberichte gemäß den Richtlinien von GP PROMOTIONS LTD einreichen.\n5.4 Das Guthaben muss innerhalb von 12 Monaten nach der Gutschrift auf Ihrem Konto verwendet werden. Erinnerungen werden per E-Mail gesendet. Abgelaufenes Guthaben kann nicht mehr verwendet werden.\n5.5 Website-Guthaben hat keinen Geldwert. Es kann nicht gegen Bargeld getauscht, übertragen oder abgehoben werden. Es ist nur für die Verwendung für zukünftige Wettbewerbsteilnahmen auf www.gpcompetition.com gültig."
+        "content": "5.1 Website-Guthaben kann bei bestimmten Wettbewerben als Preis oder Geschenk vergeben werden.\n5.2 In einigen Fällen kann ein Preis gegen Website-Guthaben eingetauscht werden, sofern dies auf der Wettbewerbsseite angegeben ist.\n5.3 Website-Guthaben kann an Gewinner vergeben werden, die Fotos und Erfahrungsberichte gemäß den Richtlinien von GP PROMOTIONS LTD einreichen.\n5.4 Das Guthaben muss innerhalb von 12 Monaten nach der Gutschrift auf Ihrem Konto verwendet werden. Erinnerungen werden per E-Mail gesendet. Abgelaufenes Guthaben kann nicht mehr verwendet werden.\n5.5 Website-Guthaben hat keinen Geldwert. Es kann nicht gegen Bargeld getauscht, übertragen oder abgehoben werden. Es ist nur für die Verwendung für zukünftige Wettbewerbsteilnahmen auf www.ALESYOWIN.com gültig."
       },
       "s6": {
         "title": "6. Teilnahmeberechtigung",
@@ -252,7 +252,7 @@
       },
       "s7": {
         "title": "7. Der Preis",
-        "content": "7.1 Der Preis für jeden Wettbewerb wird auf der jeweiligen Wettbewerbsseite von www.gpcompetition.com beschrieben.\n7.2 Die Preise unterliegen der Verfügbarkeit. GP PROMOTIONS LTD behält sich das Recht vor, jeden Preis durch einen gleichwertigen oder höherwertigen Preis zu ersetzen.\n7.3 Sofern nicht anders angegeben, gibt es keine Barauszahlung des Preises. GP PROMOTIONS LTD kann nach eigenem Ermessen ein Baräquivalent anbieten, wenn der Gewinner dies bevorzugt.\n7.4 Preise können nicht zurückerstattet, umgetauscht oder auf eine andere Person übertragen werden.\n7.5 Wenn der Preis ein Fahrzeug ist: Dieses wird mit gültigem MOT geliefert, sofern erforderlich; Versicherung und Kfz-Steuer sind nicht enthalten und liegen in der Verantwortung des Gewinners; der Gewinner muss über alle entsprechenden Lizenzen verfügen.\n7.6 Wenn der Preis ein Reise oder ein Event ist: Reisedaten, Anzahl der Tickets und Reiseklasse werden auf der Wettbewerbsseite angegeben; der Preis deckt keine zusätzlichen persönlichen Kosten ab, die nicht explizit aufgeführt sind."
+        "content": "7.1 Der Preis für jeden Wettbewerb wird auf der jeweiligen Wettbewerbsseite von www.ALESYOWIN.com beschrieben.\n7.2 Die Preise unterliegen der Verfügbarkeit. GP PROMOTIONS LTD behält sich das Recht vor, jeden Preis durch einen gleichwertigen oder höherwertigen Preis zu ersetzen.\n7.3 Sofern nicht anders angegeben, gibt es keine Barauszahlung des Preises. GP PROMOTIONS LTD kann nach eigenem Ermessen ein Baräquivalent anbieten, wenn der Gewinner dies bevorzugt.\n7.4 Preise können nicht zurückerstattet, umgetauscht oder auf eine andere Person übertragen werden.\n7.5 Wenn der Preis ein Fahrzeug ist: Dieses wird mit gültigem MOT geliefert, sofern erforderlich; Versicherung und Kfz-Steuer sind nicht enthalten und liegen in der Verantwortung des Gewinners; der Gewinner muss über alle entsprechenden Lizenzen verfügen.\n7.6 Wenn der Preis ein Reise oder ein Event ist: Reisedaten, Anzahl der Tickets und Reiseklasse werden auf der Wettbewerbsseite angegeben; der Preis deckt keine zusätzlichen persönlichen Kosten ab, die nicht explizit aufgeführt sind."
       },
       "s8": {
         "title": "8. Gewinner",
@@ -260,7 +260,7 @@
       },
       "s9": {
         "title": "9. Beanspruchung Ihres Preises",
-        "content": "9.1 Preise müssen vom Gewinner persönlich beansprucht werden. Kein Dritter darf einen Preis im Namen eines Gewinners beanspruchen.\n9.2 Gewinner müssen ihre Kontaktdaten auf dem neuesten Stand halten. Änderungen sollten so schnell wie möglich an info@gpcompetition.com gesendet werden.\n9.3 Geldpreise werden direkt auf das Bankkonto des Gewinners überwiesen. Der Gewinner muss bestätigen, dass er der alleinige oder gemeinsame Kontoinhaber ist. Die Nichtvorlage dieses Nachweises innerhalb von 14 Tagen führt zum Verfall des Preises."
+        "content": "9.1 Preise müssen vom Gewinner persönlich beansprucht werden. Kein Dritter darf einen Preis im Namen eines Gewinners beanspruchen.\n9.2 Gewinner müssen ihre Kontaktdaten auf dem neuesten Stand halten. Änderungen sollten so schnell wie möglich an info@ALESYOWIN.com gesendet werden.\n9.3 Geldpreise werden direkt auf das Bankkonto des Gewinners überwiesen. Der Gewinner muss bestätigen, dass er der alleinige oder gemeinsame Kontoinhaber ist. Die Nichtvorlage dieses Nachweises innerhalb von 14 Tagen führt zum Verfall des Preises."
       },
       "s10": {
         "title": "10. Haftungsbeschränkung",
@@ -272,7 +272,7 @@
       },
       "s12": {
         "title": "12. Allgemeines",
-        "content": "12.1 GP PROMOTIONS LTD kann diese AGB von Zeit zu Zeit aktualisieren. Die aktuelle Version ist stets auf www.gpcompetition.com verfügbar.\n12.2 Diese AGB unterliegen dem Recht von England und Wales. Alle Streitigkeiten unterliegen der ausschließlichen Zuständigkeit der Gerichte von England und Wales."
+        "content": "12.1 GP PROMOTIONS LTD kann diese AGB von Zeit zu Zeit aktualisieren. Die aktuelle Version ist stets auf www.ALESYOWIN.com verfügbar.\n12.2 Diese AGB unterliegen dem Recht von England und Wales. Alle Streitigkeiten unterliegen der ausschließlichen Zuständigkeit der Gerichte von England und Wales."
       }
     },
     "footerNote": "Ihre Privatsphäre ist unsere Priorität. Wenn Sie Fragen haben, kontaktieren Sie uns bitte."
@@ -280,11 +280,11 @@
   "Privacy": {
     "title": "Datenschutzerklärung",
     "lastUpdated": "Zuletzt aktualisiert: April 2026",
-    "intro": "GP PROMOTIONS LTD („wir“, „uns“, „unser“) nimmt den Schutz der Privatsphäre jeder Person, die www.gpcompetition.com besucht oder nutzt, sehr ernst. Diese Datenschutzerklärung legt klar dar, welche personenbezogenen Daten wir sammeln, warum wir sie sammeln, wie wir sie schützen und welche Rechte Sie in Bezug auf diese haben.\n\nKontaktdaten des Verantwortlichen:\nGP PROMOTIONS LTD (Firmennummer 17127347)\n71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Vereinigtes Königreich\nE-Mail: info@gpcompetition.com\n\nDiese Richtlinie gilt für alle, die auf www.gpcompetition.com surfen, ein Konto erstellen oder an unseren Wettbewerben teilnehmen. Durch die Nutzung unserer Website bestätigen Sie, dass Sie die Informationen zum Umgang mit Ihren Daten gelesen und verstanden haben.",
+    "intro": "GP PROMOTIONS LTD („wir“, „uns“, „unser“) nimmt den Schutz der Privatsphäre jeder Person, die www.ALESYOWIN.com besucht oder nutzt, sehr ernst. Diese Datenschutzerklärung legt klar dar, welche personenbezogenen Daten wir sammeln, warum wir sie sammeln, wie wir sie schützen und welche Rechte Sie in Bezug auf diese haben.\n\nKontaktdaten des Verantwortlichen:\nGP PROMOTIONS LTD (Firmennummer 17127347)\n71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Vereinigtes Königreich\nE-Mail: info@ALESYOWIN.com\n\nDiese Richtlinie gilt für alle, die auf www.ALESYOWIN.com surfen, ein Konto erstellen oder an unseren Wettbewerben teilnehmen. Durch die Nutzung unserer Website bestätigen Sie, dass Sie die Informationen zum Umgang mit Ihren Daten gelesen und verstanden haben.",
     "sections": {
       "s1": {
         "title": "1. Wer Wir Sind",
-        "content": "GP PROMOTIONS LTD („wir“, „uns“, „unser“) nimmt den Schutz der Privatsphäre jeder Person, die www.gpcompetition.com besucht oder nutzt, sehr ernst. Diese Datenschutzerklärung erklärt, wie wir mit Ihren Daten umgehen."
+        "content": "GP PROMOTIONS LTD („wir“, „uns“, „unser“) nimmt den Schutz der Privatsphäre jeder Person, die www.ALESYOWIN.com besucht oder nutzt, sehr ernst. Diese Datenschutzerklärung erklärt, wie wir mit Ihren Daten umgehen."
       },
       "s2": {
         "title": "2. Welche Informationen Wir Sammeln",
@@ -312,7 +312,7 @@
       },
       "s8": {
         "title": "8. Ihre Rechte",
-        "content": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit und Widerspruch. Bei Fragen kontaktieren Sie uns unter info@gpcompetition.com."
+        "content": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit und Widerspruch. Bei Fragen kontaktieren Sie uns unter info@ALESYOWIN.com."
       },
       "s9": {
         "title": "9. Gewinner und Werbung",
@@ -328,7 +328,7 @@
       },
       "s12": {
         "title": "12. Kontakt",
-        "content": "Bei Fragen zur Datenschutzerklärung kontaktieren Sie uns bitte per E-Mail an info@gpcompetition.com."
+        "content": "Bei Fragen zur Datenschutzerklärung kontaktieren Sie uns bitte per E-Mail an info@ALESYOWIN.com."
       }
     },
     "footerNote": "Ihre Privatsphäre ist unsere Priorität. Wenn Sie Fragen haben, kontaktieren Sie uns bitte."
@@ -336,11 +336,11 @@
   "Rules": {
     "title": "Offizielle Wettbewerbsregeln",
     "lastUpdated": "Gültig ab: März 2026",
-    "intro": "GP PROMOTIONS LTD, eingetragen in England und Wales unter der Firmennummer 17127347, mit eingetragenem Sitz in 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Vereinigtes Königreich.\n\nDiese offiziellen Wettbewerbsregeln („Regeln“) sind verbindlich und regeln alle auf www.gpcompetition.com gestarteten Wettbewerbe.",
+    "intro": "GP PROMOTIONS LTD, eingetragen in England und Wales unter der Firmennummer 17127347, mit eingetragenem Sitz in 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, Vereinigtes Königreich.\n\nDiese offiziellen Wettbewerbsregeln („Regeln“) sind verbindlich und regeln alle auf www.ALESYOWIN.com gestarteten Wettbewerbe.",
     "sections": {
       "s1": {
         "title": "1. Allgemeine Bedingungen",
-        "content": "1.1 Diese Offiziellen Wettbewerbsregeln („Regeln“) sind verbindlich. DER ORGANISATOR: GP PROMOTIONS LTD. DIE PLATTFORM: www.gpcompetition.com gibt berechtigten Personen die Chance, an Gewinnspielen teilzunehmen. GELTUNGSBEREICH: Diese Regeln gelten für alle Wettbewerbe, die am oder nach dem 01.03.2026 gestartet werden."
+        "content": "1.1 Diese Offiziellen Wettbewerbsregeln („Regeln“) sind verbindlich. DER ORGANISATOR: GP PROMOTIONS LTD. DIE PLATTFORM: www.ALESYOWIN.com gibt berechtigten Personen die Chance, an Gewinnspielen teilzunehmen. GELTUNGSBEREICH: Diese Regeln gelten für alle Wettbewerbe, die am oder nach dem 01.03.2026 gestartet werden."
       },
       "s2": {
         "title": "2. Teilnahme",
@@ -400,7 +400,7 @@
       },
       "s3": {
         "title": "3. Teilnahmelimits",
-        "content": "Sie können mehr als eine kostenlose Einsendung pro Wettbewerb einreichen, bis zur maximalen Anzahl der für diesen Wettbewerb zulässigen Einsendungen. Das Teilnahmelimit pro Person wird auf der jeweiligen Wettbewerbsseite auf www.gpcompetition.com angezeigt. Jede Einsendung muss separat in einem eigenen Umschlag verschickt werden. Wenn mehr als eine Einsendung in einen einzigen Umschlag gesteckt wird, zählt die gesamte Einsendung als nur eine Teilnahme, unabhängig davon, wie viele Einsendungen beigefügt sind."
+        "content": "Sie können mehr als eine kostenlose Einsendung pro Wettbewerb einreichen, bis zur maximalen Anzahl der für diesen Wettbewerb zulässigen Einsendungen. Das Teilnahmelimit pro Person wird auf der jeweiligen Wettbewerbsseite auf www.ALESYOWIN.com angezeigt. Jede Einsendung muss separat in einem eigenen Umschlag verschickt werden. Wenn mehr als eine Einsendung in einen einzigen Umschlag gesteckt wird, zählt die gesamte Einsendung als nur eine Teilnahme, unabhängig davon, wie viele Einsendungen beigefügt sind."
       },
       "s4": {
         "title": "4. Standard-Wettbewerbe",
@@ -416,7 +416,7 @@
       },
       "s7": {
         "title": "7. Registriertes Konto",
-        "content": "Um Ihre kostenlose postalische Einsendung bearbeiten zu lassen, müssen Sie über ein aktives registriertes Konto auf www.gpcompetition.com verfügen. Alle in Ihrem Brief enthaltenen persönlichen Daten müssen exakt mit den in Ihrem Konto registrierten Daten übereinstimmen. Einsendungen, bei denen die Daten nicht übereinstimmen oder bei denen kein passendes Konto existiert, gelten als ungültig und werden nicht an der Verlosung teilnehmen."
+        "content": "Um Ihre kostenlose postalische Einsendung bearbeiten zu lassen, müssen Sie über ein aktives registriertes Konto auf www.ALESYOWIN.com verfügen. Alle in Ihrem Brief enthaltenen persönlichen Daten müssen exakt mit den in Ihrem Konto registrierten Daten übereinstimmen. Einsendungen, bei denen die Daten nicht übereinstimmen oder bei denen kein passendes Konto existiert, gelten als ungültig und werden nicht an der Verlosung teilnehmen."
       }
     },
     "footerNote": "Ihre Privatsphäre ist unsere Priorität. Wenn Sie Fragen haben, kontaktieren Sie uns bitte."
@@ -424,11 +424,11 @@
   "Cookies": {
     "title": "Cookie-Richtlinie",
     "lastUpdated": "Zuletzt aktualisiert: April 2026",
-    "intro": "GP PROMOTIONS LTD („wir“, „unser“, „uns“) betreibt die Website www.gpcompetition.com. Diese Cookie-Richtlinie erklärt, was Cookies sind, wie wir sie auf unserer Website verwenden und welche Auswahlmöglichkeiten Sie hinsichtlich ihrer Verwendung haben.\n\nDurch die weitere Nutzung von www.gpcompetition.com bestätigen Sie, dass Sie gelesen und verstanden haben, wie wir Cookies wie unten beschrieben verwenden.",
+    "intro": "GP PROMOTIONS LTD („wir“, „unser“, „uns“) betreibt die Website www.ALESYOWIN.com. Diese Cookie-Richtlinie erklärt, was Cookies sind, wie wir sie auf unserer Website verwenden und welche Auswahlmöglichkeiten Sie hinsichtlich ihrer Verwendung haben.\n\nDurch die weitere Nutzung von www.ALESYOWIN.com bestätigen Sie, dass Sie gelesen und verstanden haben, wie wir Cookies wie unten beschrieben verwenden.",
     "sections": {
       "s1": {
         "title": "1. Über diese Richtlinie",
-        "content": "GP PROMOTIONS LTD („wir“, „unser“, „uns“) betreibt die Website www.gpcompetition.com. Diese Cookie-Richtlinie erklärt, was Cookies sind, wie wir sie auf unserer Website verwenden und welche Auswahlmöglichkeiten Sie hinsichtlich ihrer Verwendung haben."
+        "content": "GP PROMOTIONS LTD („wir“, „unser“, „uns“) betreibt die Website www.ALESYOWIN.com. Diese Cookie-Richtlinie erklärt, was Cookies sind, wie wir sie auf unserer Website verwenden und welche Auswahlmöglichkeiten Sie hinsichtlich ihrer Verwendung haben."
       },
       "s2": {
         "title": "2. Was ist ein Cookie?",
@@ -436,11 +436,11 @@
       },
       "s3": {
         "title": "3. Wie wir Cookies verwenden",
-        "content": "Wir verwenden Cookies auf www.gpcompetition.com für verschiedene Zwecke, darunter:\n\n• Sicherstellung des ordnungsgemäßen Funktionierens der Website – Einige Cookies sind für das Funktionieren der Website unerlässlich. Ohne sie funktionieren bestimmte Seiten oder Funktionen möglicherweise nicht wie erwartet.\n• Verständnis der Nutzung unserer Website durch Besucher – Wir verwenden Analysetools, um zu sehen, welche Seiten am häufigsten besucht werden und woher die Besucher kommen. Dies hilft uns auf die Benutzererfahrung zu verbessern.\n• Speicherung Ihrer Präferenzen – Cookies helfen uns, getroffene Entscheidungen wie Ihre Spracheinstellung zu speichern, damit Sie diese nicht jedes Mal neu eingeben müssen.\n• Bereitstellung relevanter Inhalte und Werbung – Wir können Cookies verwenden, um Ihnen Werbeaktionen im Zusammenhang mit unseren Gewinnspielen anzuzeigen, von denen wir glauben, dass sie Sie interessieren könnten."
+        "content": "Wir verwenden Cookies auf www.ALESYOWIN.com für verschiedene Zwecke, darunter:\n\n• Sicherstellung des ordnungsgemäßen Funktionierens der Website – Einige Cookies sind für das Funktionieren der Website unerlässlich. Ohne sie funktionieren bestimmte Seiten oder Funktionen möglicherweise nicht wie erwartet.\n• Verständnis der Nutzung unserer Website durch Besucher – Wir verwenden Analysetools, um zu sehen, welche Seiten am häufigsten besucht werden und woher die Besucher kommen. Dies hilft uns auf die Benutzererfahrung zu verbessern.\n• Speicherung Ihrer Präferenzen – Cookies helfen uns, getroffene Entscheidungen wie Ihre Spracheinstellung zu speichern, damit Sie diese nicht jedes Mal neu eingeben müssen.\n• Bereitstellung relevanter Inhalte und Werbung – Wir können Cookies verwenden, um Ihnen Werbeaktionen im Zusammenhang mit unseren Gewinnspielen anzuzeigen, von denen wir glauben, dass sie Sie interessieren könnten."
       },
       "s4": {
         "title": "4. Cookies von Drittanbietern",
-        "content": "Einige Cookies auf www.gpcompetition.com werden von Drittanbietern platziert, die wir zur Unterstützung unserer Website nutzen, wie Google, Meta und TikTok. Jeder dieser Drittanbieter arbeitet unter seinen eigenen Datenschutz- und Cookie-Richtlinien, die Sie hier lesen können:\n\n• Google: https://policies.google.com/privacy\n• Meta (Facebook/Instagram): https://www.facebook.com/privacy/policy/\n• TikTok: https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nGP PROMOTIONS LTD hat keine Kontrolle darüber, wie diese Drittanbieter die über ihre Cookies gesammelten Daten verwenden."
+        "content": "Einige Cookies auf www.ALESYOWIN.com werden von Drittanbietern platziert, die wir zur Unterstützung unserer Website nutzen, wie Google, Meta und TikTok. Jeder dieser Drittanbieter arbeitet unter seinen eigenen Datenschutz- und Cookie-Richtlinien, die Sie hier lesen können:\n\n• Google: https://policies.google.com/privacy\n• Meta (Facebook/Instagram): https://www.facebook.com/privacy/policy/\n• TikTok: https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nGP PROMOTIONS LTD hat keine Kontrolle darüber, wie diese Drittanbieter die über ihre Cookies gesammelten Daten verwenden."
       },
       "s5": {
         "title": "5. Ihre Auswahlmöglichkeiten und Kontrollen",
@@ -452,7 +452,7 @@
       },
       "s7": {
         "title": "7. Kontaktieren Sie uns",
-        "content": "Wenn Sie Fragen dazu haben, wie wir Cookies auf www.gpcompetition.com verwenden, kontaktieren Sie uns bitte:\n\nE-Mail: info@gpcompetition.com\nGP PROMOTIONS LTD\n71-75 Shelton Street, Covent Garden,\nLondon, WC2H 9JQ, Vereinigtes Königreich"
+        "content": "Wenn Sie Fragen dazu haben, wie wir Cookies auf www.ALESYOWIN.com verwenden, kontaktieren Sie uns bitte:\n\nE-Mail: info@ALESYOWIN.com\nGP PROMOTIONS LTD\n71-75 Shelton Street, Covent Garden,\nLondon, WC2H 9JQ, Vereinigtes Königreich"
       }
     },
     "footerNote": "Ihre Privatsphäre ist unsere Priorität. Wenn Sie Fragen haben, kontaktieren Sie uns bitte."
@@ -460,7 +460,7 @@
   "FAQ": {
     "title": "Häufig gestellte Fragen (FAQ)",
     "lastUpdated": "Zuletzt aktualisiert: April 2026",
-    "intro": "Haben Sie Fragen dazu, wie GP Competition funktioniert? Wir haben hier die häufigsten Fragen zusammengestellt, um Ihnen zu helfen, unseren Prozess zu verstehen und wie Sie unglaubliche Preise gewinnen können.",
+    "intro": "Haben Sie Fragen dazu, wie ALESYOWIN funktioniert? Wir haben hier die häufigsten Fragen zusammengestellt, um Ihnen zu helfen, unseren Prozess zu verstehen und wie Sie unglaubliche Preise gewinnen können.",
     "sections": {
       "q1": {
         "question": "Wie nehme ich an einem Wettbewerb teil?",
@@ -487,7 +487,7 @@
         "answer": "Unser Team wird Sie innerhalb von 7 Tagen nach der Ziehung telefonisch oder per E-Mail kontaktieren, um die Einzelheiten der Lieferung zu vereinbaren. Geldpreise werden direkt auf Ihr Bankkonto überwiesen."
       }
     },
-    "footerNote": "Haben Sie die gesuchte Antwort nicht gefunden? Kontaktieren Sie uns unter info@gpcompetition.com, wir helfen Ihnen gerne weiter."
+    "footerNote": "Haben Sie die gesuchte Antwort nicht gefunden? Kontaktieren Sie uns unter info@ALESYOWIN.com, wir helfen Ihnen gerne weiter."
   },
   "InstantWinnerEmail": {
     "title": "Sofortgewinn-Benachrichtigung",
@@ -497,8 +497,8 @@
     "ticketLabel": "Gewinnlosnummer",
     "prizeLabel": "Wert des Preises",
     "instructions": "Unser Team wird sich in Kürze mit Ihnen in Verbindung setzen, um Ihnen mitzuteilen, wie Sie Ihren Preis anfordern können. Behalten Sie Ihren Posteingang und Ihr Telefon im Auge!",
-    "thanks": "Danke, dass Sie bei GP Competition spielen!",
-    "footer": "© {year} GP Competition. Alle Rechte vorbehalten."
+    "thanks": "Danke, dass Sie bei ALESYOWIN spielen!",
+    "footer": "© {year} ALESYOWIN. Alle Rechte vorbehalten."
   },
   "BonusWinnerEmail": {
     "title": "Bonus-Verlosung Benachrichtigung",
@@ -508,7 +508,7 @@
     "ticketLabel": "Gewinnende Ticketnummer",
     "prizeLabel": "Preiswert",
     "instructions": "Unser Team wird Sie in Kürze kontaktieren, um die Lieferung Ihres Preises zu vereinbaren. Behalten Sie Ihr Telefon und Ihre E-Mails im Auge!",
-    "thanks": "Vielen Dank, dass Sie Teil von GP Competition sind!",
-    "footer": "© {year} GP Competition. Alle Rechte vorbehalten."
+    "thanks": "Vielen Dank, dass Sie Teil von ALESYOWIN sind!",
+    "footer": "© {year} ALESYOWIN. Alle Rechte vorbehalten."
   }
 }

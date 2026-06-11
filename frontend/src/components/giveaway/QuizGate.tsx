@@ -131,10 +131,10 @@ export default function QuizGate({
         }
 
         if (unlocked && index !== correctIndex) {
-            return `${base} border-white/10 bg-transparent text-white/30 cursor-not-allowed`;
+            return `${base} border-black/10 bg-transparent text-black/30 cursor-not-allowed`;
         }
 
-        return `${base} border-[#D4AF37]/30 bg-[#111] text-white hover:border-[#D4AF37] hover:bg-[#D4AF37]/10 cursor-pointer`;
+        return `${base} border-[#00A5FF]/30 bg-gray-50 text-black hover:border-[#00A5FF] hover:bg-[#00A5FF]/10 cursor-pointer`;
     };
 
     // --- Condiții de afișare speciale pentru concursuri gratuite ---
@@ -143,9 +143,9 @@ export default function QuizGate({
     if (isAuthLoading || checkingEntry) {
         return (
             <div className="space-y-4">
-                <div className="rounded-sm border border-[#D4AF37]/20 bg-[#0d0d0d] p-5 md:p-7">
-                    <div className="flex items-center justify-center gap-3 text-white/40">
-                        <div className="w-4 h-4 border-2 border-[#D4AF37]/40 border-t-[#D4AF37] rounded-full animate-spin" />
+                <div className="rounded-sm border border-[#00A5FF]/20 bg-gray-50 p-5 md:p-7">
+                    <div className="flex items-center justify-center gap-3 text-black/40">
+                        <div className="w-4 h-4 border-2 border-[#00A5FF]/40 border-t-[#00A5FF] rounded-full animate-spin" />
                         <span className="text-sm">Loading...</span>
                     </div>
                 </div>
@@ -157,12 +157,12 @@ export default function QuizGate({
     if (isActuallyFree && !user) {
         return (
             <div className="space-y-4">
-                <div className="rounded-sm border border-[#D4AF37]/40 bg-[#0d0d0d] p-5 md:p-7 space-y-4">
+                <div className="rounded-sm border border-[#00A5FF]/40 bg-gray-50 p-5 md:p-7 space-y-4">
                     <div className="flex items-start gap-3">
-                        <div className="shrink-0 w-8 h-8 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] font-black text-sm">
+                        <div className="shrink-0 w-8 h-8 rounded-full bg-[#00A5FF]/10 border border-[#00A5FF]/40 flex items-center justify-center text-[#00A5FF] font-black text-sm">
                             🔒
                         </div>
-                        <p className="text-white font-semibold text-base md:text-lg leading-snug">
+                        <p className="text-black font-semibold text-base md:text-lg leading-snug">
                             {t('loginToEnter')}
                         </p>
                     </div>
@@ -170,7 +170,7 @@ export default function QuizGate({
                 {/* Buton activ care redirecționează spre login */}
                 <button
                     onClick={() => router.push('/login')}
-                    className="w-full py-4 px-8 uppercase tracking-[0.2em] font-black text-base md:text-lg rounded-sm transition-all duration-500 relative overflow-hidden bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black shadow-[0_0_30px_rgba(212,175,55,0.5)] animate-pulse-gold cursor-pointer hover:scale-[1.02]"
+                    className="w-full py-4 px-8 uppercase tracking-[0.2em] font-black text-base md:text-lg rounded-sm transition-all duration-500 relative overflow-hidden bg-[#00A5FF] text-white shadow-[0_0_30px_rgba(0,165,255,0.5)] animate-pulse-blue cursor-pointer hover:scale-[1.02]"
                 >
                     {t('freeEntry')}
                 </button>
@@ -206,15 +206,15 @@ export default function QuizGate({
         <div className="space-y-6">
             {/* Quiz Card */}
             <div
-                className={`rounded-sm border border-[#D4AF37]/20 bg-[#0d0d0d] p-5 md:p-7 space-y-5 ${shake ? 'animate-shake' : ''
+                className={`rounded-sm border border-[#00A5FF]/20 bg-gray-50 p-5 md:p-7 space-y-5 ${shake ? 'animate-shake' : ''
                     }`}
             >
                 {/* Question Header */}
                 <div className="flex items-start gap-3">
-                    <div className="shrink-0 w-8 h-8 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] font-black text-sm">
+                    <div className="shrink-0 w-8 h-8 rounded-full bg-[#00A5FF]/10 border border-[#00A5FF]/40 flex items-center justify-center text-[#00A5FF] font-black text-sm">
                         ?
                     </div>
-                    <p className="text-white font-semibold text-base md:text-lg leading-snug">{question}</p>
+                    <p className="text-black font-semibold text-base md:text-lg leading-snug">{question}</p>
                 </div>
 
                 {/* Answer Buttons */}
@@ -226,7 +226,7 @@ export default function QuizGate({
                             disabled={unlocked && i !== correctIndex}
                             className={getButtonStyle(i)}
                         >
-                            <span className="text-[#D4AF37]/60 mr-2 font-mono text-xs">
+                            <span className="text-[#00A5FF]/60 mr-2 font-mono text-xs">
                                 {String.fromCharCode(65 + i)}.
                             </span>
                             {answer}
@@ -268,11 +268,11 @@ export default function QuizGate({
                                     setIsDraggingSlider(false);
                                     e.currentTarget.releasePointerCapture(e.pointerId);
                                 }}
-                                className={`absolute top-0 -translate-x-1/2 bg-[#D4AF37] btn-gold-safe text-black text-[11px] font-bold px-2.5 py-1 rounded shadow-md whitespace-nowrap pointer-events-auto touch-none select-none cursor-grab active:cursor-grabbing ${isDraggingSlider ? 'scale-110' : 'scale-100 hover:scale-105'} transition-transform`}
+                                className={`absolute top-0 -translate-x-1/2 bg-[#00A5FF] text-white text-[11px] font-bold px-2.5 py-1 rounded shadow-md whitespace-nowrap pointer-events-auto touch-none select-none cursor-grab active:cursor-grabbing ${isDraggingSlider ? 'scale-110' : 'scale-100 hover:scale-105'} transition-transform`}
                                 style={{ left: `calc(${((quantity - 1) / 999) * 100}%)` }}
                             >
                                 {t('ticketsSelected', { count: quantity })}
-                                <div className="absolute top-full left-1/2 -translate-x-1/2 border-[4px] border-transparent border-t-[#D4AF37]"></div>
+                                <div className="absolute top-full left-1/2 -translate-x-1/2 border-[4px] border-transparent border-t-[#00A5FF]"></div>
                             </div>
                         </div>
 
@@ -280,7 +280,7 @@ export default function QuizGate({
                         <button
                             type="button"
                             onClick={() => setQuantity(Math.max(minTickets > 0 ? minTickets : 1, quantity - 1))}
-                            className="w-11 h-11 shrink-0 rounded-sm bg-[#111] border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37] btn-gold-safe hover:text-black flex items-center justify-center font-bold text-xl select-none transition-colors"
+                            className="w-11 h-11 shrink-0 rounded-sm bg-gray-100 border border-[#00A5FF]/30 text-[#00A5FF] hover:bg-[#00A5FF] hover:text-white flex items-center justify-center font-bold text-xl select-none transition-colors"
                         >
                             -
                         </button>
@@ -295,7 +295,7 @@ export default function QuizGate({
                                 onChange={(e) => setQuantity(Number(e.target.value))}
                                 className="w-full h-1.5 rounded-lg appearance-none cursor-pointer outline-none custom-slider"
                                 style={{
-                                    background: `linear-gradient(to right, #D4AF37 ${((quantity - 1) / 999) * 100}%, rgba(212, 175, 55, 0.2) ${((quantity - 1) / 999) * 100}%)`
+                                    background: `linear-gradient(to right, #00A5FF ${((quantity - 1) / 999) * 100}%, rgba(0, 165, 255, 0.2) ${((quantity - 1) / 999) * 100}%)`
                                 }}
                             />
                         </div>
@@ -304,7 +304,7 @@ export default function QuizGate({
                         <button
                             type="button"
                             onClick={() => setQuantity(Math.min(1000, quantity + 1))}
-                            className="w-11 h-11 shrink-0 rounded-sm bg-[#111] border border-[#D4AF37]/30 text-[#D4AF37] hover:bg-[#D4AF37] btn-gold-safe hover:text-black flex items-center justify-center font-bold text-xl select-none transition-colors"
+                            className="w-11 h-11 shrink-0 rounded-sm bg-gray-100 border border-[#00A5FF]/30 text-[#00A5FF] hover:bg-[#00A5FF] hover:text-white flex items-center justify-center font-bold text-xl select-none transition-colors"
                         >
                             +
                         </button>
@@ -379,8 +379,8 @@ export default function QuizGate({
           w-full py-4 px-8 uppercase tracking-[0.2em] font-black text-base md:text-lg rounded-sm
           transition-all duration-500 relative overflow-hidden
           ${unlocked
-                        ? 'bg-gradient-to-r from-[#8b6914] via-[#D4AF37] to-[#f0d060] btn-gold-safe text-black shadow-[0_0_30px_rgba(212,175,55,0.5)] animate-pulse-gold cursor-pointer hover:scale-[1.02]'
-                        : 'bg-[#1a1a1a] text-white/20 border border-white/5 cursor-not-allowed'
+                        ? 'bg-[#00A5FF] text-white shadow-[0_0_30px_rgba(0,165,255,0.5)] animate-pulse-blue cursor-pointer hover:scale-[1.02]'
+                        : 'bg-gray-100 text-black/20 border border-black/5 cursor-not-allowed'
                     }
         `}
             >
@@ -399,9 +399,9 @@ export default function QuizGate({
             </button>
 
             <style jsx global>{`
-        @keyframes pulse-gold {
-          0%, 100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
-          50% { box-shadow: 0 0 50px rgba(212, 175, 55, 0.8), 0 0 80px rgba(240, 208, 96, 0.3); }
+        @keyframes pulse-blue {
+          0%, 100% { box-shadow: 0 0 20px rgba(0, 165, 255, 0.4); }
+          50% { box-shadow: 0 0 50px rgba(0, 165, 255, 0.8), 0 0 80px rgba(102, 197, 255, 0.3); }
         }
         @keyframes shake {
           0%, 100% { transform: translateX(0); }
@@ -410,8 +410,8 @@ export default function QuizGate({
           60% { transform: translateX(-6px); }
           80% { transform: translateX(6px); }
         }
-        .animate-pulse-gold {
-          animation: pulse-gold 2s ease-in-out infinite;
+        .animate-pulse-blue {
+          animation: pulse-blue 2s ease-in-out infinite;
         }
         .animate-shake {
           animation: shake 0.5s ease-in-out;
@@ -421,18 +421,18 @@ export default function QuizGate({
           width: 18px;
           height: 18px;
           border-radius: 50%;
-          background: #D4AF37;
+          background: #00A5FF;
           cursor: pointer;
-          box-shadow: 0 0 10px rgba(212,175,55,0.8);
+          box-shadow: 0 0 10px rgba(0,165,255,0.8);
           border: 2px solid #fff;
         }
         .custom-slider::-moz-range-thumb {
           width: 18px;
           height: 18px;
           border-radius: 50%;
-          background: #D4AF37;
+          background: #00A5FF;
           cursor: pointer;
-          box-shadow: 0 0 10px rgba(212,175,55,0.8);
+          box-shadow: 0 0 10px rgba(0,165,255,0.8);
           border: 2px solid #fff;
         }
       `}</style>

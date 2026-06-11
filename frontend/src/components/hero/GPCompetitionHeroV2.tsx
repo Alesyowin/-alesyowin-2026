@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 
-const GPCompetitionHeroV2 = () => {
+const ALESYOWINHeroV2 = () => {
     const [mounted, setMounted] = useState(false);
     const [animationState, setAnimationState] = useState('idle'); // idle -> tire-tracks -> assemble -> impact -> floating
 
@@ -146,7 +146,7 @@ const GPCompetitionHeroV2 = () => {
                 >
                     <img
                         src="/logo-principal-orizontal-fara-fundal.png"
-                        alt="GP Competition Large Logo"
+                        alt="ALESYOWIN Large Logo"
                         className="w-full h-full object-contain"
                     />
                     {/* Fiery Glow Overlay */}
@@ -165,7 +165,7 @@ const GPCompetitionHeroV2 = () => {
                     className="text-3xl md:text-7xl font-black tracking-[0.15em] text-transparent bg-clip-text bg-gradient-to-br from-white via-[#fbd868] to-[#9c791d] uppercase mb-2 drop-shadow-2xl px-2"
                     style={{ fontFamily: "'Montserrat', sans-serif" }}
                 >
-                    GP COMPETITION
+                    ALESYOWIN
                 </h2>
                 <div className="h-1 w-48 md:w-64 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mb-4 opacity-80" />
                 <h3
@@ -260,4 +260,4 @@ const GPCompetitionHeroV2 = () => {
     );
 };
 
-export default GPCompetitionHeroV2;
+export default ALESYOWINHeroV2;

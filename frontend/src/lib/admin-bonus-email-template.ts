@@ -73,7 +73,7 @@ export function getAdminBonusWinnerTemplate(props: AdminBonusEmailProps): string
         </div>
         
         <div class="footer">
-            Sistem Automat GP Competition<br>
+            Sistem Automat ALESYOWIN<br>
             ${props.baseUrl}
         </div>
     </div>

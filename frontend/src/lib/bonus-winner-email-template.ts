@@ -193,8 +193,8 @@ export function getBonusWinnerEmailTemplate(props: BonusOrderEmailProps): string
     <div class="email-container">
         <div class="email-header">
             ${props.logoUrl 
-                ? `<img src="${props.logoUrl}" alt="GP Competition Logo">` 
-                : `<h1 style="color: #ffcc00; margin: 0; font-size: 28px; letter-spacing: 1px;">GP COMPETITION</h1>`
+                ? `<img src="${props.logoUrl}" alt="ALESYOWIN Logo">` 
+                : `<h1 style="color: #ffcc00; margin: 0; font-size: 28px; letter-spacing: 1px;">ALESYOWIN</h1>`
             }
         </div>
 

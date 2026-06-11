@@ -76,7 +76,7 @@ export const MOCK_GIVEAWAY: Giveaway = {
 };
 
 // --- Directus Client ---
-const DIRECTUS_URL = process.env.DIRECTUS_URL || 'https://gpcompetition.onrender.com';
+const DIRECTUS_URL = process.env.DIRECTUS_URL || 'https://ALESYOWIN.onrender.com';
 const ADMIN_TOKEN = process.env.DIRECTUS_ADMIN_TOKEN;
 
 let directusClient: ReturnType<typeof createDirectus> | null = null;

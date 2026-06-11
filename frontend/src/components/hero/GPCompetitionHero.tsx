@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 
-const GPCompetitionHero = () => {
+const ALESYOWINHero = () => {
     const [mounted, setMounted] = useState(false);
     const [animationState, setAnimationState] = useState('idle'); // idle -> assemble -> impact -> floating
 
@@ -108,7 +108,7 @@ const GPCompetitionHero = () => {
                 >
                     <img
                         src="/logo-principal-orizontal-fara-fundal.png"
-                        alt="GP Competition Logo"
+                        alt="ALESYOWIN Logo"
                         className="w-full h-full object-contain"
                     />
                     {/* Gold Glow Overlay */}
@@ -124,7 +124,7 @@ const GPCompetitionHero = () => {
                     }`}
             >
                 <h2 className="text-4xl md:text-6xl font-bold tracking-[0.2em] text-[#f0d060] uppercase mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style={{ fontFamily: "'Cinzel Decorative', serif" }}>
-                    GP COMPETITION
+                    ALESYOWIN
                 </h2>
                 <div className="h-[2px] w-48 bg-gradient-to-r from-transparent via-[#c8a84b] to-transparent mb-4" />
                 <h3 className="text-xl md:text-2xl font-light tracking-[0.5em] text-white/80 uppercase" style={{ fontFamily: "'Cinzel', serif" }}>
@@ -204,4 +204,4 @@ const GPCompetitionHero = () => {
     );
 };
 
-export default GPCompetitionHero;
+export default ALESYOWINHero;

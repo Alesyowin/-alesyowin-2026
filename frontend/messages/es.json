@@ -59,7 +59,7 @@
     "country": "País"
   },
   "Home": {
-    "subtitle": "GP Competition",
+    "subtitle": "ALESYOWIN",
     "title": "Sorteos Activos",
     "description": "Participa ahora para tener la oportunidad de ganar premios de lujo. Cada boleto te acerca a premios increíbles.",
     "noCompetitions": "No hay sorteos activos en este momento.",
@@ -100,7 +100,7 @@
     "bonusDrawsTakePlaceText": "Los sorteos bonus se realizan cuando se alcanzan las secciones marcadas con una estrella"
   },
   "EntryList": {
-    "subtitle": "GP Competition",
+    "subtitle": "ALESYOWIN",
     "title": "Lista de Participantes",
     "description": "Consulta los participantes y tus boletos para cada sorteo activo o finalizado.",
     "all": "Todos",
@@ -126,7 +126,7 @@
     "ticketsFoundFor": "Boletos encontrados para",
     "ticketCount": "{count} boletos",
     "searchPrompt": "Introduce arriba tu nombre, email o número de boleto para encontrar tus boletos.",
-    "verifiedNote": "Tus boletos están seguros y registrados oficialmente en el sistema de GP Competition."
+    "verifiedNote": "Tus boletos están seguros y registrados oficialmente en el sistema de ALESYOWIN."
   },
   "Success": {
     "title": "¡Pedido Completado!",
@@ -163,7 +163,7 @@
   },
   "Profile": {
     "title": "Mi perfil",
-    "memberBadge": "Miembro de GP Competition",
+    "memberBadge": "Miembro de ALESYOWIN",
     "logout": "Cerrar sesión",
     "personalData": "Datos personales",
     "fullName": "Nombre completo",
@@ -184,7 +184,7 @@
     "contactUs": "CONTACTO",
     "tagline": "Estamos aquí para ti las 24 horas del día, los 7 días de la semana",
     "telegram": "Canal de Telegram",
-    "email": "info@gpcompetition.com",
+    "email": "info@ALESYOWIN.com",
     "companyName": "GP PROMOTIONS LTD",
     "companyNumber": "Número de empresa {number}",
     "legal": "LEGAL",
@@ -202,16 +202,16 @@
     "unauthorised": "Cualquier uso no autorizado del nombre, logotipo o marca está estrictamente prohibido."
   },
   "Email": {
-    "otpSubject": "Tu código de acceso - GP Competition",
+    "otpSubject": "Tu código de acceso - ALESYOWIN",
     "otpTitle": "Código de autenticación",
     "otpGreeting": "Hola,",
-    "otpMessage": "Tu código de acceso para GP Competition es:",
+    "otpMessage": "Tu código de acceso para ALESYOWIN es:",
     "otpExpiry": "Este código caducará en 10 minutos.",
     "otpSecurityNote": "Si no has solicitado este código, ignora este correo electrónico.",
     "footer": "© {year} GP PROMOTIONS LTD. Todos los derechos reservados."
   },
   "OrderEmail": {
-    "subject": "Confirmación de pedido #{id} - GP Competition",
+    "subject": "Confirmación de pedido #{id} - ALESYOWIN",
     "title": "Confirmación de Pedido",
     "greeting": "Hola {name},",
     "orderNumber": "Número de Pedido:",
@@ -224,27 +224,27 @@
   "Terms": {
     "title": "Términos y Condiciones",
     "lastUpdated": "Última actualización: Octubre de 2023",
-    "intro": "GP PROMOTIONS LTD (número de empresa 17127347), con domicilio social en 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Reino Unido, opera el sitio web www.gpcompetition.com y es responsable de la gestión de todos los sorteos que aparecen en él.\n\nPara cualquier pregunta o duda, puede ponerse en contacto con nosotros por correo electrónico en info@gpcompetition.com.",
+    "intro": "GP PROMOTIONS LTD (número de empresa 17127347), con domicilio social en 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Reino Unido, opera el sitio web www.ALESYOWIN.com y es responsable de la gestión de todos los sorteos que aparecen en él.\n\nPara cualquier pregunta o duda, puede ponerse en contacto con nosotros por correo electrónico en info@ALESYOWIN.com.",
     "sections": {
       "s1": {
         "title": "1. Reglas Generales",
-        "content": "1.1 Todos los sorteos publicados en www.gpcompetition.com se rigen por estos Términos y Condiciones (\"T&C\"). Cubren tanto los sorteos estándar (\"Sorteos Estándar\") como los sorteos de ganancia instantánea (\"Sorteos Instant Win\"), denominados colectivamente \"Sorteos\".\n1.2 Estos T&C prevalecen sobre cualquier otra comunicación, incluyendo cualquier material promocional, publicaciones en redes sociales u otras comunicaciones relativas a un Sorteo.\n1.3 Para tener derecho a un premio, los participantes deben responder correctamente a una pregunta o resolver un problema planteado por GP PROMOTIONS LTD (la \"Pregunta del Sorteo\").\n1.4 Cada Sorteo incluye una Pregunta del Sorteo. Se aplica una cuota de inscripción a cada participación. Cuando GP PROMOTIONS LTD ofrece una pregunta de opción múltiple o de respuesta fácil, también existe una vía de participación gratuita por correo."
+        "content": "1.1 Todos los sorteos publicados en www.ALESYOWIN.com se rigen por estos Términos y Condiciones (\"T&C\"). Cubren tanto los sorteos estándar (\"Sorteos Estándar\") como los sorteos de ganancia instantánea (\"Sorteos Instant Win\"), denominados colectivamente \"Sorteos\".\n1.2 Estos T&C prevalecen sobre cualquier otra comunicación, incluyendo cualquier material promocional, publicaciones en redes sociales u otras comunicaciones relativas a un Sorteo.\n1.3 Para tener derecho a un premio, los participantes deben responder correctamente a una pregunta o resolver un problema planteado por GP PROMOTIONS LTD (la \"Pregunta del Sorteo\").\n1.4 Cada Sorteo incluye una Pregunta del Sorteo. Se aplica una cuota de inscripción a cada participación. Cuando GP PROMOTIONS LTD ofrece una pregunta de opción múltiple o de respuesta fácil, también existe una vía de participación gratuita por correo."
       },
       "s2": {
         "title": "2. Cómo Participar",
-        "content": "2.1 Cada Sorteo se realiza entre las fechas de inicio y fin que figuran en la página del sorteo correspondiente de www.gpcompetition.com (\"Fecha de Apertura\" y \"Fecha de Cierre\"). Todas las fechas y horas se refieren a la hora de Londres, Inglaterra.\n2.2 GP PROMOTIONS LTD se reserva el derecho de ajustar las fechas de apertura o cierre si es realmente necesario. Cualquier cambio se actualizará en el sitio web con prontitud.\n2.3 Todas las participaciones deben llegarnos antes de la hora de cierre especificada. Las participaciones recibidas después de ese momento serán automáticamente inválidas. No se realizarán reembolsos por participaciones fuera de plazo.\n2.4 Cada Sorteo tiene un límite máximo de boletos, que se muestra en la página del sorteo. Una vez alcanzado este límite, no se aceptarán más participaciones.\n2.5 También existe un límite de participación por persona para cada Sorteo. Este límite se indica en la página de cada sorteo.\n2.6 Para participar en un Sorteo Estándar a través de la vía de pago: visite www.gpcompetition.com, elija el sorteo, responda a la Pregunta del Sorteo, elija cuántas participaciones desea, pase por caja, inicie sesión o regístrese si es necesario, acepte estos T&C y complete su pago.\n2.7 Para participar en un Sorteo Instant Win a través de la vía de pago: visite www.gpcompetition.com, seleccione el sorteo, elija el número de participaciones, pase por caja, inicie sesión o regístrese si es necesario, acepte estos T&C y complete su pago.\n2.8 Una vez que su participación se haya completado con éxito, recibirá una confirmación de GP PROMOTIONS LTD.\n2.9 GP PROMOTIONS LTD no asume ninguna responsabilidad por las participaciones que no nos lleguen debido a problemas técnicos, de conectividad o cualquier otra circunstancia fuera de nuestro control.\n2.10 Al participar en cualquier Sorteo, usted confirma que cumple con los requisitos de elegibilidad, que entiende que está celebrando un acuerdo vinculante con GP PROMOTIONS LTD y que acepta estos T&C en su totalidad."
+        "content": "2.1 Cada Sorteo se realiza entre las fechas de inicio y fin que figuran en la página del sorteo correspondiente de www.ALESYOWIN.com (\"Fecha de Apertura\" y \"Fecha de Cierre\"). Todas las fechas y horas se refieren a la hora de Londres, Inglaterra.\n2.2 GP PROMOTIONS LTD se reserva el derecho de ajustar las fechas de apertura o cierre si es realmente necesario. Cualquier cambio se actualizará en el sitio web con prontitud.\n2.3 Todas las participaciones deben llegarnos antes de la hora de cierre especificada. Las participaciones recibidas después de ese momento serán automáticamente inválidas. No se realizarán reembolsos por participaciones fuera de plazo.\n2.4 Cada Sorteo tiene un límite máximo de boletos, que se muestra en la página del sorteo. Una vez alcanzado este límite, no se aceptarán más participaciones.\n2.5 También existe un límite de participación por persona para cada Sorteo. Este límite se indica en la página de cada sorteo.\n2.6 Para participar en un Sorteo Estándar a través de la vía de pago: visite www.ALESYOWIN.com, elija el sorteo, responda a la Pregunta del Sorteo, elija cuántas participaciones desea, pase por caja, inicie sesión o regístrese si es necesario, acepte estos T&C y complete su pago.\n2.7 Para participar en un Sorteo Instant Win a través de la vía de pago: visite www.ALESYOWIN.com, seleccione el sorteo, elija el número de participaciones, pase por caja, inicie sesión o regístrese si es necesario, acepte estos T&C y complete su pago.\n2.8 Una vez que su participación se haya completado con éxito, recibirá una confirmación de GP PROMOTIONS LTD.\n2.9 GP PROMOTIONS LTD no asume ninguna responsabilidad por las participaciones que no nos lleguen debido a problemas técnicos, de conectividad o cualquier otra circunstancia fuera de nuestro control.\n2.10 Al participar en cualquier Sorteo, usted confirma que cumple con los requisitos de elegibilidad, que entiende que está celebrando un acuerdo vinculante con GP PROMOTIONS LTD y que acepta estos T&C en su totalidad."
       },
       "s3": {
         "title": "3. Participación Gratuita por Correo",
-        "content": "Los participantes que no deseen pagar pueden participar por correo, siempre que sigan las siguientes instrucciones:\nEnvíe una carta escrita a mano por correo prepagado de primera o segunda clase a: GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Reino Unido. No se aceptarán cartas entregadas en mano.\nSu carta debe incluir claramente: El nombre del sorteo en el que participa, su nombre completo, fecha de nacimiento, dirección completa, un número de teléfono de contacto y una dirección de correo electrónico, y su respuesta a la Pregunta del Sorteo (si procede).\nLas participaciones incompletas o ilegibles serán descalificadas. Se permite un máximo de dos (2) participaciones gratuitas por correo por persona y por sorteo. Cada participación debe enviarse en su propio sobre separado.\nLas participaciones gratuitas deben llegar antes de la Fecha de Cierre. Los gastos de envío corren a cargo del participante. Para que sea válida, debe tener una cuenta activa en www.gpcompetition.com, y todos los datos de su carta deben coincidir exactamente con los datos de su cuenta."
+        "content": "Los participantes que no deseen pagar pueden participar por correo, siempre que sigan las siguientes instrucciones:\nEnvíe una carta escrita a mano por correo prepagado de primera o segunda clase a: GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Reino Unido. No se aceptarán cartas entregadas en mano.\nSu carta debe incluir claramente: El nombre del sorteo en el que participa, su nombre completo, fecha de nacimiento, dirección completa, un número de teléfono de contacto y una dirección de correo electrónico, y su respuesta a la Pregunta del Sorteo (si procede).\nLas participaciones incompletas o ilegibles serán descalificadas. Se permite un máximo de dos (2) participaciones gratuitas por correo por persona y por sorteo. Cada participación debe enviarse en su propio sobre separado.\nLas participaciones gratuitas deben llegar antes de la Fecha de Cierre. Los gastos de envío corren a cargo del participante. Para que sea válida, debe tener una cuenta activa en www.ALESYOWIN.com, y todos los datos de su carta deben coincidir exactamente con los datos de su cuenta."
       },
       "s4": {
         "title": "4. Selección de Ganadores",
-        "content": "4.1 Para los Sorteos Estándar, todos los participantes que respondan correctamente a la Pregunta del Sorteo entrarán en un sorteo. El ganador se elegirá en directo utilizando el generador de números aleatorios de Google. El sorteo se retransmitirá en directo en las redes sociales oficiales de GP PROMOTIONS LTD. El sorteo tendrá lugar en los 7 días siguientes a la Fecha de Cierre.\n4.2 Todos los participantes en los Sorteos Estándar pueden ver su nombre y número de participación incluidos en una hoja de cálculo publicada en el sitio web o mostrada durante el sorteo en vivo. Si no desea que su nombre aparezca, póngase en contacto con nosotros en info@gpcompetition.com al menos 48 horas antes del sorteo.\n4.3 Para los Sorteos Instant Win, los premios se asignan previamente a números de boleto aleatorios. A cada participación con respuesta correcta se le asigna un número. Si ese número coincide con un premio, el participante gana. Los ganadores son notificados inmediatamente en la página del sorteo y por correo electrónico automático."
+        "content": "4.1 Para los Sorteos Estándar, todos los participantes que respondan correctamente a la Pregunta del Sorteo entrarán en un sorteo. El ganador se elegirá en directo utilizando el generador de números aleatorios de Google. El sorteo se retransmitirá en directo en las redes sociales oficiales de GP PROMOTIONS LTD. El sorteo tendrá lugar en los 7 días siguientes a la Fecha de Cierre.\n4.2 Todos los participantes en los Sorteos Estándar pueden ver su nombre y número de participación incluidos en una hoja de cálculo publicada en el sitio web o mostrada durante el sorteo en vivo. Si no desea que su nombre aparezca, póngase en contacto con nosotros en info@ALESYOWIN.com al menos 48 horas antes del sorteo.\n4.3 Para los Sorteos Instant Win, los premios se asignan previamente a números de boleto aleatorios. A cada participación con respuesta correcta se le asigna un número. Si ese número coincide con un premio, el participante gana. Los ganadores son notificados inmediatamente en la página del sorteo y por correo electrónico automático."
       },
       "s5": {
         "title": "5. Créditos del Sitio",
-        "content": "5.1 El crédito del sitio se puede conceder como premio o regalo en ciertos Sorteos.\n5.2 En algunos casos, un premio puede canjearse por crédito del sitio, cuando se indique en la página del sorteo.\n5.3 El crédito del sitio debe utilizarse en los 12 meses siguientes a su incorporación a su cuenta. Se enviarán recordatorios por correo electrónico. El crédito caducado no se podrá utilizar.\n5.4 El crédito del sitio no tiene valor monetario. No se puede canjear por dinero en efectivo, transferir ni retirar. Solo es válido para futuras participaciones en sorteos en www.gpcompetition.com."
+        "content": "5.1 El crédito del sitio se puede conceder como premio o regalo en ciertos Sorteos.\n5.2 En algunos casos, un premio puede canjearse por crédito del sitio, cuando se indique en la página del sorteo.\n5.3 El crédito del sitio debe utilizarse en los 12 meses siguientes a su incorporación a su cuenta. Se enviarán recordatorios por correo electrónico. El crédito caducado no se podrá utilizar.\n5.4 El crédito del sitio no tiene valor monetario. No se puede canjear por dinero en efectivo, transferir ni retirar. Solo es válido para futuras participaciones en sorteos en www.ALESYOWIN.com."
       },
       "s6": {
         "title": "6. Quién puede participar",
@@ -252,7 +252,7 @@
       },
       "s7": {
         "title": "7. El Premio",
-        "content": "7.1 El premio de cada Sorteo se describe en la página del sorteo correspondiente en www.gpcompetition.com.\n7.2 Los premios están sujetos a disponibilidad. GP PROMOTIONS LTD se reserva el derecho de sustituir cualquier premio por uno de igual o mayor valor.\n7.3 A menos que se indique lo contrario, no existe una alternativa en metálico para el premio. GP PROMOTIONS LTD puede, a su entera discreción, ofrecer un equivalente en efectivo si el ganador lo prefiere.\n7.4 Si el premio es un vehículo: se entregará con una ITV (MOT) válida si es necesario; el seguro y el impuesto de circulación no están incluidos y son responsabilidad exclusiva del ganador.\n7.5 Si el premio es un viaje o un evento: las fechas, el número de boletos y la clase de viaje serán los especificados en la página del sorteo."
+        "content": "7.1 El premio de cada Sorteo se describe en la página del sorteo correspondiente en www.ALESYOWIN.com.\n7.2 Los premios están sujetos a disponibilidad. GP PROMOTIONS LTD se reserva el derecho de sustituir cualquier premio por uno de igual o mayor valor.\n7.3 A menos que se indique lo contrario, no existe una alternativa en metálico para el premio. GP PROMOTIONS LTD puede, a su entera discreción, ofrecer un equivalente en efectivo si el ganador lo prefiere.\n7.4 Si el premio es un vehículo: se entregará con una ITV (MOT) válida si es necesario; el seguro y el impuesto de circulación no están incluidos y son responsabilidad exclusiva del ganador.\n7.5 Si el premio es un viaje o un evento: las fechas, el número de boletos y la clase de viaje serán los especificados en la página del sorteo."
       },
       "s8": {
         "title": "8. Ganadores",
@@ -260,7 +260,7 @@
       },
       "s9": {
         "title": "9. Reclamación de su Premio",
-        "content": "9.1 Los premios deben ser reclamados personalmente por el ganador. Ningún tercero puede reclamar un premio en nombre de un ganador.\n9.2 Los ganadores deben mantener actualizados sus datos de contacto. Cualquier cambio debe enviarse a info@gpcompetition.com de inmediato.\n9.3 Los premios en metálico se transferirán directamente a la cuenta bancaria del ganador. El ganador debe confirmar que es el titular de la cuenta. El hecho de no proporcionar esta prueba en un plazo de 14 días supondrá la pérdida del premio."
+        "content": "9.1 Los premios deben ser reclamados personalmente por el ganador. Ningún tercero puede reclamar un premio en nombre de un ganador.\n9.2 Los ganadores deben mantener actualizados sus datos de contacto. Cualquier cambio debe enviarse a info@ALESYOWIN.com de inmediato.\n9.3 Los premios en metálico se transferirán directamente a la cuenta bancaria del ganador. El ganador debe confirmar que es el titular de la cuenta. El hecho de no proporcionar esta prueba en un plazo de 14 días supondrá la pérdida del premio."
       },
       "s10": {
         "title": "10. Limitación de Responsabilidad",
@@ -272,7 +272,7 @@
       },
       "s12": {
         "title": "12. General",
-        "content": "12.1 GP PROMOTIONS LTD puede actualizar estos T&C de vez en cuando. La versión actual estará siempre disponible en www.gpcompetition.com.\n12.2 Estos T&C se rigen por las leyes de Inglaterra y Gales. Cualquier disputa estará sujeta a la jurisdicción exclusiva de los tribunales de Inglaterra y Gales."
+        "content": "12.1 GP PROMOTIONS LTD puede actualizar estos T&C de vez en cuando. La versión actual estará siempre disponible en www.ALESYOWIN.com.\n12.2 Estos T&C se rigen por las leyes de Inglaterra y Gales. Cualquier disputa estará sujeta a la jurisdicción exclusiva de los tribunales de Inglaterra y Gales."
       }
     },
     "footerNote": "Tu privacidad es nuestra prioridad. Si tienes alguna pregunta, ponte en contacto con nosotros."
@@ -280,7 +280,7 @@
   "Privacy": {
     "title": "Política de Privacidad",
     "lastUpdated": "Última actualización: Abril de 2026",
-    "intro": "GP PROMOTIONS LTD (\"nosotros\", \"nuestro\") se toma en serio la privacidad de cada persona que visita o utiliza www.gpcompetition.com. Esta Política de Privacidad establece claramente qué información personal recopilamos, por qué la recopilamos, cómo la protegemos y qué derechos tiene sobre ella.\n\nDatos del Responsable del Tratamiento:\nGP PROMOTIONS LTD (Número de Empresa 17127347)\n71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Reino Unido\nCorreo electrónico: info@gpcompetition.com\n\nEsta Política se aplica a cualquier persona que navegue por www.gpcompetition.com, cree una cuenta o participe en cualquiera de nuestros sorteos. El uso de nuestro sitio web significa que ha tenido la oportunidad de leer y comprender cómo gestionamos sus datos.",
+    "intro": "GP PROMOTIONS LTD (\"nosotros\", \"nuestro\") se toma en serio la privacidad de cada persona que visita o utiliza www.ALESYOWIN.com. Esta Política de Privacidad establece claramente qué información personal recopilamos, por qué la recopilamos, cómo la protegemos y qué derechos tiene sobre ella.\n\nDatos del Responsable del Tratamiento:\nGP PROMOTIONS LTD (Número de Empresa 17127347)\n71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Reino Unido\nCorreo electrónico: info@ALESYOWIN.com\n\nEsta Política se aplica a cualquier persona que navegue por www.ALESYOWIN.com, cree una cuenta o participe en cualquiera de nuestros sorteos. El uso de nuestro sitio web significa que ha tenido la oportunidad de leer y comprender cómo gestionamos sus datos.",
     "sections": {
       "s1": {
         "title": "1. Quiénes Somos",
@@ -312,7 +312,7 @@
       },
       "s8": {
         "title": "8. Sus Derechos",
-        "content": "Tiene derecho a acceder, rectificar o eliminar sus datos. Póngase en contacto con nosotros en info@gpcompetition.com para cualquier solicitud."
+        "content": "Tiene derecho a acceder, rectificar o eliminar sus datos. Póngase en contacto con nosotros en info@ALESYOWIN.com para cualquier solicitud."
       },
       "s9": {
         "title": "9. Ganadores y Publicidad",
@@ -328,7 +328,7 @@
       },
       "s12": {
         "title": "12. Contacto",
-        "content": "Para consultas, póngase en contacto con info@gpcompetition.com."
+        "content": "Para consultas, póngase en contacto con info@ALESYOWIN.com."
       }
     },
     "footerNote": "Tu privacidad es nuestra prioridad. Si tienes alguna pregunta, ponte en contacto con nosotros."
@@ -336,11 +336,11 @@
   "Rules": {
     "title": "Reglas Oficiales del Sorteo",
     "lastUpdated": "Vigente desde: Marzo de 2026",
-    "intro": "GP PROMOTIONS LTD, registrada en Inglaterra y Gales con el número de empresa 17127347, con domicilio social en 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Reino Unido.\n\nEstas Reglas Oficiales del Sorteo (\"Reglas\") son vinculantes y rigen todos los sorteos lanzados en www.gpcompetition.com.",
+    "intro": "GP PROMOTIONS LTD, registrada en Inglaterra y Gales con el número de empresa 17127347, con domicilio social en 71-75 Shelton Street, Covent Garden, Londres, WC2H 9JQ, Reino Unido.\n\nEstas Reglas Oficiales del Sorteo (\"Reglas\") son vinculantes y rigen todos los sorteos lanzados en www.ALESYOWIN.com.",
     "sections": {
       "s1": {
         "title": "1. Condiciones Generales",
-        "content": "1.1 Estas Reglas Oficiales del Sorteo (\"Reglas\") son vinculantes. EL ORGANIZADOR: GP PROMOTIONS LTD. LA PLATAFORMA: www.gpcompetition.com ofrece a las personas elegibles la oportunidad de participar en sorteos de premios. ÁMBITO DE APLICACIÓN: Estas Reglas rigen todos los sorteos lanzados a partir del 01/03/2026."
+        "content": "1.1 Estas Reglas Oficiales del Sorteo (\"Reglas\") son vinculantes. EL ORGANIZADOR: GP PROMOTIONS LTD. LA PLATAFORMA: www.ALESYOWIN.com ofrece a las personas elegibles la oportunidad de participar en sorteos de premios. ÁMBITO DE APLICACIÓN: Estas Reglas rigen todos los sorteos lanzados a partir del 01/03/2026."
       },
       "s2": {
         "title": "2. Cómo Participar",
@@ -400,7 +400,7 @@
       },
       "s3": {
         "title": "3. Límites de participación",
-        "content": "Puede enviar más de una participación gratuita por sorteo, hasta el número máximo de participaciones permitidas para ese sorteo. El límite de participación por persona se muestra en la página del sorteo correspondiente en www.gpcompetition.com. Cada participación debe enviarse por separado en su propio sobre individual. Si se introduce más de una participación en un mismo sobre, todo el envío contará como una sola participación, independientemente de cuántas se adjunten."
+        "content": "Puede enviar más de una participación gratuita por sorteo, hasta el número máximo de participaciones permitidas para ese sorteo. El límite de participación por persona se muestra en la página del sorteo correspondiente en www.ALESYOWIN.com. Cada participación debe enviarse por separado en su propio sobre individual. Si se introduce más de una participación en un mismo sobre, todo el envío contará como una sola participación, independientemente de cuántas se adjunten."
       },
       "s4": {
         "title": "4. Sorteos Estándar",
@@ -416,7 +416,7 @@
       },
       "s7": {
         "title": "7. Cuenta registrada",
-        "content": "Para que su participación gratuita por correo sea procesada, debe tener una cuenta registrada activa en www.gpcompetition.com. Todos los datos personales incluidos en su carta deben coincidir exactamente con los datos de su cuenta registrada. Las participaciones en las que los datos no coincidan, o en las que no exista una cuenta correspondiente, se considerarán inválidas y no se incluirán en el sorteo."
+        "content": "Para que su participación gratuita por correo sea procesada, debe tener una cuenta registrada activa en www.ALESYOWIN.com. Todos los datos personales incluidos en su carta deben coincidir exactamente con los datos de su cuenta registrada. Las participaciones en las que los datos no coincidan, o en las que no exista una cuenta correspondiente, se considerarán inválidas y no se incluirán en el sorteo."
       }
     },
     "footerNote": "Tu privacidad es nuestra prioridad. Si tienes alguna pregunta, ponte en contacto con nosotros."
@@ -424,11 +424,11 @@
   "Cookies": {
     "title": "Política de Cookies",
     "lastUpdated": "Última actualización: Abril de 2026",
-    "intro": "GP PROMOTIONS LTD (\"nosotros\", \"nuestro\") opera el sitio web www.gpcompetition.com. Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en nuestro sitio web y qué opciones tiene usted respecto a su uso.\n\nAl continuar utilizando www.gpcompetition.com, usted reconoce haber leído y comprendido cómo utilizamos las cookies según se describe a continuación.",
+    "intro": "GP PROMOTIONS LTD (\"nosotros\", \"nuestro\") opera el sitio web www.ALESYOWIN.com. Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en nuestro sitio web y qué opciones tiene usted respecto a su uso.\n\nAl continuar utilizando www.ALESYOWIN.com, usted reconoce haber leído y comprendido cómo utilizamos las cookies según se describe a continuación.",
     "sections": {
       "s1": {
         "title": "1. Acerca de esta Política",
-        "content": "GP PROMOTIONS LTD (\"nosotros\", \"nuestro\") opera el sitio web www.gpcompetition.com. Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en nuestro sitio web y qué opciones tiene usted respecto a su uso."
+        "content": "GP PROMOTIONS LTD (\"nosotros\", \"nuestro\") opera el sitio web www.ALESYOWIN.com. Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en nuestro sitio web y qué opciones tiene usted respecto a su uso."
       },
       "s2": {
         "title": "2. ¿Qué es una Cookie?",
@@ -436,11 +436,11 @@
       },
       "s3": {
         "title": "3. Cómo utilizamos las Cookies",
-        "content": "Utilizamos cookies en www.gpcompetition.com para varios fines, entre ellos:\n\n• Mantener el funcionamiento correcto del sitio web – Algunas cookies son esenciales para que el sitio funcione. Sin ellas, es posible que ciertas páginas o funciones no funcionen como se espera.\n• Comprender cómo utilizan nuestro sitio los visitantes – Utilizamos herramientas analíticas para ver qué páginas se visitan con más frecuencia y de dónde vienen los visitantes. Esto nos ayuda a mejorar la experiencia del usuario.\n• Recordar sus preferencias – Las cookies nos ayudan a recordar opciones que ha elegido, como su ajuste de idioma, para que no tenga que volver a introducirlas cada vez.\n• Ofrecer contenido y publicidad pertinentes – Podemos utilizar cookies para mostrarle promociones relacionadas con nuestros sorteos que creamos que puedan interesarle."
+        "content": "Utilizamos cookies en www.ALESYOWIN.com para varios fines, entre ellos:\n\n• Mantener el funcionamiento correcto del sitio web – Algunas cookies son esenciales para que el sitio funcione. Sin ellas, es posible que ciertas páginas o funciones no funcionen como se espera.\n• Comprender cómo utilizan nuestro sitio los visitantes – Utilizamos herramientas analíticas para ver qué páginas se visitan con más frecuencia y de dónde vienen los visitantes. Esto nos ayuda a mejorar la experiencia del usuario.\n• Recordar sus preferencias – Las cookies nos ayudan a recordar opciones que ha elegido, como su ajuste de idioma, para que no tenga que volver a introducirlas cada vez.\n• Ofrecer contenido y publicidad pertinentes – Podemos utilizar cookies para mostrarle promociones relacionadas con nuestros sorteos que creamos que puedan interesarle."
       },
       "s4": {
         "title": "4. Cookies de Terceros",
-        "content": "Algunas cookies en www.gpcompetition.com son colocadas por servicios de terceros que utilizamos para dar soporte a nuestro sitio web, como Google, Meta y TikTok. Cada uno de estos terceros opera bajo sus propias políticas de privacidad y cookies, que puede leer aquí:\n\n• Google: https://policies.google.com/privacy\n• Meta (Facebook/Instagram): https://www.facebook.com/privacy/policy/\n• TikTok: https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nGP PROMOTIONS LTD no tiene control sobre cómo estos terceros utilizan los datos recopilados a través de sus cookies."
+        "content": "Algunas cookies en www.ALESYOWIN.com son colocadas por servicios de terceros que utilizamos para dar soporte a nuestro sitio web, como Google, Meta y TikTok. Cada uno de estos terceros opera bajo sus propias políticas de privacidad y cookies, que puede leer aquí:\n\n• Google: https://policies.google.com/privacy\n• Meta (Facebook/Instagram): https://www.facebook.com/privacy/policy/\n• TikTok: https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nGP PROMOTIONS LTD no tiene control sobre cómo estos terceros utilizan los datos recopilados a través de sus cookies."
       },
       "s5": {
         "title": "5. Sus opciones y controles",
@@ -452,7 +452,7 @@
       },
       "s7": {
         "title": "7. Contacto",
-        "content": "Si tiene preguntas sobre cómo utilizamos las cookies en www.gpcompetition.com, póngase en contacto con nosotros:\n\nCorreo electrónico: info@gpcompetition.com\nGP PROMOTIONS LTD\n71-75 Shelton Street, Covent Garden,\nLondres, WC2H 9JQ, Reino Unido"
+        "content": "Si tiene preguntas sobre cómo utilizamos las cookies en www.ALESYOWIN.com, póngase en contacto con nosotros:\n\nCorreo electrónico: info@ALESYOWIN.com\nGP PROMOTIONS LTD\n71-75 Shelton Street, Covent Garden,\nLondres, WC2H 9JQ, Reino Unido"
       }
     },
     "footerNote": "Tu privacidad es nuestra prioridad. Si tienes alguna pregunta, ponte en contacto con nosotros."
@@ -460,7 +460,7 @@
   "FAQ": {
     "title": "Preguntas Frecuentes (FAQ)",
     "lastUpdated": "Última actualización: Abril 2026",
-    "intro": "¿Tienes preguntas sobre cómo funciona GP Competition? Hemos recopilado aquí las preguntas más comunes para ayudarte a entender nuestro proceso y cómo puedes ganar premios increíbles.",
+    "intro": "¿Tienes preguntas sobre cómo funciona ALESYOWIN? Hemos recopilado aquí las preguntas más comunes para ayudarte a entender nuestro proceso y cómo puedes ganar premios increíbles.",
     "sections": {
       "q1": {
         "question": "¿Cómo participo en un concurso?",
@@ -487,7 +487,7 @@
         "answer": "Nuestro equipo se pondrá en contacto contigo por teléfono o correo electrónico en un plazo de 7 días tras el sorteo para organizar los detalles de la entrega. Los premios en efectivo se transfieren directamente a tu cuenta bancaria."
       }
     },
-    "footerNote": "¿No has encontrado la respuesta que buscabas? Contáctanos en info@gpcompetition.com y estaremos encantados de ayudarte."
+    "footerNote": "¿No has encontrado la respuesta que buscabas? Contáctanos en info@ALESYOWIN.com y estaremos encantados de ayudarte."
   },
   "InstantWinnerEmail": {
     "title": "Notificación de Premio Instantáneo",
@@ -497,8 +497,8 @@
     "ticketLabel": "Número de Boleto Ganador",
     "prizeLabel": "Valor del Premio",
     "instructions": "Nuestro equipo se pondrá en contacto contigo en breve sobre cómo reclamar tu premio. ¡Mantente atento a tu bandeja de entrada y a tu teléfono!",
-    "thanks": "¡Gracias por jugar con GP Competition!",
-    "footer": "© {year} GP Competition. Todos los derechos reservados."
+    "thanks": "¡Gracias por jugar con ALESYOWIN!",
+    "footer": "© {year} ALESYOWIN. Todos los derechos reservados."
   },
   "BonusWinnerEmail": {
     "title": "Notificación de sorteo de bonificación",
@@ -508,7 +508,7 @@
     "ticketLabel": "Número de boleto ganador",
     "prizeLabel": "Valor del premio",
     "instructions": "Nuestro equipo se pondrá en contacto contigo pronto para acordar la entrega de tu premio. ¡Atento a tu teléfono y correo electrónico!",
-    "thanks": "¡Gracias por formar parte de GP Competition!",
-    "footer": "© {year} GP Competition. Todos los derechos reservados."
+    "thanks": "¡Gracias por formar parte de ALESYOWIN!",
+    "footer": "© {year} ALESYOWIN. Todos los derechos reservados."
   }
 }

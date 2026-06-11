@@ -189,8 +189,8 @@ export function getInstantWinnerEmailTemplate(props: InstantOrderEmailProps): st
         <!-- Header with conditional logo -->
         <div class="email-header">
             ${props.logoUrl 
-                ? `<img src="${props.logoUrl}" alt="GP Competition Logo">` 
-                : `<h1 style="color: #ffd700; margin: 0;">GP Competition</h1>`
+                ? `<img src="${props.logoUrl}" alt="ALESYOWIN Logo">` 
+                : `<h1 style="color: #ffd700; margin: 0;">ALESYOWIN</h1>`
             }
         </div>
 

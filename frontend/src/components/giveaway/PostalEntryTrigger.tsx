@@ -14,7 +14,7 @@ const PostalEntryTrigger: React.FC<PostalEntryTriggerProps> = ({ label }) => {
         <>
             <button 
                 onClick={() => setIsOpen(true)}
-                className="inline-block bg-[#D4AF37] btn-gold-safe text-white text-[13px] font-bold uppercase px-6 py-2.5 rounded-sm shadow-md hover:brightness-110 active:scale-95 transition-all cursor-pointer"
+                className="inline-block bg-[#00A5FF] text-white text-[13px] font-bold uppercase px-6 py-2.5 rounded-sm shadow-md hover:brightness-110 active:scale-95 transition-all cursor-pointer"
             >
                 {label}
             </button>

@@ -60,14 +60,14 @@ export default function ProgressBar({ ticketsSold: staticTicketsSold, totalTicke
     return (
         <div className="w-full pt-10 pb-4">
             {/* Main Progress Container */}
-            <div className="relative w-full h-4 bg-[#1a1a1a] rounded-full border border-white/5">
+            <div className="relative w-full h-4 bg-white/10 rounded-full border border-white/5">
                 {/* Gold Fill */}
                 <div
                     className="absolute top-0 left-0 h-full rounded-full transition-all duration-700 ease-out z-10"
                     style={{
                         width: `${percent}%`,
-                        background: 'linear-gradient(90deg, #8b6914 0%, #D4AF37 60%, #f0d060 100%)',
-                        boxShadow: '0 0 15px rgba(212, 175, 55, 0.3)',
+                        background: 'linear-gradient(90deg, #005A99 0%, #00A5FF 60%, #66C5FF 100%)',
+                        boxShadow: '0 0 15px rgba(0, 165, 255, 0.3)',
                     }}
                 />
 
@@ -76,11 +76,11 @@ export default function ProgressBar({ ticketsSold: staticTicketsSold, totalTicke
                     className="absolute top-0 -translate-y-[110%] -translate-x-1/2 z-30 transition-all duration-700 ease-out"
                     style={{ left: `${percent}%` }}
                 >
-                    <div className="relative bg-[#D4AF37] btn-gold-safe text-black px-3 py-1.5 rounded-full flex flex-col items-center justify-center min-w-[65px] shadow-[0_4px_10px_rgba(212,175,55,0.4)]">
+                    <div className="relative bg-[#00A5FF] text-white px-3 py-1.5 rounded-full flex flex-col items-center justify-center min-w-[65px] shadow-[0_4px_10px_rgba(0,165,255,0.4)]">
                         <span className="text-[14px] font-black leading-none">{percent}%</span>
                         <span className="text-[8px] font-black uppercase tracking-tighter leading-none mt-0.5">SOLD</span>
                         {/* Little triangle pointer */}
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-[#D4AF37]"></div>
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-[#00A5FF]"></div>
                     </div>
                 </div>
 
@@ -98,8 +98,8 @@ export default function ProgressBar({ ticketsSold: staticTicketsSold, totalTicke
                                 flex items-center justify-center rounded-full transition-all duration-300
                                 w-5 h-5 md:w-6 md:h-6
                                 ${achieved 
-                                    ? 'bg-[#D4AF37] btn-gold-safe shadow-[0_0_15px_rgba(212,175,55,0.5)] scale-110' 
-                                    : 'bg-[#1a1a1a] border border-white/10 hover:border-[#D4AF37]/40'
+                                    ? 'bg-[#00A5FF] shadow-[0_0_15px_rgba(0,165,255,0.5)] scale-110' 
+                                    : 'bg-[#1a1a1a] border border-white/10 hover:border-[#00A5FF]/40'
                                 }
                             `}
                             style={{ left: `${drawPercent}%` }}
@@ -120,7 +120,7 @@ export default function ProgressBar({ ticketsSold: staticTicketsSold, totalTicke
             <div className="flex flex-col items-center mt-8 space-y-3">
                 <div className="flex items-center justify-between w-full">
                     <span className="text-white/40 text-[11px] font-bold uppercase tracking-widest">
-                        {t('ticketsSold')}: <span className="text-white/80">{liveSold.toLocaleString()}</span>
+                        {t('ticketsSold')}: <span className="text-white/90">{liveSold.toLocaleString()}</span>
                     </span>
                     <span className="text-white/40 text-[11px] font-bold uppercase tracking-widest">
                         {tPage.rich('entriesInfo', { 
@@ -131,18 +131,18 @@ export default function ProgressBar({ ticketsSold: staticTicketsSold, totalTicke
                 </div>
 
                 {nextDraw && (
-                    <p className="text-[#D4AF37] font-black text-sm tracking-[0.1em] text-center uppercase">
+                    <p className="text-[#00A5FF] font-black text-sm tracking-[0.1em] text-center uppercase">
                         {tPage('bonusDrawsGoText', { percent: percentToGo })}
                     </p>
                 )}
 
                 <div className="flex items-center gap-2">
-                    <p className="text-white/30 text-[10px] uppercase font-bold tracking-widest">
+                    <p className="text-white/40 text-[10px] uppercase font-bold tracking-widest">
                         {tPage('bonusDrawsTakePlaceText')}
                     </p>
                     <button 
                         onClick={() => setIsMenuOpen(true)}
-                        className="bg-[#D4AF37]/10 hover:bg-[#D4AF37]/20 border border-[#D4AF37]/20 text-[#D4AF37] rounded-full p-1 transition-all"
+                        className="bg-[#00A5FF]/10 hover:bg-[#00A5FF]/20 border border-[#00A5FF]/20 text-[#00A5FF] rounded-full p-1 transition-all"
                     >
                         <HelpCircle size={14} />
                     </button>
@@ -152,15 +152,15 @@ export default function ProgressBar({ ticketsSold: staticTicketsSold, totalTicke
             {/* Modal */}
             {isMenuOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-                    <div className="bg-[#111] border border-[#D4AF37]/30 rounded-xl p-8 max-w-sm w-full shadow-2xl relative animate-in fade-in zoom-in duration-200">
+                    <div className="bg-[#0a0a0a] border border-[#00A5FF]/30 rounded-xl p-8 max-w-sm w-full shadow-2xl relative animate-in fade-in zoom-in duration-200">
                         <button 
                             onClick={() => setIsMenuOpen(false)}
                             className="absolute top-4 right-4 text-white/40 hover:text-white transition-colors"
                         >
                             <X size={20} />
                         </button>
-                        <h4 className="text-[#D4AF37] font-black text-xl mb-4 uppercase tracking-[0.1em] flex items-center gap-3">
-                            <Star fill="#D4AF37" size={20} />
+                        <h4 className="text-[#00A5FF] font-black text-xl mb-4 uppercase tracking-[0.1em] flex items-center gap-3">
+                            <Star fill="#00A5FF" size={20} />
                             {tPage('bonusDrawsExplanation')}
                         </h4>
                         <p className="text-white/70 text-sm leading-relaxed whitespace-pre-line font-medium italic">

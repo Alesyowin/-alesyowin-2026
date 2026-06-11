@@ -22,8 +22,8 @@ function InstantPrizeCard({ prize, t }: { prize: InstantPrize; t: any }) {
         <div className={`
             relative overflow-hidden aspect-[1.1/1] sm:aspect-[1.6/1] rounded-lg shadow-2xl transition-all duration-700 group flex flex-col items-center justify-center text-center select-none
             ${isWon
-                ? 'bg-gradient-to-br from-[#D4AF37] via-[#f0d060] to-[#B8932C] scale-[1.02] shadow-[0_0_30px_rgba(212,175,55,0.4)]'
-                : 'bg-gradient-to-br from-[#1A1A1A] via-[#222222] to-[#151515] border border-white/5 hover:border-[#D4AF37]/20'
+                ? 'bg-gradient-to-br from-[#00A5FF] via-[#66C5FF] to-[#005A99] scale-[1.02] shadow-[0_0_30px_rgba(0,165,255,0.4)]'
+                : 'bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 border border-black/5 hover:border-[#00A5FF]/20'
             }
         `}>
             {/* Decupaje laterale tip bilet */}
@@ -31,21 +31,21 @@ function InstantPrizeCard({ prize, t }: { prize: InstantPrize; t: any }) {
             <div className="absolute top-1/2 -right-3 w-5 h-5 md:w-6 md:h-6 rounded-full -translate-y-1/2 z-10 bg-[#080808]" />
 
             {/* Linie de perforare */}
-            <div className={`absolute top-1/2 left-4 right-4 h-[1px] border-t border-dashed -translate-y-1/2 pointer-events-none opacity-20 ${isWon ? 'border-black' : 'border-[#D4AF37]'}`} />
+            <div className={`absolute top-1/2 left-4 right-4 h-[1px] border-t border-dashed -translate-y-1/2 pointer-events-none opacity-20 ${isWon ? 'border-black' : 'border-[#00A5FF]'}`} />
 
             {/* Numele site-ului + numărul biletului */}
             <div className="relative z-20 space-y-0.5 md:space-y-1 mb-2 md:mb-5">
-                <h4 className={`text-[10px] sm:text-base md:text-lg font-black uppercase tracking-[0.15em] md:tracking-[0.2em] italic ${isWon ? 'text-black' : 'text-[#D4AF37] drop-shadow-[0_0_8px_rgba(212,175,55,0.3)]'}`}>
-                    GP COMPETITION
+                <h4 className={`text-[10px] sm:text-base md:text-lg font-black uppercase tracking-[0.15em] md:tracking-[0.2em] italic ${isWon ? 'text-black' : 'text-[#00A5FF] drop-shadow-[0_0_8px_rgba(0,165,255,0.3)]'}`}>
+                    ALESYOWIN
                 </h4>
-                <p className={`text-[8px] md:text-xs font-black uppercase tracking-[0.2em] md:tracking-[0.3em] ${isWon ? 'text-black/60' : 'text-[#D4AF37]/50'}`}>
+                <p className={`text-[8px] md:text-xs font-black uppercase tracking-[0.2em] md:tracking-[0.3em] ${isWon ? 'text-black/60' : 'text-[#00A5FF]/50'}`}>
                     {prize.ticket_number != null ? `BILET ${prize.ticket_number}` : 'BILET ----'}
                 </p>
             </div>
 
             {/* Suma premiului */}
             <div className="relative z-20 px-2 md:px-4">
-                <div className={`text-sm sm:text-lg md:text-xl font-black mb-1 md:mb-2 ${isWon ? 'text-black' : 'text-white/90'}`}>
+                <div className={`text-sm sm:text-lg md:text-xl font-black mb-1 md:mb-2 ${isWon ? 'text-black' : 'text-black/90'}`}>
                     {prize.prize_amount != null
                         ? `${Number(prize.prize_amount).toLocaleString()} ${prize.prize_currency || ''}`
                         : '—'
@@ -92,10 +92,10 @@ function BonusDrawCard({ draw, t, isHighlighted }: { draw: BonusDraw; t: any; is
             className={`
             relative overflow-hidden aspect-[1.1/1] sm:aspect-[1.6/1] rounded-lg shadow-2xl transition-all duration-700 group flex flex-col items-center justify-center text-center select-none
             ${isWon
-                ? 'bg-gradient-to-br from-[#D4AF37] via-[#f0d060] to-[#B8932C] scale-[1.02] shadow-[0_0_30px_rgba(212,175,55,0.4)]'
-                : 'bg-gradient-to-br from-[#1A1A1A] via-[#222222] to-[#151515] hover:border-[#D4AF37]/20'
+                ? 'bg-gradient-to-br from-[#00A5FF] via-[#66C5FF] to-[#005A99] scale-[1.02] shadow-[0_0_30px_rgba(0,165,255,0.4)]'
+                : 'bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 hover:border-[#00A5FF]/20'
             }
-            ${isHighlighted ? 'ring-2 ring-offset-2 ring-offset-[#050505] ring-[#f0d060] scale-105 shadow-[0_0_40px_rgba(212,175,55,0.6)] z-10' : 'border border-white/5'}
+            ${isHighlighted ? 'ring-2 ring-offset-2 ring-offset-white ring-[#66C5FF] scale-105 shadow-[0_0_40px_rgba(0,165,255,0.6)] z-10' : 'border border-black/5'}
         `}
         >
             {/* Decupaje laterale tip bilet */}
@@ -103,21 +103,21 @@ function BonusDrawCard({ draw, t, isHighlighted }: { draw: BonusDraw; t: any; is
             <div className="absolute top-1/2 -right-3 w-5 h-5 md:w-6 md:h-6 rounded-full -translate-y-1/2 z-10 bg-[#080808]" />
 
             {/* Linie de perforare */}
-            <div className={`absolute top-1/2 left-4 right-4 h-[1px] border-t border-dashed -translate-y-1/2 pointer-events-none opacity-20 ${isWon ? 'border-black' : 'border-[#D4AF37]'}`} />
+            <div className={`absolute top-1/2 left-4 right-4 h-[1px] border-t border-dashed -translate-y-1/2 pointer-events-none opacity-20 ${isWon ? 'border-black' : 'border-[#00A5FF]'}`} />
 
             {/* Numele site-ului ... */}
             <div className="relative z-20 space-y-0.5 md:space-y-1 mb-2 md:mb-5">
-                <h4 className={`text-[10px] sm:text-base md:text-lg font-black uppercase tracking-[0.15em] md:tracking-[0.2em] italic ${isWon ? 'text-black' : 'text-[#D4AF37] drop-shadow-[0_0_8px_rgba(212,175,55,0.3)]'}`}>
-                    GP COMPETITION
+                <h4 className={`text-[10px] sm:text-base md:text-lg font-black uppercase tracking-[0.15em] md:tracking-[0.2em] italic ${isWon ? 'text-black' : 'text-[#00A5FF] drop-shadow-[0_0_8px_rgba(0,165,255,0.3)]'}`}>
+                    ALESYOWIN
                 </h4>
-                <p className={`text-[8px] md:text-xs font-black uppercase tracking-[0.2em] md:tracking-[0.3em] flex items-center justify-center gap-1 ${isWon ? 'text-black/60' : 'text-[#D4AF37]/70'}`}>
+                <p className={`text-[8px] md:text-xs font-black uppercase tracking-[0.2em] md:tracking-[0.3em] flex items-center justify-center gap-1 ${isWon ? 'text-black/60' : 'text-[#00A5FF]/70'}`}>
                     <Trophy size={10} /> {draw.percentage || 0}% BONUS DRAW
                 </p>
             </div>
 
             {/* Suma premiului */}
             <div className="relative z-20 px-2 md:px-4">
-                <div className={`text-sm sm:text-lg md:text-xl font-black mb-1 md:mb-2 ${isWon ? 'text-black' : 'text-white/90'}`}>
+                <div className={`text-sm sm:text-lg md:text-xl font-black mb-1 md:mb-2 ${isWon ? 'text-black' : 'text-black/90'}`}>
                     {draw.prize_amount != null ? `${Number(draw.prize_amount).toLocaleString()} ${draw.prize_currency || ''}` : '—'}
                 </div>
 
@@ -133,7 +133,7 @@ function BonusDrawCard({ draw, t, isHighlighted }: { draw: BonusDraw; t: any; is
                                     {draw.winner_name}
                                 </p>
                                 {draw.winner_ticket && (
-                                    <p className="text-[8px] md:text-[9px] font-black uppercase tracking-widest text-[#665011] mt-0.5">
+                                    <p className="text-[8px] md:text-[9px] font-black uppercase tracking-widest text-[#005A99] mt-0.5">
                                         BILET {draw.winner_ticket}
                                     </p>
                                 )}
@@ -142,8 +142,8 @@ function BonusDrawCard({ draw, t, isHighlighted }: { draw: BonusDraw; t: any; is
                     </div>
                 ) : (
                     <div className="flex items-center justify-center gap-1 md:gap-1.5 opacity-60 group-hover:opacity-100 transition-opacity">
-                        <span className="w-1 md:w-1.5 h-1 md:h-1.5 bg-[#D4AF37] btn-gold-safe rounded-full animate-pulse" />
-                        <span className="text-[8px] md:text-[10px] font-black uppercase tracking-widest text-[#D4AF37]">
+                        <span className="w-1 md:w-1.5 h-1 md:h-1.5 bg-[#00A5FF] rounded-full animate-pulse" />
+                        <span className="text-[8px] md:text-[10px] font-black uppercase tracking-widest text-[#00A5FF]">
                             LOCKED
                         </span>
                     </div>
@@ -152,7 +152,7 @@ function BonusDrawCard({ draw, t, isHighlighted }: { draw: BonusDraw; t: any; is
 
             {/* Shimmer la hover */}
             {!isWon && (
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             )}
         </div>
     );
@@ -264,10 +264,10 @@ export default function GiveawayInformation({
                 <div>
                     {/* Statistică câștiguri */}
                     <div className="flex items-center justify-between mb-6">
-                        <h3 className="text-sm font-bold text-white/60 uppercase tracking-widest">
+                        <h3 className="text-sm font-bold text-black/60 uppercase tracking-widest">
                             {t('instantWinTitle')}
                         </h3>
-                        <span className="text-xs font-semibold text-[#D4AF37] bg-[#D4AF37]/10 border border-[#D4AF37]/20 px-3 py-1 rounded-full">
+                        <span className="text-xs font-semibold text-[#00A5FF] bg-[#00A5FF]/10 border border-[#00A5FF]/20 px-3 py-1 rounded-full">
                             {t('instantWinWonCount', { won: wonCount, total: totalCount })}
                         </span>
                     </div>
@@ -280,7 +280,7 @@ export default function GiveawayInformation({
                     </div>
                 </div>
             ) : (
-                <p className="text-white/40 text-sm italic py-4">{t('instantWinNoPrizes')}</p>
+                <p className="text-black/40 text-sm italic py-4">{t('instantWinNoPrizes')}</p>
             )
         },
         {
@@ -288,11 +288,11 @@ export default function GiveawayInformation({
             label: t('description'),
             content: description ? (
                 <div
-                    className="text-white/70 text-sm md:text-base leading-relaxed prose prose-invert max-w-none prose-p:my-4 prose-strong:text-[#D4AF37] prose-headings:text-white"
+                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF] prose-headings:text-black"
                     dangerouslySetInnerHTML={{ __html: description }}
                 />
             ) : (
-                <p className="text-white/40 text-sm italic py-4">{t('comingSoon')}...</p>
+                <p className="text-black/40 text-sm italic py-4">{t('comingSoon')}...</p>
             )
         },
         {
@@ -300,11 +300,11 @@ export default function GiveawayInformation({
             label: t('competitionDetails'),
             content: competitionDetails ? (
                 <div
-                    className="text-white/70 text-sm md:text-base leading-relaxed prose prose-invert max-w-none prose-p:my-4 prose-strong:text-[#D4AF37]"
+                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF]"
                     dangerouslySetInnerHTML={{ __html: competitionDetails }}
                 />
             ) : (
-                <p className="text-white/40 text-sm italic py-4">{t('comingSoon')}...</p>
+                <p className="text-black/40 text-sm italic py-4">{t('comingSoon')}...</p>
             )
         },
         {
@@ -323,13 +323,13 @@ export default function GiveawayInformation({
                 </div>
             ) : bonusDraw ? (
                 <div
-                    className="text-white/70 text-sm md:text-base leading-relaxed prose prose-invert max-w-none"
+                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none"
                     dangerouslySetInnerHTML={{ __html: bonusDraw }}
                 />
             ) : (
-                <div className="flex items-center gap-4 p-6 bg-[#D4AF37]/5 border border-[#D4AF37]/20 rounded-md">
-                    <div className="w-3 h-3 bg-[#D4AF37] rounded-full animate-pulse shadow-[0_0_10px_rgba(212,175,55,0.5)]" />
-                    <p className="text-[#D4AF37] text-base font-semibold tracking-wide italic">
+                <div className="flex items-center gap-4 p-6 bg-[#00A5FF]/5 border border-[#00A5FF]/20 rounded-md">
+                    <div className="w-3 h-3 bg-[#00A5FF] rounded-full animate-pulse shadow-[0_0_10px_rgba(0,165,255,0.5)]" />
+                    <p className="text-[#00A5FF] text-base font-semibold tracking-wide italic">
                         {t('comingSoon')}...
                     </p>
                 </div>
@@ -348,8 +348,8 @@ export default function GiveawayInformation({
                         className={`
                             min-w-[120px] md:min-w-[160px] py-3 px-5 text-center text-[10px] md:text-xs font-black uppercase tracking-[0.15em] transition-all duration-300 rounded-md border
                             ${activeTab === tab.id
-                                ? 'bg-[#D4AF37] btn-gold-safe text-white border-[#D4AF37] shadow-[0_4px_15px_rgba(212,175,55,0.3)] scale-[1.05]'
-                                : 'bg-[#0A0A0A] text-white/40 border-neutral-800 hover:border-[#D4AF37]/40 hover:text-white/70'
+                                ? 'bg-[#00A5FF] text-white border-[#00A5FF] shadow-[0_4px_15px_rgba(0,165,255,0.3)] scale-[1.05]'
+                                : 'bg-white text-black/40 border-gray-200 hover:border-[#00A5FF]/40 hover:text-black/70'
                             }
                         `}
                     >
@@ -359,7 +359,7 @@ export default function GiveawayInformation({
             </div>
 
             {/* Panoul de conținut */}
-            <div className="border border-neutral-800 bg-[#080808]/50 rounded-lg p-6 md:p-12 min-h-[250px] shadow-2xl">
+            <div className="border border-gray-200 bg-white/50 rounded-lg p-6 md:p-12 min-h-[250px] shadow-2xl">
                 {tabs.find(tab => tab.id === activeTab)?.content}
             </div>
         </div>

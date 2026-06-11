@@ -59,7 +59,7 @@
     "country": "Țară"
   },
   "Home": {
-    "subtitle": "GP Competition",
+    "subtitle": "ALESYOWIN",
     "title": "Competiții Active",
     "description": "Participă acum pentru șansa de a câștiga premii de lux. Fiecare bilet te aduce mai aproape de recompense incredibile.",
     "noCompetitions": "Nu există competiții active în acest moment.",
@@ -100,7 +100,7 @@
     "bonusDrawsTakePlaceText": "Tragerile bonus au loc atunci când secțiunile marcate cu stea sunt atinse"
   },
   "EntryList": {
-    "subtitle": "GP Competition",
+    "subtitle": "ALESYOWIN",
     "title": "Lista de Participanți",
     "description": "Verifică participanții și biletele tale pentru fiecare competiție activă sau finalizată.",
     "all": "Toate",
@@ -126,7 +126,7 @@
     "ticketsFoundFor": "Bilete găsite pentru",
     "ticketCount": "{count} bilete",
     "searchPrompt": "Introdu mai sus numele, email-ul sau numărul biletului pentru a-ți găsi biletele.",
-    "verifiedNote": "Biletele tale sunt securizate și înregistrate oficial în sistemul GP Competition."
+    "verifiedNote": "Biletele tale sunt securizate și înregistrate oficial în sistemul ALESYOWIN."
   },
   "Success": {
     "title": "Comandă Reușită!",
@@ -163,7 +163,7 @@
   },
   "Profile": {
     "title": "Profilul Meu",
-    "memberBadge": "Membru GP Competition",
+    "memberBadge": "Membru ALESYOWIN",
     "logout": "Deconectare",
     "personalData": "Date Personale",
     "fullName": "Nume Complet",
@@ -184,7 +184,7 @@
     "contactUs": "CONTACTEAZĂ-NE",
     "tagline": "Suntem aici pentru tine 24/7",
     "telegram": "Canal Telegram",
-    "email": "info@gpcompetition.com",
+    "email": "info@ALESYOWIN.com",
     "companyName": "GP PROMOTIONS LTD",
     "companyNumber": "Număr companie {number}",
     "legal": "LEGAL",
@@ -202,16 +202,16 @@
     "unauthorised": "Orice utilizare neautorizată a numelui, logo-ului sau brandingului este strict interzisă."
   },
   "Email": {
-    "otpSubject": "Codul tău de acces - GP Competition",
+    "otpSubject": "Codul tău de acces - ALESYOWIN",
     "otpTitle": "Cod de Autentificare",
     "otpGreeting": "Bună,",
-    "otpMessage": "Codul tău de acces pentru GP Competition este:",
+    "otpMessage": "Codul tău de acces pentru ALESYOWIN este:",
     "otpExpiry": "Acest cod va expira în 10 minute.",
     "otpSecurityNote": "Dacă nu ai solicitat acest cod, te rugăm să ignori acest email.",
     "footer": "© {year} GP PROMOTIONS LTD. Toate drepturile rezervate."
   },
   "OrderEmail": {
-    "subject": "Confirmare comandă #{id} - GP Competition",
+    "subject": "Confirmare comandă #{id} - ALESYOWIN",
     "title": "Confirmare Comandă",
     "greeting": "Bună {name},",
     "orderNumber": "Număr Comandă:",
@@ -224,27 +224,27 @@
   "Terms": {
     "title": "Termeni și Condiții",
     "lastUpdated": "Ultima actualizare: Octombrie 2023",
-    "intro": "GP PROMOTIONS LTD (număr companie 17127347), cu sediul social în Shelton Street nr. 71-75, Covent Garden, Londra, WC2H 9JQ, Regatul Unit, operează site-ul web www.gpcompetition.com și este responsabilă pentru gestionarea tuturor competițiilor listate acolo.\n\nPentru orice întrebări sau nelămuriri, ne puteți contacta prin email la info@gpcompetition.com.",
+    "intro": "GP PROMOTIONS LTD (număr companie 17127347), cu sediul social în Shelton Street nr. 71-75, Covent Garden, Londra, WC2H 9JQ, Regatul Unit, operează site-ul web www.ALESYOWIN.com și este responsabilă pentru gestionarea tuturor competițiilor listate acolo.\n\nPentru orice întrebări sau nelămuriri, ne puteți contacta prin email la info@ALESYOWIN.com.",
     "sections": {
       "s1": {
         "title": "1. Reguli Generale",
-        "content": "1.1 Fiecare competiție publicată pe www.gpcompetition.com este guvernată de acești Termeni și Condiții („T&C”). Aceștia acoperă atât competițiile standard cu tragere la sorți („Competiții Standard”), cât și competițiile cu câștig instant („Competiții Instant Win”), denumite colectiv „Competiții”.\n1.2 Acești T&C au prioritate față de orice altă comunicare — inclusiv orice material promoțional, postări pe rețelele sociale sau alte comunicări referitoare la o Competiție.\n1.3 Pentru a fi eligibili pentru un premiu, participanții trebuie să răspundă corect la o întrebare sau să rezolve o problemă stabilită de GP PROMOTIONS LTD („Întrebarea Competiției”).\n1.4 Fiecare Competiție include o Întrebare a Competiției. Se aplică o taxă de participare plătită pentru fiecare înscriere. În cazul în care GP PROMOTIONS LTD oferă o întrebare cu mai multe variante de răspuns sau o întrebare cu răspuns ușor, este disponibilă și o modalitate de participare gratuită prin poștă."
+        "content": "1.1 Fiecare competiție publicată pe www.ALESYOWIN.com este guvernată de acești Termeni și Condiții („T&C”). Aceștia acoperă atât competițiile standard cu tragere la sorți („Competiții Standard”), cât și competițiile cu câștig instant („Competiții Instant Win”), denumite colectiv „Competiții”.\n1.2 Acești T&C au prioritate față de orice altă comunicare — inclusiv orice material promoțional, postări pe rețelele sociale sau alte comunicări referitoare la o Competiție.\n1.3 Pentru a fi eligibili pentru un premiu, participanții trebuie să răspundă corect la o întrebare sau să rezolve o problemă stabilită de GP PROMOTIONS LTD („Întrebarea Competiției”).\n1.4 Fiecare Competiție include o Întrebare a Competiției. Se aplică o taxă de participare plătită pentru fiecare înscriere. În cazul în care GP PROMOTIONS LTD oferă o întrebare cu mai multe variante de răspuns sau o întrebare cu răspuns ușor, este disponibilă și o modalitate de participare gratuită prin poștă."
       },
       "s2": {
         "title": "2. Cum să Participi",
-        "content": "2.1 Fiecare Competiție se desfășoară între data de început și data de încheiere afișate pe pagina competiției respective de pe www.gpcompetition.com („Data de Deschidere” și „Data de Închidere”). Toate datele și orele se referă la ora Londrei, Anglia.\n2.2 GP PROMOTIONS LTD își rezervă dreptul de a ajusta datele de deschidere sau de închidere dacă este cu adevărat necesar. Orice modificări vor fi actualizate prompt pe site-ul web.\n2.3 Toate înscrierile trebuie să ajungă la noi până la ora de închidere specificată. Înscrierile primite după acest moment sunt automat invalide. Nu se vor acorda rambursări pentru înscrierile întârziate.\n2.4 Fiecare Competiție are o limită maximă de bilete, afișată pe pagina competiției. Odată ce această limită este atinsă, nu mai pot fi acceptate alte înscrieri.\n2.5 Există, de asemenea, o limită de participare per persoană pentru fiecare Competiție. Această limită este menționată pe pagina individuală a competiției.\n2.6 Pentru a participa la o Competiție Standard prin metoda plătită: vizitați www.gpcompetition.com, alegeți competiția, răspundeți la Întrebarea Competiției, alegeți câte înscrieri doriți, finalizați comanda, autentificați-vă sau înregistrați-vă dacă este necesar, acceptați acești T&C și finalizați plata.\n2.7 Pentru a participa la o Competiție Instant Win prin metoda plătită: vizitați www.gpcompetition.com, selectați competiția, alegeți numărul de înscrieri, finalizați comanda, autentificați-vă sau înregistrați-vă dacă este necesar, acceptați acești T&C și finalizați plata.\n2.8 Odată ce înscrierea este finalizată cu succes, veți primi o confirmare de la GP PROMOTIONS LTD.\n2.9 GP PROMOTIONS LTD nu își asumă nicio responsabilitate pentru înscrierile care nu ajung la noi din cauza unor probleme tehnice, de conectivitate sau orice altă circumstanță în afara controlului nostru.\n2.10 Prin participarea la orice Competiție, confirmați că îndepliniți cerințele de eligibilitate, că înțelegeți că încheiați un acord obligatoriu cu GP PROMOTIONS LTD și că acceptați acești T&C în totalitate."
+        "content": "2.1 Fiecare Competiție se desfășoară între data de început și data de încheiere afișate pe pagina competiției respective de pe www.ALESYOWIN.com („Data de Deschidere” și „Data de Închidere”). Toate datele și orele se referă la ora Londrei, Anglia.\n2.2 GP PROMOTIONS LTD își rezervă dreptul de a ajusta datele de deschidere sau de închidere dacă este cu adevărat necesar. Orice modificări vor fi actualizate prompt pe site-ul web.\n2.3 Toate înscrierile trebuie să ajungă la noi până la ora de închidere specificată. Înscrierile primite după acest moment sunt automat invalide. Nu se vor acorda rambursări pentru înscrierile întârziate.\n2.4 Fiecare Competiție are o limită maximă de bilete, afișată pe pagina competiției. Odată ce această limită este atinsă, nu mai pot fi acceptate alte înscrieri.\n2.5 Există, de asemenea, o limită de participare per persoană pentru fiecare Competiție. Această limită este menționată pe pagina individuală a competiției.\n2.6 Pentru a participa la o Competiție Standard prin metoda plătită: vizitați www.ALESYOWIN.com, alegeți competiția, răspundeți la Întrebarea Competiției, alegeți câte înscrieri doriți, finalizați comanda, autentificați-vă sau înregistrați-vă dacă este necesar, acceptați acești T&C și finalizați plata.\n2.7 Pentru a participa la o Competiție Instant Win prin metoda plătită: vizitați www.ALESYOWIN.com, selectați competiția, alegeți numărul de înscrieri, finalizați comanda, autentificați-vă sau înregistrați-vă dacă este necesar, acceptați acești T&C și finalizați plata.\n2.8 Odată ce înscrierea este finalizată cu succes, veți primi o confirmare de la GP PROMOTIONS LTD.\n2.9 GP PROMOTIONS LTD nu își asumă nicio responsabilitate pentru înscrierile care nu ajung la noi din cauza unor probleme tehnice, de conectivitate sau orice altă circumstanță în afara controlului nostru.\n2.10 Prin participarea la orice Competiție, confirmați că îndepliniți cerințele de eligibilitate, că înțelegeți că încheiați un acord obligatoriu cu GP PROMOTIONS LTD și că acceptați acești T&C în totalitate."
       },
       "s3": {
         "title": "3. Participare Gratuită prin Poștă",
-        "content": "Participanții care nu doresc să plătească pot participa prin poștă, cu condiția să urmeze instrucțiunile de mai jos:\nTrimiteți o scrisoare scrisă de mână prin poștă preplătită de clasa întâi sau a doua la: GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit. Scrisorile livrate personal nu vor fi acceptate.\nScrisoarea trebuie să includă clar: Numele competiției la care participați, numele dvs. complet, data nașterii, adresa de domiciliu completă, un număr de telefon de contact și o adresă de email, și răspunsul dvs. la Întrebarea Competiției (dacă este cazul).\nÎnscrierile incomplete sau ilizibile vor fi descalificate. Este permis un număr maxim de două (2) înscrieri gratuite prin poștă de persoană și per competiție. Fiecare înscriere trebuie trimisă în propriul plic separat.\nÎnscrierile gratuite trebuie să ajungă înainte de Data de Închidere. Costurile poștale sunt responsabilitatea participantului. Pentru a fi validă, trebuie să aveți un cont activ pe www.gpcompetition.com și toate detaliile din scrisoarea dvs. trebuie să coincidă exact cu detaliile contului dvs."
+        "content": "Participanții care nu doresc să plătească pot participa prin poștă, cu condiția să urmeze instrucțiunile de mai jos:\nTrimiteți o scrisoare scrisă de mână prin poștă preplătită de clasa întâi sau a doua la: GP PROMOTIONS LTD, 71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit. Scrisorile livrate personal nu vor fi acceptate.\nScrisoarea trebuie să includă clar: Numele competiției la care participați, numele dvs. complet, data nașterii, adresa de domiciliu completă, un număr de telefon de contact și o adresă de email, și răspunsul dvs. la Întrebarea Competiției (dacă este cazul).\nÎnscrierile incomplete sau ilizibile vor fi descalificate. Este permis un număr maxim de două (2) înscrieri gratuite prin poștă de persoană și per competiție. Fiecare înscriere trebuie trimisă în propriul plic separat.\nÎnscrierile gratuite trebuie să ajungă înainte de Data de Închidere. Costurile poștale sunt responsabilitatea participantului. Pentru a fi validă, trebuie să aveți un cont activ pe www.ALESYOWIN.com și toate detaliile din scrisoarea dvs. trebuie să coincidă exact cu detaliile contului dvs."
       },
       "s4": {
         "title": "4. Selectarea Câștigătorilor",
-        "content": "4.1 Pentru Competițiile Standard, toți participanții care răspund corect la Întrebarea Competiției vor participa la o tragere la sorți. Câștigătorul va fi ales live folosind generatorul de numere aleatorii de la Google. Tragerea la sorți va fi difuzată live pe canalele oficiale de social media ale GP PROMOTIONS LTD. Tragerea la sorți va avea loc în termen de 7 zile de la Data de Închidere.\n4.2 Toți participanții la Competițiile Standard pot avea numele și numărul de participare incluse într-un tabel publicat pe site-ul web sau afișat în timpul tragerii la sorți live. Dacă nu doriți ca numele dvs. să fie inclus, contactați-ne la info@gpcompetition.com cu cel puțin 48 de ore înainte de tragere.\n4.3 Pentru Competițiile Instant Win, premiile sunt pre-atribuite unor numere de bilet aleatorii. Fiecărei înscrieri cu răspuns corect îi este atribuit un număr. Dacă acel număr corespunde unui premiu, participantul câștigă. Câștigătorii sunt notificați imediat pe pagina competiției și prin email automat."
+        "content": "4.1 Pentru Competițiile Standard, toți participanții care răspund corect la Întrebarea Competiției vor participa la o tragere la sorți. Câștigătorul va fi ales live folosind generatorul de numere aleatorii de la Google. Tragerea la sorți va fi difuzată live pe canalele oficiale de social media ale GP PROMOTIONS LTD. Tragerea la sorți va avea loc în termen de 7 zile de la Data de Închidere.\n4.2 Toți participanții la Competițiile Standard pot avea numele și numărul de participare incluse într-un tabel publicat pe site-ul web sau afișat în timpul tragerii la sorți live. Dacă nu doriți ca numele dvs. să fie inclus, contactați-ne la info@ALESYOWIN.com cu cel puțin 48 de ore înainte de tragere.\n4.3 Pentru Competițiile Instant Win, premiile sunt pre-atribuite unor numere de bilet aleatorii. Fiecărei înscrieri cu răspuns corect îi este atribuit un număr. Dacă acel număr corespunde unui premiu, participantul câștigă. Câștigătorii sunt notificați imediat pe pagina competiției și prin email automat."
       },
       "s5": {
         "title": "5. Credit Website",
-        "content": "5.1 Creditele de website pot fi acordate ca premii sau cadouri în anumite Competiții.\n5.2 În unele cazuri, un premiu poate fi schimbat cu credite de website, acolo unde este menționat pe pagina competiției.\n5.3 Creditul de website trebuie utilizat în termen de 12 luni de la adăugarea în contul dvs. Mementourile vor fi trimise prin email. Creditul expirat nu mai poate fi utilizat.\n5.4 Creditul de website nu are valoare monetară. Nu poate fi schimbat în numerar, transferat sau retras. Este valabil numai pentru utilizare pentru înscrieri viitoare la competiții pe www.gpcompetition.com."
+        "content": "5.1 Creditele de website pot fi acordate ca premii sau cadouri în anumite Competiții.\n5.2 În unele cazuri, un premiu poate fi schimbat cu credite de website, acolo unde este menționat pe pagina competiției.\n5.3 Creditul de website trebuie utilizat în termen de 12 luni de la adăugarea în contul dvs. Mementourile vor fi trimise prin email. Creditul expirat nu mai poate fi utilizat.\n5.4 Creditul de website nu are valoare monetară. Nu poate fi schimbat în numerar, transferat sau retras. Este valabil numai pentru utilizare pentru înscrieri viitoare la competiții pe www.ALESYOWIN.com."
       },
       "s6": {
         "title": "6. Cine poate Participa",
@@ -252,7 +252,7 @@
       },
       "s7": {
         "title": "7. Premiul",
-        "content": "7.1 Premiul pentru fiecare Competiție este descris pe pagina competiției respective de pe www.gpcompetition.com.\n7.2 Premiile sunt supuse disponibilității. GP PROMOTIONS LTD își rezervă dreptul de a înlocui orice premiu cu unul de valoare egală sau mai mare.\n7.3 Cu excepția cazului în care se specifică altfel, nu există o alternativă în numerar pentru premiu. GP PROMOTIONS LTD poate, la propria sa discreție, să ofere un echivalent în bani dacă câștigătorul preferă.\n7.4 Dacă premiul este un vehicul: acesta va fi livrat cu un ITP (MOT) valabil dacă este necesar; asigurarea și impozitul auto nu sunt incluse și sunt responsabilitatea exclusivă a câștigătorului.\n7.5 Dacă premiul este o călătorie sau un eveniment: datele, numărul de bilete și clasa de călătorie vor fi cele specificate pe pagina competiției."
+        "content": "7.1 Premiul pentru fiecare Competiție este descris pe pagina competiției respective de pe www.ALESYOWIN.com.\n7.2 Premiile sunt supuse disponibilității. GP PROMOTIONS LTD își rezervă dreptul de a înlocui orice premiu cu unul de valoare egală sau mai mare.\n7.3 Cu excepția cazului în care se specifică altfel, nu există o alternativă în numerar pentru premiu. GP PROMOTIONS LTD poate, la propria sa discreție, să ofere un echivalent în bani dacă câștigătorul preferă.\n7.4 Dacă premiul este un vehicul: acesta va fi livrat cu un ITP (MOT) valabil dacă este necesar; asigurarea și impozitul auto nu sunt incluse și sunt responsabilitatea exclusivă a câștigătorului.\n7.5 Dacă premiul este o călătorie sau un eveniment: datele, numărul de bilete și clasa de călătorie vor fi cele specificate pe pagina competiției."
       },
       "s8": {
         "title": "8. Câștigători",
@@ -260,7 +260,7 @@
       },
       "s9": {
         "title": "9. Revendicarea Premiului",
-        "content": "9.1 Premiile trebuie revendicate de către câștigător personal. Nicio terță parte nu poate revendica un premiu în numele unui câștigător.\n9.2 Câștigătorii trebuie să își păstreze datele de contact actualizate. Orice modificări trebuie trimise prompt la info@gpcompetition.com.\n9.3 Premiile în bani vor fi transferate direct în contul bancar al câștigătorului. Câștigătorul trebuie să confirme că este titularul contului. Neprezentarea acestei dovezi în termen de 14 zile va duce la pierderea premiului."
+        "content": "9.1 Premiile trebuie revendicate de către câștigător personal. Nicio terță parte nu poate revendica un premiu în numele unui câștigător.\n9.2 Câștigătorii trebuie să își păstreze datele de contact actualizate. Orice modificări trebuie trimise prompt la info@ALESYOWIN.com.\n9.3 Premiile în bani vor fi transferate direct în contul bancar al câștigătorului. Câștigătorul trebuie să confirme că este titularul contului. Neprezentarea acestei dovezi în termen de 14 zile va duce la pierderea premiului."
       },
       "s10": {
         "title": "10. Limitarea Răspunderii",
@@ -272,7 +272,7 @@
       },
       "s12": {
         "title": "12. General",
-        "content": "12.1 GP PROMOTIONS LTD poate actualiza acești T&C din când în când. Versiunea curentă va fi întotdeauna disponibilă pe www.gpcompetition.com.\n12.2 Acești T&C sunt guvernați de legile din Anglia și Țara Galilor. Orice dispute vor fi supuse jurisdicției exclusive a instanțelor din Anglia și Țara Galilor."
+        "content": "12.1 GP PROMOTIONS LTD poate actualiza acești T&C din când în când. Versiunea curentă va fi întotdeauna disponibilă pe www.ALESYOWIN.com.\n12.2 Acești T&C sunt guvernați de legile din Anglia și Țara Galilor. Orice dispute vor fi supuse jurisdicției exclusive a instanțelor din Anglia și Țara Galilor."
       }
     },
     "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
@@ -280,7 +280,7 @@
   "Privacy": {
     "title": "Politică de Confidențialitate",
     "lastUpdated": "Ultima actualizare: Aprilie 2026",
-    "intro": "GP PROMOTIONS LTD („noi”, „nouă”, „nostru”) ia în serios confidențialitatea fiecărei persoane care vizitează sau utilizează www.gpcompetition.com. Această Politică de Confidențialitate stabilește clar ce informații personale colectăm, de ce le colectăm, cum le protejăm și ce drepturi aveți asupra acestora.\n\nDetalii Operator de Date:\nGP PROMOTIONS LTD (Număr Companie 17127347)\n71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit\nEmail: info@gpcompetition.com\n\nAceastă Politică se aplică oricărei persoane care navighează pe www.gpcompetition.com, creează un cont sau participă la oricare dintre competițiile noastre. Utilizarea site-ului nostru web înseamnă că ați avut ocazia să citiți și să înțelegeți cum gestionăm datele dvs.",
+    "intro": "GP PROMOTIONS LTD („noi”, „nouă”, „nostru”) ia în serios confidențialitatea fiecărei persoane care vizitează sau utilizează www.ALESYOWIN.com. Această Politică de Confidențialitate stabilește clar ce informații personale colectăm, de ce le colectăm, cum le protejăm și ce drepturi aveți asupra acestora.\n\nDetalii Operator de Date:\nGP PROMOTIONS LTD (Număr Companie 17127347)\n71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit\nEmail: info@ALESYOWIN.com\n\nAceastă Politică se aplică oricărei persoane care navighează pe www.ALESYOWIN.com, creează un cont sau participă la oricare dintre competițiile noastre. Utilizarea site-ului nostru web înseamnă că ați avut ocazia să citiți și să înțelegeți cum gestionăm datele dvs.",
     "sections": {
       "s1": {
         "title": "1. Cine Suntem",
@@ -312,7 +312,7 @@
       },
       "s8": {
         "title": "8. Drepturile Tale",
-        "content": "Ai dreptul de a accesa, rectifica sau șterge datele tale. Contactează-ne la info@gpcompetition.com pentru orice solicitare."
+        "content": "Ai dreptul de a accesa, rectifica sau șterge datele tale. Contactează-ne la info@ALESYOWIN.com pentru orice solicitare."
       },
       "s9": {
         "title": "9. Câștigători și Publicitate",
@@ -328,7 +328,7 @@
       },
       "s12": {
         "title": "12. Contact",
-        "content": "Pentru întrebări, contactați info@gpcompetition.com."
+        "content": "Pentru întrebări, contactați info@ALESYOWIN.com."
       }
     },
     "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
@@ -336,11 +336,11 @@
   "Rules": {
     "title": "Regulamentul Oficial al Competiției",
     "lastUpdated": "În vigoare de la: Martie 2026",
-    "intro": "GP PROMOTIONS LTD, înregistrată în Anglia și Țara Galilor sub numărul de companie 17127347, cu sediul social în 71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit.\n\nAcest Regulament Oficial al Competiției („Reguli”) este obligatoriu și guvernează toate competițiile lansate pe www.gpcompetition.com.",
+    "intro": "GP PROMOTIONS LTD, înregistrată în Anglia și Țara Galilor sub numărul de companie 17127347, cu sediul social în 71-75 Shelton Street, Covent Garden, Londra, WC2H 9JQ, Regatul Unit.\n\nAcest Regulament Oficial al Competiției („Reguli”) este obligatoriu și guvernează toate competițiile lansate pe www.ALESYOWIN.com.",
     "sections": {
       "s1": {
         "title": "1. Condiții Generale",
-        "content": "1.1 Acest Regulament Oficial al Competiției („Reguli”) este obligatoriu. ORGANIZATORUL: GP PROMOTIONS LTD. PLATFORMA: www.gpcompetition.com oferă persoanelor eligibile șansa de a participa la trageri la sorți cu premii. DOMENIUL DE APLICARE: Aceste Reguli guvernează toate competițiile lansate la sau după 01.03.2026."
+        "content": "1.1 Acest Regulament Oficial al Competiției („Reguli”) este obligatoriu. ORGANIZATORUL: GP PROMOTIONS LTD. PLATFORMA: www.ALESYOWIN.com oferă persoanelor eligibile șansa de a participa la trageri la sorți cu premii. DOMENIUL DE APLICARE: Aceste Reguli guvernează toate competițiile lansate la sau după 01.03.2026."
       },
       "s2": {
         "title": "2. Cum să Participi",
@@ -400,7 +400,7 @@
       },
       "s3": {
         "title": "3. Limite de Înscriere",
-        "content": "Puteți trimite mai mult de o înscriere gratuită per competiție, până la numărul maxim de înscrieri permise pentru acea competiție. Limita de înscriere per persoană este afișată pe pagina competiției respective de pe www.gpcompetition.com. Fiecare înscriere trebuie trimisă separat în propriul plic individual. Dacă mai mult de o înscriere este plasată în interiorul unui singur plic, întregul pachet va fi numărat ca o singură înscriere, indiferent de câte înscrieri sunt anexate."
+        "content": "Puteți trimite mai mult de o înscriere gratuită per competiție, până la numărul maxim de înscrieri permise pentru acea competiție. Limita de înscriere per persoană este afișată pe pagina competiției respective de pe www.ALESYOWIN.com. Fiecare înscriere trebuie trimisă separat în propriul plic individual. Dacă mai mult de o înscriere este plasată în interiorul unui singur plic, întregul pachet va fi numărat ca o singură înscriere, indiferent de câte înscrieri sunt anexate."
       },
       "s4": {
         "title": "4. Competiții Standard",
@@ -416,7 +416,7 @@
       },
       "s7": {
         "title": "7. Cont Înregistrat",
-        "content": "Pentru a vă procesa înscrierea gratuită prin poștă, trebuie să aveți un cont înregistrat activ pe www.gpcompetition.com. Toate datele personale incluse în scrisoare trebuie să coincidă exact cu datele contului dvs. înregistrat. Înscrierile unde detaliile nu coincid, sau unde nu există un cont corespunzător, vor fi considerate invalide și nu vor fi incluse în tragerea la sorți."
+        "content": "Pentru a vă procesa înscrierea gratuită prin poștă, trebuie să aveți un cont înregistrat activ pe www.ALESYOWIN.com. Toate datele personale incluse în scrisoare trebuie să coincidă exact cu datele contului dvs. înregistrat. Înscrierile unde detaliile nu coincid, sau unde nu există un cont corespunzător, vor fi considerate invalide și nu vor fi incluse în tragerea la sorți."
       }
     },
     "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
@@ -424,11 +424,11 @@
   "Cookies": {
     "title": "Politică de Cookies",
     "lastUpdated": "Ultima actualizare: Aprilie 2026",
-    "intro": "GP PROMOTIONS LTD („noi”, „nostru”, „nouă”) operează site-ul web www.gpcompetition.com. Această Politică de Cookies explică ce sunt cookie-urile, cum le folosim pe site-ul nostru web și ce opțiuni aveți cu privire la utilizarea lor.\n\nPrin continuarea utilizării www.gpcompetition.com, recunoașteți că ați citit și înțeles cum folosim cookie-urile conform descrierii de mai jos.",
+    "intro": "GP PROMOTIONS LTD („noi”, „nostru”, „nouă”) operează site-ul web www.ALESYOWIN.com. Această Politică de Cookies explică ce sunt cookie-urile, cum le folosim pe site-ul nostru web și ce opțiuni aveți cu privire la utilizarea lor.\n\nPrin continuarea utilizării www.ALESYOWIN.com, recunoașteți că ați citit și înțeles cum folosim cookie-urile conform descrierii de mai jos.",
     "sections": {
       "s1": {
         "title": "1. Despre această Politică",
-        "content": "GP PROMOTIONS LTD („noi”, „nostru”, „nouă”) operează site-ul web www.gpcompetition.com. Această Politică de Cookies explică ce sunt cookie-urile, cum le folosim pe site-ul nostru web și ce opțiuni aveți cu privire la utilizarea lor."
+        "content": "GP PROMOTIONS LTD („noi”, „nostru”, „nouă”) operează site-ul web www.ALESYOWIN.com. Această Politică de Cookies explică ce sunt cookie-urile, cum le folosim pe site-ul nostru web și ce opțiuni aveți cu privire la utilizarea lor."
       },
       "s2": {
         "title": "2. Ce este un Cookie?",
@@ -436,11 +436,11 @@
       },
       "s3": {
         "title": "3. Cum folosim Cookie-urile",
-        "content": "Folosim cookie-uri pe www.gpcompetition.com în mai multe scopuri, inclusiv:\n\n• Menținerea funcționării corecte a site-ului web – Unele cookie-uri sunt esențiale pentru funcționarea site-ului. Fără ele, anumite pagini sau funcții ar putea să nu funcționeze conform așteptărilor.\n• Înțelegerea modului în care vizitatorii folosesc site-ul nostru – Folosim instrumente analitice pentru a vedea ce pagini sunt vizitate cel mai des și de unde vin vizitatorii. Acest lucru ne ajută să îmbunătățim experiența utilizatorului.\n• Reținerea preferințelor dvs. – Cookie-urile ne ajută să ne amintim alegerile pe care le-ați făcut, cum ar fi setarea limbii, astfel încât să nu fie nevoie să le reintroduceți de fiecare dată.\n• Furnizarea de conținut și publicitate relevante – Putem folosi cookie-uri pentru a vă afișa promoții legate de cadourile noastre despre care credem că v-ar putea interesa."
+        "content": "Folosim cookie-uri pe www.ALESYOWIN.com în mai multe scopuri, inclusiv:\n\n• Menținerea funcționării corecte a site-ului web – Unele cookie-uri sunt esențiale pentru funcționarea site-ului. Fără ele, anumite pagini sau funcții ar putea să nu funcționeze conform așteptărilor.\n• Înțelegerea modului în care vizitatorii folosesc site-ul nostru – Folosim instrumente analitice pentru a vedea ce pagini sunt vizitate cel mai des și de unde vin vizitatorii. Acest lucru ne ajută să îmbunătățim experiența utilizatorului.\n• Reținerea preferințelor dvs. – Cookie-urile ne ajută să ne amintim alegerile pe care le-ați făcut, cum ar fi setarea limbii, astfel încât să nu fie nevoie să le reintroduceți de fiecare dată.\n• Furnizarea de conținut și publicitate relevante – Putem folosi cookie-uri pentru a vă afișa promoții legate de cadourile noastre despre care credem că v-ar putea interesa."
       },
       "s4": {
         "title": "4. Cookie-uri de la Terțe Părți",
-        "content": "Unele cookie-uri de pe www.gpcompetition.com sunt plasate de servicii terțe pe care le folosim pentru a ne susține site-ul web, cum ar fi Google, Meta și TikTok. Fiecare dintre aceste terțe părți operează sub propriile politici de confidențialitate și de cookie-uri, pe care le puteți citi aici:\n\n• Google: https://policies.google.com/privacy\n• Meta (Facebook/Instagram): https://www.facebook.com/privacy/policy/\n• TikTok: https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nGP PROMOTIONS LTD nu are control asupra modului în care aceste terțe părți folosesc datele colectate prin cookie-urile lor."
+        "content": "Unele cookie-uri de pe www.ALESYOWIN.com sunt plasate de servicii terțe pe care le folosim pentru a ne susține site-ul web, cum ar fi Google, Meta și TikTok. Fiecare dintre aceste terțe părți operează sub propriile politici de confidențialitate și de cookie-uri, pe care le puteți citi aici:\n\n• Google: https://policies.google.com/privacy\n• Meta (Facebook/Instagram): https://www.facebook.com/privacy/policy/\n• TikTok: https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nGP PROMOTIONS LTD nu are control asupra modului în care aceste terțe părți folosesc datele colectate prin cookie-urile lor."
       },
       "s5": {
         "title": "5. Alegerile și Controlul Dvs.",
@@ -452,7 +452,7 @@
       },
       "s7": {
         "title": "7. Contactați-ne",
-        "content": "Dacă aveți întrebări despre cum folosim cookie-urile pe www.gpcompetition.com, vă rugăm să ne contactați:\n\nEmail: info@gpcompetition.com\nGP PROMOTIONS LTD\n71-75 Shelton Street, Covent Garden,\nLondra, WC2H 9JQ, Regatul Unit"
+        "content": "Dacă aveți întrebări despre cum folosim cookie-urile pe www.ALESYOWIN.com, vă rugăm să ne contactați:\n\nEmail: info@ALESYOWIN.com\nGP PROMOTIONS LTD\n71-75 Shelton Street, Covent Garden,\nLondra, WC2H 9JQ, Regatul Unit"
       }
     },
     "footerNote": "Confidențialitatea ta este prioritatea noastră. Dacă ai întrebări, te rugăm să ne contactezi."
@@ -460,7 +460,7 @@
   "FAQ": {
     "title": "Întrebări Frecvente (FAQ)",
     "lastUpdated": "Ultima actualizare: Aprilie 2026",
-    "intro": "Ai întrebări despre cum funcționează GP Competition? Am adunat aici cele mai frecvente întrebări pentru a te ajuta să înțelegi procesul nostru și cum poți câștiga premii incredibile.",
+    "intro": "Ai întrebări despre cum funcționează ALESYOWIN? Am adunat aici cele mai frecvente întrebări pentru a te ajuta să înțelegi procesul nostru și cum poți câștiga premii incredibile.",
     "sections": {
       "q1": {
         "question": "Cum particip la un concurs?",
@@ -487,7 +487,7 @@
         "answer": "Echipa noastră te va contacta prin telefon sau e-mail în termen de 7 zile de la tragerea la sorți pentru a stabili detaliile livrării. Premiile în bani sunt transferate direct în contul tău bancar."
       }
     },
-    "footerNote": "Nu ai găsit răspunsul căutat? Contactează-ne la info@gpcompetition.com și te vom ajuta cu plăcere."
+    "footerNote": "Nu ai găsit răspunsul căutat? Contactează-ne la info@ALESYOWIN.com și te vom ajuta cu plăcere."
   },
   "InstantWinnerEmail": {
     "title": "Notificare Câștig Instant",
@@ -497,8 +497,8 @@
     "ticketLabel": "Număr Bilet Câștigător",
     "prizeLabel": "Valoarea Premiului",
     "instructions": "Vei fi contactat în scurt timp de echipa noastră cu privire la modul de ridicare a premiului tău. Fii cu ochii pe telefon și email!",
-    "thanks": "Îți mulțumim că joci alături de noi la GP Competition!",
-    "footer": "© {year} GP Competition. Toate drepturile rezervate."
+    "thanks": "Îți mulțumim că joci alături de noi la ALESYOWIN!",
+    "footer": "© {year} ALESYOWIN. Toate drepturile rezervate."
   },
   "BonusWinnerEmail": {
     "title": "Notificare Tragere Bonus",
@@ -508,7 +508,7 @@
     "ticketLabel": "Număr Bilet Câștigător",
     "prizeLabel": "Valoarea Premiului",
     "instructions": "Vei fi contactat în scurt timp de echipa noastră cu privire la modul de ridicare a premiului tău. Fii cu ochii pe telefon și email!",
-    "thanks": "Îți mulțumim că ești parte din GP Competition!",
-    "footer": "© {year} GP Competition. Toate drepturile rezervate."
+    "thanks": "Îți mulțumim că ești parte din ALESYOWIN!",
+    "footer": "© {year} ALESYOWIN. Toate drepturile rezervate."
   }
 }

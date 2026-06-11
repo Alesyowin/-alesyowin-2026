@@ -21,7 +21,7 @@ export async function sendEmail({
 }) {
     try {
         const { data, error } = await resend.emails.send({
-            from: process.env.RESEND_FROM_EMAIL || 'GP Competition <noreply@gpcompetition.com>',
+            from: process.env.RESEND_FROM_EMAIL || 'ALESYOWIN <noreply@ALESYOWIN.com>',
             to,
             subject,
             text,
@@ -63,7 +63,7 @@ export async function sendOrderConfirmationEmail(options: {
     // Forțăm logo-ul de pe serverul de producție pentru testele de pe localhost
     const isLocalhost = baseUrl.includes('localhost');
     const logoUrl = isLocalhost 
-        ? 'https://gpcompetition.com/logo-principal-orizontal-fara-fundal.png' 
+        ? 'https://ALESYOWIN.com/logo-principal-orizontal-fara-fundal.png' 
         : `${baseUrl}/logo-principal-orizontal-fara-fundal.png`;
 
     const html = getOrderEmailTemplate({
@@ -93,7 +93,7 @@ export async function sendOrderConfirmationEmail(options: {
 /**
  * Trimite emailul de notificare admin la comandă nouă.
  * Complet independent de emailul trimis către client.
- * Destinatar fix: gpcompetitionn@gmail.com
+ * Destinatar fix: ALESYOWINn@gmail.com
  */
 export async function sendAdminOrderNotification(options: {
     orderId: string;
@@ -106,13 +106,13 @@ export async function sendAdminOrderNotification(options: {
     const { orderId, customerName, customerEmail, products, totalAmount, baseUrl } = options;
 
     // Construim URL-ul spre panoul de admin Directus
-    const directusUrl = process.env.DIRECTUS_URL || 'https://gpcompetition.onrender.com';
+    const directusUrl = process.env.DIRECTUS_URL || 'https://ALESYOWIN.onrender.com';
     const directusAdminUrl = `${directusUrl}/admin/content/orders/${orderId}`;
 
     // Logo-ul — forțăm producție dacă suntem pe localhost
     const isLocalhost = baseUrl.includes('localhost');
     const logoUrl = isLocalhost
-        ? 'https://gpcompetition.com/logo-principal-orizontal-fara-fundal.png'
+        ? 'https://ALESYOWIN.com/logo-principal-orizontal-fara-fundal.png'
         : `${baseUrl}/logo-principal-orizontal-fara-fundal.png`;
 
     // Formatăm data și ora curentă
@@ -148,7 +148,7 @@ export async function sendAdminOrderNotification(options: {
     const subject = `[Comandă Nouă] Comanda #${orderId} plasată de ${customerName}`;
 
     return sendEmail({
-        to: 'gpcompetitionn@gmail.com',
+        to: 'ALESYOWINn@gmail.com',
         subject,
         text: `Comandă nouă #${orderId} de la ${customerName} (${customerEmail}). Total: £${total}`,
         html
@@ -173,7 +173,7 @@ export async function sendInstantWinnerEmail(options: {
     // Forțăm logo-ul de pe serverul de producție pentru testele de pe localhost
     const isLocalhost = baseUrl.includes('localhost');
     const logoUrl = isLocalhost 
-        ? 'https://gpcompetition.com/logo-principal-orizontal-fara-fundal.png' 
+        ? 'https://ALESYOWIN.com/logo-principal-orizontal-fara-fundal.png' 
         : `${baseUrl}/logo-principal-orizontal-fara-fundal.png`;
 
     const html = getInstantWinnerEmailTemplate({
@@ -215,7 +215,7 @@ export async function sendAdminInstantWinnerEmail(options: {
 }) {
     const { orderId, customerName, customerEmail, customerPhone, ticketNumber, prizeValue, giveawayTitle, baseUrl } = options;
 
-    const directusUrl = process.env.DIRECTUS_URL || 'https://gpcompetition.onrender.com';
+    const directusUrl = process.env.DIRECTUS_URL || 'https://ALESYOWIN.onrender.com';
     const directusAdminUrl = `${directusUrl}/admin/content/orders/${orderId}`;
 
     const html = getAdminInstantEmailTemplate({
@@ -232,7 +232,7 @@ export async function sendAdminInstantWinnerEmail(options: {
     const subject = `[INSTANT WIN] Câștigător Nou - Comanda #${orderId}`;
 
     return sendEmail({
-        to: 'gpcompetitionn@gmail.com',
+        to: 'ALESYOWINn@gmail.com',
         subject,
         text: `A câștigat ${customerName} premiul ${prizeValue} la concursul ${giveawayTitle} cu biletul ${ticketNumber}.`,
         html
@@ -256,7 +256,7 @@ export async function sendBonusWinnerEmail(options: {
 
     const isLocalhost = baseUrl.includes('localhost');
     const logoUrl = isLocalhost 
-        ? 'https://gpcompetition.com/logo-principal-orizontal-fara-fundal.png' 
+        ? 'https://ALESYOWIN.com/logo-principal-orizontal-fara-fundal.png' 
         : `${baseUrl}/logo-principal-orizontal-fara-fundal.png`;
 
     const html = getBonusWinnerEmailTemplate({
@@ -314,7 +314,7 @@ export async function sendAdminBonusWinnerEmail(options: {
     const subject = `[BONUS DRAW WIN] Câștigător Nou Extras Automat - ${customerName}`;
 
     return sendEmail({
-        to: 'gpcompetitionn@gmail.com',
+        to: 'ALESYOWINn@gmail.com',
         subject,
         text: `A fost extras automat biletul #${ticketNumber} (${customerName}) pentru premiul ${prizeValue} la concursul ${giveawayTitle}.`,
         html
