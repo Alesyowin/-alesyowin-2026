@@ -143,7 +143,7 @@ export default function QuizGate({
     if (isAuthLoading || checkingEntry) {
         return (
             <div className="space-y-4">
-                <div className="rounded-sm border border-[#00A5FF]/20 bg-gray-50 p-5 md:p-7">
+                <div className="rounded-sm border border-[#00A5FF] bg-gray-50 p-5 md:p-7">
                     <div className="flex items-center justify-center gap-3 text-black/40">
                         <div className="w-4 h-4 border-2 border-[#00A5FF]/40 border-t-[#00A5FF] rounded-full animate-spin" />
                         <span className="text-sm">Loading...</span>
@@ -157,7 +157,7 @@ export default function QuizGate({
     if (isActuallyFree && !user) {
         return (
             <div className="space-y-4">
-                <div className="rounded-sm border border-[#00A5FF]/40 bg-gray-50 p-5 md:p-7 space-y-4">
+                <div className="rounded-sm border border-[#00A5FF] bg-gray-50 p-5 md:p-7 space-y-4">
                     <div className="flex items-start gap-3">
                         <div className="shrink-0 w-8 h-8 rounded-full bg-[#00A5FF]/10 border border-[#00A5FF]/40 flex items-center justify-center text-[#00A5FF] font-black text-sm">
                             🔒
@@ -170,7 +170,7 @@ export default function QuizGate({
                 {/* Buton activ care redirecționează spre login */}
                 <button
                     onClick={() => router.push('/login')}
-                    className="w-full py-4 px-8 uppercase tracking-[0.2em] font-black text-base md:text-lg rounded-sm transition-all duration-500 relative overflow-hidden bg-[#00A5FF] text-white shadow-[0_0_30px_rgba(0,165,255,0.5)] animate-pulse-blue cursor-pointer hover:scale-[1.02]"
+                    className="w-full py-4 px-8 uppercase tracking-[0.2em] font-black text-base md:text-lg rounded-sm transition-all duration-500 relative overflow-hidden text-white shadow-[0_0_30px_rgba(0,165,255,0.5)] bg-electric-flow cursor-pointer hover:scale-[1.02]"
                 >
                     {t('freeEntry')}
                 </button>
@@ -206,7 +206,7 @@ export default function QuizGate({
         <div className="space-y-6">
             {/* Quiz Card */}
             <div
-                className={`rounded-sm border border-[#00A5FF]/20 bg-gray-50 p-5 md:p-7 space-y-5 ${shake ? 'animate-shake' : ''
+                className={`rounded-sm border border-[#00A5FF] bg-gray-50 p-5 md:p-7 space-y-5 ${shake ? 'animate-shake' : ''
                     }`}
             >
                 {/* Question Header */}
@@ -379,8 +379,8 @@ export default function QuizGate({
           w-full py-4 px-8 uppercase tracking-[0.2em] font-black text-base md:text-lg rounded-sm
           transition-all duration-500 relative overflow-hidden
           ${unlocked
-                        ? 'bg-[#00A5FF] text-white shadow-[0_0_30px_rgba(0,165,255,0.5)] animate-pulse-blue cursor-pointer hover:scale-[1.02]'
-                        : 'bg-gray-100 text-black/20 border border-black/5 cursor-not-allowed'
+                        ? 'text-white shadow-[0_0_30px_rgba(0,165,255,0.5)] bg-electric-flow cursor-pointer hover:scale-[1.02]'
+                        : 'bg-gray-100 text-black/20 border border-[#00A5FF] cursor-not-allowed'
                     }
         `}
             >
@@ -399,6 +399,11 @@ export default function QuizGate({
             </button>
 
             <style jsx global>{`
+        @keyframes electric-flow {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
         @keyframes pulse-blue {
           0%, 100% { box-shadow: 0 0 20px rgba(0, 165, 255, 0.4); }
           50% { box-shadow: 0 0 50px rgba(0, 165, 255, 0.8), 0 0 80px rgba(102, 197, 255, 0.3); }
@@ -410,8 +415,11 @@ export default function QuizGate({
           60% { transform: translateX(-6px); }
           80% { transform: translateX(6px); }
         }
-        .animate-pulse-blue {
-          animation: pulse-blue 2s ease-in-out infinite;
+        .bg-electric-flow {
+          background: linear-gradient(90deg, #00A5FF, #0055ff, #00fbff, #00A5FF);
+          background-size: 200% auto;
+          border: 1px solid #00A5FF;
+          animation: electric-flow 3s linear infinite, pulse-blue 2s ease-in-out infinite;
         }
         .animate-shake {
           animation: shake 0.5s ease-in-out;
