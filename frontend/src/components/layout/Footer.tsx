@@ -72,6 +72,7 @@ const Footer = () => {
                         </div>
                         
                         <div className="flex flex-wrap gap-3 mt-4">
+                            <SocialIcon url="#" target="_blank" rel="noopener noreferrer" network="facebook" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(24,119,242,0.5)] rounded-full" />
                             <SocialIcon url="https://www.instagram.com/alesyo_win" target="_blank" rel="noopener noreferrer" network="instagram" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(225,48,108,0.5)] rounded-full" />
                             <SocialIcon url="https://www.tiktok.com/@alesyoclub" target="_blank" rel="noopener noreferrer" network="tiktok" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] rounded-full" />
                             <SocialIcon url="https://www.youtube.com/@Alesyowin" target="_blank" rel="noopener noreferrer" network="youtube" style={{ height: 42, width: 42 }} className="hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,0,0,0.5)] rounded-full" />
