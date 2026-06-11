@@ -90,23 +90,13 @@ const Footer = () => {
                         
                         <div className="flex items-center gap-3 mt-4">
                             {/* Mastercard */}
-                            <div className="bg-white w-[60px] h-[38px] rounded-md flex items-center justify-center hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,95,0,0.4)]">
-                                <svg viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[36px] h-[24px]">
-                                    <circle cx="8" cy="8" r="8" fill="#EB001B"/>
-                                    <circle cx="16" cy="8" r="8" fill="#F79E1B"/>
-                                    <path d="M12 14.8c-1.5-1.6-2.5-3.9-2.5-6.8s1-5.2 2.5-6.8c1.5 1.6 2.5 3.9 2.5 6.8s-1 5.2-2.5 6.8z" fill="#FF5F00"/>
-                                </svg>
+                            <div className="bg-white w-[60px] h-[38px] rounded-md flex items-center justify-center p-1.5 hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(255,95,0,0.4)]">
+                                <img src="/mastercard.png" alt="Mastercard" className="w-full h-full object-contain" />
                             </div>
 
                             {/* Visa */}
-                            <div className="bg-white w-[60px] h-[38px] rounded-md flex items-center justify-center hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(20,52,203,0.4)]">
-                                <svg viewBox="0 0 40 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[36px] h-auto">
-                                    <path d="M14.654 0.25H11.531l-3.078 11.5H11.531l3.123-11.5z" fill="#1434CB"/>
-                                    <path d="M7.473 0.25H4.214C3.899 0.25 3.614 0.406 3.473 0.697L0 11.75H3.149L3.778 10H7.625l0.354 1.75h2.784L8.718 0.25H7.473zm-2.88 7.37L5.688 2.37l1.096 5.25H4.593z" fill="#1434CB"/>
-                                    <path d="M26.837 0.25h-2.909v11.5h2.909V0.25z" fill="#1434CB"/>
-                                    <path d="M37.643 0.25H34.46c-0.34 0-0.638 0.174-0.781 0.463l-4.484 11.037h3.111l0.62-1.721h3.792l0.358 1.721H40L37.643 0.25zm-2.87 7.21l1.104-3.029 0.589 3.029h-1.693z" fill="#1434CB"/>
-                                    <path d="M21.996 0.25c-0.812 0-2.316 0.217-3.147 1.054-1.218 1.228-0.902 3.123-0.902 3.123s0.038 1.002 0.73 1.54c0.551 0.428 1.341 0.662 2.146 0.818 1.764 0.339 2.185 0.771 2.185 1.488 0 0.835-0.976 1.455-2.222 1.455-1.144 0-2.383-0.297-3.238-0.793l-0.428 1.954c0.887 0.457 2.224 0.711 3.593 0.711 1.258 0 3.327-0.419 3.327-2.616 0-1.077-0.655-1.89-1.688-2.319-1.391-0.58-1.952-0.87-1.952-1.464 0-0.533 0.589-1.077 1.704-1.077 0.878 0 1.83 0.198 2.457 0.505l0.395-1.821c-0.612-0.28-1.571-0.558-2.96-0.558z" fill="#1434CB"/>
-                                </svg>
+                            <div className="bg-white w-[60px] h-[38px] rounded-md flex items-center justify-center p-1.5 hover:scale-110 transition-transform hover:shadow-[0_0_15px_rgba(20,52,203,0.4)]">
+                                <img src="/visa.png" alt="Visa" className="w-full h-full object-contain" />
                             </div>
                         </div>
                     </div>
