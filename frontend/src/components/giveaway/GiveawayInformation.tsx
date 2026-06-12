@@ -13,6 +13,7 @@ interface GiveawayInformationProps {
     bonusDraw?: string;
     giveawayId?: string; // ID-ul giveaway-ului
     price?: number; // Prețul per bilet — folosit pentru tracking ViewContent (value + currency)
+    enableLeaderboard?: boolean; // Preluat din backend
 }
 
 // Card premium tip bilet
@@ -165,6 +166,7 @@ export default function GiveawayInformation({
     bonusDraw,
     giveawayId,
     price,
+    enableLeaderboard,
 }: GiveawayInformationProps) {
     const t = useTranslations('GiveawayPage');
     const [activeTab, setActiveTab] = useState<'prizes' | 'description' | 'details' | 'bonus' | 'leaderboard'>('prizes');
@@ -338,7 +340,7 @@ export default function GiveawayInformation({
         }
     ];
 
-    if (giveaway.enable_leaderboard) {
+    if (enableLeaderboard) {
         tabs.push({
             id: 'leaderboard',
             label: t('topParticipants'),

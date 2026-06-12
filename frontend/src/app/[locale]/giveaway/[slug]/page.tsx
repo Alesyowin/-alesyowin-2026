@@ -262,6 +262,7 @@ export default async function GiveawayPage({ params }: PageProps) {
                     bonusDraw={giveaway.bonus_draw}
                     giveawayId={giveaway.id}
                     price={giveaway.price_per_ticket}
+                    enableLeaderboard={giveaway.enable_leaderboard}
                 />
             </div>
             </GiveawayLiveProvider>
