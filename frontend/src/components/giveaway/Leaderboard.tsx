@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 
 export default function Leaderboard({ giveawayId }: { giveawayId?: string }) {
@@ -96,8 +96,8 @@ export default function Leaderboard({ giveawayId }: { giveawayId?: string }) {
                             const prize = prizesConfig.find(p => p.rank === rank) || prizesConfig[index];
 
                             let rowClass = "bg-white border-b border-gray-50";
-                            let rankDisplay: React.ReactNode = rank;
-                            let prizeHtml = prize ? <span className="inline-block px-2 py-1 rounded text-[11px] font-black bg-gray-100 text-gray-700 border border-gray-200">{prize.amount}</span> : null;
+                            let rankDisplay: string | number = rank;
+                            let prizeHtml: React.ReactNode = prize ? <span className="inline-block px-2 py-1 rounded text-[11px] font-black bg-gray-100 text-gray-700 border border-gray-200">{prize.amount}</span> : null;
 
                             if (rank === 1) {
                                 rowClass = "bg-[#fffbe6] border-l-4 border-l-[#FFD700] border-b border-gray-50";
