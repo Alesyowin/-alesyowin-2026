@@ -46,19 +46,32 @@ export default ({ filter }, { services }) => {
                         
                         console.log(`[bonus-draws-engine] Giveaway ${giveawayId} a atins pragul de ${draw.percentage}%. Extragere aleatorie...`);
 
-                        // Extragem biletele vândute din tranzacția curentă
-                        const assignedRows = await knex('tickets')
+                        // Numărăm biletele existente (mult mai eficient decât să le citim pe toate)
+                        const totalCountResult = await knex('tickets')
                             .where({ giveaway_id: giveawayId })
-                            .select('ticket_number', 'client_name', 'email', 'order_id');
-                        
-                        if (assignedRows.length === 0) {
+                            .count('id as count')
+                            .first();
+                        const totalAssigned = Number(totalCountResult?.count || 0);
+
+                        if (totalAssigned === 0) {
                             console.warn(`[bonus-draws-engine] Atenție, niciun bilet generat pe giveaway ${giveawayId}. Extragere amânată.`);
                             continue;
                         }
 
-                        // Selectează câștigător random
-                        const randomIndex = Math.floor(Math.random() * assignedRows.length);
-                        const winningTicket = assignedRows[randomIndex];
+                        // Selectăm un singur bilet random folosind OFFSET (evităm citirea tuturor celor 32.000+ de bilete)
+                        const randomOffset = Math.floor(Math.random() * totalAssigned);
+                        const winningTicketArr = await knex('tickets')
+                            .where({ giveaway_id: giveawayId })
+                            .select('ticket_number', 'client_name', 'email', 'order_id')
+                            .offset(randomOffset)
+                            .limit(1);
+
+                        if (!winningTicketArr || winningTicketArr.length === 0) {
+                            console.warn(`[bonus-draws-engine] Nu s-a putut extrage câștigătorul pentru giveaway ${giveawayId}.`);
+                            continue;
+                        }
+
+                        const winningTicket = winningTicketArr[0];
 
                         const winnerName = winningTicket.client_name || winningTicket.email?.split('@')[0] || 'Anonim';
 

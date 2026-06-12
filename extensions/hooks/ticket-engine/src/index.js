@@ -62,27 +62,52 @@ export default ({ action }, { services }) => {
                             continue; 
                         }
 
-                        // Extragerea completă a numerelor deja vândute / alocate la acest giveaway
-                        const assignedRows = await trx('tickets').where({ giveaway_id: gId }).select('ticket_number');
-                        const assignedSet = new Set(assignedRows.map(row => Number(row.ticket_number)));
+                        // Numărăm biletele deja alocate cu un COUNT rapid (evităm citirea tuturor rândurilor)
+                        const countResult = await trx('tickets').where({ giveaway_id: gId }).count('id as count').first();
+                        const assignedCount = Number(countResult?.count || 0);
 
-                        if (assignedSet.size + qty > totalTickets) {
-                            console.warn(`[ticket-engine] Nu sunt destule bilete libere în giveaway ${gId}. (Cerute: ${qty}, Libere: ${totalTickets - assignedSet.size})`);
-                            continue; // Nici măcar nu încercăm să blocăm sistemul dacă nu mai sunt bilete. (Sau am putea restrânge qty)
+                        if (assignedCount + qty > totalTickets) {
+                            console.warn(`[ticket-engine] Nu sunt destule bilete libere în giveaway ${gId}. (Cerute: ${qty}, Libere: ${totalTickets - assignedCount})`);
+                            continue;
                         }
 
-                        console.log(`[ticket-engine] Giveaway ${gId} BLOCAT în Tranzacție. Căutăm ${qty} numere libere RANDOM (Total: ${totalTickets}, Vândute deja: ${assignedSet.size})...`);
+                        console.log(`[ticket-engine] Giveaway ${gId} BLOCAT în Tranzacție. Căutăm ${qty} numere libere RANDOM (Total: ${totalTickets}, Vândute deja: ${assignedCount})...`);
 
                         const newTicketNumbers = [];
-                        
-                        // Generare algoritm RANDOM garantat FĂRĂ dubluri
+                        // Reținem numerele deja verificate în această sesiune (pentru a evita interogări repetate)
+                        const triedLocally = new Set();
+
+                        // Generare algoritm RANDOM garantat FĂRĂ dubluri, în loturi eficiente
                         while (newTicketNumbers.length < qty) {
-                            // Generează număr de la 1 la total_tickets
-                            const randomNum = Math.floor(Math.random() * totalTickets) + 1;
-                            
-                            if (!assignedSet.has(randomNum)) {
-                                assignedSet.add(randomNum); // Adăugăm în set și local ca să nu apară dubluri nici pe același client
-                                newTicketNumbers.push(randomNum);
+                            // Generăm un lot de candidați (mai mulți decât avem nevoie, pentru a compensa coliziunile)
+                            const needed = qty - newTicketNumbers.length;
+                            const batchSize = Math.min(needed * 4, 400);
+                            const candidates = [];
+                            let safetyCounter = 0;
+
+                            while (candidates.length < batchSize && safetyCounter < batchSize * 6) {
+                                safetyCounter++;
+                                const randomNum = Math.floor(Math.random() * totalTickets) + 1;
+                                if (!triedLocally.has(randomNum)) {
+                                    triedLocally.add(randomNum);
+                                    candidates.push(randomNum);
+                                }
+                            }
+
+                            if (candidates.length === 0) break; // Prevenire buclă infinită
+
+                            // Verificăm într-o singură interogare care candidați sunt deja luați
+                            const takenRows = await trx('tickets')
+                                .where({ giveaway_id: gId })
+                                .whereIn('ticket_number', candidates)
+                                .select('ticket_number');
+                            const takenSet = new Set(takenRows.map(r => Number(r.ticket_number)));
+
+                            // Adăugăm numerele libere la lista finală
+                            for (const num of candidates) {
+                                if (!takenSet.has(num) && newTicketNumbers.length < qty) {
+                                    newTicketNumbers.push(num);
+                                }
                             }
                         }
 
@@ -109,7 +134,7 @@ export default ({ action }, { services }) => {
                         }
 
                         // Actualizăm contoarele vizuale ale giveaway-ului
-                        const finalSold = assignedSet.size; 
+                        const finalSold = assignedCount + newTicketNumbers.length;
                         const finalLeft = Math.max(0, totalTickets - finalSold);
                         const updateData = {
                             sold_tickets: finalSold,
