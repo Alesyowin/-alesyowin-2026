@@ -73,6 +73,9 @@ export default function StripePaymentForm({ amount, buttonText, processingText, 
                 <PaymentElement 
                     options={{ 
                         layout: "tabs",
+                        wallets: {
+                            link: 'never'
+                        },
                         fields: {
                             billingDetails: {
                                 name: 'never',
