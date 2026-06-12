@@ -1,12 +1,17 @@
 {
-  "name": "alesyowin-leaderboard-endpoint",
+  "name": "directus-extension-leaderboard",
   "version": "1.0.0",
-  "description": "Custom endpoint for calculating leaderboard",
-  "main": "src/index.js",
+  "type": "module",
   "directus:extension": {
     "type": "endpoint",
-    "path": "src/index.js",
+    "path": "dist/index.js",
     "source": "src/index.js",
     "host": "^11.0.0"
+  },
+  "scripts": {
+    "build": "directus-extension build"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "^11.0.0"
   }
 }
