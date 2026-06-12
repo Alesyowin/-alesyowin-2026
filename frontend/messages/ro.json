@@ -109,7 +109,12 @@
     "bonusDrawsExplanation": "Cum funcționează Tragerile Bonus",
     "bonusDrawsModalText": "Tragerile bonus sunt premii speciale deblocate atunci când vânzările de bilete ating anumite praguri (secțiunile marcate cu stea). Odată ce un prag este atins, un câștigător este ales aleatoriu dintre toate biletele vândute până în acel moment.",
     "bonusDrawsGoText": "Mai sunt doar {percent}% până la următoarea tragere bonus!",
-    "bonusDrawsTakePlaceText": "Tragerile bonus au loc atunci când secțiunile marcate cu stea sunt atinse"
+    "bonusDrawsTakePlaceText": "Tragerile bonus au loc atunci când secțiunile marcate cu stea sunt atinse",
+    "topParticipants": "Top Participanți",
+    "leaderboardName": "Nume",
+    "leaderboardTickets": "Bilete",
+    "leaderboardPrize": "Premiu",
+    "leaderboardEmpty": "Fii primul care participă!"
   },
   "EntryList": {
     "subtitle": "ALESYOWIN",

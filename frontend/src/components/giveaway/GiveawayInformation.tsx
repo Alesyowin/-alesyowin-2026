@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Trophy, Crown } from 'lucide-react';
 import { useGiveawayLive, InstantPrize, BonusDraw } from './GiveawayLiveProvider';
+import Leaderboard from './Leaderboard';
 
 interface GiveawayInformationProps {
     description?: string;
@@ -166,7 +167,7 @@ export default function GiveawayInformation({
     price,
 }: GiveawayInformationProps) {
     const t = useTranslations('GiveawayPage');
-    const [activeTab, setActiveTab] = useState<'prizes' | 'description' | 'details' | 'bonus'>('prizes');
+    const [activeTab, setActiveTab] = useState<'prizes' | 'description' | 'details' | 'bonus' | 'leaderboard'>('prizes');
     const [highlightedDraw, setHighlightedDraw] = useState<number | null>(null);
 
     const { prizes, bonusDraws } = useGiveawayLive();
@@ -334,6 +335,11 @@ export default function GiveawayInformation({
                     </p>
                 </div>
             )
+        },
+        {
+            id: 'leaderboard',
+            label: t('topParticipants'),
+            content: <Leaderboard giveawayId={giveawayId} />
         }
     ];
 

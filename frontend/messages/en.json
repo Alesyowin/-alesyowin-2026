@@ -109,7 +109,12 @@
     "bonusDrawsExplanation": "How Bonus Draws work",
     "bonusDrawsModalText": "Bonus draws are special prizes unlocked when ticket sales reach specific milestones (starred sections). Once a milestone is reached, a winner is randomly selected from all tickets sold up to that point.",
     "bonusDrawsGoText": "Only {percent}% away from our next bonus draw!",
-    "bonusDrawsTakePlaceText": "Bonus draws take place when the starred sections are reached"
+    "bonusDrawsTakePlaceText": "Bonus draws take place when the starred sections are reached",
+    "topParticipants": "Top Participants",
+    "leaderboardName": "Name",
+    "leaderboardTickets": "Tickets",
+    "leaderboardPrize": "Prize",
+    "leaderboardEmpty": "Be the first to join the contest!"
   },
   "EntryList": {
     "subtitle": "ALESYOWIN",

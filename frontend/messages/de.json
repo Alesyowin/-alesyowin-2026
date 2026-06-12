@@ -109,7 +109,12 @@
     "bonusDrawsExplanation": "Wie Bonus Draws funktionieren",
     "bonusDrawsModalText": "Bonusziehungen sind Sonderpreise, die freigeschaltet werden, wenn der Ticketverkauf bestimmte Meilensteine erreicht (mit Sternen markierte Abschnitte). Sobald ein Meilenstein erreicht ist, wird ein Gewinner aus allen bis dahin verkauften Tickets zufällig ermittelt.",
     "bonusDrawsGoText": "Noch {percent}% bis zur nächsten Bonusziehung!",
-    "bonusDrawsTakePlaceText": "Bonusziehungen finden statt, wenn die markierten Abschnitte erreicht werden"
+    "bonusDrawsTakePlaceText": "Bonusziehungen finden statt, wenn die markierten Abschnitte erreicht werden",
+    "topParticipants": "Top Teilnehmer",
+    "leaderboardName": "Name",
+    "leaderboardTickets": "Tickets",
+    "leaderboardPrize": "Preis",
+    "leaderboardEmpty": "Sei der Erste, der teilnimmt!"
   },
   "EntryList": {
     "subtitle": "ALESYOWIN",

@@ -109,7 +109,12 @@
     "bonusDrawsExplanation": "Cómo funcionan los Sorteos Bonus",
     "bonusDrawsModalText": "Los sorteos bonus son premios especiales que se desbloquean cuando las ventas de boletos alcanzan ciertos hitos (secciones marcadas con una estrella). Una vez alcanzado un hito, se elige un ganador al azar entre todos los boletos vendidos hasta ese momento.",
     "bonusDrawsGoText": "¡Solo falta un {percent}% para el próximo sorteo bonus!",
-    "bonusDrawsTakePlaceText": "Los sorteos bonus se realizan cuando se alcanzan las secciones marcadas con una estrella"
+    "bonusDrawsTakePlaceText": "Los sorteos bonus se realizan cuando se alcanzan las secciones marcadas con una estrella",
+    "topParticipants": "Mejores Participantes",
+    "leaderboardName": "Nombre",
+    "leaderboardTickets": "Billetes",
+    "leaderboardPrize": "Premio",
+    "leaderboardEmpty": "¡Sé el primero en participar!"
   },
   "EntryList": {
     "subtitle": "ALESYOWIN",

@@ -109,7 +109,12 @@
     "bonusDrawsExplanation": "Come funzionano le Estrazioni Bonus",
     "bonusDrawsModalText": "Le estrazioni bonus sono premi speciali sbloccati quando le vendite dei biglietti raggiungono determinati traguardi (sezioni contrassegnate dalla stella). Una volta raggiunto un traguardo, un vincitore viene scelto casualmente tra tutti i biglietti venduti fino a quel momento.",
     "bonusDrawsGoText": "Manca solo il {percent}% alla prossima estrazione bonus!",
-    "bonusDrawsTakePlaceText": "Le estrazioni bonus avvengono quando si raggiungono i traguardi indicati"
+    "bonusDrawsTakePlaceText": "Le estrazioni bonus avvengono quando si raggiungono i traguardi indicati",
+    "topParticipants": "Migliori Partecipanti",
+    "leaderboardName": "Nome",
+    "leaderboardTickets": "Biglietti",
+    "leaderboardPrize": "Premio",
+    "leaderboardEmpty": "Sii il primo a partecipare!"
   },
   "EntryList": {
     "subtitle": "ALESYOWIN",

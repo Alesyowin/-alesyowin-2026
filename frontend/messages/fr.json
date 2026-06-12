@@ -109,7 +109,12 @@
     "bonusDrawsExplanation": "Comment fonctionnent les tirages bonus",
     "bonusDrawsModalText": "Les tirages bonus sont des prix spéciaux débloqués lorsque les ventes de billets atteignent des paliers spécifiques (sections étoilées). Dès qu'un palier est atteint, un gagnant est tiré au sort parmi tous les billets vendus jusque-là.",
     "bonusDrawsGoText": "Encore {percent}% avant le prochain tirage bonus !",
-    "bonusDrawsTakePlaceText": "Les tirages bonus ont lieu lorsque les sections étoilées sont atteintes"
+    "bonusDrawsTakePlaceText": "Les tirages bonus ont lieu lorsque les sections étoilées sont atteintes",
+    "topParticipants": "Meilleurs Participants",
+    "leaderboardName": "Nom",
+    "leaderboardTickets": "Billets",
+    "leaderboardPrize": "Prix",
+    "leaderboardEmpty": "Soyez le premier à participer !"
   },
   "EntryList": {
     "subtitle": "ALESYOWIN",
