@@ -106,10 +106,10 @@ const Footer = () => {
             {/* Bottom Section */}
             <div className="border-t border-white/10 pt-8 text-center space-y-2">
                 <p className="text-xs text-white/80">
-                    &copy; {new Date().getFullYear()} Alesywin. All Rights Reserved.
+                    &copy; {new Date().getFullYear()} Alesyowin. All Rights Reserved.
                 </p>
                 <p className="text-[10px] text-white/60">
-                    ALESYWIN&reg;
+                    ALESYOWIN&reg;
                 </p>
             </div>
         </footer>

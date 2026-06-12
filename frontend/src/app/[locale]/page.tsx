@@ -23,7 +23,7 @@ export default async function Home({ params }: PageProps) {
 
     return (
         <div className="relative bg-[#000000]">
-            {/* Alesywin Hero Banner */}
+            {/* Alesyowin Hero Banner */}
             <div className="relative w-full h-screen min-h-[600px] bg-black">
                 <div 
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"

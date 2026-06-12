@@ -50,7 +50,7 @@ export default function Navbar() {
                         <Link href="/" className="flex items-center">
                             <Image
                                 src="/logo-principal-transparent.webp"
-                                alt="Alesywin Logo"
+                                alt="Alesyowin Logo"
                                 width={300}
                                 height={100}
                                 className="w-auto h-14 md:h-16 lg:h-24 xl:h-28 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] contrast-125 saturate-150 transition-transform hover:scale-105"
