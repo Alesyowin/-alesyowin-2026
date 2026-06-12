@@ -335,13 +335,16 @@ export default function GiveawayInformation({
                     </p>
                 </div>
             )
-        },
-        {
+        }
+    ];
+
+    if (giveaway.enable_leaderboard) {
+        tabs.push({
             id: 'leaderboard',
             label: t('topParticipants'),
             content: <Leaderboard giveawayId={giveawayId} />
-        }
-    ];
+        });
+    }
 
     return (
         <div id="bonus-info-container" className="mt-12 w-full mx-auto space-y-6">

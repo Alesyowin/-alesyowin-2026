@@ -40,6 +40,7 @@ export interface Giveaway {
     images?: GiveawayImage[];
     status: 'active' | 'ended' | 'draft' | 'published';
     category?: 'cars' | 'apartments' | 'cash' | 'tech' | string;
+    enable_leaderboard?: boolean;
     instant_prizes?: any[];             // JSON array cu premii instant
     limit_per_user?: number;            // Default 1 în DB
     min_tickets?: number;               // Numărul minim obligatoriu de bilete
@@ -173,6 +174,7 @@ export async function getGiveawayBySlug(slug: string, locale: string = 'en'): Pr
                     'deadline',
                     'status',
                     'category',
+                    'enable_leaderboard',
                     'question',
                     'answer_a',
                     'answer_b',
@@ -237,6 +239,7 @@ export async function getGiveawayBySlug(slug: string, locale: string = 'en'): Pr
             correct_answer_index: mapCorrectAnswer(data.correct_answer),
             status: data.status || 'draft',
             category: data.category || undefined,
+            enable_leaderboard: data.enable_leaderboard === true,
             instant_prizes: data.instant_prizes || [],
             limit_per_user: data.limit_per_user ?? 1,
             min_tickets: data.min_tickets ?? 1,
