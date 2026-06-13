@@ -38,6 +38,12 @@ export default function CheckoutPage() {
     // Protecție suplimentară contra dublu-click
     const isProcessingRef = useRef(false);
 
+    // Stări pentru Promo Code
+    const [promoInput, setPromoInput] = useState('');
+    const [appliedPromo, setAppliedPromo] = useState<{code: string, discount: number} | null>(null);
+    const [promoMessage, setPromoMessage] = useState<{text: string, type: 'success' | 'error'} | null>(null);
+    const [isApplyingPromo, setIsApplyingPromo] = useState(false);
+
     // Auto-fill pentru utilizatorul deja logat
     useEffect(() => {
         if (user) {
@@ -67,7 +73,34 @@ export default function CheckoutPage() {
 
     if (!mounted) return null;
 
-    const total = getTotal();
+    const baseTotal = getTotal();
+    const discountValue = appliedPromo ? (baseTotal * appliedPromo.discount) / 100 : 0;
+    const total = Math.max(0, baseTotal - discountValue);
+
+    const handleApplyPromo = async () => {
+        if (!promoInput.trim()) return;
+        setIsApplyingPromo(true);
+        setPromoMessage(null);
+        try {
+            const res = await fetch('/api/promo/validate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ promoCode: promoInput })
+            });
+            const data = await res.json();
+            if (data.valid) {
+                setAppliedPromo({ code: data.code, discount: data.discount_percentage });
+                setPromoMessage({ text: t('promoSuccess'), type: 'success' });
+            } else {
+                setAppliedPromo(null);
+                setPromoMessage({ text: data.error || t('promoError'), type: 'error' });
+            }
+        } catch (error) {
+            setPromoMessage({ text: t('promoError'), type: 'error' });
+        } finally {
+            setIsApplyingPromo(false);
+        }
+    };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -168,6 +201,7 @@ export default function CheckoutPage() {
                     locale: locale,
                     quizGiveawayId: items[0]?.id,
                     quizAnswer: items[0]?.quizAnswer,
+                    promoCode: appliedPromo?.code || null,
                 }),
             });
 
@@ -534,11 +568,52 @@ export default function CheckoutPage() {
                         )}
                     </div>
 
+                    <div className="pt-6 border-t border-[#00A5FF]/30 mt-6 mb-6">
+                        <label className="block text-sm font-medium text-white/70 mb-2 uppercase tracking-wide">
+                            {t('promoCodeLabel')}
+                        </label>
+                        <div className="flex gap-2">
+                            <input
+                                type="text"
+                                value={promoInput}
+                                onChange={(e) => setPromoInput(e.target.value.toUpperCase())}
+                                placeholder={t('promoCodePlaceholder')}
+                                className="w-full bg-[#111] border border-[#00A5FF]/30 rounded-sm px-4 py-2 text-white focus:outline-none focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF] transition-colors"
+                            />
+                            <button
+                                type="button"
+                                onClick={handleApplyPromo}
+                                disabled={isApplyingPromo || !promoInput.trim()}
+                                className="px-4 py-2 bg-[#00A5FF] text-black font-bold uppercase tracking-wider rounded-sm hover:bg-[#00A5FF]/90 transition-colors disabled:opacity-50"
+                            >
+                                {isApplyingPromo ? '...' : t('applyPromo')}
+                            </button>
+                        </div>
+                        {promoMessage && (
+                            <p className={`mt-2 text-sm ${promoMessage.type === 'success' ? 'text-green-400' : 'text-red-400'}`}>
+                                {promoMessage.text}
+                            </p>
+                        )}
+                        {appliedPromo && (
+                            <div className="mt-2 text-sm text-[#00A5FF] bg-[#00A5FF]/10 p-2 rounded-sm border border-[#00A5FF]/20 flex justify-between">
+                                <span>{t('promoApplied')} <strong>{appliedPromo.code}</strong></span>
+                                <span>-{appliedPromo.discount}%</span>
+                            </div>
+                        )}
+                    </div>
+
                     <div className="flex justify-between items-center pt-4 border-t border-[#00A5FF]/30">
                         <span className="text-white font-bold uppercase tracking-widest">{tCart('total')}</span>
-                        <span className="text-3xl font-black text-[#00A5FF]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                            £{Number(total).toFixed(2)}
-                        </span>
+                        <div className="text-right">
+                            {appliedPromo && (
+                                <div className="text-white/50 line-through text-lg">
+                                    £{Number(baseTotal).toFixed(2)}
+                                </div>
+                            )}
+                            <span className="text-3xl font-black text-[#00A5FF]" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                £{Number(total).toFixed(2)}
+                            </span>
+                        </div>
                     </div>
 
                     {/* Badge procesator plăți */}

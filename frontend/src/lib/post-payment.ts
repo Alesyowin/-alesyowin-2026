@@ -27,7 +27,7 @@ export async function processPostPayment({
         const order = await adminClient.request(
             readItems('orders' as any, {
                 filter: { id: { _eq: parseInt(orderId.toString(), 10) } },
-                fields: ['client_email', 'client_phone', 'customer_name', 'Total_Amount', 'locale', 'status'] as any,
+                fields: ['client_email', 'client_phone', 'customer_name', 'Total_Amount', 'locale', 'status', 'promo_code'] as any,
                 limit: 1,
             })
         );
@@ -67,6 +67,22 @@ export async function processPostPayment({
                 status: 'paid' 
             })
         );
+
+        // 4.1 Increment Promo Code usage
+        if (orderData.promo_code) {
+            try {
+                // @ts-ignore
+                const promoData = await adminClient.request(readItems('promo_codes' as any, { filter: { id: { _eq: orderData.promo_code } }, limit: 1 }));
+                if (promoData && promoData.length > 0) {
+                    const currentUses = promoData[0].current_uses || 0;
+                    // @ts-ignore
+                    await adminClient.request(updateItem('promo_codes' as any, orderData.promo_code, { current_uses: currentUses + 1 }));
+                    console.log(`[POST-PAYMENT] Incremented usage for promo code ${orderData.promo_code}`);
+                }
+            } catch (err) {
+                console.warn('[POST-PAYMENT] Failed to increment promo code usage:', err);
+            }
+        }
 
         // 5. TikTok S2S CompletePayment Event
         fireTikTokEvent({

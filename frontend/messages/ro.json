@@ -56,7 +56,13 @@
     "city": "Oraș",
     "county": "Județ / Regiune",
     "postalCode": "Cod poștal",
-    "country": "Țară"
+    "country": "Țară",
+    "promoCodeLabel": "Ai un cod promoțional?",
+    "promoCodePlaceholder": "Introduce codul",
+    "applyPromo": "Aplică",
+    "promoSuccess": "Codul a fost aplicat cu succes!",
+    "promoError": "Acest cod este invalid, a expirat sau limita de utilizări a fost atinsă.",
+    "promoApplied": "Cod promoțional aplicat:"
   },
   "Home": {
     "subtitle": "ALESYOWIN",

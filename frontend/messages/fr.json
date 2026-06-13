@@ -56,7 +56,13 @@
     "city": "Ville",
     "county": "Département / Région",
     "postalCode": "Code postal",
-    "country": "Pays"
+    "country": "Pays",
+    "promoCodeLabel": "Vous avez un code promo ?",
+    "promoCodePlaceholder": "Entrez le code",
+    "applyPromo": "Appliquer",
+    "promoSuccess": "Code promo appliqué avec succès !",
+    "promoError": "Ce code est invalide, expiré ou la limite d'utilisation a été atteinte.",
+    "promoApplied": "Code promo appliqué :"
   },
   "Home": {
     "subtitle": "ALESYOWIN",

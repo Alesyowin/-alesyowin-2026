@@ -31,7 +31,7 @@ export async function POST(request: Request) {
         }
 
         const body = await request.json();
-        const { customer, items, total: clientTotal, locale, quizGiveawayId, quizAnswer } = body;
+        const { customer, items, total: clientTotal, locale, quizGiveawayId, quizAnswer, promoCode } = body;
 
         if (!customer || !items || items.length === 0) {
             return NextResponse.json({ error: 'Missing required checkout data' }, { status: 400 });
@@ -102,6 +102,43 @@ export async function POST(request: Request) {
         } catch (priceErr) {
             console.error('[API] Error fetching real prices from Directus:', priceErr);
             return NextResponse.json({ error: 'Failed to validate prices server-side' }, { status: 500 });
+        }
+
+        // --- 0.2 VALIDARE PROMO CODE ȘI APLICARE REDUCERE ---
+        let appliedPromoCodeId = null;
+        if (promoCode) {
+            try {
+                // @ts-ignore
+                const codes = await (adminClient as any).request(
+                    readItems('promo_codes' as any, {
+                        filter: { code: { _eq: promoCode.trim().toUpperCase() } },
+                        limit: 1
+                    })
+                );
+
+                if (codes && codes.length > 0) {
+                    const promo = codes[0];
+                    const isActive = promo.is_active;
+                    const isNotExpired = !promo.valid_until || new Date() <= new Date(promo.valid_until);
+                    const hasUsesLeft = promo.max_uses === null || promo.current_uses < promo.max_uses;
+
+                    if (isActive && isNotExpired && hasUsesLeft) {
+                        appliedPromoCodeId = promo.id;
+                        const discount = (calculatedTotal * promo.discount_percentage) / 100;
+                        calculatedTotal = Math.max(0, calculatedTotal - discount);
+                        console.log(`[API] Promo code applied: ${promo.code} (-${promo.discount_percentage}%). New total: £${calculatedTotal}`);
+                    } else {
+                        console.warn(`[API] Invalid/Expired/Exhausted promo code provided: ${promoCode}`);
+                        return NextResponse.json({ error: 'Invalid promo code' }, { status: 400 });
+                    }
+                } else {
+                    console.warn(`[API] Non-existent promo code provided: ${promoCode}`);
+                    return NextResponse.json({ error: 'Invalid promo code' }, { status: 400 });
+                }
+            } catch (promoErr) {
+                console.error('[API] Error validating promo code:', promoErr);
+                return NextResponse.json({ error: 'Promo code validation failed' }, { status: 500 });
+            }
         }
 
         if (Math.abs(Number(clientTotal) - calculatedTotal) > 0.01) {
@@ -219,6 +256,7 @@ export async function POST(request: Request) {
                     Total_Amount: total,
                     status: 'pending',
                     locale: locale, // Salvăm limba pentru email viitor
+                    ...(appliedPromoCodeId ? { promo_code: appliedPromoCodeId } : {})
                 })
             );
             orderId = newOrder.id;
