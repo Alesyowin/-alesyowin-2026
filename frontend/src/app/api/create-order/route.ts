@@ -112,6 +112,7 @@ export async function POST(request: Request) {
                 const codes = await (adminClient as any).request(
                     readItems('promo_codes' as any, {
                         filter: { code: { _eq: promoCode.trim().toUpperCase() } },
+                        fields: ['*', 'applicable_giveaways.giveaways_id'],
                         limit: 1
                     })
                 );
@@ -124,9 +125,32 @@ export async function POST(request: Request) {
 
                     if (isActive && isNotExpired && hasUsesLeft) {
                         appliedPromoCodeId = promo.id;
-                        const discount = (calculatedTotal * promo.discount_percentage) / 100;
-                        calculatedTotal = Math.max(0, calculatedTotal - discount);
-                        console.log(`[API] Promo code applied: ${promo.code} (-${promo.discount_percentage}%). New total: £${calculatedTotal}`);
+                        
+                        const applicableList = promo.applicable_giveaways?.map((g: any) => g.giveaways_id) || [];
+                        let eligibleTotal = 0;
+
+                        if (applicableList.length === 0) {
+                            // Se aplică la tot coșul
+                            eligibleTotal = calculatedTotal;
+                        } else {
+                            // Se aplică doar la produsele specifice
+                            for (const item of items) {
+                                const gId = parseInt(item.id, 10);
+                                if (applicableList.includes(gId)) {
+                                    const realPrice = pricesMap.get(gId) || 0;
+                                    eligibleTotal += realPrice * item.quantity;
+                                }
+                            }
+                        }
+
+                        if (eligibleTotal > 0) {
+                            const discount = (eligibleTotal * promo.discount_percentage) / 100;
+                            calculatedTotal = Math.max(0, calculatedTotal - discount);
+                            console.log(`[API] Promo code applied: ${promo.code} (-${promo.discount_percentage}% on £${eligibleTotal}). New total: £${calculatedTotal}`);
+                        } else {
+                            console.warn(`[API] Promo code ${promoCode} is valid but doesn't apply to any items in the cart.`);
+                            return NextResponse.json({ error: 'Promo code does not apply to these items' }, { status: 400 });
+                        }
                     } else {
                         console.warn(`[API] Invalid/Expired/Exhausted promo code provided: ${promoCode}`);
                         return NextResponse.json({ error: 'Invalid promo code' }, { status: 400 });

@@ -9,7 +9,7 @@ const adminClient = createDirectus(DIRECTUS_URL).with(staticToken(ADMIN_TOKEN)).
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { promoCode } = body;
+        const { promoCode, cartItems } = body;
 
         if (!promoCode) {
             return NextResponse.json({ error: 'Promo code is required', valid: false }, { status: 400 });
@@ -20,6 +20,7 @@ export async function POST(request: Request) {
         const codes = await adminClient.request(
             readItems('promo_codes' as any, {
                 filter: { code: { _eq: promoCode.trim().toUpperCase() } },
+                fields: ['*', 'applicable_giveaways.giveaways_id'],
                 limit: 1
             })
         );
@@ -48,11 +49,24 @@ export async function POST(request: Request) {
             return NextResponse.json({ valid: false, error: 'Promo code usage limit reached' }, { status: 200 });
         }
 
+        // Verifică dacă se aplică pe produsele din coș
+        const applicableList = promo.applicable_giveaways?.map((g: any) => g.giveaways_id) || [];
+        let appliesToCart = true;
+
+        if (applicableList.length > 0 && cartItems && cartItems.length > 0) {
+            const cartIds = cartItems.map((item: any) => parseInt(item.id, 10));
+            const hasApplicableItem = cartIds.some((id: number) => applicableList.includes(id));
+            if (!hasApplicableItem) {
+                return NextResponse.json({ valid: false, error: 'Promo code does not apply to items in your cart' }, { status: 200 });
+            }
+        }
+
         return NextResponse.json({
             valid: true,
             id: promo.id,
             code: promo.code,
-            discount_percentage: promo.discount_percentage
+            discount_percentage: promo.discount_percentage,
+            applicableList: applicableList
         }, { status: 200 });
 
     } catch (error: any) {

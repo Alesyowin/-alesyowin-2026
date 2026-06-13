@@ -40,7 +40,7 @@ export default function CheckoutPage() {
 
     // Stări pentru Promo Code
     const [promoInput, setPromoInput] = useState('');
-    const [appliedPromo, setAppliedPromo] = useState<{code: string, discount: number} | null>(null);
+    const [appliedPromo, setAppliedPromo] = useState<{code: string, discount: number, applicableList: number[]} | null>(null);
     const [promoMessage, setPromoMessage] = useState<{text: string, type: 'success' | 'error'} | null>(null);
     const [isApplyingPromo, setIsApplyingPromo] = useState(false);
 
@@ -74,7 +74,20 @@ export default function CheckoutPage() {
     if (!mounted) return null;
 
     const baseTotal = getTotal();
-    const discountValue = appliedPromo ? (baseTotal * appliedPromo.discount) / 100 : 0;
+    let discountValue = 0;
+    if (appliedPromo) {
+        if (appliedPromo.applicableList && appliedPromo.applicableList.length > 0) {
+            let eligibleTotal = 0;
+            items.forEach(item => {
+                if (appliedPromo.applicableList.includes(parseInt(item.id, 10))) {
+                    eligibleTotal += (Number(item.price) * item.quantity);
+                }
+            });
+            discountValue = (eligibleTotal * appliedPromo.discount) / 100;
+        } else {
+            discountValue = (baseTotal * appliedPromo.discount) / 100;
+        }
+    }
     const total = Math.max(0, baseTotal - discountValue);
 
     const handleApplyPromo = async () => {
@@ -85,11 +98,11 @@ export default function CheckoutPage() {
             const res = await fetch('/api/promo/validate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ promoCode: promoInput })
+                body: JSON.stringify({ promoCode: promoInput, cartItems: items })
             });
             const data = await res.json();
             if (data.valid) {
-                setAppliedPromo({ code: data.code, discount: data.discount_percentage });
+                setAppliedPromo({ code: data.code, discount: data.discount_percentage, applicableList: data.applicableList || [] });
                 setPromoMessage({ text: t('promoSuccess'), type: 'success' });
             } else {
                 setAppliedPromo(null);
