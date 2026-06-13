@@ -148,37 +148,43 @@ export default function Leaderboard({ giveawayId }: { giveawayId?: string }) {
                         }
 
                         return (
-                            <div key={index} className={`flex items-center px-4 md:px-6 py-4 md:py-5 rounded-xl ${rowClass} group`}>
+                            <div key={index} className={`relative flex items-center p-3 md:px-6 md:py-5 rounded-xl ${rowClass} group`}>
                                 {/* Rank Badge */}
-                                <div className="w-12 md:w-16 flex justify-center shrink-0">
+                                <div className="w-10 md:w-16 flex justify-center shrink-0 mr-3 md:mr-0">
                                     <div className={`flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full font-black text-sm md:text-base ${rankBadgeClass}`}>
                                         {rankDisplay}
                                     </div>
                                 </div>
 
-                                {/* Nume */}
-                                <div className={`flex-1 font-bold text-sm md:text-base truncate px-3 md:px-4 ${nameClass}`}>
-                                    {user.name}
-                                </div>
+                                {/* Nume și Bilete (stacked pe mobil, inline pe desktop) */}
+                                <div className="flex-1 min-w-0 flex flex-col md:flex-row md:items-center">
+                                    {/* Nume */}
+                                    <div className={`font-bold text-sm md:text-base truncate md:flex-1 md:px-4 ${nameClass}`}>
+                                        {user.name}
+                                    </div>
 
-                                {/* Bilete */}
-                                <div className="w-24 md:w-32 flex flex-col items-center justify-center shrink-0">
-                                    <span className={`text-[9px] md:text-[10px] uppercase font-black tracking-[0.2em] mb-1 ${ticketsLabelClass}`}>TICKETS</span>
-                                    <div className={`flex items-center gap-1.5 font-black text-base md:text-lg ${ticketsCountClass}`}>
-                                        <Ticket size={14} className={rank === 1 ? 'text-[#00A5FF]' : (rank <= 3 ? 'text-white/70' : 'text-gray-400')} />
-                                        {user.count}
+                                    {/* Bilete */}
+                                    <div className="flex items-center mt-1 md:mt-0 md:w-32 md:justify-center md:flex-col shrink-0">
+                                        <span className={`text-[9px] md:text-[10px] uppercase font-black tracking-[0.2em] md:mb-1 hidden md:block ${ticketsLabelClass}`}>
+                                            TICKETS
+                                        </span>
+                                        <div className={`flex items-center gap-1 md:gap-1.5 font-black text-xs md:text-lg ${ticketsCountClass}`}>
+                                            <Ticket size={12} className={`md:w-3.5 md:h-3.5 ${rank === 1 ? 'text-[#00A5FF]' : (rank <= 3 ? 'text-white/70' : 'text-gray-400')}`} />
+                                            {user.count}
+                                            <span className={`md:hidden text-[9px] uppercase tracking-widest ml-1 ${ticketsLabelClass}`}>Tickets</span>
+                                        </div>
                                     </div>
                                 </div>
 
                                 {/* Premiu */}
-                                <div className="w-28 md:w-32 flex justify-end shrink-0">
+                                <div className="ml-2 md:ml-0 md:w-32 flex justify-end shrink-0">
                                     {prize && isRewarded ? (
-                                        <div className={`px-3 md:px-4 py-1.5 md:py-2 rounded-lg text-xs md:text-sm font-black whitespace-nowrap tracking-wide flex items-center gap-1.5 ${prizeClass}`}>
-                                            <Award size={14} />
+                                        <div className={`px-2 py-1.5 md:px-4 md:py-2 rounded-lg text-[10px] md:text-sm font-black whitespace-nowrap flex items-center gap-1 md:gap-1.5 ${prizeClass}`}>
+                                            <Award size={12} className="md:w-[14px] md:h-[14px]" />
                                             {prize.amount}
                                         </div>
                                     ) : (
-                                        <span className="text-gray-300 text-xs font-bold px-4">-</span>
+                                        <span className="text-gray-300 text-xs font-bold px-2 md:px-4">-</span>
                                     )}
                                 </div>
                             </div>
