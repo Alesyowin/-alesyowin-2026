@@ -85,14 +85,18 @@ export default function GiveawayCard({
                             <span>{ticketsSold} SOLD</span>
                             <span>{totalTickets} TOTAL</span>
                         </div>
-                        <div className="relative w-full h-2 bg-gray-800 rounded-full overflow-hidden border border-gray-700">
+                        <div className="relative w-full h-4 bg-gray-900 rounded-full overflow-hidden border border-gray-700 flex items-center justify-center shadow-inner">
                             <div
-                                className="absolute top-0 left-0 h-full rounded-full transition-all duration-700 ease-out"
+                                className="absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-[#008ecc] to-[#00A5FF] transition-all duration-700 ease-out"
                                 style={{
-                                    width: `${Math.max(2, percent)}%`,
-                                    backgroundColor: '#00A5FF'
+                                    width: `${Math.max(1, percent)}%`
                                 }}
-                            />
+                            >
+                                <div className="absolute top-0 left-0 right-0 h-[50%] bg-white/20 rounded-t-full"></div>
+                            </div>
+                            <span className="relative z-10 text-[10px] font-extrabold text-white tracking-wider" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.9)' }}>
+                                {percent}%
+                            </span>
                         </div>
                     </div>
                 </div>
