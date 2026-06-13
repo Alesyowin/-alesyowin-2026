@@ -265,7 +265,7 @@ export default function GiveawayInformation({
             label: t('description'),
             content: description ? (
                 <div
-                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF] prose-headings:text-black"
+                    className="text-black text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF] prose-headings:text-black"
                     dangerouslySetInnerHTML={{ __html: description }}
                 />
             ) : (
@@ -277,7 +277,7 @@ export default function GiveawayInformation({
             label: t('competitionDetails'),
             content: competitionDetails ? (
                 <div
-                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF]"
+                    className="text-black text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF] prose-headings:text-black"
                     dangerouslySetInnerHTML={{ __html: competitionDetails }}
                 />
             ) : (
@@ -291,7 +291,7 @@ export default function GiveawayInformation({
                 <div>
                     {/* Statistică câștiguri */}
                     <div className="flex items-center justify-between mb-6">
-                        <h3 className="text-sm font-bold text-black/60 uppercase tracking-widest">
+                        <h3 className="text-sm font-bold text-black uppercase tracking-widest">
                             {t('instantWinTitle')}
                         </h3>
                         <span className="text-xs font-semibold text-[#00A5FF] bg-[#00A5FF]/10 border border-[#00A5FF]/20 px-3 py-1 rounded-full">
@@ -326,7 +326,7 @@ export default function GiveawayInformation({
                 </div>
             ) : bonusDraw ? (
                 <div
-                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none"
+                    className="text-black text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF] prose-headings:text-black"
                     dangerouslySetInnerHTML={{ __html: bonusDraw }}
                 />
             ) : (
@@ -370,7 +370,7 @@ export default function GiveawayInformation({
             </div>
 
             {/* Panoul de conținut */}
-            <div className="border border-gray-200 bg-white/50 rounded-lg p-6 md:p-12 min-h-[250px] shadow-2xl">
+            <div className="border border-gray-200 bg-white rounded-lg p-6 md:p-12 min-h-[250px] shadow-2xl">
                 {tabs.find(tab => tab.id === activeTab)?.content}
             </div>
         </div>
