@@ -552,8 +552,6 @@ export default function CheckoutPage() {
                             </div>
                             <div className="text-white/20 text-xs">|</div>
                             <span className="text-white/30 text-xs">PCI DSS</span>
-                            <div className="text-white/20 text-xs">|</div>
-                            <span className="text-white/30 text-xs">Stripe</span>
                         </div>
                     </div>
                 </div>
