@@ -380,7 +380,7 @@ export default function QuizGate({
           transition-all duration-500 relative overflow-hidden
           ${unlocked
                         ? 'text-white shadow-[0_0_30px_rgba(0,165,255,0.5)] bg-electric-flow cursor-pointer hover:scale-[1.02]'
-                        : 'bg-gray-100 text-black/20 border border-[#00A5FF] cursor-not-allowed'
+                        : 'bg-[#00A5FF] text-white border border-[#00A5FF] cursor-not-allowed'
                     }
         `}
             >
