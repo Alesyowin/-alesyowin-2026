@@ -1,4 +1,11 @@
 export default (router, { database }) => {
+	router.options('/:giveawayId', (req, res) => {
+		res.setHeader('Access-Control-Allow-Origin', '*');
+		res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+		res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+		res.status(200).end();
+	});
+
 	router.get('/:giveawayId', async (req, res, next) => {
 		try {
 			const { giveawayId } = req.params;
@@ -40,6 +47,10 @@ export default (router, { database }) => {
             })).filter(row => row.name !== 'Unknown'); // Opțional excludem Unknown-urile dacă sunt invalide
 
 			// 3. Return results along with prizes config so frontend knows how to render
+			res.setHeader('Access-Control-Allow-Origin', '*');
+			res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+			res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+
 			return res.json({
 				success: true,
 				data: formattedResults,
