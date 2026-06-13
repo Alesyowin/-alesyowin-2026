@@ -4,7 +4,7 @@ if (!process.env.STRIPE_SECRET_KEY) {
   throw new Error('STRIPE_SECRET_KEY lipsește din variabilele de mediu');
 }
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY.trim(), {
   apiVersion: '2025-01-27.acacia', // Folosim versiunea curentă stabilă
   appInfo: {
     name: 'Alesyowin',
