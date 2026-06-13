@@ -11,6 +11,7 @@ interface GiveawayCardProps {
     title: string;
     subtitle?: string;
     price: number;
+    old_price?: number;
     imageUrl: string;
     ticketsSold: number;
     totalTickets: number;
@@ -20,7 +21,7 @@ interface GiveawayCardProps {
 }
 
 export default function GiveawayCard({
-    id, title, subtitle, price, imageUrl, ticketsSold, totalTickets, endDate, locale, animate = false,
+    id, title, subtitle, price, old_price, imageUrl, ticketsSold, totalTickets, endDate, locale, animate = false,
 }: GiveawayCardProps) {
     const t = useTranslations('Home');
     const [isHovered, setIsHovered] = useState(false);
@@ -51,6 +52,11 @@ export default function GiveawayCard({
                 
                 {/* Badge preț */}
                 <div className="absolute top-3 right-3 bg-black/80 backdrop-blur-md border border-[#00A5FF]/30 rounded-lg px-4 py-2 flex items-center justify-center shadow-sm">
+                    {old_price && old_price > price && (
+                        <span className="text-gray-400 font-bold text-sm line-through mr-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                            £{Number(old_price).toFixed(2)}
+                        </span>
+                    )}
                     <span className="text-[#00A5FF] font-black text-xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                         £{Number(price).toFixed(2)}
                     </span>

@@ -8,13 +8,14 @@ interface CategoryGiveawayCardProps {
     title: string;
     subtitle?: string;
     price: number;
+    old_price?: number;
     imageUrl: string;
     locale: string;
 }
 
 // Cartonaș produs pentru paginile de categorie
 export default function CategoryGiveawayCard({
-    id, title, subtitle, price, imageUrl, locale,
+    id, title, subtitle, price, old_price, imageUrl, locale,
 }: CategoryGiveawayCardProps) {
     const t = useTranslations('Home');
 
@@ -43,6 +44,11 @@ export default function CategoryGiveawayCard({
                 <div className="mt-auto space-y-4">
                     {/* Preț centrat deasupra butonului */}
                     <div className="text-center">
+                        {old_price && old_price > price && (
+                            <span className="text-gray-400 font-bold text-sm line-through mr-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                                £{Number(old_price).toFixed(2)}
+                            </span>
+                        )}
                         <span className="text-[#00A5FF] font-black text-2xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>£{Number(price).toFixed(2)}</span>
                     </div>
 

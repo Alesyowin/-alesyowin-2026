@@ -131,6 +131,14 @@ export default async function GiveawayPage({ params }: PageProps) {
 
                             {/* Prețul biletului */}
                             <div className="flex items-end gap-3 pt-2">
+                                {giveaway.old_price && giveaway.old_price > giveaway.price_per_ticket && (
+                                    <span
+                                        className="text-2xl md:text-3xl font-bold text-gray-400 line-through mb-1 md:mb-2"
+                                        style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                    >
+                                        £{Number(giveaway.old_price).toFixed(2)}
+                                    </span>
+                                )}
                                 <span
                                     className="text-4xl md:text-5xl font-black text-[#00A5FF]"
                                     style={{ fontFamily: "'Montserrat', sans-serif" }}

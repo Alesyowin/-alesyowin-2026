@@ -72,6 +72,7 @@ export default async function Home({ params }: PageProps) {
                                     title={giveaway.title}
                                     subtitle={giveaway.subtitle}
                                     price={giveaway.price_per_ticket}
+                                    old_price={giveaway.old_price}
                                     imageUrl={imageUrl}
                                     ticketsSold={giveaway.tickets_sold}
                                     totalTickets={giveaway.total_tickets}

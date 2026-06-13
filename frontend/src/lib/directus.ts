@@ -26,6 +26,7 @@ export interface Giveaway {
     description: string;
     competition_details?: string;       // HTML rich text cu detalii concurs
     price_per_ticket: number;
+    old_price?: number;                 // Prețul vechi (tăiat)
     product_id?: string;
     total_tickets: number;
     tickets_sold: number;
@@ -166,6 +167,7 @@ export async function getGiveawayBySlug(slug: string, locale: string = 'en'): Pr
                     'description',
                     'competition_details',
                     'price',
+                    'old_price',
                     'product_id',
                     'total_tickets',
                     'sold_tickets',
@@ -225,6 +227,7 @@ export async function getGiveawayBySlug(slug: string, locale: string = 'en'): Pr
             description: translated.description || data.description || '',
             competition_details: translated.competition_details || data.competition_details || undefined,
             price_per_ticket: data.price ?? 0, // Folosim ?? în loc de || ca să respectăm prețul 0 (concursuri gratuite)
+            old_price: data.old_price ? Number(data.old_price) : undefined,
             product_id: data.product_id || undefined,
             total_tickets: data.total_tickets || 0,
             tickets_sold: data.sold_tickets || 0,
@@ -300,7 +303,7 @@ export async function getAllGiveaways(locale: string = 'en'): Promise<Giveaway[]
             readItems('giveaways', {
                 fields: [
                     'id', 'sort', 'title', 'subtitle', 'status', 'image',
-                    'total_tickets', 'sold_tickets', 'deadline', 'category', 'price',
+                    'total_tickets', 'sold_tickets', 'deadline', 'category', 'price', 'old_price',
                     // Câmpuri traduceri relaționale
                     'translations.languages_code',
                     'translations.title',
@@ -323,7 +326,8 @@ export async function getAllGiveaways(locale: string = 'en'): Promise<Giveaway[]
                 title: translated.title || data.title || 'Giveaway #' + data.id,
                 subtitle: translated.subtitle || data.subtitle || undefined,
                 description: '',
-                price_per_ticket: data.price ?? 0, // Folosim ?? în loc de || ca să respectăm prețul 0 (concursuri gratuite)
+                price_per_ticket: data.price ?? 0,
+                old_price: data.old_price ? Number(data.old_price) : undefined,
                 total_tickets: data.total_tickets || 0,
                 tickets_sold: data.sold_tickets || 0,
                 end_date: data.deadline || null,

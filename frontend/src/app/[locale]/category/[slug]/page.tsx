@@ -79,6 +79,7 @@ export default async function CategoryPage({ params }: PageProps) {
                                     title={giveaway.title}
                                     subtitle={giveaway.subtitle}
                                     price={giveaway.price_per_ticket}
+                                    old_price={giveaway.old_price}
                                     imageUrl={imageUrl}
                                     locale={locale}
                                 />
