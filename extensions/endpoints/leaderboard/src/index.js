@@ -28,7 +28,7 @@ export default (router, { database }) => {
 				.limit(10);
 
 			if (giveaway.leaderboard_start_date) {
-				query = query.where('created_at', '>=', giveaway.leaderboard_start_date);
+				query = query.where('date_created', '>=', giveaway.leaderboard_start_date);
 			}
 
 			const results = await query;

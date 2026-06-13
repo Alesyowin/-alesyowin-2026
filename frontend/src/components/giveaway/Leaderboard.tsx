@@ -16,7 +16,7 @@ export default function Leaderboard({ giveawayId }: { giveawayId?: string }) {
         const fetchLeaderboard = async () => {
             try {
                 // Preia datele de la endpointul custom Directus
-                const res = await fetch(`https://alesyowin-backend.onrender.com/leaderboard/${giveawayId}`);
+                const res = await fetch(`https://alesyowin-backend.onrender.com/directus-extension-leaderboard/${giveawayId}`);
                 if (!res.ok) {
                     throw new Error('Failed to fetch leaderboard');
                 }
