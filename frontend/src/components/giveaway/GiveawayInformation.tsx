@@ -169,7 +169,7 @@ export default function GiveawayInformation({
     enableLeaderboard,
 }: GiveawayInformationProps) {
     const t = useTranslations('GiveawayPage');
-    const [activeTab, setActiveTab] = useState<'prizes' | 'description' | 'details' | 'bonus' | 'leaderboard'>('prizes');
+    const [activeTab, setActiveTab] = useState<'description' | 'details' | 'prizes' | 'bonus' | 'leaderboard'>('description');
     const [highlightedDraw, setHighlightedDraw] = useState<number | null>(null);
 
     const { prizes, bonusDraws } = useGiveawayLive();
@@ -261,6 +261,30 @@ export default function GiveawayInformation({
 
     const tabs = [
         {
+            id: 'description',
+            label: t('description'),
+            content: description ? (
+                <div
+                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF] prose-headings:text-black"
+                    dangerouslySetInnerHTML={{ __html: description }}
+                />
+            ) : (
+                <p className="text-black/40 text-sm italic py-4">{t('comingSoon')}...</p>
+            )
+        },
+        {
+            id: 'details',
+            label: t('competitionDetails'),
+            content: competitionDetails ? (
+                <div
+                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF]"
+                    dangerouslySetInnerHTML={{ __html: competitionDetails }}
+                />
+            ) : (
+                <p className="text-black/40 text-sm italic py-4">{t('comingSoon')}...</p>
+            )
+        },
+        {
             id: 'prizes',
             label: t('instantPrizes'),
             content: prizes.length > 0 ? (
@@ -284,30 +308,6 @@ export default function GiveawayInformation({
                 </div>
             ) : (
                 <p className="text-black/40 text-sm italic py-4">{t('instantWinNoPrizes')}</p>
-            )
-        },
-        {
-            id: 'description',
-            label: t('description'),
-            content: description ? (
-                <div
-                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF] prose-headings:text-black"
-                    dangerouslySetInnerHTML={{ __html: description }}
-                />
-            ) : (
-                <p className="text-black/40 text-sm italic py-4">{t('comingSoon')}...</p>
-            )
-        },
-        {
-            id: 'details',
-            label: t('competitionDetails'),
-            content: competitionDetails ? (
-                <div
-                    className="text-black/70 text-sm md:text-base leading-relaxed prose max-w-none prose-p:my-4 prose-strong:text-[#00A5FF]"
-                    dangerouslySetInnerHTML={{ __html: competitionDetails }}
-                />
-            ) : (
-                <p className="text-black/40 text-sm italic py-4">{t('comingSoon')}...</p>
             )
         },
         {
