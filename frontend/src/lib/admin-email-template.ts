@@ -16,6 +16,8 @@ export function getAdminOrderEmailTemplate({
     orderId,
     customerName,
     customerEmail,
+    customerPhone,
+    customerAddress,
     orderDate,
     products,
     subtotal,
@@ -26,6 +28,8 @@ export function getAdminOrderEmailTemplate({
     orderId: string;
     customerName: string;
     customerEmail: string;
+    customerPhone: string;
+    customerAddress: string;
     orderDate: string;
     products: AdminOrderProduct[];
     subtotal: string;
@@ -120,6 +124,12 @@ export function getAdminOrderEmailTemplate({
                                         <!-- Header Text -->
                                         <div style="color: #ffffff; font-size: 16px; text-align: center; margin-bottom: 25px; line-height: 1.5;">
                                             <span style="font-weight: bold;">${customerName}</span> a plasat comanda <span style="color: #00A5FF; font-weight: bold;">#${orderId}</span> pe ${orderDate}
+                                            <br/><br/>
+                                            <div style="font-size: 14px; color: #bbbbbb; text-align: left; background-color: #222; padding: 15px; border-radius: 8px; border: 1px solid #333;">
+                                                <div style="margin-bottom: 5px;"><strong style="color: #fff;">Email:</strong> <a href="mailto:${customerEmail}" style="color: #00A5FF; text-decoration: none;">${customerEmail}</a></div>
+                                                <div style="margin-bottom: 5px;"><strong style="color: #fff;">Telefon:</strong> <a href="tel:${customerPhone}" style="color: #00A5FF; text-decoration: none;">${customerPhone}</a></div>
+                                                <div><strong style="color: #fff;">Adresă:</strong> ${customerAddress}</div>
+                                            </div>
                                         </div>
                                         
                                         <!-- View Order Button -->

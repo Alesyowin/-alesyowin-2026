@@ -99,11 +99,13 @@ export async function sendAdminOrderNotification(options: {
     orderId: string;
     customerName: string;
     customerEmail: string;
+    customerPhone: string;
+    customerAddress: string;
     products: AdminOrderProduct[];
     totalAmount: string;
     baseUrl: string;
 }) {
-    const { orderId, customerName, customerEmail, products, totalAmount, baseUrl } = options;
+    const { orderId, customerName, customerEmail, customerPhone, customerAddress, products, totalAmount, baseUrl } = options;
 
     // Construim URL-ul spre panoul de admin Directus
     const directusUrl = process.env.DIRECTUS_URL || 'https://ALESYOWIN.onrender.com';
@@ -136,6 +138,8 @@ export async function sendAdminOrderNotification(options: {
         orderId,
         customerName,
         customerEmail,
+        customerPhone,
+        customerAddress,
         orderDate,
         products,
         subtotal,

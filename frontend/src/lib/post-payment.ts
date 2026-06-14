@@ -27,7 +27,7 @@ export async function processPostPayment({
         const order = await adminClient.request(
             readItems('orders' as any, {
                 filter: { id: { _eq: parseInt(orderId.toString(), 10) } },
-                fields: ['client_email', 'client_phone', 'customer_name', 'Total_Amount', 'locale', 'status', 'promo_code'] as any,
+                fields: ['client_email', 'client_phone', 'customer_name', 'Total_Amount', 'locale', 'status', 'promo_code', 'address', 'city', 'county', 'postal_code', 'country'] as any,
                 limit: 1,
             })
         );
@@ -233,8 +233,10 @@ export async function processPostPayment({
 
             await sendAdminOrderNotification({
                 orderId: orderId.toString(),
-                customerName: orderData.customer_name || 'Customer',
-                customerEmail: orderData.client_email,
+                customerName: orderData.customer_name || 'N/A',
+                customerEmail: orderData.client_email || 'N/A',
+                customerPhone: orderData.client_phone || 'N/A',
+                customerAddress: [orderData.address, orderData.city, orderData.county, orderData.postal_code, orderData.country].filter(Boolean).join(', ') || 'N/A',
                 products: adminProducts,
                 totalAmount: orderData.Total_Amount ? orderData.Total_Amount.toString() : '0',
                 baseUrl,
