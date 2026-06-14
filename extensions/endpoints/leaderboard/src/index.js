@@ -26,11 +26,13 @@ export default (router, { database }) => {
 			}
 
 			// 2. Query tickets
+			// Normalizăm client_name ignorând spațiile de la început/sfârșit, reducând spațiile multiple la unul singur,
+			// și transformând în majuscule/minuscule folosind funcțiile native PostgreSQL pentru o grupare perfectă.
 			let query = database('tickets')
-				.select(database.raw('LOWER(TRIM(client_name)) as normalized_name'), database.raw('MAX(client_name) as client_name'))
+				.select(database.raw("LOWER(REGEXP_REPLACE(TRIM(client_name), '\\s+', ' ', 'g')) as normalized_name"), database.raw('MAX(client_name) as client_name'))
 				.count('id as count')
 				.where('giveaway_id', giveawayId)
-				.groupByRaw('LOWER(TRIM(client_name))')
+				.groupByRaw("LOWER(REGEXP_REPLACE(TRIM(client_name), '\\s+', ' ', 'g'))")
 				.orderBy('count', 'desc')
 				.limit(10);
 
