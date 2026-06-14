@@ -203,6 +203,13 @@ export default function CheckoutPage() {
                 }
             }
 
+            // Validăm formatul de email
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+                setPaymentError('Please enter a valid email address.');
+                isProcessingRef.current = false;
+                return null;
+            }
+
             // --- PASUL 1: Creăm comanda în Directus ---
             const response = await fetch('/api/create-order', {
                 method: 'POST',
