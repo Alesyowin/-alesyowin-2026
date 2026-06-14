@@ -27,10 +27,10 @@ export default (router, { database }) => {
 
 			// 2. Query tickets
 			let query = database('tickets')
-				.select('client_name')
+				.select(database.raw('LOWER(TRIM(client_name)) as normalized_name'), database.raw('MAX(client_name) as client_name'))
 				.count('id as count')
 				.where('giveaway_id', giveawayId)
-				.groupBy('client_name')
+				.groupByRaw('LOWER(TRIM(client_name))')
 				.orderBy('count', 'desc')
 				.limit(10);
 
