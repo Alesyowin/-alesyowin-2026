@@ -14,11 +14,10 @@ export default function HeroAnimatedText() {
             className="flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto drop-shadow-2xl"
         >
             <h1 
-                className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tight leading-tight uppercase mb-6"
+                className="text-4xl md:text-5xl lg:text-7xl font-black text-[#00A5FF] tracking-tight leading-tight uppercase"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-                <span className="block mb-2 text-[#00A5FF]">{t('title')}</span>
-                <span className="block text-3xl md:text-4xl lg:text-5xl mt-4 font-bold text-white">{t('subtitle')}</span>
+                {t('title')}
             </h1>
         </motion.div>
     );
