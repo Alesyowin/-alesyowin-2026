@@ -1,5 +1,6 @@
 import GiveawayCard from '../../components/home/GiveawayCard';
 import HeroAnimatedText from '../../components/hero/HeroAnimatedText';
+import HeroSlideshow from '../../components/hero/HeroSlideshow';
 import WhyChooseUs from '../../components/home/WhyChooseUs';
 import { getAllGiveaways, getDirectusFileUrl } from '../../lib/directus';
 import { getTranslations } from 'next-intl/server';
@@ -25,12 +26,9 @@ export default async function Home({ params }: PageProps) {
         <div className="relative bg-[#000000]">
             {/* Alesyowin Hero Banner */}
             <div className="relative w-full h-screen min-h-[600px] bg-black">
-                <div 
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
-                    style={{ backgroundImage: "url('/hero%201.webp')" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-[#f8f9fa]" />
-                <div className="relative z-10 flex flex-col items-center justify-center h-full text-center pb-20">
+                <HeroSlideshow />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-[#f8f9fa] z-10 pointer-events-none" />
+                <div className="relative z-20 flex flex-col items-center justify-center h-full text-center pb-20">
                     <HeroAnimatedText />
                 </div>
             </div>

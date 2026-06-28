@@ -18,7 +18,7 @@ export default function HeroAnimatedText() {
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
                 <span className="block mb-2 text-[#00A5FF]">{t('title')}</span>
-                <span className="block text-3xl md:text-4xl lg:text-5xl mt-4 font-bold text-gray-200">{t('subtitle')}</span>
+                <span className="block text-3xl md:text-4xl lg:text-5xl mt-4 font-bold text-white">{t('subtitle')}</span>
             </h1>
         </motion.div>
     );
