@@ -542,5 +542,16 @@
   "Hero": {
     "title": "A BMW X6 is waiting to be won",
     "subtitle": "Buy participation tickets and enter the race for the grand prize."
+  },
+  "Login": {
+    "titleEmail": "Login",
+    "titleOtp": "Verify Code",
+    "descEmail": "Enter your email address to receive the access code.",
+    "descOtp": "We sent a 6-digit code to the address {email}",
+    "placeholderEmail": "name.surname@example.com",
+    "sendOtpBtn": "Send Access Code",
+    "changeEmailBtn": "Change Email Address",
+    "errorSendOtp": "Error sending the code. Please try again.",
+    "errorVerifyOtp": "The code entered is incorrect or has already been used."
   }
 }

@@ -1,0 +1,557 @@
+{
+  "Navbar": {
+    "home": "Anasayfa",
+    "apartments": "Daireler",
+    "cars": "Arabalar",
+    "cash": "Nakit Para",
+    "tech": "Teknoloji",
+    "entryList": "Katılımcı Listesi",
+    "contact": "İletişim",
+    "login": "Giriş Yap",
+    "profile": "Profilim",
+    "logout": "Çıkış Yap"
+  },
+  "Giveaway": {
+    "timeRemaining": "Kalan Süre",
+    "ticketsSold": "Satılan Biletler",
+    "quizTitle": "Sepeti açmak için cevaplayın",
+    "quizSubtitle": "Satın alma butonunu aktif etmek için soruyu doğru yanıtlayın.",
+    "addToCart": "Sepete Ekle",
+    "lockedBtn": "Kilidi açmak için doğru cevaplayın",
+    "wrongAnswer": "Yanlış cevap. Tekrar deneyin!",
+    "correctAnswer": "Doğru! Şimdi sepete ekleyebilirsiniz.",
+    "giveawayEnded": "Çekiliş Sona Erdi",
+    "perTicket": "/ bilet",
+    "ticketsSelected": "{count} Bilet",
+    "enterNowFor": "Şimdi katılın {total}",
+    "loginToEnter": "Bu ücretsiz çekilişe katılmak için lütfen giriş yapın veya kayıt olun.",
+    "alreadyEntered": "Bu çekilişe zaten katıldınız. Bol şanslar!",
+    "freeEntry": "Ücretsiz Katıl"
+  },
+  "Cart": {
+    "title": "Sepetiniz",
+    "empty": "Sepetiniz boş.",
+    "total": "Toplam",
+    "checkout": "Siparişi Tamamla",
+    "continueShopping": "Alışverişe Devam Et"
+  },
+  "Checkout": {
+    "title": "Siparişi Tamamla",
+    "summary": "Sipariş Özeti",
+    "formTitle": "Müşteri Bilgileri",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "email": "E-posta Adresi",
+    "phone": "Telefon Numarası",
+    "payNow": "Şimdi Öde",
+    "processing": "İşleniyor...",
+    "errorProcessing": "Sipariş işlenirken hata oluştu",
+    "qty": "Adet",
+    "paymentTitle": "Ödeme Detayları",
+    "secureRedirect": "Satın alma işlemini tamamlamak için güvenli bir şekilde Stripe'a yönlendirileceksiniz.",
+    "cardNumber": "Kart Numarası",
+    "expiry": "Son Kullanma Tarihi",
+    "billingTitle": "Fatura Adresi",
+    "address": "Adres",
+    "city": "Şehir",
+    "county": "İlçe / Bölge",
+    "postalCode": "Posta Kodu",
+    "country": "Ülke",
+    "promoCodeLabel": "Promosyon kodunuz var mı?",
+    "promoCodePlaceholder": "Kodu girin",
+    "applyPromo": "Uygula",
+    "promoSuccess": "Kod başarıyla uygulandı!",
+    "promoError": "Bu kod geçersiz, süresi dolmuş veya kullanım sınırına ulaşmış.",
+    "promoApplied": "Uygulanan promosyon kodu:"
+  },
+  "Home": {
+    "subtitle": "ALESYOWIN",
+    "title": "Devam Eden Çekilişler",
+    "description": "Özel ödüller kazanma şansı için şimdi katılın. Her bilet sizi inanılmaz ödüllere daha da yakınlaştırır.",
+    "noCompetitions": "Şu anda aktif çekiliş bulunmamaktadır.",
+    "checkBack": "Yeni ödüller için yakında tekrar kontrol edin!",
+    "enterNow": "Şimdi Katıl",
+    "features": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "subtitle": "Şeffaf ve adil bir deneyim için tasarlanmış güvenilir bir platform.",
+      "f1_title": "%100 Şeffaflık",
+      "f1_desc": "Her çekiliş, kanıtlanabilir şekilde adil bir sistemle canlı olarak gerçekleştirilir.",
+      "f2_title": "Orijinal Ödüller",
+      "f2_desc": "Kazanacağınız her ödül için orijinallik ve premium kalite garantisi sunuyoruz.",
+      "f3_title": "Güvenli Ödemeler",
+      "f3_desc": "İşlemleriniz sektördeki en yüksek güvenlik standartlarıyla korunmaktadır.",
+      "f4_title": "Birleşik Topluluk",
+      "f4_desc": "Şansın unutulmaz ödüllerle buluştuğu meraklılar topluluğumuza katılın."
+    }
+  },
+  "GiveawayPage": {
+    "instantPrizes": "Anında Ödüller",
+    "description": "Açıklama",
+    "competitionDetails": "Çekiliş Detayları",
+    "bonusDraw": "Bonus Çekilişler",
+    "comingSoon": "Yakında",
+    "perTicket": "/ bilet",
+    "maxTickets": "Kişi başı en fazla {limit} bilet",
+    "timeRemaining": "Kalan Süre",
+    "ticketsSold": "Satılan Biletler",
+    "ticketsRemaining": "{count} bilet kaldı",
+    "quizTitle": "Sepeti açmak için cevaplayın",
+    "quizSubtitle": "Satın alma butonunu aktif etmek için soruyu doğru yanıtlayın.",
+    "cars": "Arabalar",
+    "apartments": "Daireler",
+    "cash": "Nakit Para",
+    "tech": "Teknoloji",
+    "liveDrawBadge": "Canlı Çekiliş",
+    "liveDrawInfo": "Çekiliş <fb>Facebook</fb> ve <yt>YouTube</yt> üzerinden canlı yayınlanacaktır.",
+    "winnersInfo": "Bu çekilişte <strong>1</strong> kazanan olacaktır",
+    "entriesInfo": "<strong>{count}</strong> katılım",
+    "postalEntryBtn": "POSTA İLE ÜCRETSİZ KATILIM",
+    "instantWinTitle": "Anında Kazanç",
+    "instantWinWon": "{name} tarafından KAZANILDI",
+    "instantWinAvailable": "Mevcut",
+    "instantWinPrizeLabel": "Ödül",
+    "instantWinNoPrizes": "Bu çekiliş için tanımlanmış anında ödül bulunmamaktadır.",
+    "instantWinWonCount": "{won} / {total} ödül kazanıldı",
+    "bonusDrawsExplanation": "Bonus Çekilişler Nasıl Çalışır?",
+    "bonusDrawsModalText": "Bonus çekilişler, bilet satışları belirli sınırlara (yıldızlı bölümler) ulaştığında açılan özel ödüllerdir. Bir sınıra ulaşıldığında, o ana kadar satılan tüm biletler arasından rastgele bir kazanan seçilir.",
+    "bonusDrawsGoText": "Bir sonraki bonus çekilişine sadece %{percent} kaldı!",
+    "bonusDrawsTakePlaceText": "Bonus çekilişler, yıldızlı bölümlere ulaşıldığında gerçekleştirilir",
+    "topParticipants": "En Çok Katılanlar",
+    "leaderboardName": "Ad",
+    "leaderboardTickets": "Bilet",
+    "leaderboardPrize": "Ödül",
+    "leaderboardEmpty": "İlk katılan siz olun!"
+  },
+  "EntryList": {
+    "subtitle": "ALESYOWIN",
+    "title": "Katılımcı Listesi",
+    "description": "Aktif veya tamamlanmış her çekiliş için katılımlarınızı ve biletlerinizi kontrol edin.",
+    "all": "Hepsi",
+    "cars": "Arabalar",
+    "apartments": "Daireler",
+    "cash": "Nakit Para",
+    "tech": "Teknoloji",
+    "active": "Aktif",
+    "finished": "Tamamlanmış",
+    "noCompetitions": "Bu kategoride çekiliş bulunmamaktadır.",
+    "tickets": "bilet",
+    "viewTickets": "Biletleri Gör",
+    "searchTitle": "Biletlerinizi Arayın",
+    "searchDescription": "Hesabınıza kayıtlı tüm biletleri görmek için adınızı girin.",
+    "totalTickets": "Toplam Bilet",
+    "ticketsSold": "Satılan Biletler",
+    "searchPlaceholder": "Ad, E-posta veya Bilet Numarası (örn: 4521)...",
+    "searchBtn": "Ara",
+    "searching": "Aranıyor...",
+    "connectionError": "Bağlantı hatası.",
+    "noTicketsFound": "Hiçbir bilet bulunamadı",
+    "tryAnother": "Başka bir ad, e-posta veya bilet numarası deneyin.",
+    "ticketsFoundFor": "Şunun için bulunan biletler:",
+    "ticketCount": "{count} bilet",
+    "searchPrompt": "Biletlerinizi bulmak için yukarıya adınızı, e-postanızı veya bilet numaranızı girin.",
+    "verifiedNote": "Biletleriniz güvence altına alınmış ve ALESYOWIN sistemine resmi olarak kaydedilmiştir."
+  },
+  "Success": {
+    "title": "Sipariş Başarılı!",
+    "message": "Katılımınız için teşekkür ederiz. Biletleriniz güvenceye alındı ve bir onay e-postası gönderildi. Bol şanslar!",
+    "returnHome": "Anasayfaya Dön",
+    "checkTickets": "Biletleri Kontrol Et",
+    "instantWinCongrats": "🎉 Anında Ödül Kazandınız!",
+    "instantWinAmount": "{amount} {currency} kazandınız!",
+    "instantWinMsg": "Ekibimiz, ödül teslimat detaylarını netleştirmek için yakında sizinle iletişime geçecektir."
+  },
+  "Category": {
+    "breadcrumb": "Kategoriler",
+    "cars": "Arabalar",
+    "apartments": "Daireler",
+    "cashPrizes": "Nakit Ödüller",
+    "techGadgets": "Teknoloji & Aletler",
+    "noActive": "Henüz aktif {category} bulunmamaktadır",
+    "preparingNew": "Şu anda bu kategoride yeni ve heyecan verici ödüller hazırlıyoruz. Yakında tekrar kontrol edin!"
+  },
+  "Timer": {
+    "days": "Gün",
+    "hours": "Saat",
+    "min": "Dak",
+    "sec": "Sn",
+    "ended": "Çekiliş Sona Erdi"
+  },
+  "Payment": {
+    "title": "Mock Ödeme Geçidi",
+    "orderRef": "SİPARİŞ REF",
+    "description": "Entegrasyon öncesi test ortamı. Canlı ortamda bu sayfa, Paytriot UK'in güvenli ödeme arayüzüyle değiştirilecektir.",
+    "simulateBtn": "Başarılı Ödeme Simüle Et",
+    "processingWebhook": "Webhook işleniyor...",
+    "webhookNote": "Butona basılması, Directus'taki siparişi güncelleyen ve bilet oluşturan Webhook'u tetikler."
+  },
+  "Profile": {
+    "title": "Profilim",
+    "memberBadge": "ALESYOWIN Üyesi",
+    "logout": "Çıkış Yap",
+    "personalData": "Kişisel Bilgiler",
+    "fullName": "Ad Soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "notSet": "Belirtilmemiş",
+    "ticketsSummary": "Bilet Özeti",
+    "activeTickets": "Aktif Biletler",
+    "totalPrizes": "Toplam Kazanılan Ödüller",
+    "recentActivity": "Son Etkinlikler",
+    "loadingOrders": "Siparişler yükleniyor...",
+    "noOrders": "Henüz siparişiniz yok",
+    "ticketsPurchased": "Satın Alınan Biletler",
+    "event": "Çekiliş",
+    "id": "ID"
+  },
+  "Footer": {
+    "contactUs": "BİZE ULAŞIN",
+    "tagline": "7/24 yanınızdayız",
+    "telegram": "Telegram Kanalı",
+    "email": "info@ALESYOWIN.com",
+    "companyName": "Alesyo Win LTD",
+    "companyNumber": "Şirket Numarası {number}",
+    "legal": "YASAL",
+    "terms": "Şartlar ve Koşullar",
+    "privacy": "Gizlilik Politikası",
+    "rules": "Çekiliş Kuralları",
+    "postal": "Posta ile Ücretsiz Katılım Yöntemi",
+    "cookies": "Çerez Politikası",
+    "faq": "SSS (FAQ)",
+    "keepInTouch": "İLETİŞİMDE KALIN",
+    "paymentMethods": "ÖDEME YÖNTEMLERİ",
+    "securePayments": "Güvenli Ödemeler",
+    "rights": "Tüm hakları saklıdır.",
+    "trademark": "{name} tescilli bir markadır.",
+    "unauthorised": "İsim, logo veya markanın yetkisiz kullanımı kesinlikle yasaktır.",
+    "joinFamily": "Bugün Alesyowin ailesine katılın!",
+    "companyDetailsName": "Alesyo Win LTD",
+    "companyDetailsNumber": "Şirket Numarası: 16737234",
+    "companyDetailsAddressTitle": "Kayıtlı Adres:",
+    "companyDetailsAddress": "54 Market Street, Eastleigh, England, SO50 5RB, Birleşik Krallık"
+  },
+  "Email": {
+    "otpSubject": "Erişim kodunuz - ALESYOWIN",
+    "otpTitle": "Doğrulama Kodu",
+    "otpGreeting": "Merhaba,",
+    "otpMessage": "ALESYOWIN erişim kodunuz:",
+    "otpExpiry": "Bu kodun süresi 10 dakika içinde dolacaktır.",
+    "otpSecurityNote": "Bu kodu siz talep etmediyseniz lütfen bu e-postayı dikkate almayın.",
+    "footer": "© {year} Alesyo Win LTD. Tüm hakları saklıdır."
+  },
+  "OrderEmail": {
+    "subject": "Sipariş Onayı #{id} - ALESYOWIN",
+    "title": "Sipariş Onayı",
+    "greeting": "Merhaba {name},",
+    "orderNumber": "Sipariş Numarası:",
+    "event": "Çekiliş:",
+    "total": "Ödenen Toplam Tutar:",
+    "yourTickets": "Biletleriniz:",
+    "thanks": "Çekilişimize katıldığınız için teşekkür ederiz! Bir sonraki çekilişte bol şans dileriz.",
+    "footer": "© {year} Alesyo Win LTD. Tüm hakları saklıdır."
+  },
+  "Terms": {
+    "title": "Şartlar ve Koşullar",
+    "lastUpdated": "Son Güncelleme: Ekim 2023",
+    "intro": "Kayıtlı ofisi 54 Market Street, Eastleigh, SO50 5RB, Birleşik Krallık adresinde bulunan Alesyo Win LTD (şirket numarası 16737234), www.ALESYOWIN.com web sitesini işletmekte ve burada listelenen tüm çekilişlerin yönetiminden sorumludur.\n\nHer türlü soru veya endişeniz için info@ALESYOWIN.com adresinden bizimle e-posta yoluyla iletişime geçebilirsiniz.",
+    "sections": {
+      "s1": {
+        "title": "1. Genel Kurallar",
+        "content": "1.1 www.ALESYOWIN.com adresinde yayınlanan her çekiliş, bu Şartlar ve Koşullara („Ş&K“) tabidir. Bunlar hem standart çekilişli yarışmaları („Standart Çekilişler“) hem de anında kazanılan yarışmaları („Anında Kazanma Çekilişleri“) kapsar (birlikte „Çekilişler“).\n1.2 Bu Ş&K, bir Çekilişle ilgili reklam materyalleri, sosyal medya gönderileri veya diğer iletişimler dahil olmak üzere diğer tüm iletişimlerden üstündür.\n1.3 Bir ödül almaya hak kazanmak için katılımcıların Alesyo Win LTD tarafından belirlenen bir soruyu doğru yanıtlamaları veya bir problemi çözmeleri gerekir („Çekiliş Sorusu“).\n1.4 Her Çekiliş bir Çekiliş Sorusu içerir. Her katılım için ücretli bir katılım ücreti uygulanır. Alesyo Win LTD'nin çoktan seçmeli veya kolay bir soru sunması durumunda, posta yoluyla ücretsiz bir katılım yöntemi de mevcuttur."
+      },
+      "s2": {
+        "title": "2. Nasıl Katılınır?",
+        "content": "2.1 Her Çekiliş, www.ALESYOWIN.com sitesindeki ilgili çekiliş sayfasında gösterilen başlangıç ve bitiş tarihleri arasında gerçekleşir („Açılış Tarihi“ ve „Kapanış Tarihi“). Tüm tarih ve saatler Londra, İngiltere saatine göredir.\n2.2 Alesyo Win LTD, gerçekten gerekli olduğunda açılış veya kapanış tarihlerini ayarlama hakkını saklı tutar. Tüm değişiklikler web sitesinde derhal güncellenecektir.\n2.3 Tüm katılımların belirtilen kapanış saatine kadar elimize ulaşması gerekmektedir. Bu saatten sonra gelen katılımlar otomatik olarak geçersizdir. Geç gelen katılımlar için iade yapılmaz.\n2.4 Her Çekilişin, çekiliş sayfasında gösterilen maksimum bilet sınırı vardır. Bu sınıra ulaşıldığında başka katılım kabul edilmez.\n2.5 Her Çekiliş için kişi başına katılım sınırı da vardır. Bu sınır bireysel çekiliş sayfasında belirtilmiştir.\n2.6 Ücretli yöntemle bir Standart Çekilişe katılmak için: www.ALESYOWIN.com adresini ziyaret edin, çekilişi seçin, Çekiliş Sorusunu yanıtlayın, istediğiniz katılım sayısını seçin, siparişi tamamlayın, gerekiyorsa giriş yapın veya kayıt olun, bu Ş&K'yı kabul edin ve ödemeyi tamamlayın.\n2.7 Ücretli yöntemle bir Anında Kazanma Çekilişine katılmak için: www.ALESYOWIN.com adresini ziyaret edin, çekilişi seçin, bilet sayısını seçin, siparişi tamamlayın, gerekiyorsa giriş yapın veya kayıt olun, bu Ş&K'yı kabul edin ve ödemeyi tamamlayın.\n2.8 Katılım başarıyla tamamlandığında, Alesyo Win LTD'den bir onay alacaksınız.\n2.9 Alesyo Win LTD, teknik sorunlar, bağlantı sorunları veya kontrolümüz dışındaki diğer durumlar nedeniyle elimize ulaşmayan katılımlar için hiçbir sorumluluk kabul etmez.\n2.10 Herhangi bir Çekilişe katılarak, katılım koşullarını karşıladığınızı, Alesyo Win LTD ile bağlayıcı bir anlaşma yaptığınızı ve bu Ş&K'yı tamamen kabul ettiğinizi onaylamış olursunuz."
+      },
+      "s3": {
+        "title": "3. Posta Yoluyla Ücretsiz Katılım",
+        "content": "Ödeme yapmak istemeyen katılımcılar aşağıdaki talimatları izleyerek posta yoluyla katılabilirler:\nAlesyo Win LTD, 54 Market Street, Eastleigh, SO50 5RB, Birleşik Krallık adresine ön ödemeli birinci veya ikinci sınıf posta ile el yazısıyla yazılmış bir mektup gönderin. Elden teslim edilen mektuplar kabul edilmeyecektir.\nMektup açıkça şunları içermelidir: Katıldığınız çekilişin adı, tam adınız, doğum tarihiniz, tam ev adresiniz, bir iletişim telefon numarası, e-posta adresi ve Çekiliş Sorusu'na verdiğiniz cevap (varsa).\nEksik veya okunaksız mektuplar elenecektir. Kişi başına ve çekiliş başına en fazla iki (2) adet posta yoluyla ücretsiz katılıma izin verilir. Her katılım kendi ayrı zarfında gönderilmelidir.\nÜcretsiz katılımların Kapanış Tarihinden önce ulaşması gerekir. Posta masrafları katılımcının sorumluluğundadır. Katılımınızın geçerli olması için www.ALESYOWIN.com üzerinde aktif bir hesabınızın olması ve mektuptaki tüm bilgilerin hesabınızdaki bilgilerle birebir eşleşmesi gerekir."
+      },
+      "s4": {
+        "title": "4. Kazananların Belirlenmesi",
+        "content": "4.1 Standart Çekilişler için, Çekiliş Sorusunu doğru yanıtlayan tüm katılımcılar bir çekilişe dahil edilecektir. Kazanan, Google'ın rastgele sayı üreteci kullanılarak canlı yayında seçilecektir. Çekiliş, Alesyo Win LTD'nin resmi sosyal medya kanallarında canlı yayınlanacaktır. Çekiliş, Kapanış Tarihinden itibaren 7 gün içinde gerçekleştirilecektir.\n4.2 Standart Çekilişlerdeki tüm katılımcıların adları ve katılım numaraları, web sitesinde yayınlanan bir tabloya dahil edilebilir veya canlı çekiliş sırasında gösterilebilir. Adınızın dahil edilmesini istemiyorsanız, çekilişten en az 48 saat önce info@ALESYOWIN.com adresinden bizimle iletişime geçin.\n4.3 Anında Kazanma Çekilişleri için ödüller, rastgele bilet numaralarına önceden atanır. Doğru cevap veren her katılıma bir numara atanır. Bu numara bir ödüle karşılık geliyorsa, katılımcı kazanır. Kazananlar çekiliş sayfasında ve otomatik e-posta yoluyla anında bilgilendirilir."
+      },
+      "s5": {
+        "title": "5. Web Sitesi Kredisi",
+        "content": "5.1 Belirli Çekilişlerde ödül veya hediye olarak web sitesi kredisi verilebilir.\n5.2 Bazı durumlarda, çekiliş sayfasında belirtildiği yerde bir ödül web sitesi kredisi ile değiştirilebilir.\n5.3 Web sitesi kredisinin hesabınıza eklenmesinden itibaren 12 ay içinde kullanılması gerekir. Hatırlatmalar e-posta ile gönderilecektir. Süresi dolan kredi kullanılamaz.\n5.4 Web sitesi kredisinin nakit değeri yoktur. Nakde çevrilemez, devredilemez veya çekilemez. Yalnızca www.ALESYOWIN.com adresindeki gelecekteki çekilişlere katılım için geçerlidir."
+      },
+      "s6": {
+        "title": "6. Kimler Katılabilir?",
+        "content": "6.1 Çekilişler, 18 yaşın üzerindeki Birleşik Krallık sakinlerine açıktır; şunlar hariçtir: Alesyo Win LTD çalışanları, Çekilişlerin yönetiminde yer alan herhangi bir acente veya tedarikçinin çalışanları veya yukarıdakilerin birinci derece aile üyeleri.\n6.2 Katılarak, katılım ve ödül talep etme koşullarını karşıladığınızı onaylamış olursunuz. Alesyo Win LTD her an uygunluk kanıtı talep edebilir.\n6.3 Alesyo Win LTD, bilgisayar tarafından oluşturulan veya eksik katılımları kabul etmeyecektir.\n6.4 Katılım ücretleri, daha sonra uygun olmadığınızı fark etseniz veya diskalifiye edilseniz dahi, hiçbir koşulda iade edilmez.\n6.5 Dolandırıcılık, hackleme veya web sitesine herhangi bir şekilde müdahale ettiği tespit edilen katılımcılar kalıcı olarak yasaklanacaktır."
+      },
+      "s7": {
+        "title": "7. Ödül",
+        "content": "7.1 Her Çekilişin ödülü, www.ALESYOWIN.com üzerindeki ilgili çekiliş sayfasında açıklanmaktadır.\n7.2 Ödüller stok durumuna bağlıdır. Alesyo Win LTD, herhangi bir ödülü eşit veya daha yüksek değerde bir ödülle değiştirme hakkını saklı tutar.\n7.3 Aksi belirtilmedikçe, ödülün nakit alternatifi yoktur. Alesyo Win LTD, kazananın tercih etmesi halinde kendi takdirine bağlı olarak nakit eşdeğeri sunabilir.\n7.4 Ödül bir araç ise: gerekirse geçerli bir teknik muayene (MOT) ile teslim edilecektir; araç sigortası ve vergisi dahil değildir ve tamamen kazananın sorumluluğundadır.\n7.5 Ödül bir seyahat veya etkinlik ise: tarihler, bilet sayısı ve seyahat sınıfı çekiliş sayfasında belirtilenler olacaktır."
+      },
+      "s8": {
+        "title": "8. Kazananlar",
+        "content": "8.1 Alesyo Win LTD'nin kararı kesindir. Herhangi bir Çekilişin sonucuyla ilgili hiçbir itiraz kabul edilmeyecektir.\n8.2 Standart Çekilişler için, Alesyo Win LTD kazananla çekilişten sonraki 7 gün içinde iletişime geçecektir. Bir kazanana ulaşılamazsa veya ödülünü 14 gün içinde talep etmezse, alternatif bir kazanan seçme hakkımızı saklı tutarız.\n8.3 Anında Kazanma Çekilişleri için kazananlar çekiliş sayfası ve e-posta yoluyla anında bilgilendirilir. Bir ödül 14 gün içinde talep edilmezse, yeniden dağıtılabilir."
+      },
+      "s9": {
+        "title": "9. Ödülün Talep Edilmesi",
+        "content": "9.1 Ödüller kazanan tarafından şahsen talep edilmelidir. Hiçbir üçüncü şahıs kazanan adına ödül talep edemez.\n9.2 Kazananlar iletişim bilgilerini güncel tutmalıdır. Her türlü değişiklik derhal info@ALESYOWIN.com adresine gönderilmelidir.\n9.3 Nakit ödüller doğrudan kazananın banka hesabına aktarılır. Kazanan, hesap sahibi olduğunu doğrulamalıdır. Bu kanıtın 14 gün içinde sunulmaması ödülün geri alınmasına yol açacaktır."
+      },
+      "s10": {
+        "title": "10. Sorumluluğun Sınırlandırılması",
+        "content": "10.1 Yasaların izin verdiği ölçüde, Alesyo Win LTD, doğrudan ihmalimizden kaynaklanmadığı sürece, bir Çekilişe katılım veya bir ödülün kullanımından kaynaklanan hiçbir kayıp, kişisel yaralanma veya hasardan sorumlu olmayacaktır.\n10.2 Alesyo Win LTD şunlardan sorumlu değildir: yanlış bilgi veya teknik arızalar nedeniyle kaybolan katılımlar; katılım verilerine yetkisiz erişim veya müdahale."
+      },
+      "s11": {
+        "title": "11. Veri Koruma ve Reklam",
+        "content": "11.1 Katılarak, Alesyo Win LTD'nin kişisel bilgilerinizi yalnızca Çekilişin yönetimi amacıyla, Gizlilik Politikamıza uygun olarak saklamasını ve kullanmasını kabul etmiş olursunuz.\n11.2 Kazanırsanız, Alesyo Win LTD'nin sonucu kamuya duyurmak için adınızı ve resminizi kullanmasını kabul edersiniz.\n11.3 Reklam faaliyetlerinde yer almak istemiyorsanız, lütfen Kapanış Tarihinden önce bizi bilgilendirin."
+      },
+      "s12": {
+        "title": "12. Genel Hükümler",
+        "content": "12.1 Alesyo Win LTD bu Ş&K'yı zaman zaman güncelleyebilir. Güncel sürüm her zaman www.ALESYOWIN.com adresinde mevcut olacaktır.\n12.2 Bu Ş&K, İngiltere ve Galler yasalarına tabidir. Her türlü uyuşmazlık İngiltere ve Galler mahkemelerinin münhasır yargı yetkisine tabi olacaktır."
+      }
+    },
+    "footerNote": "Gizliliğiniz önceliğimizdir. Sorularınız için lütfen bizimle iletişime geçin."
+  },
+  "Privacy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son Güncelleme: Nisan 2026",
+    "intro": "Alesyo Win LTD („biz“, „bize“, „bizim“) www.ALESYOWIN.com adresini ziyaret eden veya kullanan herkesin gizliliğini ciddiye alır. Bu Gizlilik Politikası, hangi kişisel bilgileri topladığımızı, bunları neden topladığımızı, nasıl koruduğumuzu ve bunlar üzerinde hangi haklara sahip olduğunuzu açıkça belirtir.\n\nVeri Sorumlusu Bilgileri:\nAlesyo Win LTD (Şirket Numarası 16737234)\n54 Market Street, Eastleigh, SO50 5RB, Birleşik Krallık\nE-posta: info@ALESYOWIN.com\n\nBu Politika, www.ALESYOWIN.com adresine göz atan, hesap oluşturan veya çekilişlerimizden herhangi birine katılan herkes için geçerlidir. Web sitemizi kullanmanız, verilerinizi nasıl yönettiğimizi okuma ve anlama fırsatına sahip olduğunuz anlamına gelir.",
+    "sections": {
+      "s1": {
+        "title": "1. Biz Kimiz?",
+        "content": "Alesyo Win LTD gizliliğinize önem verir. Bu politika, veri koruma yaklaşımımızı açıklar."
+      },
+      "s2": {
+        "title": "2. Toplanan Bilgiler",
+        "content": "Doğrudan etkileşimleriniz aracılığıyla ve internet üzerinden otomatik olarak veri topluyoruz.\n- Kimlik: Ad, soyad.\n- İletişim: E-posta, telefon, adres.\n- Finansal: İşlem geçmişi.\n- Teknik: IP, tarayıcı türü vb."
+      },
+      "s3": {
+        "title": "3. Bilgilerin Kullanımı",
+        "content": "Verilerinizi; hesabınızı, çekilişleri, ödemeleri yönetmek ve sizi gelişmelerden haberdar etmek için kullanırız. Yasal dayanaklar arasında sözleşmenin ifası ve meşru menfaat yer alır."
+      },
+      "s4": {
+        "title": "4. Veri Güvenliği",
+        "content": "Bilgilerinizi korumak için SSL şifrelemesi ve güvenli barındırma ortamları kullanıyoruz."
+      },
+      "s5": {
+        "title": "5. Veri Paylaşımı",
+        "content": "Verileri yalnızca güvenilir harici sağlayıcılarla paylaşırız. Kişisel verilerinizi asla üçüncü şahıslara satmayız."
+      },
+      "s6": {
+        "title": "6. Uluslararası Transferler",
+        "content": "Verilerin Birleşik Krallık veya AEA dışına aktarılması durumunda, uygun korumaları garanti ederiz."
+      },
+      "s7": {
+        "title": "7. Veri Saklama",
+        "content": "Verilerinizi, hesabınız aktif olduğu sürece veya yasal yükümlülüklere uygun olarak (genellikle 6 yıl) saklarız."
+      },
+      "s8": {
+        "title": "8. Haklarınız",
+        "content": "Verilerinize erişme, bunları düzeltme veya silme hakkına sahipsiniz. Her türlü talebiniz için info@ALESYOWIN.com adresinden bizimle iletişime geçin."
+      },
+      "s9": {
+        "title": "9. Kazananlar ve Reklam",
+        "content": "Şeffaflığı sağlamak için kazananların adlarını yayınlayabiliriz. Diğer her türlü reklam faaliyeti için onayınızı isteyeceğiz."
+      },
+      "s10": {
+        "title": "10. Çocukların Gizliliği",
+        "content": "Hizmetlerimiz 18 yaş ve üzeri kişiler için ayrılmıştır."
+      },
+      "s11": {
+        "title": "11. Güncellemeler",
+        "content": "Bu politika periyodik olarak gözden geçirilebilir."
+      },
+      "s12": {
+        "title": "12. İletişim",
+        "content": "Sorularınız için info@ALESYOWIN.com ile iletişime geçin."
+      }
+    },
+    "footerNote": "Gizliliğiniz önceliğimizdir. Sorularınız için lütfen bizimle iletişime geçin."
+  },
+  "Rules": {
+    "title": "Resmi Çekiliş Kuralları",
+    "lastUpdated": "Yürürlük Tarihi: Mart 2026",
+    "intro": "Alesyo Win LTD, İngiltere ve Galler'de 16737234 şirket numarasıyla tescilli, kayıtlı ofisi 54 Market Street, Eastleigh, SO50 5RB, Birleşik Krallık adresindedir.\n\nBu Resmi Çekiliş Kuralları („Kurallar“) bağlayıcıdır ve www.ALESYOWIN.com üzerinde başlatılan tüm çekilişleri yönetir.",
+    "sections": {
+      "s1": {
+        "title": "1. Genel Koşullar",
+        "content": "1.1 Bu Resmi Çekiliş Kuralları („Kurallar“) bağlayıcıdır. ORGANİZATÖR: Alesyo Win LTD. PLATFORM: www.ALESYOWIN.com uygun kişilere ödül çekilişlerine katılma şansı sunar. UYGULAMA ALANI: Bu Kurallar, 01.03.2026 tarihinde veya sonrasında başlatılan tüm çekilişleri yönetir."
+      },
+      "s2": {
+        "title": "2. Nasıl Katılınır?",
+        "content": "2.1 Başlangıç ve bitiş tarihleri çekiliş sayfasındadır. Ücretli Katılım: Soruyu yanıtlayın, biletleri seçin, siparişi tamamlayın, giriş yapın, Ş&K'yı kabul edin, ödemeyi tamamlayın. Posta yoluyla Ücretsiz Katılım: Adresimize el yazısıyla yazılmış bir mektup gönderin. Çekiliş ID'sini, Adınızı, Doğum Tarihinizi, Adresinizi, E-postanızı, Telefonunuzu ve Cevabınızı içermelidir. Bilgilerle eşleşen aktif bir hesabınız olmalıdır."
+      },
+      "s3": {
+        "title": "3. Kayıt ve Sorumluluktan Muafiyet Koşulları",
+        "content": "3.1 Katılım göndererek, her katılımcı bu Kuralları kabul ettiğini onaylar, Alesyo Win LTD'yi ve sosyal medya platformlarını sorumluluktan muaf tutar ve dolaylı zararlar için tazminat taleplerinden feragat eder."
+      },
+      "s4": {
+        "title": "4. Kazananlar Nasıl Seçilir?",
+        "content": "4.1 Kazananlar, Google'ın rastgele sayı üreteci kullanılarak seçilir. Yalnızca doğru cevaba sahip geçerli katılımlar dahil edilir. Çekilişler, kapanış tarihinden itibaren 7 gün içinde gerçekleştirilir."
+      },
+      "s5": {
+        "title": "5. Web Sitesi Kredisi",
+        "content": "5.1 Web sitesi kredisinin nakit değeri yoktur, nakde çevrilemez ve hesabınıza eklendiği tarihten itibaren 12 ay sonra süresi dolar."
+      },
+      "s6": {
+        "title": "6. Ödüller",
+        "content": "6.1 Ödüller stok durumuna bağlıdır. Alesyo Win LTD, herhangi bir ödülü eşit veya daha yüksek değerde bir ödülle değiştirme hakkını saklı tutar. Aksi belirtilmedikçe nakit alternatifi yoktur."
+      },
+      "s7": {
+        "title": "7. İadeler ve Tarih Değişiklikleri",
+        "content": "7.1 Kapanış tarihi 120 günden fazla uzatılmadıkça veya ödül önemli ölçüde değişmedikçe katılım ücretleri iade edilmez."
+      },
+      "s8": {
+        "title": "8. Veri Koruma ve Gizlilik",
+        "content": "8.1 Kişisel veriler çekilişin yönetimi ve pazarlama iletişimleri için kullanılır. Tüm detaylar Gizlilik Politikamızdadır."
+      },
+      "s9": {
+        "title": "9. Sorumluluğun Sınırlandırılması",
+        "content": "9.1 Alesyo Win LTD, katılımcı hatalarından, teknik arızalardan veya sistem kesintilerinden sorumlu değildir."
+      },
+      "s10": {
+        "title": "10. Uyuşmazlıklar",
+        "content": "10.1 Uyuşmazlıklar İngiltere ve Galler yasalarına tabidir. Toplu davalara veya grup davalarına izin verilmez."
+      },
+      "s11": {
+        "title": "11. Genel Hükümler",
+        "content": "11.1 Alesyo Win LTD bu kuralları periyodik olarak güncelleyebilir. Teknik arızalar veya mücbir sebepler durumunda iptal veya askıya alma meydana gelebilir."
+      }
+    },
+    "footerNote": "Gizliliğiniz önceliğimizdir. Sorularınız için lütfen bizimle iletişime geçin."
+  },
+  "PostalEntry": {
+    "title": "Posta ile Ücretsiz Katılım Yöntemi",
+    "lastUpdated": "Yürürlük Tarihi: Mart 2026",
+    "intro": "Bir çekilişe—Standart Çekiliş veya Anında Kazanma Çekilişi fark etmeksizin—katılmak isteyen herkes, aşağıdaki talimatları izleyerek ücretsiz olarak katılabilir.",
+    "sections": {
+      "s1": {
+        "title": "1. Adres",
+        "content": "Katılımınız ön ödemeli birinci veya ikinci sınıf posta ile gönderilmeli ve şu adrese yönlendirilmelidir: Alesyo Win LTD, 54 Market Street, Eastleigh, SO50 5RB, Birleşik Krallık. Elden teslim edilen katılımlar hiçbir koşulda kabul edilmeyecek ve çekilişten hariç tutulacaktır."
+      },
+      "s2": {
+        "title": "2. Gerekli Bilgiler",
+        "content": "Posta yoluyla yapılan her katılım aşağıdaki bilgileri açıkça içermelidir:\n\n• Katıldığınız çekilişin adı\n• Tam adınız\n• Doğum tarihiniz\n• Tam ev adresiniz\n• İletişim telefon numarası ve e-posta adresi\n• Varsa Çekiliş Sorusu'na verdiğiniz cevap\n\nYukarıdaki bilgilerden herhangi birinin eksik olduğu veya net olarak okunamayan katılımlar istisnasız diskalifiye edilecektir."
+      },
+      "s3": {
+        "title": "3. Katılım Sınırları",
+        "content": "Bir çekiliş için izin verilen maksimum katılım sınırına kadar birden fazla ücretsiz katılım gönderebilirsiniz. Kişi başına katılım sınırı www.ALESYOWIN.com adresindeki ilgili çekiliş sayfasında gösterilir. Her katılım kendi ayrı zarfında gönderilmelidir. Tek bir zarfın içine birden fazla katılım yerleştirilirse, ekteki katılım sayısına bakılmaksızın tüm paket tek bir katılım olarak sayılacaktır."
+      },
+      "s4": {
+        "title": "4. Standart Çekilişler",
+        "content": "Standart Çekilişler için, posta yoluyla katılımınızın belirlenen Kapanış Tarihinden ve o çekiliş için mevcut tüm biletler tahsis edilmeden önce yukarıdaki adrese fiziksel olarak ulaşması gerekir. Kapanış Tarihinden sonraki 48 saat içinde veya tüm biletlerin tahsis edilmesinden sonraki 48 saat içinde ulaşan katılımlar, Alesyo Win LTD'nin takdirine bağlı olarak, katılımların hala açık olduğu benzer değerdeki bir sonraki uygun çekilişe aktarılabilir ve kaydedilebilir. Kapanış Tarihinden sonra ve tüm biletler tahsis edildikten sonra ulaşan katılımlar ilk çekilişe veya başka bir çekilişe dahil edilmeyecektir. Posta gönderim belgesinin alındı kanıtı olarak kabul edilmediğini ve katılımınızın çekilişe dahil edileceğini garanti etmediğini lütfen unutmayın."
+      },
+      "s5": {
+        "title": "5. Anında Kazanma Çekilişleri",
+        "content": "Anında Kazanma Çekilişleri için, ücretsiz posta katılımınızın, o çekiliş için tüm biletler ücretli katılımlar yoluyla tahsis edilmeden önce ulaşması gerekir. Tüm biletlerin tahsis edilmemiş olması kaydıyla, Kapanış Tarihinden sonraki 48 saat içinde ulaşan katılımlar da Anında Kazanma Çekilişine dahil edilmek üzere kabul edilecektir."
+      },
+      "s6": {
+        "title": "6. Bilet Durumu",
+        "content": "Posta yoluyla katılımınız alınmadan önce bir çekiliş için maksimum katılım sayısına ulaşılırsa, yukarıdaki 4. madde hükümleri geçerli olmadıkça katılımınız o çekilişe ve başka hiçbir çekilişe dahil edilmeyecektir."
+      },
+      "s7": {
+        "title": "7. Kayıtlı Hesap",
+        "content": "Ücretsiz posta katılımınızın işleme alınması için www.ALESYOWIN.com üzerinde aktif kayıtlı bir hesabınızın olması gerekir. Mektupta yer alan tüm kişisel bilgiler, kayıtlı hesabınızdaki bilgilerle birebir eşleşmelidir. Bilgilerin eşleşmediği veya ilgili bir hesabın bulunmadığı katılımlar geçersiz sayılacak ve çekilişe dahil edilmeyecektir."
+      }
+    },
+    "footerNote": "Gizliliğiniz önceliğimizdir. Sorularınız için lütfen bizimle iletişime geçin."
+  },
+  "Cookies": {
+    "title": "Çerez Politikası",
+    "lastUpdated": "Son Güncelleme: Nisan 2026",
+    "intro": "Alesyo Win LTD („biz“, „bizim“, „bize“) www.ALESYOWIN.com web sitesini işletmektedir. Bu Çerez Politikası, çerezlerin ne olduğunu, bunları web sitemizde nasıl kullandığımızı ve kullanımlarıyla ilgili seçeneklerinizi açıklar.\n\nwww.ALESYOWIN.com adresini kullanmaya devam ederek, çerezleri aşağıda açıklandığı şekilde kullanmamızı kabul etmiş ve anladığınızı onaylamış olursunuz.",
+    "sections": {
+      "s1": {
+        "title": "1. Bu Politika Hakkında",
+        "content": "Alesyo Win LTD („biz“, „bizim“, „bize“) www.ALESYOWIN.com web sitesini işletmektedir. Bu Çerez Politikası, çerezlerin ne olduğunu, bunları web sitemizde nasıl kullandığımızı ve kullanımlarıyla ilgili seçeneklerinizi açıklar."
+      },
+      "s2": {
+        "title": "2. Çerez Nedir?",
+        "content": "Çerez, bir web sitesini ziyaret ettiğinizde cihazınıza—bilgisayar, tablet veya cep telefonu gibi—yerleştirilen küçük bir metin dosyasıdır. Çerezler, web sitesinin gelecekteki ziyaretlerde cihazınızı tanımasına ve giriş yapıp yapmadığınız veya hangi dili tercih ettiğiniz gibi tercihleriniz veya etkinlikleriniz hakkındaki belirli bilgileri hatırlamasına olanak tanır.\nÇerezler kendi başlarına adınızı veya doğrudan tanımlanabilir herhangi bir kişisel bilginizi içermez, ancak Gizlilik Politikamız uyarınca hakkınızda tuttuğumuz kişisel verilerle ilişkilendirilebilir."
+      },
+      "s3": {
+        "title": "3. Çerezleri Nasıl Kullanıyoruz?",
+        "content": "www.ALESYOWIN.com adresinde çerezleri aşağıdakiler de dahil olmak üzere çeşitli amaçlar için kullanırız:\n\n• Web sitesinin düzgün çalışmasını sağlamak – Bazı çerezler sitenin çalışması için gereklidir. Onlar olmadan belirli sayfalar veya özellikler beklendiği gibi çalışmayabilir.\n• Ziyaretçilerin sitemizi nasıl kullandığını anlamak – Hangi sayfaların en sık ziyaret edildiğini ve ziyaretçilerin nereden geldiğini görmek için analitik araçlar kullanırız. Bu, kullanıcı deneyimini geliştirmemize yardımcı olur.\n• Tercihlerinizi hatırlamak – Çerezler, dil ayarı gibi yaptığınız seçimleri hatırlamamıza yardımcı olur, böylece her ziyarette bunları tekrar girmek zorunda kalmazsınız.\n• İlgili içerik ve reklam sağlamak – Çerezleri size hediyelerimizle ilgili ilginizi çekebileceğini düşündüğümüz promosyonlar göstermek için kullanabiliriz."
+      },
+      "s4": {
+        "title": "4. Üçüncü Taraf Çerezleri",
+        "content": "www.ALESYOWIN.com sitesindeki bazı çerezler, Google, Meta ve TikTok gibi web sitemizi desteklemek için kullandığımız üçüncü taraf hizmetler tarafından yerleştirilir. Bu üçüncü tarafların her biri, buradan okuyabileceğiniz kendi gizlilik ve çerez politikaları altında çalışır:\n\n• Google: https://policies.google.com/privacy\n• Meta (Facebook/Instagram): https://www.facebook.com/privacy/policy/\n• TikTok: https://www.tiktok.com/legal/page/eea/privacy-policy/en\n\nAlesyo Win LTD, bu üçüncü tarafların çerezleri aracılığıyla toplanan verileri nasıl kullandıkları üzerinde hiçbir kontrole sahip değildir."
+      },
+      "s5": {
+        "title": "5. Seçimleriniz and Kontrolünüz",
+        "content": "Web sitemizi ziyaretiniz sırasında çerezlerin nasıl kullanılacağı konusunda kontrole sahipsiniz:\n\n• Çerez Banner'ı – İlk ziyaretinizde, zorunlu olmayan çerezleri kabul etmenize veya reddetmenize olanak tanıyan bir bildirim gösterilecektir.\n• Tarayıcı Ayarları – Çerezleri engellemek veya silmek için tarayıcı ayarlarınızı istediğiniz zaman ayarlayabilirsiniz. Talimatlar için lütfen tarayıcınızın „Yardım“ veya „Ayarlar“ menüsünü kontrol edin.\n• Tercihleri Değiştirme – Çerezleri silerek veya sitemizdeki onay bağlantısı aracılığıyla çerez tercihlerinizi istediğiniz zaman güncelleyebilirsiniz."
+      },
+      "s6": {
+        "title": "6. Bu Politikadaki Güncellemeler",
+        "content": "Teknolojideki, mevzuattaki veya web sitemizi işletme şeklimizdeki değişiklikleri yansıtmak için bu Çerez Politikasını zaman zaman gözden geçirebiliriz. Güncellemeler bu sayfada yayınlanacak ve üstteki tarih buna göre güncellenecektir."
+      },
+      "s7": {
+        "title": "7. Bize Ulaşın",
+        "content": "www.ALESYOWIN.com adresinde çerezleri nasıl kullandığımız hakkında sorularınız varsa, lütfen bizimle iletişime geçin:\n\nE-posta: info@ALESYOWIN.com\nAlesyo Win LTD\n54 Market Street, Eastleigh,\nSO50 5RB, Birleşik Krallık"
+      }
+    },
+    "footerNote": "Gizliliğiniz önceliğimizdir. Sorularınız için lütfen bizimle iletişime geçin."
+  },
+  "FAQ": {
+    "title": "Sıkça Sorulan Sorular (FAQ)",
+    "lastUpdated": "Son Güncelleme: Nisan 2026",
+    "intro": "ALESYOWIN'in nasıl çalıştığı hakkında sorularınız mı var? Sürecimizi ve nasıl inanılmaz ödüller kazanabileceğinizi anlamanıza yardımcı olmak için en sık sorulan soruları burada topladık.",
+    "sections": {
+      "q1": {
+        "question": "Bir çekilişe nasıl katılırım?",
+        "answer": "Çok kolay! İstediğiniz çekilişi seçin, eleme sorusunu doğru yanıtlayın, bilet sayısını seçin ve ödemeyi tamamlayın. Bilet numaralarınızı içeren bir onay e-postası alacaksınız."
+      },
+      "q2": {
+        "question": "Kimler katılabilir?",
+        "answer": "Çekilişler, 18 yaşın üzerindeki Birleşik Krallık sakinlerine açıktür. Katılım koşullarının tamamı için lütfen Resmi Kuralları kontrol edin."
+      },
+      "q3": {
+        "question": "Kazananlar nasıl seçiliyor?",
+        "answer": "Standart çekilişlerin kazananları, Google'ın rastgele sayı üreteci kullanılarak canlı yayında seçilir. Anında Kazanma (Instant Win) çekilişlerinde ödüller, satın alma anında kazanan bilet numaralarına otomatik olarak atanır."
+      },
+      "q4": {
+        "question": "Anında Kazanma (Instant Win) ödülleri nedir?",
+        "answer": "Instant Win ödülleri, nihai çekilişi beklemeden bilet satın aldığınız anda hemen kazanabileceğiniz ödüllerdir. Biletiniz anında ödüle karşılık gelen bir numaraya sahipse, anında kazanırsınız!"
+      },
+      "q5": {
+        "question": "Çekiliş ne zaman gerçekleşecek?",
+        "answer": "Çekilişler genellikle çekiliş kapandıktan sonraki 7 gün içinde gerçekleşir. Kesin tarih ve saat sosyal medya sayfalarımızda duyurulur."
+      },
+      "q6": {
+        "question": "Kazanırsam ödülümü nasıl alırım?",
+        "answer": "Ekibimiz, teslimat detaylarını netleştirmek için çekilişten sonraki 7 gün içinde sizinle telefon veya e-posta yoluyla iletişime geçecektir. Nakit ödüller doğrudan banka hesabınıza aktarılır."
+      }
+    },
+    "footerNote": "Aradığınız cevabı bulamadınız mı? info@ALESYOWIN.com adresinden bizimle iletişime geçin, size yardımcı olmaktan memnuniyet duyarız."
+  },
+  "InstantWinnerEmail": {
+    "title": "Anında Kazanan Bildirimi",
+    "subject": "Tebrikler! Anında ödül kazandınız! - {title}",
+    "greeting": "Merhaba {name},",
+    "congrats": "Tebrikler! {title} çekilişinde anında ödül kazandınız.",
+    "ticketLabel": "Kazanan Bilet Numarası",
+    "prizeLabel": "Ödül Değeri",
+    "instructions": "Ödülünüzü nasıl alacağınız konusunda ekibimiz kısa süre içinde sizinle iletişime geçecektir. Telefonunuzu ve e-postanızı takipte kalın!",
+    "thanks": "ALESYOWIN'de bizimle oynadığınız için teşekkür ederiz!",
+    "footer": "© {year} ALESYOWIN. Tüm hakları saklıdır."
+  },
+  "BonusWinnerEmail": {
+    "title": "Bonus Çekiliş Bildirimi",
+    "subject": "Tebrikler! Bonus çekiliş kazandınız! - {title}",
+    "greeting": "Merhaba {name},",
+    "congrats": "Harika haber! {title} çekilişindeki bir bonus çekilişin kazananı olarak otomatik olarak seçildiniz.",
+    "ticketLabel": "Kazanan Bilet Numarası",
+    "prizeLabel": "Ödül Değeri",
+    "instructions": "Ödülünüzü nasıl alacağınız konusunda ekibimiz kısa süre içinde sizinle iletişime geçecektir. Telefonunuzu ve e-postanızı takipte kalın!",
+    "thanks": "ALESYOWIN'in bir parçası olduğunuz için teşekkür ederiz!",
+    "footer": "© {year} ALESYOWIN. Tüm hakları saklıdır."
+  },
+  "Hero": {
+    "title": "Bir BMW X6 seni kazanman için bekliyor",
+    "subtitle": "Katılım biletlerini satın al ve büyük ödül için yarışa katıl."
+  },
+  "Login": {
+    "titleEmail": "Giriş Yap",
+    "titleOtp": "Kodu Doğrula",
+    "descEmail": "Erişim kodunu almak için e-posta adresinizi girin.",
+    "descOtp": "{email} adresine 6 haneli bir kod gönderdik",
+    "placeholderEmail": "ad.soyad@ornek.com",
+    "sendOtpBtn": "Erişim Kodu Gönder",
+    "changeEmailBtn": "E-posta Adresini Değiştir",
+    "errorSendOtp": "Kod gönderilirken hata oluştu. Lütfen tekrar deneyin.",
+    "errorVerifyOtp": "Girilen kod hatalı veya zaten kullanılmış."
+  }
+}

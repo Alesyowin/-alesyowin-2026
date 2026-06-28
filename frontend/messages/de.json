@@ -542,5 +542,16 @@
   "Hero": {
     "title": "Ein BMW X6 wartet darauf, von Ihnen gewonnen zu werden",
     "subtitle": "Kaufen Sie Teilnahmetickets und nehmen Sie am Rennen um den Hauptpreis teil."
+  },
+  "Login": {
+    "titleEmail": "Einloggen",
+    "titleOtp": "Code überprüfen",
+    "descEmail": "Geben Sie Ihre E-Mail-Adresse ein, um den Zugangscode zu erhalten.",
+    "descOtp": "Wir haben einen 6-stelligen Code an die Adresse {email} gesendet.",
+    "placeholderEmail": "name.vorname@beispiel.com",
+    "sendOtpBtn": "Zugangscode senden",
+    "changeEmailBtn": "E-Mail-Adresse ändern",
+    "errorSendOtp": "Fehler beim Senden des Codes. Bitte versuchen Sie es erneut.",
+    "errorVerifyOtp": "Der eingegebene Code ist falsch oder wurde bereits verwendet."
   }
 }

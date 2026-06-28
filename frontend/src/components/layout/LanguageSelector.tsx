@@ -5,7 +5,7 @@ import { usePathname, useRouter } from '../../i18n/routing';
 import { useState, useTransition, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import { GB, RO, DE, FR, IT, ES } from 'country-flag-icons/react/3x2';
+import { GB, RO, DE, FR, IT, ES, BG, TR } from 'country-flag-icons/react/3x2';
 
 const languages = [
     { code: 'en', label: 'EN', Component: GB },
@@ -14,6 +14,8 @@ const languages = [
     { code: 'fr', label: 'FR', Component: FR },
     { code: 'it', label: 'IT', Component: IT },
     { code: 'es', label: 'ES', Component: ES },
+    { code: 'bg', label: 'BG', Component: BG },
+    { code: 'tr', label: 'TR', Component: TR },
 ];
 
 export default function LanguageSelector() {

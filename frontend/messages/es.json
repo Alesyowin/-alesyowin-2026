@@ -542,5 +542,16 @@
   "Hero": {
     "title": "Un BMW X6 te espera para ser ganado",
     "subtitle": "Compra boletos de participación y entra en la carrera por el gran premio."
+  },
+  "Login": {
+    "titleEmail": "Iniciar Sesión",
+    "titleOtp": "Verificar Código",
+    "descEmail": "Introduce tu dirección de correo electrónico para recibir el código de acceso.",
+    "descOtp": "Hemos enviado un código de 6 dígitos a la dirección {email}",
+    "placeholderEmail": "nombre.apellido@ejemplo.com",
+    "sendOtpBtn": "Enviar Código de Acceso",
+    "changeEmailBtn": "Cambiar Dirección de Correo",
+    "errorSendOtp": "Error al enviar el código. Inténtalo de nuevo.",
+    "errorVerifyOtp": "El código introducido es incorrecto o ya ha sido utilizado."
   }
 }

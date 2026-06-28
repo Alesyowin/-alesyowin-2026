@@ -542,5 +542,16 @@
   "Hero": {
     "title": "Un BMW X6 te așteaptă să-l câștigi",
     "subtitle": "Cumpără bilete de participare și intră în cursa pentru marele premiu."
+  },
+  "Login": {
+    "titleEmail": "Autentificare",
+    "titleOtp": "Verificare Cod",
+    "descEmail": "Introdu adresa de email pentru a primi codul de acces.",
+    "descOtp": "Am trimis un cod de 6 cifre pe adresa {email}",
+    "placeholderEmail": "nume.prenume@exemplu.com",
+    "sendOtpBtn": "Trimite Cod Acces",
+    "changeEmailBtn": "Schimbă Adresa de Email",
+    "errorSendOtp": "Eroare la trimiterea codului. Încearcă din nou.",
+    "errorVerifyOtp": "Codul introdus este incorect sau a fost deja utilizat."
   }
 }

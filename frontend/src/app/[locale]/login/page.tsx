@@ -16,7 +16,7 @@ export default function LoginPage() {
     
     const { requestOTP, verifyOTP } = useAuth();
     const router = useRouter();
-    const t = useTranslations('Navbar'); // Folosim 'Navbar' pentru login momentan sau creăm secțiune nouă
+    const t = useTranslations('Login');
 
     const handleRequestOTP = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -29,7 +29,7 @@ export default function LoginPage() {
         if (success) {
             setStep('otp');
         } else {
-            setError(apiError || 'Eroare la trimiterea codului. Încearcă din nou.');
+            setError(apiError || t('errorSendOtp'));
         }
     };
 
@@ -43,7 +43,7 @@ export default function LoginPage() {
             router.push('/profile');
         } else {
             setIsPending(false);
-            setError(apiError || 'Codul introdus este incorect sau a fost deja utilizat.');
+            setError(apiError || t('errorVerifyOtp'));
         }
     };
 
@@ -56,12 +56,12 @@ export default function LoginPage() {
 
                 <div className="relative z-10 text-center space-y-6">
                     <h1 className="text-3xl font-black text-white uppercase tracking-tighter">
-                        {step === 'email' ? 'Autentificare' : 'Verificare Cod'}
+                        {step === 'email' ? t('titleEmail') : t('titleOtp')}
                     </h1>
                     <p className="text-white/50 text-sm">
                         {step === 'email' 
-                            ? 'Introdu adresa de email pentru a primi codul de acces.' 
-                            : `Am trimis un cod de 6 cifre pe adresa ${email}`
+                            ? t('descEmail') 
+                            : t('descOtp', { email })
                         }
                     </p>
 
@@ -72,7 +72,7 @@ export default function LoginPage() {
                                 <input
                                     type="email"
                                     required
-                                    placeholder="Nume.prenume@exemplu.com"
+                                    placeholder={t('placeholderEmail')}
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     className="w-full bg-white border border-gray-200 rounded py-3 pl-10 pr-4 text-black font-semibold focus:border-[#00A5FF] focus:ring-1 focus:ring-[#00A5FF]/50 outline-none transition-all placeholder:text-gray-400"
@@ -90,7 +90,7 @@ export default function LoginPage() {
                                 disabled={isPending}
                                 className="w-full bg-gradient-to-r from-(--color-gold-dark) via-(--color-gold) to-(--color-gold-light) text-black font-black uppercase tracking-widest py-4 rounded-sm hover:scale-[1.02] transition-all transform flex items-center justify-center gap-2 disabled:opacity-50 disabled:scale-100"
                             >
-                                {isPending ? <Loader2 className="animate-spin" /> : 'Trimite Cod Acces'}
+                                {isPending ? <Loader2 className="animate-spin" /> : t('sendOtpBtn')}
                                 {!isPending && <ArrowRight size={18} />}
                             </button>
                         </form>
@@ -112,7 +112,7 @@ export default function LoginPage() {
                                 onClick={() => setStep('email')}
                                 className="text-white/30 hover:text-white text-xs uppercase tracking-widest font-semibold transition-colors"
                             >
-                                Schimbă Adresa de Email
+                                {t('changeEmailBtn')}
                             </button>
                         </div>
                     )}
